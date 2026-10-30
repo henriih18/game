@@ -1,0 +1,11 @@
+# Godot 4
+.godot/
+/android/
+
+# Builds exportados
+/build/
+/exports/
+
+# Sistema / editores
+*~
+.DS_Store
