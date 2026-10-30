@@ -66,6 +66,11 @@ func _build_camera() -> void:
 	add_child(camera)
 	_current_eye = eye_height
 
+	var listener := AudioListener3D.new()
+	listener.name = "AudioListener"
+	listener.current = true
+	camera.add_child(listener)
+
 	_carry_anchor = Node3D.new()
 	_carry_anchor.name = "CarryAnchor"
 	_carry_anchor.position = Vector3(0.0, -0.32, -1.05)
@@ -216,12 +221,36 @@ func _interact() -> void:
 	if hidden:
 		exit_hide()
 		return
+	if _try_interactable():
+		return
 	if carried_item != null:
 		_drop_item()
 		return
 	if _try_pickup():
 		return
 	_try_hide()
+
+func _try_interactable() -> bool:
+	var best: Node3D = null
+	var best_distance := interact_distance
+	for node in get_tree().get_nodes_in_group("fm_interactable"):
+		if node == null or not is_instance_valid(node):
+			continue
+		if not node.has_method("can_interact") or not node.has_method("get_interaction_position"):
+			continue
+		if not node.can_interact(self):
+			continue
+		var point: Vector3 = node.get_interaction_position()
+		var distance := global_position.distance_to(point)
+		if distance <= best_distance and _has_line_of_sight(point):
+			best = node as Node3D
+			best_distance = distance
+	if best == null:
+		return false
+	if not best.has_method("interact"):
+		return false
+	best.interact(self)
+	return true
 
 func _try_pickup() -> bool:
 	var best: Node3D = null
@@ -329,6 +358,9 @@ func is_observing(target: Node3D) -> bool:
 func get_interaction_prompt() -> String:
 	if hidden:
 		return "E   SALIR DEL ESCONDITE"
+	var interactable := _nearest_interactable()
+	if interactable != null and interactable.has_method("get_interaction_prompt"):
+		return interactable.get_interaction_prompt()
 	if carried_item != null:
 		return "Q   SOLTAR NÚCLEO"
 	if _nearest_item() != null:
@@ -336,6 +368,28 @@ func get_interaction_prompt() -> String:
 	if _nearest_hiding_spot() != null:
 		return "E   ESCONDERSE"
 	return _prompt
+
+func _nearest_interactable() -> Node3D:
+	var best: Node3D = null
+	var best_distance := interact_distance
+	for node in get_tree().get_nodes_in_group("fm_interactable"):
+		if node == null or not is_instance_valid(node):
+			continue
+		if not node.has_method("can_interact") or not node.has_method("get_interaction_position"):
+			continue
+		if not node.can_interact(self):
+			continue
+		var point: Vector3 = node.get_interaction_position()
+		var distance := global_position.distance_to(point)
+		if distance <= best_distance and _has_line_of_sight(point):
+			best = node as Node3D
+			best_distance = distance
+	return best
+
+func recharge_battery(amount: float) -> void:
+	battery = clampf(battery + amount, 0.0, max_battery)
+	if battery > 0.0:
+		flashlight_on = true
 
 func _nearest_item() -> Node3D:
 	for node in get_tree().get_nodes_in_group("fm_carry_item"):

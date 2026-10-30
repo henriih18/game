@@ -20,7 +20,46 @@ func _ready() -> void:
 	_check(scene.hud != null, "HUD existe")
 	_check(scene.player.flashlight_on, "la linterna empieza encendida")
 
+	# Puerta de seguridad: cerrada, bloquea y se abre con E.
+	_check(scene.security_door != null and not scene.security_door.is_open, "la puerta empieza cerrada")
+	_check(scene.security_door._leaves[0].collision_layer != 0, "la puerta cerrada bloquea el paso")
+	scene.watcher.set_physics_process(false)
+	scene.watcher.global_position = Vector3(0, 0.1, -5.0)
+	scene.watcher.state = FMWatcher.State.PATROL
+	scene.player.global_position = Vector3(0, 0.1, -8.0)
+	scene.player.rotation.y = 0.0
+	await get_tree().physics_frame
+	_check(scene.player.get_interaction_prompt() == "E   ABRIR PUERTA DE SEGURIDAD", "la puerta muestra su prompt")
+	scene.player._interact()
+	await get_tree().physics_frame
+	_check(scene.security_door.is_open and scene.security_door._leaves[0].collision_layer == 0, "la puerta se abre y deja pasar")
+	_check(scene.watcher.state == FMWatcher.State.INVESTIGATE, "abrir la puerta atrae al Vigilante")
+
+	# Batería: recarga la linterna y desaparece.
+	var battery: FMBattery = scene.batteries[0]
+	scene.player.battery = 10.0
+	scene.player.global_position = Vector3(-3.8, 0.1, 0.9)
+	scene.player.rotation.y = 0.0
+	await get_tree().physics_frame
+	scene.player._interact()
+	await get_tree().physics_frame
+	_check(scene.player.battery > 50.0, "la bateria recarga la linterna")
+	_check(not is_instance_valid(battery), "la bateria recogida desaparece")
+
+	# Trampa sonora: emite ruido y atrae al Vigilante.
+	scene.watcher.global_position = Vector3(1.15, 0.1, 8.5)
+	scene.watcher.state = FMWatcher.State.PATROL
+	scene.noise_trap.trigger()
+	await get_tree().physics_frame
+	_check(scene.noise_trap.triggered, "la trampa sonora se activa")
+	_check(scene.watcher.state == FMWatcher.State.INVESTIGATE, "la trampa atrae al Vigilante")
+
+	# Audio ambiental 3D en loop.
+	_check(scene.ambience != null and scene.ambience.playing, "el audio ambiental esta sonando")
+	_check(scene.ambience.stream is AudioStreamWAV and scene.ambience.stream.loop_mode == AudioStreamWAV.LOOP_FORWARD, "el audio ambiental tiene loop")
+
 	# Observación: el jugador mira al Vigilante.
+	scene.watcher.set_physics_process(true)
 	scene.player.global_position = Vector3(0, 0.1, 2.0)
 	scene.player.rotation.y = 0.0
 	scene.watcher.global_position = Vector3(0, 0.1, -2.0)

@@ -1,7 +1,7 @@
 # FRECUENCIA MUERTA — Vertical slice offline
 
-Estado: **primera versión jugable**, offline y de un solo jugador. No es la versión final
-ni tiene red.
+Estado: **primera versión jugable con pulido P1**, offline y de un solo jugador.
+No es la versión final ni tiene red.
 
 ## Objetivo
 
@@ -12,9 +12,16 @@ Validar el bucle mínimo de terror y extracción:
 3. Recogerlo y transportarlo.
 4. Evitar a El Vigilante.
 5. Usar un escondite si hace falta.
-6. Llegar a la extracción con el núcleo.
+6. Abrir la puerta de seguridad al final del corredor.
+7. Llegar a la extracción con el núcleo.
 
 Sin armas, sin combate y sin posibilidad de matar a la criatura.
+
+| Captura | Qué muestra |
+|---|---|
+| ![Corredor y Vigilante](fm_slice.png) | Vista general del corredor, el laboratorio y El Vigilante |
+| ![Puerta de seguridad](fm_slice_door.png) | Puerta interactiva cerrada, con prompt de interacción |
+| ![Batería](fm_slice_battery.png) | Batería recogible para recargar la linterna |
 
 ## Cómo abrir
 
@@ -40,7 +47,7 @@ godot --path ~/Documentos/game scenes/fm/vertical_slice.tscn
 | Mirar | Mouse |
 | Correr | Shift |
 | Agacharse | Ctrl |
-| Interactuar / recoger / esconderse / salir | E |
+| Interactuar / recoger / esconderse / salir / abrir puerta | E |
 | Soltar el núcleo | Q |
 | Linterna | F |
 | Volver al menú | Esc |
@@ -61,8 +68,16 @@ godot --path ~/Documentos/game scenes/fm/vertical_slice.tscn
   viñeta y pantalla de fin.
 - **Escenario** (`scripts/fm/vertical_slice.gd`): corredor, laboratorio, tanque,
   puerta de seguridad, luces, niebla, polvo y props con colisión.
-- **Audio y atmósfera**: música existente, pasos, recogida, caída, escondite y
-  extracción; sin audio 3D ni voz todavía.
+- **Puerta de seguridad interactiva** (`scripts/fm/fm_security_door.gd`): dos hojas
+  con colisión, keypad, prompt, apertura con E y ruido que puede atraer al Vigilante.
+- **Baterías recogibles** (`scripts/fm/fm_battery.gd`): dos unidades que recargan un
+  45% de la linterna, hacen ruido al recogerse y desaparecen.
+- **Trampa sonora** (`scripts/fm/fm_noise_trap.gd`): cristales y latas en el corredor;
+  al pisarla emite ruido y atrae al Vigilante. No hace daño.
+- **Audio ambiental 3D** (`assets/audio/ambience/ambience.wav`): loop industrial de
+  24 segundos reproducido con `AudioStreamPlayer3D`; el jugador tiene `AudioListener3D`.
+- **Audio y atmósfera**: música existente, pasos, recogida, caída, escondite,
+  extracción, puerta, batería y trampa; sin voz todavía.
 
 ## Pruebas
 
@@ -71,12 +86,15 @@ godot --headless --path . tests/fm_slice_smoke.tscn
 ```
 
 Cubre jugador, Vigilante, núcleo, extracción, escondites, HUD, observación,
-recogida, esconderse/salir, linterna inicial y victoria. Resultado actual: **15/15 PASS**.
+recogida, esconderse/salir, linterna inicial, victoria, puerta, batería, trampa y
+audio ambiental. Resultado actual: **26/26 PASS**.
 
 ## Limitaciones
 
 - Offline y de un solo jugador.
 - Sin red, sin voz, sin Imitador y sin herramientas.
+- La puerta, las baterías y la trampa son sistemas locales; todavía no están
+  sincronizados por red.
 - El Vigilante y el núcleo usan geometría procedural provisional.
 - No hay inventario, base, progresión ni misiones.
 - El escenario es un blockout con materiales de Fase 2, no arte final.

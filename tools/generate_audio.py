@@ -13,6 +13,7 @@ import wave
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SFX_DIR = os.path.join(ROOT, "assets", "audio", "sfx")
 MUSIC_DIR = os.path.join(ROOT, "assets", "audio", "music")
+AMBIENCE_DIR = os.path.join(ROOT, "assets", "audio", "ambience")
 
 TAU = math.tau
 SFX_SR = 44100
@@ -331,6 +332,50 @@ def music_heist():
     return buf
 
 
+def ambience_lab():
+    """Loop industrial de 24 s para el vertical slice.
+
+    Solo tonos con un numero entero de ciclos en el loop, mas eventos
+    cortos que se apagan antes del final: el salto de loop queda limpio.
+    """
+    sr = MUSIC_SR
+    loop_s = 24.0
+    n = int(loop_s * sr)
+    buf = [0.0] * n
+
+    # Zumbido de instalacion: frecuencias que completan ciclos exactos en 24 s.
+    for i in range(n):
+        t = i / sr
+        slow = 0.55 + 0.45 * math.sin(TAU * 0.0416667 * t)
+        drone = (
+            0.030 * math.sin(TAU * 55.0 * t)
+            + 0.018 * math.sin(TAU * 82.5 * t + 0.7)
+            + 0.010 * math.sin(TAU * 110.0 * t + 1.9)
+            + 0.006 * math.sin(TAU * 220.5 * t + 0.3)
+        )
+        buf[i] = drone * (0.55 + 0.45 * slow)
+
+    # Aire metalico tenue, tambien periodico.
+    for i in range(n):
+        t = i / sr
+        buf[i] += 0.004 * math.sin(TAU * 440.25 * t) * (0.5 + 0.5 * math.sin(TAU * 0.0833333 * t))
+
+    # Gotas y crujidos, separados y con caida corta.
+    for start, freq, amp in [
+        (3.2, 1450.0, 0.06),
+        (8.7, 1720.0, 0.045),
+        (13.4, 1280.0, 0.05),
+        (19.1, 1840.0, 0.04),
+    ]:
+        add_note(buf, start, freq, 0.42, amp, sr, attack=0.002, decay=0.11,
+                 harmonics=((1.0, 1.0), (2.4, 0.25)))
+
+    for start, f0, f1 in [(6.2, 92.0, 61.0), (16.8, 78.0, 54.0)]:
+        add_sweep(buf, start, f0, f1, 0.85, 0.035, sr,
+                  harmonics=((1.0, 1.0), (2.0, 0.2)))
+    return buf
+
+
 def main():
     random.seed(3)
     sfx = {
@@ -355,6 +400,8 @@ def main():
     }
     for name, fn in music.items():
         write_wav(os.path.join(MUSIC_DIR, name), fn(), MUSIC_SR, 0.8)
+
+    write_wav(os.path.join(AMBIENCE_DIR, "ambience.wav"), ambience_lab(), MUSIC_SR, 0.6)
 
 
 if __name__ == "__main__":

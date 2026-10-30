@@ -9,7 +9,8 @@ godot --headless --path . tests/fm_slice_smoke.tscn
 ```
 
 Comprueba: jugador, Vigilante, núcleo, extracción, escondites, HUD, linterna,
-observación, recogida, esconderse/salir y victoria. Resultado esperado: **15 PASS**.
+observación, recogida, esconderse/salir, victoria, puerta de seguridad, batería,
+trampa sonora y audio ambiental. Resultado esperado: **26 PASS**.
 
 ## Juego 2D heredado
 

@@ -6,25 +6,33 @@
 
 La primera versión jugable de FRECUENCIA MUERTA ya está en el proyecto. Es un
 **vertical slice offline de un jugador** para validar el bucle de terror antes de
-llevarlo a red: corredor industrial, laboratorio de contención, puerta de seguridad,
-linterna con batería, un objeto físico, dos escondites, El Vigilante, estrés y
-extracción. Sin armas y sin combate.
+llevarlo a red: corredor industrial, laboratorio de contención, puerta de seguridad
+interactiva, linterna con batería, un objeto físico, dos escondites, El Vigilante,
+estrés, trampa sonora, audio ambiental 3D y extracción. Sin armas y sin combate.
 
 ![Vertical slice offline](docs/fm_slice.png)
+
+| Captura | Qué muestra |
+|---|---|
+| ![Puerta de seguridad](docs/fm_slice_door.png) | Puerta interactiva cerrada, con prompt |
+| ![Batería](docs/fm_slice_battery.png) | Batería recogible para la linterna |
 
 - Cómo abrirla: botón **ENTRAR A LA INSTALACIÓN** del menú, o `godot --path ~/Documentos/game -- --slice`
 - Escena: `scenes/fm/vertical_slice.tscn`
 - La criatura se detiene cuando la observás; si dejás de mirarla, se mueve.
 - El núcleo está en el laboratorio; hay que llevarlo a la extracción al final del corredor.
+- La puerta de seguridad se abre con E; el ruido puede atraer al Vigilante.
+- Hay dos baterías recogibles que recargan la linterna; los cristales del corredor hacen ruido al pisarlos.
 - La linterna consume batería. Los escondites reducen el riesgo, pero no son invisibilidad absoluta.
 - El lookdev de Fase 2 se conserva como referencia visual y se puede abrir desde el menú.
+- Documentación detallada: [docs/fm_vertical_slice.md](docs/fm_vertical_slice.md).
 
 | Acción | Tecla |
 |---|---|
 | Mover | WASD |
 | Mirar | Mouse |
 | Correr / agacharse | Shift / Ctrl |
-| Interactuar, recoger, esconderse o salir | E |
+| Interactuar, recoger, esconderse, salir o abrir puerta | E |
 | Soltar el núcleo | Q |
 | Linterna | F |
 | Volver al menú | Esc |
@@ -40,7 +48,7 @@ Pruebas básicas versionadas:
 bash tests/run_all.sh
 ```
 
-Resultados actuales: vertical slice **15/15**, juego 2D **16/16**, red 2D **6/6**.
+Resultados actuales: vertical slice **26/26**, juego 2D **16/16**, red 2D **6/6**.
 Los tests dejan avisos de recursos al forzar la salida; no son fallos de gameplay.
 
 ## Fase 2 — Identidad visual y look dev

@@ -11,6 +11,9 @@ const WATCHER_SCENE := preload("res://scenes/fm/fm_watcher.tscn")
 const ITEM_SCENE := preload("res://scenes/fm/carry_item.tscn")
 const HIDING_SCENE := preload("res://scenes/fm/hiding_spot.tscn")
 const EXTRACTION_SCENE := preload("res://scenes/fm/extraction.tscn")
+const DOOR_SCENE := preload("res://scenes/fm/security_door.tscn")
+const BATTERY_SCENE := preload("res://scenes/fm/battery.tscn")
+const TRAP_SCENE := preload("res://scenes/fm/noise_trap.tscn")
 
 const MAT_CONCRETE := preload("res://assets/art/fm/concrete_wall.tres")
 const MAT_METAL := preload("res://assets/art/fm/metal_panel.tres")
@@ -40,6 +43,10 @@ var artifact: FMCarryItem
 var extraction: FMExtraction
 var hud: FMHUD
 var level: Node3D
+var security_door: FMSecurityDoor
+var batteries: Array[FMBattery] = []
+var noise_trap: FMNoiseTrap
+var ambience: AudioStreamPlayer3D
 
 var _mats: Dictionary = {}
 var _time := 0.0
@@ -57,11 +64,15 @@ func _ready() -> void:
 	_build_lights()
 	_build_props()
 	_build_hiding_spots()
+	_build_security_door()
+	_build_batteries()
+	_build_noise_trap()
 	_build_extraction()
 	_build_artifact()
 	_build_player()
 	_build_watcher()
 	_build_hud()
+	_build_ambience()
 	Audio.play_music("heist")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -315,6 +326,57 @@ func _add_hiding_spot(pos: Vector3, display_name: String, yaw: float) -> void:
 		_box(level, pos + Vector3(-0.28, 1.55 - i * 0.16, 0.43), Vector3(0.34, 0.035, 0.03), "dark", false)
 	_box(level, pos + Vector3(0.3, 1.1, 0.43), Vector3(0.04, 0.2, 0.03), "yellow", false)
 
+func _build_security_door() -> void:
+	security_door = DOOR_SCENE.instantiate() as FMSecurityDoor
+	security_door.name = "SecurityDoor"
+	security_door.position = Vector3(0.0, 0.0, -9.9)
+	security_door.game = self
+	add_child(security_door)
+	security_door.opened.connect(_on_security_door_opened)
+
+func _build_batteries() -> void:
+	for data in [
+		{"name": "BatteryLab", "pos": Vector3(-4.9, 0.76, 0.9)},
+		{"name": "BatteryCorridor", "pos": Vector3(2.45, 0.55, -3.2)},
+	]:
+		var battery := BATTERY_SCENE.instantiate() as FMBattery
+		battery.name = data["name"]
+		battery.position = data["pos"]
+		battery.game = self
+		add_child(battery)
+		batteries.append(battery)
+
+func _build_noise_trap() -> void:
+	noise_trap = TRAP_SCENE.instantiate() as FMNoiseTrap
+	noise_trap.name = "NoiseTrap"
+	noise_trap.position = Vector3(1.15, 0.0, 6.4)
+	noise_trap.game = self
+	add_child(noise_trap)
+
+func _build_ambience() -> void:
+	var path := "res://assets/audio/ambience/ambience.wav"
+	if not ResourceLoader.exists(path):
+		return
+	var stream := load(path) as AudioStreamWAV
+	if stream == null:
+		return
+	stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
+	stream.loop_begin = 0
+	stream.loop_end = int(stream.get_length() * stream.mix_rate)
+	ambience = AudioStreamPlayer3D.new()
+	ambience.name = "Ambience3D"
+	ambience.stream = stream
+	ambience.position = Vector3(0.0, 2.4, 1.5)
+	ambience.unit_size = 9.0
+	ambience.max_distance = 38.0
+	ambience.volume_db = -21.0
+	add_child(ambience)
+	ambience.play()
+
+func _on_security_door_opened() -> void:
+	if hud != null:
+		hud.set_status("PUERTA ABIERTA  ·  LLEGÁ A EXTRACCIÓN")
+
 func _build_extraction() -> void:
 	extraction = EXTRACTION_SCENE.instantiate() as FMExtraction
 	extraction.name = "Extraction"
@@ -355,8 +417,8 @@ func _build_hud() -> void:
 	hud = FMHUD.new()
 	hud.name = "HUD"
 	add_child(hud)
-	hud.set_objective("RECUPERAR EL NÚCLEO", "Laboratorio de contención  ·  extracción al final del corredor")
-	hud.set_status("NÚCLEO EN EL LABORATORIO")
+	hud.set_objective("RECUPERAR EL NÚCLEO", "Laboratorio de contención  ·  puerta de seguridad al final del corredor")
+	hud.set_status("NÚCLEO EN EL LABORATORIO  ·  PUERTA BLOQUEADA")
 	hud.set_battery(100.0, true)
 	hud.set_stress(0.0)
 	hud.set_stamina(100.0)
@@ -406,13 +468,15 @@ func _update_status() -> void:
 	if artifact == null:
 		return
 	if artifact.carried_by == player:
-		hud.set_status("NÚCLEO EN MANOS  ·  LLEVALO A EXTRACCIÓN")
+		hud.set_status("NÚCLEO EN MANOS  ·  LLEGÁ A EXTRACCIÓN")
 	elif artifact.carried_by != null:
 		hud.set_status("EL NÚCLEO ESTÁ SIENDO TRANSPORTADO")
 	elif player.hidden:
 		hud.set_status("ESCONDIDO  ·  ESCUCHÁ ANTES DE SALIR")
+	elif security_door != null and not security_door.is_open:
+		hud.set_status("PUERTA DE SEGURIDAD BLOQUEADA  ·  ABRILA CON E")
 	else:
-		hud.set_status("NÚCLEO EN EL LABORATORIO")
+		hud.set_status("NÚCLEO EN EL LABORATORIO  ·  PUERTA ABIERTA")
 
 func emit_noise(position: Vector3, radius: float, _kind: String) -> void:
 	if watcher != null and is_instance_valid(watcher):
@@ -450,6 +514,8 @@ func _end(result: int, title: String, subtitle: String) -> void:
 		watcher.set_physics_process(false)
 	if artifact != null:
 		artifact.set_physics_process(false)
+	if ambience != null and is_instance_valid(ambience):
+		ambience.stop()
 	hud.show_end(title, subtitle)
 	Audio.stop_music()
 	Audio.play_sfx("win" if state == State.WON else "lose", -4.0)
