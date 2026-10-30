@@ -1,12 +1,10 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Texture2D" path="res://assets/art/floor_tile.svg" id="2_floor"]
-[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_player"]
 [ext_resource type="PackedScene" path="res://scenes/gem.tscn" id="4_gem"]
 [ext_resource type="PackedScene" path="res://scenes/crate.tscn" id="5_crate"]
 [ext_resource type="PackedScene" path="res://scenes/extraction_zone.tscn" id="6_zone"]
-[ext_resource type="PackedScene" path="res://scenes/player2.tscn" id="7_player2"]
 [ext_resource type="PackedScene" path="res://scenes/security_camera.tscn" id="8_camera"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h"]
@@ -106,11 +104,7 @@ position = Vector2(260, 620)
 [node name="ExtractionZone" parent="." instance=ExtResource("6_zone")]
 position = Vector2(1090, 630)
 
-[node name="Player" parent="." instance=ExtResource("3_player")]
-position = Vector2(640, 600)
-
-[node name="Player2" parent="." instance=ExtResource("7_player2")]
-position = Vector2(780, 600)
+[node name="Players" type="Node2D" parent="."]
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -198,6 +192,6 @@ offset_right = 460.0
 offset_bottom = 60.0
 theme_override_colors/font_color = Color(0.78, 0.8, 0.9, 1)
 theme_override_font_sizes/font_size = 20
-text = "R para reintentar"
+text = "R para volver al menú"
 horizontal_alignment = 1
 vertical_alignment = 1

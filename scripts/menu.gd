@@ -1,0 +1,108 @@
+extends Control
+
+const PORT := 7777
+const MAX_PLAYERS := 4
+const GAME_SCENE := "res://scenes/main.tscn"
+
+@onready var ip_edit: LineEdit = $IPEdit
+@onready var status: Label = $Status
+
+func _ready() -> void:
+	_style_button($HostButton)
+	_style_button($JoinButton)
+	_style_button($LocalButton)
+	_style_line_edit($IPEdit)
+
+	$HostButton.pressed.connect(_host)
+	$JoinButton.pressed.connect(_join)
+	$LocalButton.pressed.connect(_local)
+
+	multiplayer.connected_to_server.connect(_on_connected, CONNECT_ONE_SHOT)
+	multiplayer.connection_failed.connect(_on_connection_failed, CONNECT_ONE_SHOT)
+
+	_handle_cmdline.call_deferred()
+
+func _handle_cmdline() -> void:
+	for arg in OS.get_cmdline_user_args():
+		if arg == "--host":
+			_host()
+			return
+		if arg.begins_with("--join="):
+			ip_edit.text = arg.get_slice("=", 1)
+			_join()
+			return
+
+func _style_button(button: Button) -> void:
+	var normal := StyleBoxFlat.new()
+	normal.bg_color = Color(0.24, 0.17, 0.46, 1.0)
+	normal.set_corner_radius_all(10)
+	normal.set_content_margin_all(12)
+
+	var hover := normal.duplicate() as StyleBoxFlat
+	hover.bg_color = Color(0.33, 0.24, 0.6, 1.0)
+
+	var pressed := normal.duplicate() as StyleBoxFlat
+	pressed.bg_color = Color(0.18, 0.12, 0.36, 1.0)
+
+	button.add_theme_stylebox_override("normal", normal)
+	button.add_theme_stylebox_override("hover", hover)
+	button.add_theme_stylebox_override("pressed", pressed)
+	button.add_theme_stylebox_override("focus", hover)
+	button.add_theme_font_size_override("font_size", 22)
+	button.add_theme_color_override("font_color", Color(0.92, 0.9, 1.0, 1.0))
+
+func _style_line_edit(edit: LineEdit) -> void:
+	var box := StyleBoxFlat.new()
+	box.bg_color = Color(0.1, 0.11, 0.18, 1.0)
+	box.border_color = Color(0.3, 0.24, 0.5, 1.0)
+	box.set_border_width_all(2)
+	box.set_corner_radius_all(8)
+	box.set_content_margin_all(10)
+	edit.add_theme_stylebox_override("normal", box)
+	edit.add_theme_stylebox_override("focus", box)
+	edit.add_theme_font_size_override("font_size", 18)
+	edit.add_theme_color_override("font_color", Color(0.9, 0.92, 0.97, 1.0))
+	edit.add_theme_color_override("font_placeholder_color", Color(0.5, 0.52, 0.6, 1.0))
+	edit.add_theme_color_override("caret_color", Color(0.7, 0.6, 1.0, 1.0))
+
+func _host() -> void:
+	var peer := ENetMultiplayerPeer.new()
+	var err := peer.create_server(PORT, MAX_PLAYERS)
+	if err != OK:
+		_set_status("No se pudo abrir el puerto %d (error %d)." % [PORT, err], true)
+		return
+	multiplayer.multiplayer_peer = peer
+	get_tree().change_scene_to_file(GAME_SCENE)
+
+func _join() -> void:
+	var address := ip_edit.text.strip_edges()
+	if address.is_empty():
+		_set_status("Escribí la IP del anfitrión (o 127.0.0.1 en esta PC).", true)
+		return
+	var peer := ENetMultiplayerPeer.new()
+	var err := peer.create_client(address, PORT)
+	if err != OK:
+		_set_status("No se pudo iniciar la conexión (error %d)." % err, true)
+		return
+	multiplayer.multiplayer_peer = peer
+	_set_status("Conectando a %s..." % address, false)
+
+func _local() -> void:
+	if multiplayer.multiplayer_peer != null:
+		multiplayer.multiplayer_peer.close()
+		multiplayer.multiplayer_peer = null
+	get_tree().change_scene_to_file(GAME_SCENE)
+
+func _on_connected() -> void:
+	get_tree().change_scene_to_file(GAME_SCENE)
+
+func _on_connection_failed() -> void:
+	if multiplayer.multiplayer_peer != null:
+		multiplayer.multiplayer_peer.close()
+		multiplayer.multiplayer_peer = null
+	_set_status("No se pudo conectar. Revisá la IP y que el anfitrión tenga la partida abierta.", true)
+
+func _set_status(message: String, is_error: bool) -> void:
+	status.text = message
+	var color := Color(1, 0.45, 0.45) if is_error else Color(0.62, 0.65, 0.74)
+	status.add_theme_color_override("font_color", color)

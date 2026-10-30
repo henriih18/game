@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Robo Caotico"
 config/description="Prototipo de robo cooperativo 2D con tension social."
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
