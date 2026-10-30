@@ -3,6 +3,7 @@ extends Control
 const PORT := 7777
 const MAX_PLAYERS := 4
 const GAME_SCENE := "res://scenes/main.tscn"
+const DEMO3D_SCENE := "res://scenes/demo3d.tscn"
 
 @onready var ip_edit: LineEdit = $IPEdit
 @onready var status: Label = $Status
@@ -15,14 +16,17 @@ func _ready() -> void:
 	_style_button($HostButton)
 	_style_button($JoinButton)
 	_style_button($LocalButton)
+	_style_button($Demo3DButton)
 	_style_line_edit($IPEdit)
 	_wire_button($HostButton)
 	_wire_button($JoinButton)
 	_wire_button($LocalButton)
+	_wire_button($Demo3DButton)
 
 	$HostButton.pressed.connect(_host)
 	$JoinButton.pressed.connect(_join)
 	$LocalButton.pressed.connect(_local)
+	$Demo3DButton.pressed.connect(_demo3d)
 	$IPEdit.text_submitted.connect(func(_text: String): _join())
 
 	multiplayer.connected_to_server.connect(_on_connected, CONNECT_ONE_SHOT)
@@ -48,6 +52,9 @@ func _handle_cmdline() -> void:
 			return
 		if arg == "--local":
 			_local()
+			return
+		if arg == "--demo3d":
+			_demo3d()
 			return
 		if arg.begins_with("--join="):
 			ip_edit.text = arg.get_slice("=", 1)
@@ -114,6 +121,12 @@ func _local() -> void:
 		multiplayer.multiplayer_peer.close()
 		multiplayer.multiplayer_peer = null
 	get_tree().change_scene_to_file(GAME_SCENE)
+
+func _demo3d() -> void:
+	if multiplayer.multiplayer_peer != null:
+		multiplayer.multiplayer_peer.close()
+		multiplayer.multiplayer_peer = null
+	get_tree().change_scene_to_file(DEMO3D_SCENE)
 
 func _on_connected() -> void:
 	get_tree().change_scene_to_file(GAME_SCENE)
