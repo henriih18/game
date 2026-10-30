@@ -1,3 +1,26 @@
+# FRECUENCIA MUERTA
+
+**Terror cooperativo online. No todas las voces que escuchas pertenecen a tus compañeros.**
+
+## Fase 2 — Identidad visual y look dev
+
+La nueva dirección del proyecto es **FRECUENCIA MUERTA**: un juego de terror y extracción cooperativa en 3D en primera persona, sin armas y sin combate. Esta fase construyó una escena visual para validar la atmósfera, los materiales, la iluminación y el rendimiento antes de invertir en el vertical slice jugable.
+
+| Captura | Qué muestra |
+|---|---|
+| ![Corredor](docs/fm_lookdev_corridor.png) | Corredor industrial de acceso |
+| ![Laboratorio](docs/fm_lookdev_lab.png) | Laboratorio de contención |
+| ![Puerta](docs/fm_lookdev_door.png) | Puerta de seguridad |
+
+- Cómo abrirla: `godot --path ~/Documentos/game scenes/fm/lookdev.tscn`
+- Documentación completa: [`docs/fm_lookdev.md`](docs/fm_lookdev.md)
+- Renderer: **Forward+**.
+- Rendimiento medido: 95-99 FPS a 1080p en el corredor, 92-94 FPS en el laboratorio (GTX 1650 Ti).
+- La escena es un **look dev**: no tiene jugador, criaturas, IA, loot ni red.
+- Los prototipos anteriores se conservan más abajo como banco de pruebas e historial.
+
+---
+
 # Robo Caótico — Prototipo 0.8
 
 Prototipo de robo cooperativo para Steam. La dirección elegida es **3D en primera persona y online**. El juego 2D sigue siendo la base jugable con red; la demo 3D elevada queda como referencia y la demo FP sirve para validar la cámara, la caja y el nivel antes de invertir en el multijugador 3D.

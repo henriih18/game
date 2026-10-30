@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+albedo_color = Color(0.25, 0.55, 0.55, 0.18)
+metallic = 0.2
+roughness = 0.06
+transparency = 1
