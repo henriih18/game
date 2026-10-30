@@ -26,7 +26,8 @@ var last_seen := Vector3.ZERO
 var observed := false
 
 var _visual: Node3D
-var _eye_mat: StandardMaterial3D
+var _glow: OmniLight3D
+var _visual_parts: Dictionary = {}
 var _time := 0.0
 var _wait_timer := 0.0
 var _repath_timer := 0.0
@@ -51,114 +52,34 @@ func _build_visual() -> void:
 	_visual = Node3D.new()
 	_visual.name = "Visual"
 	add_child(_visual)
+	_visual_parts = FMCreatureModels.build_vigilante(_visual)
+	_glow = _visual_parts.get("glow") as OmniLight3D
 
-	var dark := StandardMaterial3D.new()
-	dark.albedo_color = Color(0.018, 0.022, 0.03, 1.0)
-	dark.roughness = 0.72
-	dark.metallic = 0.15
-
-	var pale := StandardMaterial3D.new()
-	pale.albedo_color = Color(0.18, 0.17, 0.15, 1.0)
-	pale.roughness = 0.86
-
-	var body := MeshInstance3D.new()
-	var body_mesh := CapsuleMesh.new()
-	body_mesh.radius = 0.34
-	body_mesh.height = 1.8
-	body_mesh.radial_segments = 12
-	body_mesh.rings = 8
-	body.mesh = body_mesh
-	body.material_override = dark
-	body.position = Vector3(0, 1.18, 0)
-	body.scale = Vector3(0.82, 1.18, 0.62)
-	_visual.add_child(body)
-
-	var head := MeshInstance3D.new()
-	var head_mesh := SphereMesh.new()
-	head_mesh.radius = 0.27
-	head_mesh.height = 0.52
-	head_mesh.radial_segments = 12
-	head_mesh.rings = 8
-	head.mesh = head_mesh
-	head.material_override = pale
-	head.position = Vector3(0, 2.22, 0)
-	head.scale = Vector3(0.82, 1.08, 0.72)
-	_visual.add_child(head)
-
-	var face := MeshInstance3D.new()
-	var face_mesh := BoxMesh.new()
-	face_mesh.size = Vector3(0.32, 0.12, 0.04)
-	face.mesh = face_mesh
-	var face_mat := StandardMaterial3D.new()
-	face_mat.albedo_color = Color(0.01, 0.01, 0.012, 1.0)
-	face_mat.roughness = 0.2
-	face.material_override = face_mat
-	face.position = Vector3(0, 2.22, -0.255)
-	_visual.add_child(face)
-
-	_eye_mat = StandardMaterial3D.new()
-	_eye_mat.albedo_color = Color(0.8, 0.18, 0.06, 1.0)
-	_eye_mat.emission_enabled = true
-	_eye_mat.emission = Color(1.0, 0.18, 0.05)
-	_eye_mat.emission_energy_multiplier = 1.8
-	for side in [-1.0, 1.0]:
-		var eye := MeshInstance3D.new()
-		var eye_mesh := SphereMesh.new()
-		eye_mesh.radius = 0.038
-		eye_mesh.height = 0.076
-		eye_mesh.radial_segments = 8
-		eye_mesh.rings = 4
-		eye.mesh = eye_mesh
-		eye.material_override = _eye_mat
-		eye.position = Vector3(0.09 * side, 2.23, -0.285)
-		_visual.add_child(eye)
-
-	for side in [-1.0, 1.0]:
-		var arm := MeshInstance3D.new()
-		var arm_mesh := CapsuleMesh.new()
-		arm_mesh.radius = 0.075
-		arm_mesh.height = 1.35
-		arm_mesh.radial_segments = 8
-		arm_mesh.rings = 4
-		arm.mesh = arm_mesh
-		arm.material_override = dark
-		arm.position = Vector3(0.38 * side, 1.1, 0.02)
-		arm.rotation_degrees.z = 7.0 * side
-		_visual.add_child(arm)
-
-		var leg := MeshInstance3D.new()
-		var leg_mesh := CapsuleMesh.new()
-		leg_mesh.radius = 0.09
-		leg_mesh.height = 0.9
-		leg_mesh.radial_segments = 8
-		leg_mesh.rings = 4
-		leg.mesh = leg_mesh
-		leg.material_override = dark
-		leg.position = Vector3(0.15 * side, 0.45, 0.0)
-		_visual.add_child(leg)
-
-	var shadow := MeshInstance3D.new()
-	var shadow_mesh := CylinderMesh.new()
-	shadow_mesh.top_radius = 0.5
-	shadow_mesh.bottom_radius = 0.5
-	shadow_mesh.height = 0.01
-	shadow_mesh.radial_segments = 16
-	shadow.mesh = shadow_mesh
-	var shadow_mat := StandardMaterial3D.new()
-	shadow_mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	shadow_mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-	shadow_mat.albedo_color = Color(0, 0, 0, 0.35)
-	shadow.material_override = shadow_mat
-	shadow.position.y = 0.012
-	add_child(shadow)
-
-	var glow := OmniLight3D.new()
-	glow.light_color = Color(1.0, 0.2, 0.07)
-	glow.light_energy = 0.45
-	glow.omni_range = 1.6
-	glow.shadow_enabled = false
-	glow.position = Vector3(0, 2.22, -0.35)
-	_visual.add_child(glow)
+func _animate_visual(delta: float) -> void:
+	if _visual_parts.is_empty():
+		return
+	var speed := velocity.length()
+	var chase := state == State.CHASE
+	var head := _visual_parts.get("head") as Node3D
+	var jaw := _visual_parts.get("jaw") as Node3D
+	var body := _visual_parts.get("body") as Node3D
+	var left_arm := _visual_parts.get("left_arm") as Node3D
+	var right_arm := _visual_parts.get("right_arm") as Node3D
+	if head != null:
+		head.rotation.z = sin(_time * 0.7) * 0.018
+		# Conserva la inclinación base de la cabeza (-8°) y añade un balanceo sutil.
+		head.rotation.x = -0.14 + sin(_time * 0.45) * 0.015
+	if jaw != null:
+		var opening := 0.22 if chase else 0.04
+		jaw.rotation.x = lerpf(jaw.rotation.x, opening + sin(_time * 2.1) * 0.018, clampf(delta * 4.0, 0.0, 1.0))
+	if body != null:
+		body.rotation.x = lerpf(body.rotation.x, -0.055 if chase else 0.0, clampf(delta * 2.5, 0.0, 1.0))
+	if left_arm != null and right_arm != null:
+		var swing := sin(_time * 1.7) * (0.05 + speed * 0.035)
+		left_arm.rotation.x = lerpf(left_arm.rotation.x, swing, clampf(delta * 5.0, 0.0, 1.0))
+		right_arm.rotation.x = lerpf(right_arm.rotation.x, -swing, clampf(delta * 5.0, 0.0, 1.0))
+	if _glow != null:
+		_glow.light_energy = 0.03 if observed else (0.10 if chase else 0.05)
 
 func set_game(value: Node) -> void:
 	game = value
@@ -181,8 +102,8 @@ func apply_network_state(pos: Vector3, yaw: float, state_value: int, observed_va
 	rotation.y = yaw
 	state = state_value
 	observed = observed_value
-	if _eye_mat != null:
-		_eye_mat.emission_energy_multiplier = 2.8 if observed else 1.8
+	if _glow != null:
+		_glow.light_energy = 0.03 if observed_value else 0.05
 
 func _physics_process(delta: float) -> void:
 	if game == null or not is_instance_valid(game):
@@ -196,8 +117,8 @@ func _physics_process(delta: float) -> void:
 
 	_time += delta
 	observed = _is_observed_by_targets()
-	if _eye_mat != null:
-		_eye_mat.emission_energy_multiplier = 2.8 if observed else 1.8
+	if _glow != null:
+		_glow.light_energy = 0.03 if observed else 0.05
 
 	if observed and state != State.DORMANT:
 		velocity = Vector3.ZERO
@@ -295,6 +216,7 @@ func _face_point(point: Vector3, delta: float, intense: bool) -> void:
 	rotation.y = lerp_angle(rotation.y, target_yaw, clampf(delta * (10.0 if intense else 5.0), 0.0, 1.0))
 	if _visual != null:
 		_visual.position.y = lerpf(_visual.position.y, sin(_time * 1.7) * 0.012, clampf(delta * 3.0, 0.0, 1.0))
+	_animate_visual(delta)
 
 func _nearest_target() -> Node3D:
 	if targets.is_empty():

@@ -79,6 +79,14 @@ godot --path ~/Documentos/game scenes/fm/vertical_slice.tscn
 - **Audio y atmósfera**: música existente, pasos, recogida, caída, escondite,
   extracción, puerta, batería y trampa; sin voz todavía.
 
+## Pase visual
+
+El escenario incorpora decorado industrial, deterioro, sangre, restos, carteles,
+consola de laboratorio, cuerpo en bolsa y una capa de iluminación de emergencia.
+También hay modelos procedurales independientes de El Vigilante y El Imitador,
+basados en `fotos-referencia/modelos-referencia.png`. Las capturas y el estado
+honesto del arte están en [fm_visual_reference.md](fm_visual_reference.md).
+
 ## Pruebas
 
 ```bash
@@ -105,7 +113,7 @@ técnico, los comandos y los límites están en [fm_online.md](fm_online.md).
   simulación completa del movimiento en el servidor.
 - El Vigilante y el núcleo usan geometría procedural provisional.
 - No hay inventario, base, progresión ni misiones.
-- El escenario es un blockout con materiales de Fase 2, no arte final.
+- El escenario tiene ambientación detallada, pero sigue siendo geometría procedural; las criaturas son bloqueos orgánicos, no modelos finales.
 - Los avisos de recursos al cerrar los tests son de la salida forzada.
 
 ## Siguiente paso

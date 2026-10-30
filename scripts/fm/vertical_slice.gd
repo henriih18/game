@@ -45,6 +45,7 @@ var extraction: FMExtraction
 var hud: FMHUD
 var level: Node3D
 var security_door: FMSecurityDoor
+var dressing: FMScenarioDressing
 var batteries: Array[FMBattery] = []
 var noise_trap: FMNoiseTrap
 var ambience: AudioStreamPlayer3D
@@ -74,6 +75,7 @@ func _ready() -> void:
 	_build_rooms()
 	_build_lights()
 	_build_props()
+	_build_scenario_dressing()
 	_build_hiding_spots()
 	_build_security_door()
 	_build_batteries()
@@ -222,6 +224,9 @@ func _prepare_materials() -> void:
 	var cyan_dim: StandardMaterial3D = MAT_CYAN.duplicate()
 	cyan_dim.emission_energy_multiplier = 0.45
 	_mats["cyan_dim"] = cyan_dim
+	var cyan_faint: StandardMaterial3D = MAT_CYAN.duplicate()
+	cyan_faint.emission_energy_multiplier = 0.22
+	_mats["cyan_faint"] = cyan_faint
 	var red: StandardMaterial3D = MAT_RED.duplicate()
 	red.emission_energy_multiplier = 0.85
 	_mats["red"] = red
@@ -236,9 +241,11 @@ func _prepare_materials() -> void:
 	glass.cull_mode = BaseMaterial3D.CULL_DISABLED
 	_mats["glass"] = glass
 	var goo: StandardMaterial3D = MAT_GOO.duplicate()
-	goo.transparency = BaseMaterial3D.TRANSPARENCY_DISABLED
-	goo.albedo_color = Color(0.03, 0.4, 0.13, 1.0)
-	goo.emission_energy_multiplier = 0.9
+	goo.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	goo.albedo_color = Color(0.03, 0.18, 0.07, 0.18)
+	goo.emission_energy_multiplier = 0.05
+	goo.roughness = 0.30
+	goo.cull_mode = BaseMaterial3D.CULL_DISABLED
 	_mats["goo"] = goo
 
 func _mat(key: String) -> Material:
@@ -332,7 +339,7 @@ func _build_lights() -> void:
 	# Laboratorio: luz fría cenital, verde del tanque y lámpara de trabajo.
 	_fixture(Vector3(-6.2, 3.92, 3.6), true)
 	_fixture(Vector3(-6.2, 3.92, 0.9), true)
-	_omni(Vector3(-7.4, 1.6, 2.0), Color(0.12, 0.95, 0.42), 2.2, 6.5)
+	_omni(Vector3(-7.4, 1.6, 2.0), Color(0.16, 0.80, 0.38), 1.15, 5.8)
 	_omni(Vector3(-5.9, 1.35, 4.4), Color(1.0, 0.6, 0.25), 0.9, 3.2)
 	_omni(Vector3(-8.7, 2.6, 4.7), Color(0.34, 0.62, 1.0), 0.8, 4.0)
 	_omni(Vector3(-7.5, 3.0, 1.2), Color(0.25, 0.55, 0.95), 0.9, 5.0)
@@ -340,22 +347,33 @@ func _build_lights() -> void:
 	_omni(Vector3(0, 2.6, -9.4), Color(1.0, 0.12, 0.08), 1.1, 4.5)
 	_omni(Vector3(0, 2.2, -12.2), Color(0.1, 1.0, 0.4), 0.9, 5.0)
 	_spot(Vector3(0, 3.6, -10.3), Vector3(0, 1.1, -12.0), Color(0.55, 0.9, 0.7), 2.4, 44.0, 8.0, true)
-	_spot(Vector3(-3.2, 3.2, 2.5), Vector3(-7.4, 1.2, 2.0), Color(0.45, 0.7, 1.0), 2.2, 48.0, 9.0, true)
+	_spot(Vector3(-3.2, 3.2, 2.5), Vector3(-7.4, 1.2, 2.0), Color(0.45, 0.7, 1.0), 1.35, 48.0, 9.0, true)
+	_spot(Vector3(-4.7, 2.45, 4.35), Vector3(-7.4, 1.35, 2.0), Color(0.86, 0.94, 1.0), 1.1, 42.0, 7.5, false)
 
 func _fixture(pos: Vector3, lab: bool) -> void:
 	_box(level, pos, Vector3(1.55, 0.08, 0.24), "dark", false)
 	_box(level, pos + Vector3(0, -0.06, 0), Vector3(1.36, 0.018, 0.1), "cyan" if not lab else "cyan_dim", false)
 	_omni(pos + Vector3(0, -0.25, 0), Color(0.58, 0.78, 1.0), 1.35 if not lab else 1.1, 7.0)
 
+func _build_scenario_dressing() -> void:
+	dressing = FMScenarioDressing.new()
+	dressing.name = "ScenarioDressing"
+	level.add_child(dressing)
+	dressing.build(_mats)
+
 func _build_props() -> void:
 	# Tanque de contención del laboratorio.
 	var tank_pos := Vector3(-7.4, 0.0, 2.0)
 	_static_cylinder(tank_pos + Vector3(0, 1.4, 0), 1.06, 2.8, "glass")
-	_cylinder_mesh(tank_pos + Vector3(0, 1.35, 0), 0.82, 2.2, "goo", false)
+	_cylinder_mesh(tank_pos + Vector3(0, 0.96, 0), 0.82, 1.52, "goo", false)
 	_cylinder_mesh(tank_pos + Vector3(0, 0.2, 0), 1.15, 0.18, "dark", false)
 	_cylinder_mesh(tank_pos + Vector3(0, 2.82, 0), 1.1, 0.14, "dark", false)
-	_sphere_mesh(tank_pos + Vector3(0, 1.35, 0), 0.38, "dark", Vector3(1.5, 2.5, 1.1), false)
-	_sphere_mesh(tank_pos + Vector3(0, 2.18, 0), 0.28, "dark", Vector3(1.0, 1.1, 0.9), false)
+	var specimen := Node3D.new()
+	specimen.name = "ImitadorEnContencion"
+	specimen.position = tank_pos + Vector3(0.35, 0.10, 0.55)
+	specimen.rotation.y = -2.0
+	level.add_child(specimen)
+	FMCreatureModels.build_imitator(specimen)
 	for x in [-0.75, 0.0, 0.75]:
 		_cylinder_mesh(tank_pos + Vector3(x, 1.35, 0), 0.035, 2.65, "metal", false)
 	var ring := MeshInstance3D.new()
@@ -365,7 +383,7 @@ func _build_props() -> void:
 	torus.rings = 28
 	torus.ring_segments = 8
 	ring.mesh = torus
-	ring.material_override = _mat("cyan_dim")
+	ring.material_override = _mat("cyan_faint")
 	ring.position = tank_pos + Vector3(0, 2.9, 0)
 	level.add_child(ring)
 
@@ -376,7 +394,6 @@ func _build_props() -> void:
 			_box(level, Vector3(-5.9 + x, 0.43, 4.4 + z), Vector3(0.07, 0.86, 0.07), "dark", true)
 	_box(level, Vector3(-5.9, 1.0, 4.4), Vector3(0.7, 0.5, 0.12), "dark", false)
 	_quad_mesh(Vector3(-5.9, 1.0, 4.47), Vector2(0.58, 0.34), "screen", Vector3(0, 0, 0), false)
-	_label3d("NEXUS // NÚCLEO", Vector3(-5.9, 1.42, 4.4), 18, Color(0.45, 0.95, 0.8), true)
 
 	# Camilla y estanterías.
 	_box(level, Vector3(-4.9, 0.55, 0.9), Vector3(1.8, 0.1, 0.7), "metal_dirty", true)

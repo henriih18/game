@@ -10,6 +10,25 @@ seguridad interactiva, linterna con batería, un objeto físico, dos escondites,
 Vigilante, estrés, trampa sonora, audio ambiental 3D y extracción. Sin armas y sin
 combate.
 
+## Pase visual del escenario (referencia actual)
+
+El corredor y el laboratorio recibieron un pase de ambientación industrial:
+costillas estructurales, vigas, cableado, tuberías, rejillas, carteles con placa,
+escombros, charcos, sangre, cuerpo en bolsa, consola de monitoreo, panel de techo
+desprendido y luces de emergencia. También se agregaron modelos procedurales de
+**El Vigilante** y **El Imitador** basados en la silueta de la referencia oficial.
+
+| Captura | Qué muestra |
+|---|---|
+| ![Corredor](docs/fm_visual_corridor.png) | Corredor con iluminación de emergencia y deterioro |
+| ![Laboratorio](docs/fm_visual_lab.png) | Laboratorio de contención y consola |
+| ![Tanque](docs/fm_visual_tank.png) | Tanque con el Imitador y barras frontales |
+| ![Vigilante](docs/fm_visual_watcher.png) | El Vigilante como silueta en el corredor |
+
+- Documentación: [docs/fm_visual_reference.md](docs/fm_visual_reference.md).
+- Renderer **Forward+**; medición del corredor con el driver de captura: ~206 FPS a 720p y ~95–103 FPS a 1080p (GTX 1650 Ti). No es una medición del juego final.
+- **Honestidad**: las criaturas son bloqueos orgánicos procedurales, no modelos finales. El escenario es la referencia de composición, luz y densidad; el arte definitivo de criaturas requiere modelado 3D dedicado.
+
 **Novedad P2:** el vertical slice ya se puede jugar **entre dos instancias por red**
 (ENet, puerto UDP 7777). El host manda sobre la partida: valida interacciones, puerta,
 baterías, trampa, núcleo, criatura, extracción y final. El movimiento de cada cliente
