@@ -22,16 +22,21 @@ var state := State.PLAYING
 var time_left := ROUND_TIME
 var alarm := 0.0
 var sync_accum := 0.0
+var _last_tick_second := -1
+var _vignette_material: ShaderMaterial
 
 @onready var status_label: Label = $HUD/StatusLabel
 @onready var hint_label: Label = $HUD/HintLabel
 @onready var timer_label: Label = $HUD/TimerLabel
 @onready var alarm_fill: ColorRect = $HUD/AlarmFill
+@onready var danger_vignette: ColorRect = $HUD/DangerVignette
 @onready var overlay: ColorRect = $HUD/Overlay
 @onready var result_label: Label = $HUD/Overlay/ResultLabel
 
 func _ready() -> void:
 	add_to_group("game")
+	Audio.play_music("heist")
+	_vignette_material = danger_vignette.material as ShaderMaterial
 
 	for gem in $Gems.get_children():
 		gem.collected.connect(_on_gem_collected)
@@ -96,6 +101,30 @@ func _process(delta: float) -> void:
 func _update_hud() -> void:
 	timer_label.text = "Tiempo: %d:%02d" % [floori(time_left / 60.0), int(time_left) % 60]
 	alarm_fill.size.x = 224.0 * clampf(alarm / ALARM_MAX, 0.0, 1.0)
+	alarm_fill.color = Color(0.95, lerpf(0.55, 0.2, clampf(alarm / ALARM_MAX, 0.0, 1.0)), 0.3)
+
+	var danger := clampf((alarm - 40.0) / (ALARM_MAX - 40.0), 0.0, 1.0)
+	if state != State.PLAYING:
+		danger = 0.0
+	_vignette_material.set_shader_parameter("intensity", danger * 0.62)
+	Audio.set_alarm(alarm, state == State.PLAYING)
+
+	if state == State.PLAYING and time_left <= 20.0:
+		var pulse := 0.5 + 0.5 * sin(Time.get_ticks_msec() / 1000.0 * 9.0)
+		timer_label.modulate = Color(1.0, 0.35 + 0.25 * pulse, 0.35 + 0.15 * pulse)
+	else:
+		timer_label.modulate = Color.WHITE
+
+	if state == State.PLAYING:
+		var seconds := int(ceilf(time_left))
+		if seconds <= 10 and seconds > 0 and seconds != _last_tick_second:
+			_last_tick_second = seconds
+			Audio.play_sfx("tick", -15.0, 1.0 if seconds > 5 else 1.12)
+
+func _pulse_status() -> void:
+	var tween := create_tween()
+	status_label.scale = Vector2(1.06, 1.06)
+	tween.tween_property(status_label, "scale", Vector2.ONE, 0.28).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 func _spawn_local_players() -> void:
 	var p1 := PLAYER_SCENE.instantiate()
@@ -204,17 +233,26 @@ func _on_gem_collected(gem: Node) -> void:
 	gems_collected += 1
 	collected_gems.append(gem.name)
 	_update_status()
+	_pulse_status()
 	if _net_mode() == Mode.HOST:
 		remove_gem.rpc(gem.name)
 	else:
-		gem.queue_free()
+		_remove_gem_local(gem.name, gem.global_position)
 	_check_win()
 
 @rpc("authority", "call_local", "reliable")
 func remove_gem(gem_name: String) -> void:
 	var gem := $Gems.get_node_or_null(gem_name)
 	if gem != null:
-		gem.queue_free()
+		_remove_gem_local(gem_name, gem.global_position)
+
+func _remove_gem_local(gem_name: String, gem_position: Vector2) -> void:
+	var gem := $Gems.get_node_or_null(gem_name)
+	if gem == null:
+		return
+	Effects.burst(self, gem_position, Color(0.32, 1.0, 0.72), 14, 1.0)
+	Audio.play_sfx("gem", -6.0, randf_range(0.96, 1.05))
+	gem.queue_free()
 
 func _on_crate_delivered() -> void:
 	if not _is_server_logic():
@@ -227,6 +265,7 @@ func _on_crate_delivered() -> void:
 	else:
 		$Crate.deliver()
 	_update_status()
+	_pulse_status()
 	_check_win()
 
 func _check_win() -> void:
@@ -245,18 +284,27 @@ func _end(new_state: State, message: String) -> void:
 
 @rpc("authority", "call_local", "reliable")
 func apply_end(new_state: int, message: String) -> void:
+	var was_playing := state == State.PLAYING
 	state = new_state
 	result_label.text = message
 	overlay.visible = true
+	_update_hud()
+	if was_playing:
+		Audio.set_alarm(0.0, false)
+		Audio.stop_music()
+		Audio.play_sfx("win" if new_state == State.WON else "lose", -5.0)
 
 @rpc("authority", "call_remote", "unreliable")
 func sync_state(t: float, a: float, g: int, d: bool, s: int) -> void:
+	var changed := g != gems_collected or d != crate_delivered
 	time_left = t
 	alarm = a
 	gems_collected = g
 	crate_delivered = d
 	state = s
 	_update_status()
+	if changed and state == State.PLAYING:
+		_pulse_status()
 	_update_hud()
 
 func _unhandled_input(event: InputEvent) -> void:

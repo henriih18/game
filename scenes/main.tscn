@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Texture2D" path="res://assets/art/floor_tile.svg" id="2_floor"]
@@ -6,12 +6,18 @@
 [ext_resource type="PackedScene" path="res://scenes/crate.tscn" id="5_crate"]
 [ext_resource type="PackedScene" path="res://scenes/extraction_zone.tscn" id="6_zone"]
 [ext_resource type="PackedScene" path="res://scenes/security_camera.tscn" id="8_camera"]
+[ext_resource type="Shader" path="res://assets/shaders/vignette.gdshader" id="9_vignette"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h"]
 size = Vector2(600, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v"]
 size = Vector2(40, 260)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vignette"]
+shader = ExtResource("9_vignette")
+shader_parameter/intensity = 0.0
+shader_parameter/danger_color = Color(0.85, 0.08, 0.12, 1)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_main")
@@ -107,6 +113,13 @@ position = Vector2(1090, 630)
 [node name="Players" type="Node2D" parent="."]
 
 [node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="DangerVignette" type="ColorRect" parent="HUD"]
+material = SubResource("ShaderMaterial_vignette")
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
 
 [node name="StatusLabel" type="Label" parent="HUD"]
 offset_left = 24.0

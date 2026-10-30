@@ -16,6 +16,10 @@ run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Audio="*res://scripts/audio.gd"
+
 [display]
 
 window/size/viewport_width=1280

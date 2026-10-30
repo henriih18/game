@@ -8,24 +8,46 @@ const GAME_SCENE := "res://scenes/main.tscn"
 @onready var status: Label = $Status
 
 func _ready() -> void:
+	Audio.play_music("menu")
+	modulate.a = 0.0
+	create_tween().tween_property(self, "modulate:a", 1.0, 0.35)
+
 	_style_button($HostButton)
 	_style_button($JoinButton)
 	_style_button($LocalButton)
 	_style_line_edit($IPEdit)
+	_wire_button($HostButton)
+	_wire_button($JoinButton)
+	_wire_button($LocalButton)
 
 	$HostButton.pressed.connect(_host)
 	$JoinButton.pressed.connect(_join)
 	$LocalButton.pressed.connect(_local)
+	$IPEdit.text_submitted.connect(func(_text: String): _join())
 
 	multiplayer.connected_to_server.connect(_on_connected, CONNECT_ONE_SHOT)
 	multiplayer.connection_failed.connect(_on_connection_failed, CONNECT_ONE_SHOT)
 
+	_float_title()
 	_handle_cmdline.call_deferred()
+
+func _wire_button(button: Button) -> void:
+	button.pressed.connect(func(): Audio.play_sfx("click", -11.0))
+	button.mouse_entered.connect(func(): Audio.play_sfx("click", -24.0, 1.35))
+
+func _float_title() -> void:
+	var title: Label = $Title
+	var tween := create_tween().set_loops()
+	tween.tween_property(title, "position:y", -7.0, 2.4).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	tween.tween_property(title, "position:y", 0.0, 2.4).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func _handle_cmdline() -> void:
 	for arg in OS.get_cmdline_user_args():
 		if arg == "--host":
 			_host()
+			return
+		if arg == "--local":
+			_local()
 			return
 		if arg.begins_with("--join="):
 			ip_edit.text = arg.get_slice("=", 1)

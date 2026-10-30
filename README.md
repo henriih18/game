@@ -1,4 +1,4 @@
-# Robo Caótico — Prototipo 0.5
+# Robo Caótico — Prototipo 0.6
 
 Prototipo de robo cooperativo 2D (estilo R.E.P.O. / Among Us) para Steam.
 
@@ -15,6 +15,8 @@ Prototipo de robo cooperativo 2D (estilo R.E.P.O. / Among Us) para Steam.
 - **Agarre cooperativo**: la caja se lleva entre uno (45% de velocidad) o entre dos (80%), y se ubica en el punto medio entre ambos
 - **Ronda de 2 minutos** con cuenta regresiva
 - **Cámaras de seguridad**: si te ven, la alarma sube; al 100% perdés. Sin nadie a la vista, baja sola
+- **Sonido y música originales**, generados por código (sin samples externos): loops de menú y de golpe, efectos de gemas, agarre, entrega, pasos, cámara, alarma y victoria/derrota
+- **Feedback visual**: partículas al recoger gemas, viñeta roja que crece con la alarma, personajes que saltan al caminar, caja que se tambalea, zona de extracción que respira y HUD animado
 - Pantalla de fin (victoria / derrota)
 - **Mini-bucle**: juntar las 3 gemas y llevar la caja a EXTRACCIÓN antes de que se acabe el tiempo o salte la alarma
 - El host manda: valida agarres, gemas, tiempos y entrega, y sincroniza todo a los clientes
@@ -44,6 +46,7 @@ También se puede arrancar directo desde la terminal (útil para pruebas):
 ```bash
 godot --path ~/Documentos/game -- --host
 godot --path ~/Documentos/game -- --join=127.0.0.1
+godot --path ~/Documentos/game -- --local
 ```
 
 ## Controles
@@ -53,17 +56,33 @@ godot --path ~/Documentos/game -- --join=127.0.0.1
 | Mover | WASD | Flechas |
 | Agarrar / soltar caja | E | Enter |
 | Volver al menú (al terminar) | R | R |
+| Silenciar todo el audio | M | M |
 
-En red cada jugador usa **WASD + E**.
+En red cada jugador usa **WASD + E**. **M** silencia o reactiva el audio del juego en cualquier momento.
 
 ## Estructura
 
 ```
 scenes/        menu, main, player, player2, gem, crate, extraction_zone, security_camera
-scripts/       GDScript de cada escena
-assets/art/    SVGs (personajes, caja, gema, sombra, baldosa)
-assets/audio/  (vacío por ahora)
+scripts/       GDScript de cada escena + audio.gd (autoload) + effects.gd
+assets/art/    SVGs (personajes, caja, gema, sombra, baldosa, chispa)
+assets/audio/  SFX y música en WAV (generados, sin samples externos)
+assets/shaders/ viñeta de peligro
+tools/         generate_audio.py (audio reproducible)
 ```
+
+## Cómo regenerar el audio
+
+El audio se puede reconstruir desde cero con Python 3 (solo biblioteca estándar):
+
+```bash
+cd ~/Documentos/game
+python3 tools/generate_audio.py
+godot --headless --path . --import
+godot --headless --path . --import
+```
+
+La primera importación puede avisar que los WAV recién creados no tienen loader; la segunda pasada los deja listos. Los WAV se importan sin compresión (PCM) para que los loops de música no tengan artefactos.
 
 ## Limitaciones actuales
 
@@ -71,9 +90,11 @@ assets/audio/  (vacío por ahora)
 - 2 a 4 jugadores por partida
 - Sin voz ni chat
 - Si un jugador se desconecta, sale de la partida (no hay reconexión)
+- El audio está generado por código: sirve para el prototipo, pero todavía no es una banda sonora profesional
 
 ## Siguiente paso
 
 - Lobbies de Steam con GodotSteam (y voz por proximidad)
-- Sonido y música (mucho "juice" pendiente)
 - Modo traidor (tensión social)
+- Más mapas, objetivos y variantes de robo
+- Página de Steam y demo

@@ -12,6 +12,8 @@ var net_id := 0
 var net_target := Vector2.ZERO
 var sync_accum := 0.0
 var game: Node = null
+var _anim_time := 0.0
+var _step_accum := 0.0
 
 @onready var grab_area: Area2D = $GrabArea
 @onready var visual: Sprite2D = $Visual
@@ -32,7 +34,9 @@ func _physics_process(delta: float) -> void:
 		game = get_tree().get_first_node_in_group("game")
 
 	if net_id > 0 and not is_multiplayer_authority():
+		var previous := position
 		position = position.lerp(net_target, minf(1.0, 20.0 * delta))
+		_animate(delta, position.distance_to(previous) > 0.5)
 		return
 
 	if game != null and game.state != 0:
@@ -42,6 +46,17 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * speed * _carry_multiplier()
 	move_and_slide()
 	_clamp_to_screen()
+
+	var moving := direction.length() > 0.1 and velocity.length() > 5.0
+	_animate(delta, moving)
+	if _is_controlled() and moving:
+		_step_accum += delta
+		var interval := 0.27 / clampf(_carry_multiplier(), 0.45, 1.0)
+		if _step_accum >= interval:
+			_step_accum = 0.0
+			Audio.play_sfx("step", -20.0, randf_range(0.9, 1.1))
+	else:
+		_step_accum = 0.0
 
 	if net_id > 0:
 		sync_accum += delta
@@ -127,3 +142,11 @@ func server_toggle_grab() -> void:
 func _clamp_to_screen() -> void:
 	var rect := get_viewport_rect()
 	global_position = global_position.clamp(rect.position + Vector2(20, 52), rect.end - Vector2(20, 56))
+
+func _animate(delta: float, moving: bool) -> void:
+	_anim_time += delta
+	var target_y := -absf(sin(_anim_time * 13.0)) * 3.0 if moving else sin(_anim_time * 2.2) * 0.8
+	var target_rotation := sin(_anim_time * 13.0) * 0.05 if moving else 0.0
+	var weight := minf(1.0, 18.0 * delta)
+	visual.position.y = lerpf(visual.position.y, target_y, weight)
+	visual.rotation = lerpf(visual.rotation, target_rotation, weight)
