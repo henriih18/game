@@ -11,6 +11,7 @@ const MENU_SCENE := "res://scenes/menu.tscn"
 const PAD_POS := Vector3(9.0, 0.0, 6.0)
 
 var state: int = State.PLAYING
+var first_person := false
 var time_left := ROUND_TIME
 var alarm := 0.0
 var gems_collected := 0
@@ -23,12 +24,15 @@ var pad: Node3D
 var pad_ring: MeshInstance3D
 
 var camera3d: Camera3D
+var camera_base_fov := 49.0
 var alarm_light: OmniLight3D
 var danger_material: ShaderMaterial
 var status_label: Label
 var timer_label: Label
 var alarm_label_ref: Label
 var seen_label: Label
+var hint_label: Label
+var demo_badge: Label
 var alarm_fill: ColorRect
 var overlay: ColorRect
 var result_label: Label
@@ -373,7 +377,7 @@ func _build_hud() -> void:
 
 	var goal := _hud_label(hud, Vector2(28, 88), Vector2(620, 22), "JUNTÁ 3 GEMAS Y LLEVÁ LA CAJA A LA EXTRACCIÓN", 13, Color(0.56, 0.62, 0.75))
 
-	var demo_badge := _hud_label(hud, Vector2(440, 22), Vector2(400, 24), "DEMO 3D  ·  CO-OP LOCAL", 14, Color(0.48, 0.55, 0.7))
+	demo_badge = _hud_label(hud, Vector2(440, 22), Vector2(400, 24), "DEMO 3D  ·  CO-OP LOCAL", 14, Color(0.48, 0.55, 0.7))
 	demo_badge.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 	seen_label = _hud_label(hud, Vector2(28, 112), Vector2(420, 20), "CÁMARA DETECTANDO", 14, Color(1.0, 0.32, 0.26))
@@ -410,7 +414,7 @@ func _build_hud() -> void:
 	alarm_fill.color = Color(0.95, 0.22, 0.2)
 	hud.add_child(alarm_fill)
 
-	_hud_label(
+	hint_label = _hud_label(
 		hud,
 		Vector2(24, 682),
 		Vector2(940, 26),
@@ -559,7 +563,7 @@ func _update_hud() -> void:
 		danger = clampf((alarm - 25.0) / 75.0, 0.0, 1.0) * 0.55
 	danger_material.set_shader_parameter("intensity", danger)
 	alarm_light.light_energy = (alarm / ALARM_MAX) * 0.7
-	camera3d.fov = lerpf(49.0, 46.0, ratio if state == State.PLAYING else 0.0)
+	camera3d.fov = lerpf(camera_base_fov, camera_base_fov - 3.0, ratio if state == State.PLAYING else 0.0)
 
 	if state == State.PLAYING:
 		Audio.set_alarm(alarm, true)
@@ -599,14 +603,23 @@ func _end(result: int, message: String) -> void:
 	Audio.set_alarm(0.0, false)
 	Audio.stop_music()
 	Audio.play_sfx("win" if result == State.WON else "lose", -6.0)
-	var effect_pos: Vector3 = PAD_POS + Vector3(0, 0.8, 0) if result == State.WON else players[1].global_position + Vector3(0, 1.0, 0)
+	var effect_player: Node3D = null
+	if players.has(1):
+		effect_player = players[1]
+	elif not players.is_empty():
+		effect_player = players.values()[0]
+	var effect_pos: Vector3 = PAD_POS + Vector3(0, 0.8, 0)
+	if result != State.WON and effect_player != null:
+		effect_pos = effect_player.global_position + Vector3(0, 1.0, 0)
 	_burst3d(effect_pos, Color(0.4, 1.0, 0.6) if result == State.WON else Color(1.0, 0.25, 0.18), 36, 1.4)
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	_update_hud()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		get_viewport().set_input_as_handled()
 		Audio.set_alarm(0.0, false)
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		get_tree().change_scene_to_file(MENU_SCENE)
 		return
 	if state != State.PLAYING and event.is_action_pressed("restart"):

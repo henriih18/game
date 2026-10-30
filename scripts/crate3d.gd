@@ -86,6 +86,7 @@ func _process(delta: float) -> void:
 
 	var total := Vector3.ZERO
 	var count := 0
+	var first_player: Node3D = null
 	if game != null and is_instance_valid(game):
 		for id in holder_ids:
 			if game.players.has(id):
@@ -93,9 +94,21 @@ func _process(delta: float) -> void:
 				if is_instance_valid(player):
 					total += player.global_position
 					count += 1
+					if first_player == null:
+						first_player = player
 
 	if count > 0:
 		var target := total / float(count) + Vector3(0, 2.15, 0)
+		var is_fp := bool(game.get("first_person")) if game != null and is_instance_valid(game) else false
+		if is_fp and first_player != null:
+			if count == 1:
+				var forward := -first_player.global_transform.basis.z
+				forward.y = 0.0
+				forward = forward.normalized()
+				target = first_player.global_position + forward * 1.85 + Vector3(0, 0.62, 0)
+				rotation.y = lerp_angle(rotation.y, first_player.rotation.y, minf(1.0, 9.0 * delta))
+			else:
+				target = total / float(count) + Vector3(0, 1.05, 0)
 		global_position = global_position.lerp(target, minf(1.0, 11.0 * delta))
 		global_position.x = clampf(global_position.x, -12.0, 12.0)
 		global_position.z = clampf(global_position.z, -8.0, 8.0)
