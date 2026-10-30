@@ -62,11 +62,11 @@ func _physics_process(delta: float) -> void:
 		sync_accum += delta
 		if sync_accum >= 0.05:
 			sync_accum = 0.0
-			sync_position.rpc(position)
-
-@rpc("authority", "call_remote", "unreliable_ordered")
-func sync_position(new_position: Vector2) -> void:
-	net_target = new_position
+			# La posición viaja por el nodo Game, que existe en todos los peers.
+			# Así un cliente nuevo no recibe RPCs dirigidos a un jugador que
+			# todavía no ha sido instanciado.
+			if game != null and game.has_method("sync_player_position"):
+				game.sync_player_position.rpc(net_id, position)
 
 func _action(suffix: String) -> String:
 	if net_id > 0:

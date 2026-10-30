@@ -2,6 +2,47 @@
 
 **Terror cooperativo online. No todas las voces que escuchas pertenecen a tus compañeros.**
 
+## Fase 3 — Vertical slice offline (en desarrollo)
+
+La primera versión jugable de FRECUENCIA MUERTA ya está en el proyecto. Es un
+**vertical slice offline de un jugador** para validar el bucle de terror antes de
+llevarlo a red: corredor industrial, laboratorio de contención, puerta de seguridad,
+linterna con batería, un objeto físico, dos escondites, El Vigilante, estrés y
+extracción. Sin armas y sin combate.
+
+![Vertical slice offline](docs/fm_slice.png)
+
+- Cómo abrirla: botón **ENTRAR A LA INSTALACIÓN** del menú, o `godot --path ~/Documentos/game -- --slice`
+- Escena: `scenes/fm/vertical_slice.tscn`
+- La criatura se detiene cuando la observás; si dejás de mirarla, se mueve.
+- El núcleo está en el laboratorio; hay que llevarlo a la extracción al final del corredor.
+- La linterna consume batería. Los escondites reducen el riesgo, pero no son invisibilidad absoluta.
+- El lookdev de Fase 2 se conserva como referencia visual y se puede abrir desde el menú.
+
+| Acción | Tecla |
+|---|---|
+| Mover | WASD |
+| Mirar | Mouse |
+| Correr / agacharse | Shift / Ctrl |
+| Interactuar, recoger, esconderse o salir | E |
+| Soltar el núcleo | Q |
+| Linterna | F |
+| Volver al menú | Esc |
+| Silenciar audio | M |
+
+**Limitaciones de esta versión:** offline y de un solo jugador, sin red ni voz; el
+Vigilante y los objetos usan geometría procedural provisional; no hay inventario,
+herramientas, base ni progresión. La red 3D y el Imitador llegan en fases posteriores.
+
+Pruebas básicas versionadas:
+
+```bash
+bash tests/run_all.sh
+```
+
+Resultados actuales: vertical slice **15/15**, juego 2D **16/16**, red 2D **6/6**.
+Los tests dejan avisos de recursos al forzar la salida; no son fallos de gameplay.
+
 ## Fase 2 — Identidad visual y look dev
 
 La nueva dirección del proyecto es **FRECUENCIA MUERTA**: un juego de terror y extracción cooperativa en 3D en primera persona, sin armas y sin combate. Esta fase construyó una escena visual para validar la atmósfera, los materiales, la iluminación y el rendimiento antes de invertir en el vertical slice jugable.
@@ -21,7 +62,7 @@ La nueva dirección del proyecto es **FRECUENCIA MUERTA**: un juego de terror y 
 
 ---
 
-# Robo Caótico — Prototipo 0.8
+# Prototipos heredados — Robo Caótico 0.8
 
 Prototipo de robo cooperativo para Steam. La dirección elegida es **3D en primera persona y online**. El juego 2D sigue siendo la base jugable con red; la demo 3D elevada queda como referencia y la demo FP sirve para validar la cámara, la caja y el nivel antes de invertir en el multijugador 3D.
 
@@ -88,11 +129,13 @@ O abrir Godot, **Import** y seleccionar esta carpeta. Dentro del editor, **F5** 
 
 En el menú:
 
-- **Crear partida**: abre una sala 2D en el puerto UDP 7777.
+- **Entrar a la instalación**: vertical slice offline de FRECUENCIA MUERTA.
+- **Crear partida 2D**: abre una sala 2D en el puerto UDP 7777.
 - **Unirse**: escribí la IP del anfitrión y tocá Unirse.
 - **Prueba 2D local**: banco de pruebas de 2 jugadores en la misma PC, en 2D.
 - **Demo 3D**: demo 3D local con cámara elevada y 2 jugadores.
 - **Demo 3D FPS**: prototipo en primera persona, offline y de un jugador.
+- **Ver lookdev**: escena de referencia visual de Fase 2.
 
 Para probar el multijugador 2D en la misma PC, abrí **dos instancias** del juego: en una creá la partida y en la otra uníte a `127.0.0.1`.
 

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_hiding_spot.gd" id="1_hide"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hide"]
+size = Vector3(1.1, 2.1, 1.1)
+
+[node name="HidingSpot" type="Area3D"]
+script = ExtResource("1_hide")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_hide")
+
+[node name="HidePoint" type="Marker3D" parent="."]
+
+[node name="ExitPoint" type="Marker3D" parent="."]
+position = Vector3(0, 0, -1.2)

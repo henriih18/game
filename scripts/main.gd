@@ -307,6 +307,24 @@ func sync_state(t: float, a: float, g: int, d: bool, s: int) -> void:
 		_pulse_status()
 	_update_hud()
 
+@rpc("any_peer", "call_remote", "unreliable_ordered")
+func sync_player_position(pid: int, new_position: Vector2) -> void:
+	var sender := multiplayer.get_remote_sender_id()
+	if multiplayer.is_server():
+		if sender != pid:
+			return
+		_apply_player_position(pid, new_position)
+		sync_player_position.rpc(pid, new_position)
+	elif sender == 1:
+		_apply_player_position(pid, new_position)
+
+func _apply_player_position(pid: int, new_position: Vector2) -> void:
+	if not players.has(pid):
+		return
+	var node = players[pid]
+	if is_instance_valid(node):
+		node.net_target = new_position
+
 func _unhandled_input(event: InputEvent) -> void:
 	if state == State.PLAYING:
 		return

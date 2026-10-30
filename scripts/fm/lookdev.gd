@@ -43,6 +43,11 @@ func _ready() -> void:
 		if arg.begins_with("--view="):
 			set_view(int(arg.get_slice("=", 1)))
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("pause"):
+		get_viewport().set_input_as_handled()
+		get_tree().change_scene_to_file("res://scenes/menu.tscn")
+
 func _prepare_materials() -> void:
 	var concrete: StandardMaterial3D = MAT_CONCRETE.duplicate()
 	concrete.uv1_scale = Vector3(4.0, 4.0, 1.0)

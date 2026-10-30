@@ -474,7 +474,7 @@ func _process(delta: float) -> void:
 
 	_check_gems()
 
-	if not crate.delivered and _crate_on_pad():
+	if not crate.delivered and crate.holder_ids.is_empty() and _crate_on_pad():
 		_deliver_crate()
 
 	if crate.delivered and gems_collected >= TOTAL_GEMS:
@@ -527,6 +527,15 @@ func toggle_grab(player: Player3D) -> void:
 	var offset := player.global_position - crate.global_position
 	offset.y = 0.0
 	if offset.length() > Player3D.GRAB_RANGE:
+		return
+	# No permitir agarrar la caja a través de una pared o un rack.
+	var query := PhysicsRayQueryParameters3D.create(
+		player.global_position + Vector3(0, 1.0, 0),
+		crate.global_position + Vector3(0, 0.2, 0)
+	)
+	query.collision_mask = 1
+	query.exclude = [player.get_rid()]
+	if not get_world_3d().direct_space_state.intersect_ray(query).is_empty():
 		return
 	crate.add_holder(player.game_id)
 	Audio.play_sfx("grab", -9.0)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_extraction.gd" id="1_extraction"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_extraction"]
+height = 1.2
+radius = 1.55
+
+[node name="Extraction" type="Area3D"]
+script = ExtResource("1_extraction")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_extraction")
+position = Vector3(0, 0.6, 0)

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_carry_item.gd" id="1_item"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_item"]
+height = 0.62
+radius = 0.27
+
+[node name="CarryItem" type="RigidBody3D"]
+script = ExtResource("1_item")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_item")

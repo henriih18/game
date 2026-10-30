@@ -20,6 +20,17 @@ func _process(_delta: float) -> void:
 
 func _sees_player() -> bool:
 	for body in get_overlapping_bodies():
-		if body.is_in_group("player"):
+		if not body.is_in_group("player"):
+			continue
+		var target := body as CollisionObject2D
+		if target == null:
+			continue
+		# El Area2D detecta por superposición, pero no conoce las paredes.
+		# El rayo comprueba que no haya un muro entre la lente y el jugador.
+		var query := PhysicsRayQueryParameters2D.create(global_position, target.global_position)
+		query.collision_mask = 1
+		query.exclude = [target.get_rid()]
+		var hit := get_world_2d().direct_space_state.intersect_ray(query)
+		if hit.is_empty() or hit.get("collider") == target:
 			return true
 	return false
