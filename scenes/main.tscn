@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Texture2D" path="res://assets/art/floor_tile.svg" id="2_floor"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" path="res://scenes/gem.tscn" id="4_gem"]
 [ext_resource type="PackedScene" path="res://scenes/crate.tscn" id="5_crate"]
 [ext_resource type="PackedScene" path="res://scenes/extraction_zone.tscn" id="6_zone"]
+[ext_resource type="PackedScene" path="res://scenes/player2.tscn" id="7_player2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h"]
 size = Vector2(600, 40)
@@ -99,6 +100,9 @@ position = Vector2(1090, 630)
 [node name="Player" parent="." instance=ExtResource("3_player")]
 position = Vector2(640, 600)
 
+[node name="Player2" parent="." instance=ExtResource("7_player2")]
+position = Vector2(780, 600)
+
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="StatusLabel" type="Label" parent="HUD"]
@@ -117,4 +121,4 @@ offset_right = 760.0
 offset_bottom = 704.0
 theme_override_colors/font_color = Color(0.55, 0.58, 0.66, 1)
 theme_override_font_sizes/font_size = 16
-text = "WASD / Flechas: mover   ·   E: agarrar / soltar"
+text = "P1: WASD + E   ·   P2: Flechas + Enter   ·   Juntos la caja va más rápido"

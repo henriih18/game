@@ -1,4 +1,4 @@
-# Robo Caótico — Prototipo 0.2
+# Robo Caótico — Prototipo 0.3
 
 Prototipo de robo cooperativo 2D (estilo R.E.P.O. / Among Us) para Steam.
 
@@ -6,11 +6,12 @@ Prototipo de robo cooperativo 2D (estilo R.E.P.O. / Among Us) para Steam.
 
 ## Estado actual
 
-- Arte flat vector estilo Among Us (personaje con antifaz, caja, gemas, baldosas)
-- Movimiento top-down (WASD o flechas)
-- Colisiones con paredes
-- **Agarre**: E levanta/suelta la caja de botín (cargarla te frena)
-- **Mini-bucle**: juntá las 3 gemas y llevá la caja a la zona de EXTRACCIÓN
+- Arte flat vector estilo Among Us (dos personajes, caja, gemas, baldosas)
+- **Co-op local 2 jugadores**: P1 (violeta) y P2 (cian)
+- Movimiento top-down con colisiones
+- **Agarre cooperativo**: la caja se lleva entre uno (45% de velocidad) o entre dos (80%), y se ubica en el punto medio entre ambos
+- Si los portadores se separan demasiado, se sueltan (sin efecto goma)
+- **Mini-bucle**: juntar las 3 gemas y llevar la caja a la zona de EXTRACCIÓN
 - HUD con estado del botín
 
 ## Cómo abrir el proyecto
@@ -23,22 +24,22 @@ O abrir Godot, **Import** y seleccionar esta carpeta. Dentro del editor, **F5** 
 
 ## Controles
 
-| Acción | Teclas |
-|---|---|
-| Mover | WASD / Flechas |
-| Agarrar / soltar caja | E |
+| Acción | Jugador 1 | Jugador 2 |
+|---|---|---|
+| Mover | WASD | Flechas |
+| Agarrar / soltar caja | E | Enter |
 
 ## Estructura
 
 ```
-scenes/        main, player, gem, crate, extraction_zone
+scenes/        main, player, player2, gem, crate, extraction_zone
 scripts/       GDScript de cada escena
-assets/art/    SVGs (personaje, caja, gema, sombra, baldosa)
+assets/art/    SVGs (personajes, caja, gema, sombra, baldosa)
 assets/audio/  (vacío por ahora)
 ```
 
 ## Siguiente paso
 
 - Ronda con temporizador y alarma
-- Multijugador local (2 jugadores, misma pantalla) → red
-- Agarre cooperativo real: dos jugadores deben cargar la caja juntos
+- Agarre cooperativo con física (peso real, tambaleo)
+- Multijugador en red (lobbies de Steam)
