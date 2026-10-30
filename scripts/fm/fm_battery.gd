@@ -12,6 +12,7 @@ const MAT_GREEN := preload("res://assets/art/fm/emissive_green.tres")
 
 var game: Node = null
 var taken := false
+var network_index := -1
 var _visual: Node3D
 var _time := 0.0
 
@@ -104,5 +105,7 @@ func interact(player: Node) -> bool:
 	Audio.play_sfx("gem", -12.0, 1.2)
 	if game != null and game.has_method("emit_noise"):
 		game.emit_noise(global_position, 3.5, "battery")
+	if game != null and game.has_method("on_battery_taken"):
+		game.on_battery_taken(network_index, player)
 	queue_free()
 	return true

@@ -89,12 +89,20 @@ Cubre jugador, Vigilante, núcleo, extracción, escondites, HUD, observación,
 recogida, esconderse/salir, linterna inicial, victoria, puerta, batería, trampa y
 audio ambiental. Resultado actual: **26/26 PASS**.
 
+## Multijugador 3D (P2)
+
+La puerta, las baterías, la trampa, el núcleo, el Vigilante y la extracción ya se
+sincronizan en una partida host-autoritativa de dos instancias. El host simula la
+partida; cada cliente mueve su avatar y el host valida sus interacciones. El detalle
+técnico, los comandos y los límites están en [fm_online.md](fm_online.md).
+
 ## Limitaciones
 
-- Offline y de un solo jugador.
-- Sin red, sin voz, sin Imitador y sin herramientas.
-- La puerta, las baterías y la trampa son sistemas locales; todavía no están
-  sincronizados por red.
+- Dos instancias probadas; el roster admite hasta cuatro, pero falta una prueba de
+  estrés con tres o cuatro jugadores.
+- Sin voz, sin Imitador, sin reconexión y sin lobbies de Steam.
+- El movimiento es cliente-autoritativo con validación de distancia en el host; no hay
+  simulación completa del movimiento en el servidor.
 - El Vigilante y el núcleo usan geometría procedural provisional.
 - No hay inventario, base, progresión ni misiones.
 - El escenario es un blockout con materiales de Fase 2, no arte final.
@@ -102,6 +110,5 @@ audio ambiental. Resultado actual: **26/26 PASS**.
 
 ## Siguiente paso
 
-Pulir el vertical slice y después llevar la arquitectura a red 3D host-autoritativa.
-No se deben meter RPCs dentro del controlador de movimiento; la intención del jugador
-debe enviarse a un servidor que valide interacciones, criatura, núcleo y extracción.
+Probar tres o cuatro jugadores, pulir la sincronización del Vigilante y de los objetos,
+y después avanzar a salas/lobbies, voz por proximidad y El Imitador.

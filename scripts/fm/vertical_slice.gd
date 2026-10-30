@@ -5,6 +5,7 @@ extends Node3D
 ## un escondite, El Vigilante y extracción. Sin armas.
 
 enum State { PLAYING, WON, LOST }
+enum NetMode { OFFLINE, HOST, CLIENT }
 
 const PLAYER_SCENE := preload("res://scenes/fm/fm_player.tscn")
 const WATCHER_SCENE := preload("res://scenes/fm/fm_watcher.tscn")
@@ -48,13 +49,23 @@ var batteries: Array[FMBattery] = []
 var noise_trap: FMNoiseTrap
 var ambience: AudioStreamPlayer3D
 
+var net_mode: NetMode = NetMode.OFFLINE
+var local_id := 1
+var net: FMNet
+var players: Dictionary = {}
+var players_root: Node3D
+var hiding_spots: Array[FMHidingSpot] = []
+var battery_taken: Array[bool] = []
+
 var _mats: Dictionary = {}
 var _time := 0.0
 var _stress := 0.0
 var _ending := false
 var _watcher_was_observed := false
+var _last_hide_index := -1
 
 func _ready() -> void:
+	_detect_net_mode()
 	_prepare_materials()
 	_build_environment()
 	level = Node3D.new()
@@ -69,12 +80,99 @@ func _ready() -> void:
 	_build_noise_trap()
 	_build_extraction()
 	_build_artifact()
+	players_root = Node3D.new()
+	players_root.name = "Players"
+	add_child(players_root)
 	_build_player()
 	_build_watcher()
+	if OS.get_cmdline_user_args().has("--nettest") and watcher != null:
+		watcher.set_physics_process(false)
 	_build_hud()
+	_build_network()
 	_build_ambience()
 	Audio.play_music("heist")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _detect_net_mode() -> void:
+	var peer := multiplayer.multiplayer_peer
+	if peer is ENetMultiplayerPeer:
+		net_mode = NetMode.HOST if multiplayer.is_server() else NetMode.CLIENT
+	else:
+		net_mode = NetMode.OFFLINE
+	local_id = 1
+	if net_mode == NetMode.CLIENT:
+		local_id = maxi(2, multiplayer.get_unique_id())
+
+func _build_network() -> void:
+	if net_mode == NetMode.OFFLINE:
+		return
+	net = FMNet.new()
+	net.name = "Network"
+	add_child(net)
+	net.setup(self)
+	if net_mode == NetMode.CLIENT and watcher != null:
+		# El cliente no simula la IA: recibe posición y estado del host.
+		watcher.set_physics_process(false)
+
+func place_local_player(spawn_position: Vector3, yaw: float) -> void:
+	if player == null or not is_instance_valid(player):
+		return
+	player.global_position = spawn_position
+	player.rotation.y = yaw
+	player.velocity = Vector3.ZERO
+	if player.has_method("reset_view"):
+		player.reset_view(yaw)
+
+func spawn_point_for(pid: int) -> Vector3:
+	var offsets := [
+		Vector3.ZERO,
+		Vector3(2.2, 0.0, 1.0),
+		Vector3(-2.2, 0.0, 1.0),
+		Vector3(2.2, 0.0, 2.4),
+	]
+	var slot := 0 if pid == 1 else players.size()
+	return SPAWN + offsets[slot % offsets.size()]
+
+func spawn_remote(pid: int, spawn_position: Vector3, yaw: float) -> void:
+	if pid == local_id or players.has(pid):
+		return
+	var remote := FMRemotePlayer.new()
+	remote.name = "Player%d" % pid
+	players_root.add_child(remote)
+	remote.setup(pid, spawn_position, yaw)
+	players[pid] = remote
+	_refresh_watcher_targets()
+
+func remove_remote(pid: int) -> void:
+	var remote = players.get(pid)
+	if remote == null:
+		return
+	var spot := _spot_for_occupant(remote)
+	if spot != null:
+		spot.release_player(remote)
+	players.erase(pid)
+	if is_instance_valid(remote):
+		remote.queue_free()
+	_refresh_watcher_targets()
+
+func _refresh_watcher_targets() -> void:
+	if watcher == null:
+		return
+	var list: Array[Node3D] = []
+	for entry in players.values():
+		if entry is Node3D and is_instance_valid(entry):
+			list.append(entry)
+	watcher.set_targets(list)
+
+func get_battery_taken_flags() -> Array:
+	var flags: Array = []
+	for battery in batteries:
+		flags.append(battery == null or not is_instance_valid(battery) or battery.taken)
+	return flags
+
+func receive_remote_noise(position: Vector3, radius: float) -> void:
+	if watcher != null and is_instance_valid(watcher):
+		watcher.hear_noise(position, radius)
 
 func _prepare_materials() -> void:
 	var concrete: StandardMaterial3D = MAT_CONCRETE.duplicate()
@@ -342,9 +440,11 @@ func _build_batteries() -> void:
 		var battery := BATTERY_SCENE.instantiate() as FMBattery
 		battery.name = data["name"]
 		battery.position = data["pos"]
+		battery.network_index = batteries.size()
 		battery.game = self
 		add_child(battery)
 		batteries.append(battery)
+		battery_taken.append(false)
 
 func _build_noise_trap() -> void:
 	noise_trap = TRAP_SCENE.instantiate() as FMNoiseTrap
@@ -376,6 +476,8 @@ func _build_ambience() -> void:
 func _on_security_door_opened() -> void:
 	if hud != null:
 		hud.set_status("PUERTA ABIERTA  ·  LLEGÁ A EXTRACCIÓN")
+	if net_mode == NetMode.HOST and net != null:
+		net.broadcast_door()
 
 func _build_extraction() -> void:
 	extraction = EXTRACTION_SCENE.instantiate() as FMExtraction
@@ -395,7 +497,9 @@ func _build_player() -> void:
 	player.name = "Player"
 	player.position = SPAWN
 	player.set_game(self)
-	add_child(player)
+	player.network_client = net_mode == NetMode.CLIENT
+	players_root.add_child(player)
+	players[local_id] = player
 
 func _build_watcher() -> void:
 	watcher = WATCHER_SCENE.instantiate() as FMWatcher
@@ -425,7 +529,7 @@ func _build_hud() -> void:
 
 func _process(delta: float) -> void:
 	_time += delta
-	if state != State.PLAYING:
+	if state != State.PLAYING or player == null or not is_instance_valid(player):
 		return
 
 	_update_stress(delta)
@@ -442,12 +546,23 @@ func _process(delta: float) -> void:
 		_watcher_was_observed = observed
 		_update_status()
 
-	if extraction != null and extraction.has_player() and player.carried_item != null:
-		_end(State.WON, "NÚCLEO RECUPERADO", "NEXUS recibirá el artefacto. El Vigilante sigue dentro.")
+	# La victoria y el respawn los decide el host. El cliente recibe el fin por RPC.
+	if net_mode != NetMode.CLIENT:
+		if extraction != null and player.carried_item != null and _carrier_at_extraction(player):
+			_end(State.WON, "NÚCLEO RECUPERADO", "NEXUS recibirá el artefacto. El Vigilante sigue dentro.")
+		elif extraction != null and artifact != null and artifact.carried_by != null and _carrier_at_extraction(artifact.carried_by):
+			_end(State.WON, "NÚCLEO RECUPERADO", "NEXUS recibirá el artefacto. El Vigilante sigue dentro.")
 
-	if player.global_position.y < -5.0:
-		player.global_position = SPAWN
-		player.velocity = Vector3.ZERO
+		if player.global_position.y < -5.0:
+			player.global_position = SPAWN
+			player.velocity = Vector3.ZERO
+
+func _carrier_at_extraction(carrier: Node3D) -> bool:
+	if extraction == null or carrier == null or not is_instance_valid(carrier):
+		return false
+	var offset := _network_position(carrier) - extraction.global_position
+	offset.y = 0.0
+	return offset.length() <= 2.1
 
 func _update_stress(delta: float) -> void:
 	var target := 0.0
@@ -479,21 +594,285 @@ func _update_status() -> void:
 		hud.set_status("NÚCLEO EN EL LABORATORIO  ·  PUERTA ABIERTA")
 
 func emit_noise(position: Vector3, radius: float, _kind: String) -> void:
+	if net_mode == NetMode.CLIENT:
+		# La trampa se valida en el host; su ruido lo emite allí al activarse.
+		if net != null and _kind != "glass":
+			net.send_noise.rpc_id(1, position, radius)
+		return
 	if watcher != null and is_instance_valid(watcher):
 		watcher.hear_noise(position, radius)
 
 func on_player_hidden(is_hidden: bool) -> void:
 	if is_hidden:
-		if watcher != null:
-			watcher.hear_noise(player.global_position, 6.0)
-	else:
-		if watcher != null:
-			watcher.hear_noise(player.global_position, 5.0)
+		_last_hide_index = _hiding_spot_index(player.hide_spot)
+	if net_mode != NetMode.CLIENT:
+		emit_noise(player.global_position, 6.0 if is_hidden else 5.0, "hide")
+	if net_mode == NetMode.HOST and net != null:
+		net.broadcast_hide(local_id, _last_hide_index, is_hidden)
+		if not is_hidden:
+			_last_hide_index = -1
 
-func on_player_caught() -> void:
-	if state != State.PLAYING:
+func _hiding_spot_index(spot: Node) -> int:
+	if spot == null:
+		return -1
+	for i in range(hiding_spots.size()):
+		if hiding_spots[i] == spot:
+			return i
+	return -1
+
+func on_player_caught(_caught: Node3D = null) -> void:
+	if state != State.PLAYING or net_mode == NetMode.CLIENT:
 		return
-	_end(State.LOST, "EL VIGILANTE TE ENCONTRÓ", "No hay armas. No hay segunda oportunidad. R para reintentar.")
+	_end(State.LOST, "EL VIGILANTE ENCONTRÓ AL EQUIPO", "No hay armas. No hay segunda oportunidad. R para reintentar.")
+
+func on_battery_taken(index: int, who: Node) -> void:
+	if index >= 0 and index < battery_taken.size():
+		battery_taken[index] = true
+		if index < batteries.size():
+			batteries[index] = null
+	if net_mode != NetMode.HOST or net == null:
+		return
+	var pid := local_id
+	if who != null and who != player:
+		pid = int(who.get("net_id"))
+	net.broadcast_battery(index, pid)
+
+func on_artifact_picked(who: Node3D) -> void:
+	if net_mode == NetMode.HOST and net != null:
+		net.broadcast_carrier(_network_id_of(who), artifact.global_position)
+
+func on_artifact_dropped() -> void:
+	if net_mode == NetMode.HOST and net != null:
+		net.broadcast_carrier(0, artifact.global_position)
+
+func _network_id_of(who: Node) -> int:
+	if who == null:
+		return 0
+	if who == player:
+		return local_id
+	return int(who.get("net_id"))
+
+func on_noise_trap_triggered() -> void:
+	if net_mode == NetMode.HOST and net != null:
+		net.broadcast_trap()
+	elif net_mode == NetMode.CLIENT and net != null:
+		net.request_trap.rpc_id(1)
+
+func apply_network_door(open_flag: bool) -> void:
+	if open_flag and security_door != null and not security_door.is_open:
+		security_door.apply_network_open()
+
+func apply_network_battery(index: int, pid: int) -> void:
+	if index < 0 or index >= battery_taken.size():
+		return
+	if battery_taken[index]:
+		return
+	battery_taken[index] = true
+	if index < batteries.size() and is_instance_valid(batteries[index]):
+		var battery := batteries[index]
+		if pid == local_id and net_mode == NetMode.CLIENT and player != null and player.has_method("recharge_battery"):
+			player.recharge_battery(battery.charge_amount)
+		battery.queue_free()
+		batteries[index] = null
+
+func apply_network_batteries(flags: Array) -> void:
+	for i in range(mini(flags.size(), battery_taken.size())):
+		if bool(flags[i]) and not battery_taken[i]:
+			battery_taken[i] = true
+			if i < batteries.size() and is_instance_valid(batteries[i]):
+				batteries[i].queue_free()
+				batteries[i] = null
+
+func apply_network_trap() -> void:
+	if noise_trap != null and is_instance_valid(noise_trap):
+		noise_trap.trigger_network()
+
+func apply_network_trap_state(triggered: bool) -> void:
+	if triggered:
+		apply_network_trap()
+
+func apply_network_carrier(carrier_id: int, position: Vector3) -> void:
+	if artifact == null or not is_instance_valid(artifact):
+		return
+	if carrier_id == 0:
+		if player != null and player.carried_item == artifact:
+			player.carried_item = null
+		artifact.network_set_carrier(null, position)
+		return
+	if carrier_id == local_id:
+		if player != null:
+			player.carried_item = artifact
+			artifact.network_set_carrier(player, position)
+		return
+	if player != null and player.carried_item == artifact:
+		player.carried_item = null
+	var remote = players.get(carrier_id)
+	if remote != null and is_instance_valid(remote):
+		artifact.network_set_carrier(remote, position)
+
+func apply_network_hide(pid: int, spot_index: int, is_hidden: bool) -> void:
+	if pid == local_id:
+		if player == null or player.hidden == is_hidden:
+			return
+		if is_hidden and spot_index >= 0 and spot_index < hiding_spots.size():
+			player.hide_in(hiding_spots[spot_index])
+		elif not is_hidden and player.hidden:
+			player.exit_hide()
+		return
+	var remote = players.get(pid)
+	if remote == null or not is_instance_valid(remote):
+		return
+	var spot: FMHidingSpot = hiding_spots[spot_index] if spot_index >= 0 and spot_index < hiding_spots.size() else null
+	remote.hidden = is_hidden
+	remote.visible = not is_hidden
+	if spot != null:
+		if is_hidden:
+			spot.occupant = remote
+			remote.global_position = spot.get_hide_point()
+		else:
+			spot.release_player(remote)
+			remote.global_position = spot.get_exit_point()
+
+func apply_network_watcher(position: Vector3, yaw: float, watcher_state: int) -> void:
+	if net_mode == NetMode.CLIENT and watcher != null and is_instance_valid(watcher):
+		watcher.apply_network_state(position, yaw, watcher_state, watcher.is_observed())
+
+func apply_network_end(result: int, title: String, subtitle: String) -> void:
+	_end(result, title, subtitle, true)
+
+func request_network_interaction() -> void:
+	if net_mode == NetMode.CLIENT and net != null:
+		net.request_interact.rpc_id(1)
+
+func request_network_drop() -> void:
+	if net_mode == NetMode.CLIENT and net != null:
+		net.request_drop.rpc_id(1)
+
+func resolve_remote_interaction(pid: int) -> void:
+	var remote = players.get(pid)
+	if remote == null or not is_instance_valid(remote):
+		return
+	if bool(remote.get("hidden")):
+		var old_spot := _spot_for_occupant(remote)
+		if old_spot != null:
+			old_spot.release_player(remote)
+			remote.global_position = old_spot.get_exit_point()
+		remote.hidden = false
+		remote.visible = true
+		emit_noise(remote.global_position, 5.0, "hide")
+		if net != null:
+			net.broadcast_hide(pid, -1, false)
+		return
+	if artifact != null and artifact.carried_by == remote:
+		resolve_remote_drop(pid)
+		return
+
+	# Elegir el interactuable más cercano, igual que el prompt local del jugador.
+	var target_position := _network_position(remote)
+	var best_kind := ""
+	var best_node: Node = null
+	var best_distance := 999.0
+
+	if security_door != null and not security_door.is_open:
+		var door_distance := target_position.distance_to(security_door.get_interaction_position())
+		if door_distance <= 3.2 and door_distance < best_distance:
+			best_kind = "door"
+			best_node = security_door
+			best_distance = door_distance
+
+	for battery in batteries:
+		if battery == null or not is_instance_valid(battery) or battery.taken:
+			continue
+		var battery_distance := target_position.distance_to(battery.get_interaction_position())
+		if battery_distance <= 3.0 and battery_distance < best_distance:
+			best_kind = "battery"
+			best_node = battery
+			best_distance = battery_distance
+
+	if artifact != null and is_instance_valid(artifact) and artifact.carried_by == null:
+		var artifact_distance := target_position.distance_to(artifact.global_position)
+		if artifact_distance <= 3.0 and artifact_distance < best_distance:
+			best_kind = "artifact"
+			best_node = artifact
+			best_distance = artifact_distance
+
+	var spot := _nearest_spot_for(remote)
+	if spot != null:
+		var spot_distance := target_position.distance_to(spot.get_exit_point())
+		if spot_distance <= 2.4 and spot_distance < best_distance:
+			best_kind = "hide"
+			best_node = spot
+			best_distance = spot_distance
+
+	match best_kind:
+		"door":
+			security_door.interact(remote)
+		"battery":
+			var battery_node := best_node as FMBattery
+			if battery_node != null:
+				battery_node.interact(remote)
+		"artifact":
+			artifact.pickup(remote)
+			if net != null:
+				net.broadcast_carrier(pid, artifact.global_position)
+		"hide":
+			var hiding := best_node as FMHidingSpot
+			if hiding != null:
+				hiding.occupant = remote
+				remote.hidden = true
+				remote.visible = false
+				remote.global_position = hiding.get_hide_point()
+				emit_noise(remote.global_position, 6.0, "hide")
+				if net != null:
+					net.broadcast_hide(pid, _hiding_spot_index(hiding), true)
+
+func resolve_remote_drop(pid: int) -> void:
+	var remote = players.get(pid)
+	if artifact == null or artifact.carried_by != remote:
+		return
+	artifact.drop(-remote.global_transform.basis.z)
+	if net != null:
+		net.broadcast_carrier(0, artifact.global_position)
+
+func drop_carrier_if(pid: int) -> void:
+	if artifact == null or artifact.carried_by == null:
+		return
+	if int(artifact.carried_by.get("net_id")) == pid:
+		artifact.drop(Vector3.ZERO)
+		if net != null:
+			net.broadcast_carrier(0, artifact.global_position)
+
+func on_server_disconnected() -> void:
+	if state == State.PLAYING:
+		_end(State.LOST, "CONEXIÓN PERDIDA", "El host abandonó la partida. R para volver a intentar.", true)
+
+func _near_point(body: Node3D, point: Vector3, radius: float) -> bool:
+	return _network_position(body).distance_to(point) <= radius
+
+func _network_position(body: Node3D) -> Vector3:
+	if body == null or not is_instance_valid(body):
+		return Vector3.ZERO
+	if body.has_method("get_network_position"):
+		return body.get_network_position()
+	return body.global_position
+
+func _spot_for_occupant(occupant: Node) -> FMHidingSpot:
+	for spot in hiding_spots:
+		if spot.occupant == occupant:
+			return spot
+	return null
+
+func _nearest_spot_for(body: Node3D) -> FMHidingSpot:
+	var best: FMHidingSpot = null
+	var best_distance := 2.4
+	for spot in hiding_spots:
+		if spot.is_occupied():
+			continue
+		var distance := body.global_position.distance_to(spot.get_exit_point())
+		if distance <= best_distance:
+			best = spot
+			best_distance = distance
+	return best
 
 func clamp_player(body: FMPlayer) -> void:
 	body.global_position.x = clampf(body.global_position.x, -9.2, 2.45)
@@ -501,11 +880,16 @@ func clamp_player(body: FMPlayer) -> void:
 	if body.global_position.y < -1.0:
 		body.global_position = SPAWN
 
-func _end(result: int, title: String, subtitle: String) -> void:
+func _end(result: int, title: String, subtitle: String, from_network := false) -> void:
 	if _ending:
 		return
 	_ending = true
 	state = result
+	if net_mode != NetMode.OFFLINE:
+		subtitle = subtitle.replace("R para reintentar.", "R para volver al menú.")
+		subtitle = subtitle.replace("R para volver a intentar.", "R para volver al menú.")
+	if net_mode == NetMode.HOST and not from_network and net != null:
+		net.broadcast_end(result, title, subtitle)
 	if player != null:
 		player.velocity = Vector3.ZERO
 		player.set_physics_process(false)
@@ -529,10 +913,17 @@ func _unhandled_input(event: InputEvent) -> void:
 	if state != State.PLAYING and event.is_action_pressed("restart"):
 		get_viewport().set_input_as_handled()
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		get_tree().reload_current_scene()
+		if net_mode == NetMode.OFFLINE:
+			get_tree().reload_current_scene()
+		else:
+			_leave_to_menu()
 
 func _leave_to_menu() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	var peer := multiplayer.multiplayer_peer
+	if peer is ENetMultiplayerPeer:
+		peer.close()
+	multiplayer.multiplayer_peer = null
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
 # --- Helpers de construcción ------------------------------------------------

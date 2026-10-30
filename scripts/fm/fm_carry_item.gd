@@ -12,6 +12,7 @@ extends RigidBody3D
 var carried_by: Node3D = null
 var home_position := Vector3.ZERO
 var game: Node = null
+var network_replica := false
 var _visual: Node3D
 var _hum_light: OmniLight3D
 var _time := 0.0
@@ -135,3 +136,19 @@ func _reset_home() -> void:
 	global_position = home_position
 	linear_velocity = Vector3.ZERO
 	angular_velocity = Vector3.ZERO
+
+## Replica no autoritativa: el host manda quién lo lleva y su posición.
+## No simula física para evitar que las dos instancias diverjan.
+func network_set_carrier(carrier: Node3D, position: Vector3) -> void:
+	network_replica = true
+	carried_by = carrier
+	linear_velocity = Vector3.ZERO
+	angular_velocity = Vector3.ZERO
+	freeze = true
+	if carrier != null:
+		collision_layer = 0
+		collision_mask = 0
+	else:
+		collision_layer = 4
+		collision_mask = 1
+		global_position = position

@@ -2,13 +2,32 @@
 
 **Terror cooperativo online. No todas las voces que escuchas pertenecen a tus compañeros.**
 
-## Fase 3 — Vertical slice offline (en desarrollo)
+## Fase 3 — Vertical slice jugable y online (P2 implementado, MVP)
 
-La primera versión jugable de FRECUENCIA MUERTA ya está en el proyecto. Es un
-**vertical slice offline de un jugador** para validar el bucle de terror antes de
-llevarlo a red: corredor industrial, laboratorio de contención, puerta de seguridad
-interactiva, linterna con batería, un objeto físico, dos escondites, El Vigilante,
-estrés, trampa sonora, audio ambiental 3D y extracción. Sin armas y sin combate.
+La primera versión jugable de FRECUENCIA MUERTA ya está en el proyecto. El
+**vertical slice** incluye corredor industrial, laboratorio de contención, puerta de
+seguridad interactiva, linterna con batería, un objeto físico, dos escondites, El
+Vigilante, estrés, trampa sonora, audio ambiental 3D y extracción. Sin armas y sin
+combate.
+
+**Novedad P2:** el vertical slice ya se puede jugar **entre dos instancias por red**
+(ENet, puerto UDP 7777). El host manda sobre la partida: valida interacciones, puerta,
+baterías, trampa, núcleo, criatura, extracción y final. El movimiento de cada cliente
+es local y el host valida las acciones por distancia; es la misma filosofía del
+prototipo 2D, no un servidor con simulación completa de movimiento.
+
+![Compañero remoto en la partida online](docs/fm_online.png)
+
+![Menú principal de FRECUENCIA MUERTA](docs/menu.png)
+
+| Cómo probar | Comando |
+|---|---|
+| Host 3D | Menú **CREAR PARTIDA 3D (HOST)** o `godot --path ~/Documentos/game -- --host3d` |
+| Cliente 3D | Menú: IP `127.0.0.1` + **UNIRSE 3D**, o `godot --path ~/Documentos/game -- --join3d=127.0.0.1` |
+| Offline | Menú **ENTRAR A LA INSTALACIÓN** o `godot --path ~/Documentos/game -- --slice` |
+
+- Documentación de red: [docs/fm_online.md](docs/fm_online.md).
+- Para LAN, el host comparte su IP local; para internet hay que abrir/redirigir **UDP 7777**. Todavía no hay lobbies de Steam, reconexión ni voz.
 
 ![Vertical slice offline](docs/fm_slice.png)
 
@@ -36,11 +55,13 @@ estrés, trampa sonora, audio ambiental 3D y extracción. Sin armas y sin combat
 | Soltar el núcleo | Q |
 | Linterna | F |
 | Volver al menú | Esc |
+| Reintentar (offline) / volver al menú (online) al terminar | R |
 | Silenciar audio | M |
 
-**Limitaciones de esta versión:** offline y de un solo jugador, sin red ni voz; el
-Vigilante y los objetos usan geometría procedural provisional; no hay inventario,
-herramientas, base ni progresión. La red 3D y el Imitador llegan en fases posteriores.
+**Limitaciones de esta versión:** el modo online es de prototipo, sin lobbies de Steam,
+reconexión ni voz; el movimiento se confía al cliente y el host valida las acciones por
+distancia. El Vigilante y los objetos usan geometría procedural provisional; no hay
+inventario, herramientas, base ni progresión. El Imitador llega en una fase posterior.
 
 Pruebas básicas versionadas:
 
@@ -48,7 +69,7 @@ Pruebas básicas versionadas:
 bash tests/run_all.sh
 ```
 
-Resultados actuales: vertical slice **26/26**, juego 2D **16/16**, red 2D **6/6**.
+Resultados actuales: vertical slice offline **26/26**, red 3D **15/15**, juego 2D **16/16**, red 2D **6/6**.
 Los tests dejan avisos de recursos al forzar la salida; no son fallos de gameplay.
 
 ## Fase 2 — Identidad visual y look dev
@@ -70,11 +91,12 @@ La nueva dirección del proyecto es **FRECUENCIA MUERTA**: un juego de terror y 
 
 ---
 
-# Prototipos heredados — Robo Caótico 0.8
+# Historial de prototipos — Robo Caótico 0.8
+
+> **Nota:** esta sección describe el estado anterior del proyecto y se conserva como historial.
+> El estado actual de FRECUENCIA MUERTA es el de la parte superior del README.
 
 Prototipo de robo cooperativo para Steam. La dirección elegida es **3D en primera persona y online**. El juego 2D sigue siendo la base jugable con red; la demo 3D elevada queda como referencia y la demo FP sirve para validar la cámara, la caja y el nivel antes de invertir en el multijugador 3D.
-
-![Menú](docs/menu.png)
 
 ![Demo 3D en primera persona](docs/demo3d_fp.png)
 

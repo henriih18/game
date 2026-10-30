@@ -11,6 +11,8 @@ const DEMO3D_FP_SCENE := "res://scenes/demo3d_fp.tscn"
 @onready var ip_edit: LineEdit = $IPEdit
 @onready var status: Label = $Status
 
+var _pending_scene := SLICE_SCENE
+
 func _ready() -> void:
 	Audio.play_music("menu")
 	modulate.a = 0.0
@@ -33,13 +35,13 @@ func _ready() -> void:
 	_wire_button($LookDevButton)
 
 	$SliceButton.pressed.connect(_slice)
-	$HostButton.pressed.connect(_host)
-	$JoinButton.pressed.connect(_join)
+	$HostButton.pressed.connect(_host_menu)
+	$JoinButton.pressed.connect(_join_menu)
 	$LocalButton.pressed.connect(_local)
 	$Demo3DButton.pressed.connect(_demo3d)
 	$DemoFPButton.pressed.connect(_demo3d_fp)
 	$LookDevButton.pressed.connect(_lookdev)
-	$IPEdit.text_submitted.connect(func(_text: String): _join())
+	$IPEdit.text_submitted.connect(func(_text: String): _join_menu())
 
 	multiplayer.connected_to_server.connect(_on_connected, CONNECT_ONE_SHOT)
 	multiplayer.connection_failed.connect(_on_connection_failed, CONNECT_ONE_SHOT)
@@ -60,8 +62,11 @@ func _float_title() -> void:
 
 func _handle_cmdline() -> void:
 	for arg in OS.get_cmdline_user_args():
+		if arg == "--host3d":
+			_host(SLICE_SCENE)
+			return
 		if arg == "--host":
-			_host()
+			_host(GAME_SCENE)
 			return
 		if arg == "--slice":
 			_slice()
@@ -78,9 +83,13 @@ func _handle_cmdline() -> void:
 		if arg == "--demo3dfp":
 			_demo3d_fp()
 			return
+		if arg.begins_with("--join3d="):
+			ip_edit.text = arg.get_slice("=", 1)
+			_join(SLICE_SCENE)
+			return
 		if arg.begins_with("--join="):
 			ip_edit.text = arg.get_slice("=", 1)
-			_join()
+			_join(GAME_SCENE)
 			return
 
 func _style_button(button: Button) -> void:
@@ -120,20 +129,28 @@ func _style_line_edit(edit: LineEdit) -> void:
 	edit.add_theme_color_override("font_placeholder_color", Color(0.42, 0.5, 0.44, 1.0))
 	edit.add_theme_color_override("caret_color", Color(0.7, 0.82, 0.55, 1.0))
 
-func _host() -> void:
+func _host_menu() -> void:
+	_host(SLICE_SCENE)
+
+func _join_menu() -> void:
+	_join(SLICE_SCENE)
+
+func _host(scene: String) -> void:
 	var peer := ENetMultiplayerPeer.new()
 	var err := peer.create_server(PORT, MAX_PLAYERS)
 	if err != OK:
 		_set_status("No se pudo abrir el puerto %d (error %d)." % [PORT, err], true)
 		return
 	multiplayer.multiplayer_peer = peer
-	get_tree().change_scene_to_file(GAME_SCENE)
+	_pending_scene = scene
+	get_tree().change_scene_to_file(scene)
 
-func _join() -> void:
+func _join(scene: String) -> void:
 	var address := ip_edit.text.strip_edges()
 	if address.is_empty():
 		_set_status("Escribí la IP del anfitrión (o 127.0.0.1 en esta PC).", true)
 		return
+	_pending_scene = scene
 	var peer := ENetMultiplayerPeer.new()
 	var err := peer.create_client(address, PORT)
 	if err != OK:
@@ -172,7 +189,7 @@ func _demo3d_fp() -> void:
 	get_tree().change_scene_to_file(DEMO3D_FP_SCENE)
 
 func _on_connected() -> void:
-	get_tree().change_scene_to_file(GAME_SCENE)
+	get_tree().change_scene_to_file(_pending_scene)
 
 func _on_connection_failed() -> void:
 	if multiplayer.multiplayer_peer != null:

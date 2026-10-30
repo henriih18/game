@@ -16,6 +16,7 @@ enum State { DORMANT, PATROL, INVESTIGATE, CHASE, SEARCH }
 
 var game: Node = null
 var player: FMPlayer = null
+var targets: Array[Node3D] = []
 var state: State = State.DORMANT
 var state_timer := 4.0
 var patrol_points: Array[Vector3] = []
@@ -164,38 +165,56 @@ func set_game(value: Node) -> void:
 
 func set_player(value: FMPlayer) -> void:
 	player = value
+	if value != null and targets.is_empty():
+		targets = [value]
+
+func set_targets(values: Array[Node3D]) -> void:
+	targets = values
+	if player == null and not targets.is_empty():
+		player = targets[0] as FMPlayer
 
 func set_patrol_points(points: Array[Vector3]) -> void:
 	patrol_points = points
 
+func apply_network_state(pos: Vector3, yaw: float, state_value: int, observed_value: bool) -> void:
+	global_position = pos
+	rotation.y = yaw
+	state = state_value
+	observed = observed_value
+	if _eye_mat != null:
+		_eye_mat.emission_energy_multiplier = 2.8 if observed else 1.8
+
 func _physics_process(delta: float) -> void:
-	if game == null or not is_instance_valid(game) or player == null or not is_instance_valid(player):
+	if game == null or not is_instance_valid(game):
+		return
+	var target_player := _nearest_target()
+	if target_player == null:
 		return
 	if game.state != 0:
 		velocity = Vector3.ZERO
 		return
 
 	_time += delta
-	observed = player.is_observing(self)
+	observed = _is_observed_by_targets()
 	if _eye_mat != null:
 		_eye_mat.emission_energy_multiplier = 2.8 if observed else 1.8
 
 	if observed and state != State.DORMANT:
 		velocity = Vector3.ZERO
-		_face_point(player.global_position, delta, true)
+		_face_point(target_player.global_position, delta, true)
 		return
 
-	var sees := _can_see_player()
+	var sees := _can_see_target(target_player)
 	if sees:
 		if state != State.CHASE:
 			state = State.CHASE
 			state_timer = 0.0
 			Audio.play_sfx("camera", -24.0, 0.7)
-		last_seen = player.global_position
+		last_seen = target_player.global_position
 		target = last_seen
-		if global_position.distance_to(player.global_position) <= catch_distance and not player.hidden:
+		if global_position.distance_to(target_player.global_position) <= catch_distance and not bool(target_player.get("hidden")):
 			if game.has_method("on_player_caught"):
-				game.on_player_caught()
+				game.on_player_caught(target_player)
 			return
 	elif state == State.CHASE:
 		state = State.SEARCH
@@ -221,7 +240,7 @@ func _physics_process(delta: float) -> void:
 					_wait_timer = 0.0
 					_choose_patrol_target()
 		State.CHASE:
-			target = player.global_position
+			target = target_player.global_position
 			_move_toward(target, chase_speed, delta)
 		State.SEARCH:
 			state_timer -= delta
@@ -233,6 +252,7 @@ func _physics_process(delta: float) -> void:
 					state = State.PATROL
 					_wait_timer = 0.0
 					_choose_patrol_target()
+
 
 func _update_patrol(delta: float) -> void:
 	if patrol_points.is_empty():
@@ -276,11 +296,48 @@ func _face_point(point: Vector3, delta: float, intense: bool) -> void:
 	if _visual != null:
 		_visual.position.y = lerpf(_visual.position.y, sin(_time * 1.7) * 0.012, clampf(delta * 3.0, 0.0, 1.0))
 
-func _can_see_player() -> bool:
-	if player.hidden:
+func _nearest_target() -> Node3D:
+	if targets.is_empty():
+		if player != null and is_instance_valid(player):
+			return player
+		return null
+	var best: Node3D = null
+	var best_distance := INF
+	for candidate in targets:
+		if candidate == null or not is_instance_valid(candidate):
+			continue
+		if bool(candidate.get("hidden")):
+			continue
+		var distance := global_position.distance_squared_to(candidate.global_position)
+		if distance < best_distance:
+			best = candidate
+			best_distance = distance
+	if best == null:
+		for candidate in targets:
+			if candidate != null and is_instance_valid(candidate):
+				return candidate
+	return best
+
+func _is_observed_by_targets() -> bool:
+	if targets.is_empty():
+		return player != null and is_instance_valid(player) and player.is_observing(self)
+	for candidate in targets:
+		if candidate == null or not is_instance_valid(candidate):
+			continue
+		if bool(candidate.get("hidden")):
+			continue
+		if candidate == player:
+			if player.is_observing(self):
+				return true
+		elif bool(candidate.get("observing_watcher")):
+			return true
+	return false
+
+func _can_see_target(candidate: Node3D) -> bool:
+	if candidate == null or bool(candidate.get("hidden")):
 		return false
 	var eye := global_position + Vector3(0, 1.85, 0)
-	var chest := player.global_position + Vector3(0, 1.0, 0)
+	var chest := candidate.global_position + Vector3(0, 1.0, 0)
 	var to_player := chest - eye
 	var distance := to_player.length()
 	if distance > vision_distance or distance < 0.05:
@@ -293,6 +350,10 @@ func _can_see_player() -> bool:
 	query.exclude = [get_rid()]
 	var hit := get_world_3d().direct_space_state.intersect_ray(query)
 	return hit.is_empty()
+
+func _can_see_player() -> bool:
+	return _can_see_target(_nearest_target())
+
 
 func hear_noise(position: Vector3, radius: float) -> void:
 	if game == null or game.state != 0:

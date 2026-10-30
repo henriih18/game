@@ -67,7 +67,8 @@ offset_left = 430.0
 offset_top = 310.0
 offset_right = 850.0
 offset_bottom = 354.0
-text = "Crear partida 2D"
+text = "CREAR PARTIDA 3D (HOST)"
+tooltip_text = "Abre una partida cooperativa 3D en el puerto UDP 7777"
 
 [node name="IPEdit" type="LineEdit" parent="."]
 layout_mode = 0
@@ -84,7 +85,8 @@ offset_left = 700.0
 offset_top = 362.0
 offset_right = 850.0
 offset_bottom = 406.0
-text = "Unirse"
+text = "UNIRSE 3D"
+tooltip_text = "Conecta a una partida 3D por IP"
 
 [node name="LocalButton" type="Button" parent="."]
 layout_mode = 0
@@ -138,6 +140,6 @@ offset_right = 1280.0
 offset_bottom = 712.0
 theme_override_colors/font_color = Color(0.38, 0.41, 0.5, 1)
 theme_override_font_sizes/font_size = 14
-text = "vertical slice offline  ·  sin armas  ·  M silencio  ·  demos y red 2D en Prototipos"
+text = "vertical slice cooperativo 2-4  ·  sin armas  ·  M silencio  ·  demos y 2D en Prototipos"
 horizontal_alignment = 1
 vertical_alignment = 1

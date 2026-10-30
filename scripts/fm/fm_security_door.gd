@@ -144,6 +144,16 @@ func get_interaction_position() -> Vector3:
 func interact(_player: Node) -> bool:
 	if is_open:
 		return false
+	return _open(true)
+
+func apply_network_open() -> void:
+	if is_open:
+		return
+	_open(false)
+
+func _open(emit_feedback: bool) -> bool:
+	if is_open:
+		return false
 	is_open = true
 	for body in _leaves:
 		if not is_instance_valid(body):
@@ -162,9 +172,10 @@ func interact(_player: Node) -> bool:
 		_state_label.text = "PUERTA ABIERTA"
 		_state_label.modulate = Color(0.42, 1.0, 0.62)
 
-	Audio.play_sfx("click", -8.0, 0.62)
-	Audio.play_sfx("drop", -15.0, 0.72)
-	if game != null and game.has_method("emit_noise"):
-		game.emit_noise(global_position, 11.0, "door")
+	if emit_feedback:
+		Audio.play_sfx("click", -8.0, 0.62)
+		Audio.play_sfx("drop", -15.0, 0.72)
+		if game != null and game.has_method("emit_noise"):
+			game.emit_noise(global_position, 11.0, "door")
 	opened.emit()
 	return true

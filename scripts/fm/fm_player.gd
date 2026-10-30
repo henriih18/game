@@ -19,6 +19,7 @@ var game: Node = null
 var camera: Camera3D
 var flashlight: SpotLight3D
 var carried_item: Node3D = null
+var network_client := false
 
 var battery := 100.0
 var flashlight_on := true
@@ -215,9 +216,17 @@ func _unhandled_input(event: InputEvent) -> void:
 
 	if event.is_action_pressed("drop") and carried_item != null:
 		get_viewport().set_input_as_handled()
-		_drop_item()
+		if network_client:
+			if game != null and game.has_method("request_network_drop"):
+				game.request_network_drop()
+		else:
+			_drop_item()
 
 func _interact() -> void:
+	if network_client:
+		if game != null and game.has_method("request_network_interaction"):
+			game.request_network_interaction()
+		return
 	if hidden:
 		exit_hide()
 		return
@@ -268,6 +277,8 @@ func _try_pickup() -> bool:
 	var item := best as FMCarryItem
 	if item.pickup(self):
 		carried_item = item
+		if game != null and game.has_method("on_artifact_picked"):
+			game.on_artifact_picked(self)
 		return true
 	return false
 
@@ -300,6 +311,8 @@ func _drop_item() -> void:
 	carried_item = null
 	if item != null:
 		item.drop(-camera.global_transform.basis.z)
+		if game != null and game.has_method("on_artifact_dropped"):
+			game.on_artifact_dropped()
 
 func hide_in(spot: FMHidingSpot) -> void:
 	if hidden:

@@ -29,6 +29,18 @@ bash tests/run_net_check.sh
 Levanta un host headless en el puerto 7777 y ejecuta un cliente. Resultado esperado:
 **6 PASS**. El test usa `/tmp/opencode` para el log temporal.
 
+## Red 3D host-autoritativa
+
+```bash
+bash tests/run_net_3d_check.sh
+```
+
+Levanta un host 3D headless (`--host3d --nettest`) y ejecuta un cliente real de la
+escena `VerticalSlice` contra él. Comprueba conexión, roster de dos jugadores, spawns
+separados, recarga de batería, apertura de puerta, recogida del núcleo, extracción
+final y HUD del cliente. Resultado esperado: **15 PASS**. Los logs quedan en
+`/tmp/opencode`.
+
 ## Nota
 
 Los tests fuerzan la salida del árbol y pueden imprimir avisos de `ObjectDB` o recursos

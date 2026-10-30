@@ -69,7 +69,7 @@ func _on_body_entered(body: Node3D) -> void:
 		return
 	trigger()
 
-func trigger() -> void:
+func trigger(emit_sound: bool = true) -> void:
 	if triggered:
 		return
 	triggered = true
@@ -81,5 +81,11 @@ func trigger() -> void:
 			if child is MeshInstance3D:
 				child.position.y += 0.02
 				child.rotation_degrees.z += 8.0
-	if game != null and game.has_method("emit_noise"):
-		game.emit_noise(global_position, noise_radius, "glass")
+	if emit_sound and game != null:
+		if game.has_method("emit_noise"):
+			game.emit_noise(global_position, noise_radius, "glass")
+		if game.has_method("on_noise_trap_triggered"):
+			game.on_noise_trap_triggered()
+
+func trigger_network() -> void:
+	trigger(false)
