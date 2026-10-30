@@ -11,6 +11,9 @@ var carried: Crate = null
 
 @onready var grab_area: Area2D = $GrabArea
 
+func _ready() -> void:
+	add_to_group("player")
+
 func _physics_process(_delta: float) -> void:
 	if carried != null and carried.delivered:
 		carried = null

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Texture2D" path="res://assets/art/floor_tile.svg" id="2_floor"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" path="res://scenes/crate.tscn" id="5_crate"]
 [ext_resource type="PackedScene" path="res://scenes/extraction_zone.tscn" id="6_zone"]
 [ext_resource type="PackedScene" path="res://scenes/player2.tscn" id="7_player2"]
+[ext_resource type="PackedScene" path="res://scenes/security_camera.tscn" id="8_camera"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h"]
 size = Vector2(600, 40)
@@ -80,6 +81,14 @@ color = Color(0.12, 0.13, 0.19, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallVertical"]
 shape = SubResource("RectangleShape2D_v")
 
+[node name="Cameras" type="Node2D" parent="."]
+
+[node name="Camera1" parent="Cameras" instance=ExtResource("8_camera")]
+position = Vector2(710, 320)
+
+[node name="Camera2" parent="Cameras" instance=ExtResource("8_camera")]
+position = Vector2(1120, 260)
+
 [node name="Gems" type="Node2D" parent="."]
 
 [node name="Gem1" parent="Gems" instance=ExtResource("4_gem")]
@@ -121,4 +130,74 @@ offset_right = 760.0
 offset_bottom = 704.0
 theme_override_colors/font_color = Color(0.55, 0.58, 0.66, 1)
 theme_override_font_sizes/font_size = 16
-text = "P1: WASD + E   ·   P2: Flechas + Enter   ·   Juntos la caja va más rápido"
+text = "P1: WASD + E   ·   P2: Flechas + Enter   ·   Evitá las cámaras"
+
+[node name="TimerLabel" type="Label" parent="HUD"]
+offset_left = 900.0
+offset_top = 16.0
+offset_right = 1256.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.93, 0.94, 0.97, 1)
+theme_override_font_sizes/font_size = 24
+text = "Tiempo: 2:00"
+horizontal_alignment = 2
+
+[node name="AlarmLabel" type="Label" parent="HUD"]
+offset_left = 900.0
+offset_top = 66.0
+offset_right = 1016.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(1, 0.45, 0.45, 1)
+theme_override_font_sizes/font_size = 14
+text = "ALARMA"
+horizontal_alignment = 2
+
+[node name="AlarmBack" type="ColorRect" parent="HUD"]
+offset_left = 1024.0
+offset_top = 66.0
+offset_right = 1252.0
+offset_bottom = 80.0
+color = Color(0.2, 0.11, 0.13, 1)
+
+[node name="AlarmFill" type="ColorRect" parent="HUD"]
+offset_left = 1026.0
+offset_top = 68.0
+offset_right = 1026.0
+offset_bottom = 78.0
+color = Color(0.95, 0.3, 0.3, 1)
+
+[node name="Overlay" type="ColorRect" parent="HUD"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.03, 0.03, 0.06, 0.72)
+
+[node name="ResultLabel" type="Label" parent="HUD/Overlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = -70.0
+offset_right = 460.0
+offset_bottom = 10.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 52
+text = "¡ROBO COMPLETO!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubLabel" type="Label" parent="HUD/Overlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = 20.0
+offset_right = 460.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.78, 0.8, 0.9, 1)
+theme_override_font_sizes/font_size = 20
+text = "R para reintentar"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,4 +1,4 @@
-# Robo Caótico — Prototipo 0.3
+# Robo Caótico — Prototipo 0.4
 
 Prototipo de robo cooperativo 2D (estilo R.E.P.O. / Among Us) para Steam.
 
@@ -10,9 +10,10 @@ Prototipo de robo cooperativo 2D (estilo R.E.P.O. / Among Us) para Steam.
 - **Co-op local 2 jugadores**: P1 (violeta) y P2 (cian)
 - Movimiento top-down con colisiones
 - **Agarre cooperativo**: la caja se lleva entre uno (45% de velocidad) o entre dos (80%), y se ubica en el punto medio entre ambos
-- Si los portadores se separan demasiado, se sueltan (sin efecto goma)
-- **Mini-bucle**: juntar las 3 gemas y llevar la caja a la zona de EXTRACCIÓN
-- HUD con estado del botín
+- **Ronda de 2 minutos** con cuenta regresiva
+- **Cámaras de seguridad**: si te ven, la alarma sube; al 100% perdés. Sin nadie a la vista, baja sola
+- Pantalla de fin (victoria / derrota) y **R para reintentar**
+- **Mini-bucle**: juntar las 3 gemas y llevar la caja a EXTRACCIÓN antes de que se acabe el tiempo o salte la alarma
 
 ## Cómo abrir el proyecto
 
@@ -28,11 +29,12 @@ O abrir Godot, **Import** y seleccionar esta carpeta. Dentro del editor, **F5** 
 |---|---|---|
 | Mover | WASD | Flechas |
 | Agarrar / soltar caja | E | Enter |
+| Reintentar (al terminar) | R | R |
 
 ## Estructura
 
 ```
-scenes/        main, player, player2, gem, crate, extraction_zone
+scenes/        main, player, player2, gem, crate, extraction_zone, security_camera
 scripts/       GDScript de cada escena
 assets/art/    SVGs (personajes, caja, gema, sombra, baldosa)
 assets/audio/  (vacío por ahora)
@@ -40,6 +42,6 @@ assets/audio/  (vacío por ahora)
 
 ## Siguiente paso
 
-- Ronda con temporizador y alarma
-- Agarre cooperativo con física (peso real, tambaleo)
 - Multijugador en red (lobbies de Steam)
+- Sonido y música (mucho "juice" pendiente)
+- Modo traidor (tensión social)
