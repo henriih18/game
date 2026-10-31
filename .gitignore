@@ -9,3 +9,9 @@
 # Sistema / editores
 *~
 .DS_Store
+
+# Fuentes Blender pesadas: se conservan en disco, no en el repositorio.
+/blender_concept/*.blend
+/blender_concept/*.blend1
+/blender_concept/renders/
+/blender_concept/versions/

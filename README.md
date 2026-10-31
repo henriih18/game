@@ -10,24 +10,28 @@ seguridad interactiva, linterna con batería, un objeto físico, dos escondites,
 Vigilante, estrés, trampa sonora, audio ambiental 3D y extracción. Sin armas y sin
 combate.
 
-## Pase visual del escenario (referencia actual)
+## Pase visual del escenario (arte integrado en el juego)
 
-El corredor y el laboratorio recibieron un pase de ambientación industrial:
-costillas estructurales, vigas, cableado, tuberías, rejillas, carteles con placa,
-escombros, charcos, sangre, cuerpo en bolsa, consola de monitoreo, panel de techo
-desprendido y luces de emergencia. También se agregaron modelos procedurales de
-**El Vigilante** y **El Imitador** basados en la silueta de la referencia oficial.
+El corredor jugable ya no es un blockout: usa el arte reconstruido en Blender,
+exportado como GLB e integrado en la escena del vertical slice. Se conservan las
+colisiones, la puerta interactiva, la extracción, la lógica y la red.
 
 | Captura | Qué muestra |
 |---|---|
-| ![Corredor](docs/fm_visual_corridor.png) | Corredor con iluminación de emergencia y deterioro |
-| ![Laboratorio](docs/fm_visual_lab.png) | Laboratorio de contención y consola |
-| ![Tanque](docs/fm_visual_tank.png) | Tanque con el Imitador y barras frontales |
-| ![Vigilante](docs/fm_visual_watcher.png) | El Vigilante como silueta en el corredor |
+| ![Corredor jugable](docs/fm_scene_corridor.png) | Corredor con el arte GLB, luces cian/rojas, tuberías, sangre y El Vigilante |
+| ![Laboratorio jugable](docs/fm_scene_lab.png) | Laboratorio de contención, tanque con el Imitador, consola y núcleo |
 
-- Documentación: [docs/fm_visual_reference.md](docs/fm_visual_reference.md).
-- Renderer **Forward+**; medición del corredor con el driver de captura: ~206 FPS a 720p y ~95–103 FPS a 1080p (GTX 1650 Ti). No es una medición del juego final.
-- **Honestidad**: las criaturas son bloqueos orgánicos procedurales, no modelos finales. El escenario es la referencia de composición, luz y densidad; el arte definitivo de criaturas requiere modelado 3D dedicado.
+- El corredor GLB incluye arquitectura, paneles, costillas, vigas, tuberías,
+  bandejas, luces de emergencia, señalización, calcomanías y deterioro.
+- El laboratorio, la puerta de seguridad y la extracción siguen construidos en
+  Godot, con el mismo lenguaje visual y materiales PBR.
+- Documentación del arte: [docs/fm_scene_art.md](docs/fm_scene_art.md).
+- Documentación de criaturas: [docs/fm_visual_reference.md](docs/fm_visual_reference.md).
+- Renderer **Forward+**. La escena jugable no se ha benchmarkeado todavía con
+  jugadores, IA y red; no se presentan cifras como rendimiento final.
+- **Honestidad**: el arte del pasillo es una reconstrucción procedural desde
+  Blender, no un kit modular modelado a mano. Las criaturas siguen siendo
+  bloqueos orgánicos procedurales; no son modelos finales.
 
 **Novedad P2:** el vertical slice ya se puede jugar **entre dos instancias por red**
 (ENet, puerto UDP 7777). El host manda sobre la partida: valida interacciones, puerta,

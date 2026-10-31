@@ -15,6 +15,7 @@ const EXTRACTION_SCENE := preload("res://scenes/fm/extraction.tscn")
 const DOOR_SCENE := preload("res://scenes/fm/security_door.tscn")
 const BATTERY_SCENE := preload("res://scenes/fm/battery.tscn")
 const TRAP_SCENE := preload("res://scenes/fm/noise_trap.tscn")
+const CORRIDOR_ART_SCENE := preload("res://assets/models/fm/corridor_art.glb")
 
 const MAT_CONCRETE := preload("res://assets/art/fm/concrete_wall.tres")
 const MAT_METAL := preload("res://assets/art/fm/metal_panel.tres")
@@ -44,6 +45,8 @@ var artifact: FMCarryItem
 var extraction: FMExtraction
 var hud: FMHUD
 var level: Node3D
+var corridor_shell: Node3D
+var corridor_art: Node3D
 var security_door: FMSecurityDoor
 var dressing: FMScenarioDressing
 var batteries: Array[FMBattery] = []
@@ -72,7 +75,11 @@ func _ready() -> void:
 	level = Node3D.new()
 	level.name = "Level"
 	add_child(level)
+	corridor_shell = Node3D.new()
+	corridor_shell.name = "CorridorBlockout"
+	level.add_child(corridor_shell)
 	_build_rooms()
+	_build_corridor_art()
 	_build_lights()
 	_build_props()
 	_build_scenario_dressing()
@@ -256,10 +263,10 @@ func _build_environment() -> void:
 	env.background_mode = Environment.BG_COLOR
 	env.background_color = Color(0.002, 0.004, 0.006)
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	env.ambient_light_color = Color(0.14, 0.19, 0.2)
-	env.ambient_light_energy = 0.48
+	env.ambient_light_color = Color(0.17, 0.21, 0.22)
+	env.ambient_light_energy = 0.66
 	env.tonemap_mode = Environment.TONE_MAPPER_FILMIC
-	env.tonemap_exposure = 1.08
+	env.tonemap_exposure = 1.16
 	env.glow_enabled = true
 	env.glow_intensity = 0.72
 	env.glow_bloom = 0.12
@@ -291,14 +298,13 @@ func _build_environment() -> void:
 	add_child(world)
 
 func _build_rooms() -> void:
-	# Suelo continuo del corredor.
-	_box(level, Vector3(0, -0.1, 1.0), Vector3(5.4, 0.2, 24.0), "floor", true)
-	# Muros del corredor.
-	_box(level, Vector3(2.85, 2.0, 1.0), Vector3(0.3, 4.0, 24.0), "metal", true)
-	_box(level, Vector3(-2.85, 2.0, -5.0), Vector3(0.3, 4.0, 10.0), "concrete", true)
-	_box(level, Vector3(-2.85, 2.0, 8.75), Vector3(0.3, 4.0, 6.5), "concrete", true)
-	_box(level, Vector3(-2.85, 3.65, 2.75), Vector3(0.3, 0.7, 5.5), "metal", true)
-	_box(level, Vector3(0, 4.05, 1.0), Vector3(5.4, 0.2, 24.0), "ceiling", true)
+	# Suelo y muros del corredor: solo colisión, el arte viene del GLB.
+	_box(corridor_shell, Vector3(0, -0.1, 1.0), Vector3(5.4, 0.2, 24.0), "floor", true)
+	_box(corridor_shell, Vector3(2.85, 2.0, 1.0), Vector3(0.3, 4.0, 24.0), "metal", true)
+	_box(corridor_shell, Vector3(-2.85, 2.0, -5.0), Vector3(0.3, 4.0, 10.0), "concrete", true)
+	_box(corridor_shell, Vector3(-2.85, 2.0, 8.75), Vector3(0.3, 4.0, 6.5), "concrete", true)
+	_box(corridor_shell, Vector3(-2.85, 3.65, 2.75), Vector3(0.3, 0.7, 5.5), "metal", true)
+	_box(corridor_shell, Vector3(0, 4.05, 1.0), Vector3(5.4, 0.2, 24.0), "ceiling", true)
 
 	# Laboratorio a la izquierda, abierto al corredor entre z=0 y z=5.5.
 	_box(level, Vector3(-6.25, -0.1, 2.5), Vector3(6.8, 0.2, 6.2), "floor_lab", true)
@@ -332,6 +338,46 @@ func _build_rooms() -> void:
 	_box(level, Vector3(-2.85, 3.72, 2.75), Vector3(0.34, 0.18, 5.5), "dark", false)
 	_box(level, Vector3(-2.7, 0.02, 2.75), Vector3(0.3, 0.03, 5.4), "hazard", false)
 
+func _build_corridor_art() -> void:
+	if CORRIDOR_ART_SCENE == null:
+		return
+	var art := CORRIDOR_ART_SCENE.instantiate() as Node3D
+	if art == null:
+		return
+	corridor_art = art
+	corridor_art.name = "CorridorArt"
+	level.add_child(corridor_art)
+	_hide_node_by_prefix(corridor_art, "FM_Sign_Sector")
+	_fix_art_materials(corridor_art)
+	# La carcasa procedural queda invisible; sus colisiones siguen activas.
+	corridor_shell.visible = false
+
+
+func _hide_node_by_prefix(root: Node, prefix: String) -> void:
+	for child in root.get_children():
+		if String(child.name).begins_with(prefix) and child is Node3D:
+			(child as Node3D).visible = false
+		_hide_node_by_prefix(child, prefix)
+
+
+func _fix_art_materials(root: Node) -> void:
+	var replacements := {
+		"FM_Concrete_Weathered": "concrete",
+		"FM_Metal_Panel": "metal",
+		"FM_Floor_Wet": "floor",
+		"FM_Rust": "rust",
+		"FM_Dark_Metal": "dark",
+		"FM_Red_Pipe": "rust",
+	}
+	for child in root.get_children():
+		if child is MeshInstance3D:
+			var mesh_instance := child as MeshInstance3D
+			var mat := mesh_instance.material_override as StandardMaterial3D
+			if mat != null and replacements.has(mat.resource_name):
+				mesh_instance.material_override = _mat(replacements[mat.resource_name])
+		_fix_art_materials(child)
+
+
 func _build_lights() -> void:
 	# Luces del corredor.
 	for z in [8.0, 3.0, -2.0, -7.0]:
@@ -339,10 +385,22 @@ func _build_lights() -> void:
 	# Laboratorio: luz fría cenital, verde del tanque y lámpara de trabajo.
 	_fixture(Vector3(-6.2, 3.92, 3.6), true)
 	_fixture(Vector3(-6.2, 3.92, 0.9), true)
-	_omni(Vector3(-7.4, 1.6, 2.0), Color(0.16, 0.80, 0.38), 1.15, 5.8)
-	_omni(Vector3(-5.9, 1.35, 4.4), Color(1.0, 0.6, 0.25), 0.9, 3.2)
-	_omni(Vector3(-8.7, 2.6, 4.7), Color(0.34, 0.62, 1.0), 0.8, 4.0)
-	_omni(Vector3(-7.5, 3.0, 1.2), Color(0.25, 0.55, 0.95), 0.9, 5.0)
+	_omni(Vector3(-7.4, 1.6, 2.0), Color(0.16, 0.80, 0.38), 0.95, 5.8)
+	_omni(Vector3(-5.9, 1.35, 4.4), Color(1.0, 0.6, 0.25), 0.7, 3.2)
+	_omni(Vector3(-8.7, 2.6, 4.7), Color(0.34, 0.62, 1.0), 0.55, 4.0)
+	_omni(Vector3(-7.5, 3.0, 1.2), Color(0.25, 0.55, 0.95), 0.65, 5.0)
+	# Relleno de paredes y entrada del laboratorio: evita pasillos negros.
+	for z in [6.0, 0.0, -6.0]:
+		_omni(Vector3(2.25, 2.45, z), Color(0.48, 0.62, 0.72), 0.55, 4.6)
+	_omni(Vector3(-3.35, 2.35, 4.9), Color(0.52, 0.72, 0.95), 0.75, 6.0)
+	_omni(Vector3(-3.35, 2.35, 0.9), Color(0.52, 0.72, 0.95), 0.65, 6.0)
+	_omni(Vector3(-6.2, 3.2, 2.5), Color(0.55, 0.72, 0.92), 0.7, 8.0)
+	_omni(Vector3(-3.25, 2.25, 2.75), Color(0.62, 0.74, 0.86), 0.55, 5.5)
+	# Puerta de seguridad: luz frontal para que se lea desde el corredor.
+	_omni(Vector3(0, 2.4, -8.6), Color(0.55, 0.68, 0.80), 0.9, 5.0)
+	_spot(Vector3(0, 3.2, -8.3), Vector3(0, 1.15, -9.82), Color(0.72, 0.84, 0.95), 2.1, 56.0, 7.0, false)
+	_spot(Vector3(-3.05, 3.35, 2.75), Vector3(-6.8, 1.2, 2.35), Color(0.58, 0.76, 0.98), 1.1, 70.0, 11.0, false)
+	_omni(Vector3(-4.15, 2.0, 2.75), Color(0.5, 0.7, 0.95), 0.55, 6.0)
 	# Emergencia y extracción.
 	_omni(Vector3(0, 2.6, -9.4), Color(1.0, 0.12, 0.08), 1.1, 4.5)
 	_omni(Vector3(0, 2.2, -12.2), Color(0.1, 1.0, 0.4), 0.9, 5.0)
@@ -351,15 +409,16 @@ func _build_lights() -> void:
 	_spot(Vector3(-4.7, 2.45, 4.35), Vector3(-7.4, 1.35, 2.0), Color(0.86, 0.94, 1.0), 1.1, 42.0, 7.5, false)
 
 func _fixture(pos: Vector3, lab: bool) -> void:
-	_box(level, pos, Vector3(1.55, 0.08, 0.24), "dark", false)
-	_box(level, pos + Vector3(0, -0.06, 0), Vector3(1.36, 0.018, 0.1), "cyan" if not lab else "cyan_dim", false)
-	_omni(pos + Vector3(0, -0.25, 0), Color(0.58, 0.78, 1.0), 1.35 if not lab else 1.1, 7.0)
+	if lab:
+		_box(level, pos, Vector3(1.55, 0.08, 0.24), "dark", false)
+		_box(level, pos + Vector3(0, -0.06, 0), Vector3(1.36, 0.018, 0.1), "cyan_dim", false)
+	_omni(pos + Vector3(0, -0.25, 0), Color(0.58, 0.78, 1.0), 1.7 if lab else 2.25, 9.0)
 
 func _build_scenario_dressing() -> void:
 	dressing = FMScenarioDressing.new()
 	dressing.name = "ScenarioDressing"
 	level.add_child(dressing)
-	dressing.build(_mats)
+	dressing.build(_mats, false)
 
 func _build_props() -> void:
 	# Tanque de contención del laboratorio.
@@ -408,10 +467,6 @@ func _build_props() -> void:
 	# Cajas, barriles y tuberías.
 	_box(level, Vector3(-8.9, 0.42, 0.2), Vector3(0.75, 0.84, 0.75), "metal_dirty", true)
 	_box(level, Vector3(-8.1, 0.32, 0.25), Vector3(0.6, 0.64, 0.6), "rust", true)
-	_cylinder_mesh(Vector3(2.1, 0.5, 5.4), 0.34, 1.0, "rust", true)
-	_cylinder_mesh(Vector3(1.5, 0.5, 5.7), 0.34, 1.0, "metal_dirty", true)
-	for z in [-6.0, -1.0, 4.0]:
-		_cylinder_mesh(Vector3(2.45, 2.9, z), 0.11, 20.0, "rust", false, Vector3(90, 0, 0))
 	_box(level, Vector3(2.6, 0.45, -6.4), Vector3(0.7, 0.9, 0.7), "yellow", true)
 
 	# Carteles y pantallas.

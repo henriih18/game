@@ -17,13 +17,14 @@ var _mats: Dictionary = {}
 var _time := 0.0
 var _flicker: Array[Dictionary] = []
 
-func build(materials: Dictionary) -> void:
+func build(materials: Dictionary, include_corridor := true) -> void:
 	_mats = materials
-	_architecture()
-	_corridor_details()
+	if include_corridor:
+		_architecture()
+		_corridor_details()
+		_narrative_damage()
 	_lab_details()
 	_extraction_details()
-	_narrative_damage()
 	_atmosphere()
 
 func _process(delta: float) -> void:

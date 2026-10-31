@@ -79,13 +79,23 @@ godot --path ~/Documentos/game scenes/fm/vertical_slice.tscn
 - **Audio y atmósfera**: música existente, pasos, recogida, caída, escondite,
   extracción, puerta, batería y trampa; sin voz todavía.
 
-## Pase visual
+## Pase visual integrado
 
-El escenario incorpora decorado industrial, deterioro, sangre, restos, carteles,
-consola de laboratorio, cuerpo en bolsa y una capa de iluminación de emergencia.
-También hay modelos procedurales independientes de El Vigilante y El Imitador,
-basados en `fotos-referencia/modelos-referencia.png`. Las capturas y el estado
-honesto del arte están en [fm_visual_reference.md](fm_visual_reference.md).
+El corredor ya no usa el blockout procedural como imagen principal: recibe el arte
+reconstruido en Blender y exportado como `assets/models/fm/corridor_art.glb`. El GLB
+se instancia como capa visual y el blockout queda invisible, conservando sus
+colisiones. El laboratorio y la puerta siguen construidos en Godot.
+
+| Captura | Qué muestra |
+|---|---|
+| ![Corredor jugable](fm_scene_corridor.png) | Corredor con arte GLB, luces y El Vigilante |
+| ![Laboratorio jugable](fm_scene_lab.png) | Laboratorio de contención y núcleo |
+
+El escenario conserva deterioro, sangre, restos, carteles, consola de laboratorio,
+cuerpo en bolsa y luces de emergencia. Los modelos de El Vigilante y El Imitador
+siguen siendo procedurales, basados en `fotos-referencia/modelos-referencia.png`.
+El detalle técnico y las limitaciones están en [fm_scene_art.md](fm_scene_art.md);
+el estado de las criaturas, en [fm_visual_reference.md](fm_visual_reference.md).
 
 ## Pruebas
 
