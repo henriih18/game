@@ -1,0 +1,59 @@
+{
+  "collection": "L1_P0B4_Z10",
+  "objects": {
+    "P0B4_HVAC_LINK_RUN": {
+      "tris": 3376,
+      "verts": 1824,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORTS_LINK": {
+      "tris": 632,
+      "verts": 336,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_FIREDAMPER_LINK": {
+      "tris": 7888,
+      "verts": 4040,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_LINK_E": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_RISER_PASS_PLATES": {
+      "tris": 720,
+      "verts": 480,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  },
+  "total_tris_added": 15924,
+  "link_run_bbox": [
+    [
+      61.828,
+      19.57,
+      3.22
+    ],
+    [
+      70.0,
+      20.43,
+      3.88
+    ]
+  ],
+  "checks": {
+    "non_manifold_total": 0,
+    "degenerate_total": 0,
+    "uv_missing": []
+  },
+  "bbox_note": "Corregido tras view_layer.update(); el primer cálculo usó matrix_world obsoleto."
+}

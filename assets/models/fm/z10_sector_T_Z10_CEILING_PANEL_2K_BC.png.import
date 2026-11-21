@@ -1,0 +1,44 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://baldpm4f23efg"
+path.bptc="res://.godot/imported/z10_sector_T_Z10_CEILING_PANEL_2K_BC.png-2629a7bcf2c1030929a1eab126e4d917.bptc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "d36d0cb5bbea42654c6ea468081cd7e2"
+}
+
+[deps]
+
+source_file="res://assets/models/fm/z10_sector_T_Z10_CEILING_PANEL_2K_BC.png"
+dest_files=["res://.godot/imported/z10_sector_T_Z10_CEILING_PANEL_2K_BC.png-2629a7bcf2c1030929a1eab126e4d917.bptc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=true
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=1024
+detect_3d/compress_to=1

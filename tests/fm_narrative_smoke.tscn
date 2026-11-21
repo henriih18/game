@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/fm_narrative_smoke.gd" id="1_narrative"]
+
+[node name="FMNarrativeSmoke" type="Node"]
+script = ExtResource("1_narrative")

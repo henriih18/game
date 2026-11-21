@@ -1,0 +1,44 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dxlfivifbscdt"
+path.bptc="res://.godot/imported/z10_sector_T_Z10_SPRINKLER_RED_WORN_2K_N.png-67792494cb193d46c6a236efa5c41127.bptc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "ca68d7701d5e0b47fbe8a242cb6d2937"
+}
+
+[deps]
+
+source_file="res://assets/models/fm/z10_sector_T_Z10_SPRINKLER_RED_WORN_2K_N.png"
+dest_files=["res://.godot/imported/z10_sector_T_Z10_SPRINKLER_RED_WORN_2K_N.png-67792494cb193d46c6a236efa5c41127.bptc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=true
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=1024
+detect_3d/compress_to=1

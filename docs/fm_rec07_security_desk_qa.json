@@ -1,0 +1,66 @@
+{
+  "collection": "L1_RECEPTION_R7_HERO",
+  "retired": [
+    "PROP_REC02_Chair_Security_Back",
+    "PROP_REC02_Chair_Security_Leg",
+    "PROP_REC02_Chair_Security_Leg.001",
+    "PROP_REC02_Chair_Security_Leg.002",
+    "PROP_REC02_Chair_Security_Leg.003",
+    "PROP_REC02_Chair_Security_Seat",
+    "PROP_REC02_Monitor_Security_Base",
+    "PROP_REC02_Monitor_Security_Frame",
+    "PROP_REC02_Monitor_Security_Neck",
+    "PROP_REC02_Monitor_Security_Screen",
+    "PROP_REC02_Security_Front",
+    "PROP_REC02_Security_Keyboard",
+    "PROP_REC02_Security_Modesty",
+    "PROP_REC02_Security_SideL",
+    "PROP_REC02_Security_SideR",
+    "PROP_REC02_Security_Top"
+  ],
+  "retired_count": 16,
+  "objects": {
+    "REC07_SECURITY_DESK_HERO": {
+      "tris": 6968,
+      "verts": 3616,
+      "polys": 3524,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "hide_render": false
+    },
+    "REC07_SECURITY_EQUIPMENT_HERO": {
+      "tris": 14504,
+      "verts": 7516,
+      "polys": 7292,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "hide_render": false
+    },
+    "REC07_SECURITY_CHAIR_HERO": {
+      "tris": 4764,
+      "verts": 2452,
+      "polys": 2466,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "hide_render": false
+    }
+  },
+  "total_tris": 26236,
+  "bbox_min": [
+    -85.12,
+    -11.164,
+    0.0
+  ],
+  "bbox_max": [
+    -82.4638,
+    -10.444,
+    1.4
+  ],
+  "notes": {
+    "collection_fix": "desk y equipo relinkeados a L1_RECEPTION_R7_HERO; join_group conservaba Scene Collection",
+    "chair_fix": "silla reasentada a z 0.015..1.0575; antes el pivote centraba la Z y la hundia 0.5213 m"
+  }
+}

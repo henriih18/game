@@ -1,0 +1,58 @@
+{
+  "bytes": 6593560,
+  "meshes": 17,
+  "nodes": 17,
+  "materials": 20,
+  "images": 21,
+  "tris": 62978,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "NWS_Architecture",
+    "NWS_Electrical",
+    "NWS_Label_AGUA_SIGN",
+    "NWS_Label_Control_SIGN",
+    "NWS_Label_Elec_0_SIGN",
+    "NWS_Label_Elec_1_SIGN",
+    "NWS_Label_Elec_2_SIGN",
+    "NWS_Label_VAPOR_SIGN",
+    "NWS_Lights",
+    "NWS_Pumps",
+    "NWS_Services",
+    "NWS_Sign_Elec_SIGN",
+    "NWS_Sign_Exit_SIGN",
+    "NWS_Sign_NoBlock_SIGN",
+    "NWS_Sign_NW01_SIGN",
+    "NWS_Sign_Room_SIGN",
+    "NWS_Workbench"
+  ],
+  "file": "assets/models/fm/nwstair_service_art.glb",
+  "source_objects": 17,
+  "source_tris": 62978,
+  "source_aabb_blender": {
+    "min": [
+      -76.3,
+      59.825,
+      -4.701
+    ],
+    "max": [
+      -67.7,
+      70.8,
+      -1.7
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      -76.3,
+      59.5,
+      -4.8
+    ],
+    "max": [
+      -67.7,
+      70.8,
+      -1.6
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "pass": true
+}

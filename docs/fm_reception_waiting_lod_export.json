@@ -1,0 +1,38 @@
+{
+  "objects": 17,
+  "unique_meshes": 17,
+  "tris": 24082,
+  "collisions": 4,
+  "names": [
+    "REC10_RUG_HERO",
+    "REC12_BENCH_A",
+    "REC12_BENCH_A-col",
+    "REC12_BENCH_A_LOD1",
+    "REC12_BENCH_A_LOD2",
+    "REC12_BENCH_B",
+    "REC12_BENCH_B-col",
+    "REC12_BENCH_B_LOD1",
+    "REC12_BENCH_B_LOD2",
+    "REC12_PLANTER",
+    "REC12_PLANTER-col",
+    "REC12_PLANTER_LOD1",
+    "REC12_PLANTER_LOD2",
+    "REC12_TABLE",
+    "REC12_TABLE-col",
+    "REC12_TABLE_LOD1",
+    "REC12_TABLE_LOD2"
+  ],
+  "aabb": [
+    [
+      -110.25,
+      -24.86,
+      0.0
+    ],
+    [
+      -104.35,
+      -18.74,
+      1.1999
+    ]
+  ],
+  "bytes": 1019712
+}

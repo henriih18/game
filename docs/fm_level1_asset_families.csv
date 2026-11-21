@@ -1,0 +1,19 @@
+family,priority,status,visible_meshes,tris,uv0,linked
+A. Assets enlazados de NEXUS_SHARED_ASSETS,P0,Enlazado; no duplicar,128,200175,0,128
+B. Caldera / boiler kit,P1,QA/UV aprobado,48,1963,0,0
+C. Generador / genset kit,P1,QA/UV aprobado,72,2482,0,0
+D. Colector y tuberías,P1,QA/UV aprobado,23,1752,0,0
+E. Colector de gas,P1,QA/UV aprobado,35,2224,0,0
+F. Depósito de aire,P1,QA/UV aprobado,14,1760,0,0
+H. Bandejas de cables,P1,QA/UV aprobado,36,264,0,0
+I. Estructura modular,P1,QA/UV aprobado,130,4509,0,0
+J. Equipamiento y soportes del piloto,P2,QA/UV aprobado,13,206,0,0
+M. Puerta y servicio de mantenimiento,P1,QA/UV aprobado,18,852,0,0
+N. Conexiones de servicio,P2,Parcial; 4 sin UV,109,4399,4,0
+O. Props de mantenimiento,P2,QA/UV aprobado,68,1678,0,0
+P. Set dressing de desastre (no asset),NO,Set dressing único,211,43427,0,0
+Q. Set dressing de mantenimiento,NO,Set dressing único,7,42,0,0
+R. Props de gameplay de recepción,P2,Blockout; 65 sin UV,65,1994,65,0
+S. Props de almacén y taller,P3,Blockout; 291 sin UV,292,3760,291,0
+T. Mobiliario y oficina,P3,Blockout; 22 sin UV,22,202,22,0
+U. Otros props locales,P3,Blockout; 827 sin UV,985,12042,827,0

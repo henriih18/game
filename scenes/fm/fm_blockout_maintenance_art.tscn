@@ -1,0 +1,190 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/blockout_maintenance.glb" id="1_maintenance"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/maintenance_art.glb" id="2_mt"]
+
+[node name="BlockoutMaintenanceArt" type="Node3D"]
+
+[node name="MaintenanceSector" parent="." instance=ExtResource("1_maintenance")]
+
+[node name="MaintenanceArt" parent="MaintenanceSector" instance=ExtResource("2_mt")]
+
+[node name="Emerg_Maintenance" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 4.7, 28)
+light_color = Color(1, 0.42, 0.16, 1)
+light_energy = 0.38
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Mt_HighBay_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 5.2, 11.5)
+light_color = Color(0.74, 0.86, 1, 1)
+light_energy = 6.5
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 5.2, 11.5)
+light_color = Color(0.74, 0.86, 1, 1)
+light_energy = 6.5
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_03" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102, 5.2, 11.5)
+light_color = Color(0.74, 0.86, 1, 1)
+light_energy = 6.0
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_04" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 5.2, 24)
+light_color = Color(0.72, 0.85, 1, 1)
+light_energy = 6.5
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_05" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 5.2, 24)
+light_color = Color(0.72, 0.85, 1, 1)
+light_energy = 6.5
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_06" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102, 5.2, 24)
+light_color = Color(0.72, 0.85, 1, 1)
+light_energy = 6.0
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_07" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 5.2, 36.5)
+light_color = Color(0.70, 0.84, 1, 1)
+light_energy = 6.0
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.0
+omni_attenuation = 1.3
+
+[node name="Mt_HighBay_08" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 5.2, 36.5)
+light_color = Color(0.70, 0.84, 1, 1)
+light_energy = 6.5
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.25
+
+[node name="Mt_HighBay_09" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102, 5.2, 36.5)
+light_color = Color(0.70, 0.84, 1, 1)
+light_energy = 6.0
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.3
+
+[node name="Mt_Boiler_Warm" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86, 3.2, 25)
+light_color = Color(1, 0.58, 0.3, 1)
+light_energy = 2.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.5
+omni_attenuation = 1.4
+
+[node name="Mt_Workshop_Warm" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 2.8, 13)
+light_color = Color(1, 0.66, 0.36, 1)
+light_energy = 2.6
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Mt_Entry_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63, 2.9, 10.5)
+light_color = Color(1, 0.58, 0.32, 1)
+light_energy = 1.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Mt_Emerg_North" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 3.0, 7.82)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 1.1
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.5
+omni_attenuation = 1.5
+
+[node name="Mt_Emerg_West" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.32, 3.0, 33)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 1.0
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.5
+omni_attenuation = 1.5
+
+[node name="Mt_Emerg_East" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.68, 3.0, 22)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 1.0
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.5
+omni_attenuation = 1.5
+
+[node name="Mt_Emerg_South" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 3.0, 47.82)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 1.0
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.5
+omni_attenuation = 1.5
+
+[node name="Mt_Tank_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 3.1, 43.0)
+light_color = Color(0.78, 0.88, 1, 1)
+light_energy = 2.8
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 10.0
+omni_attenuation = 1.35
+
+[node name="Mt_SE_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103, 2.9, 45.8)
+light_color = Color(1, 0.64, 0.34, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.5
+omni_attenuation = 1.4
+
+[node name="Mt_Chem_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 2.9, 23.5)
+light_color = Color(1, 0.7, 0.4, 1)
+light_energy = 2.6
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.0
+omni_attenuation = 1.4

@@ -1,0 +1,139 @@
+{
+  "room_id": "stairs_e2",
+  "title_es": "Escalera de emergencia E2",
+  "function_es": "Salida de emergencia E2 de 10 x 18 m y 6 m de altura: 24 peldaños que descienden 4,5 m al Nivel 2. Se accede desde el muro este de Mantenimiento.",
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_stairs_e2.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "prefixes": [
+    "SM_L1_Stair_E2_",
+    "SM_L1_Zone12b_EmergencyStairsE2_"
+  ],
+  "collections": [
+    "L1_ARCH_CEILINGS",
+    "L1_ARCH_CORES",
+    "L1_ARCH_ZONES"
+  ],
+  "objects": 34,
+  "unique_meshes": 34,
+  "tris_blender": 408,
+  "materials": 5,
+  "material_names": [
+    "M_L1_Ceiling_Blockout.009",
+    "M_L1_Stair_Concrete.010",
+    "M_L1_Wall_Blockout",
+    "M_L1_Wall_Blockout.010",
+    "M_L1_Zone_EmergencyE2.010"
+  ],
+  "images": 0,
+  "image_names": [],
+  "shell": {
+    "floor": true,
+    "ceiling": true,
+    "wall_pieces": 3,
+    "door_pieces": 0
+  },
+  "aabb_blender": [
+    [
+      112.0,
+      -44.15,
+      -4.8
+    ],
+    [
+      122.15,
+      -25.85,
+      6.0
+    ]
+  ],
+  "aabb_godot_position": [
+    112.0,
+    -4.8,
+    25.85
+  ],
+  "aabb_godot_size": [
+    10.15,
+    10.8,
+    18.3
+  ],
+  "names": [
+    "SM_L1_Stair_E2_Floor_E",
+    "SM_L1_Stair_E2_Floor_Front",
+    "SM_L1_Stair_E2_Floor_W",
+    "SM_L1_Stair_E2_LowerLanding",
+    "SM_L1_Stair_E2_Pit_E",
+    "SM_L1_Stair_E2_Pit_W",
+    "SM_L1_Stair_E2_Step_00",
+    "SM_L1_Stair_E2_Step_01",
+    "SM_L1_Stair_E2_Step_02",
+    "SM_L1_Stair_E2_Step_03",
+    "SM_L1_Stair_E2_Step_04",
+    "SM_L1_Stair_E2_Step_05",
+    "SM_L1_Stair_E2_Step_06",
+    "SM_L1_Stair_E2_Step_07",
+    "SM_L1_Stair_E2_Step_08",
+    "SM_L1_Stair_E2_Step_09",
+    "SM_L1_Stair_E2_Step_10",
+    "SM_L1_Stair_E2_Step_11",
+    "SM_L1_Stair_E2_Step_12",
+    "SM_L1_Stair_E2_Step_13",
+    "SM_L1_Stair_E2_Step_14",
+    "SM_L1_Stair_E2_Step_15",
+    "SM_L1_Stair_E2_Step_16",
+    "SM_L1_Stair_E2_Step_17",
+    "SM_L1_Stair_E2_Step_18",
+    "SM_L1_Stair_E2_Step_19",
+    "SM_L1_Stair_E2_Step_20",
+    "SM_L1_Stair_E2_Step_21",
+    "SM_L1_Stair_E2_Step_22",
+    "SM_L1_Stair_E2_Step_23",
+    "SM_L1_Zone12b_EmergencyStairsE2_Ceiling",
+    "SM_L1_Zone12b_EmergencyStairsE2_Wall_E_0",
+    "SM_L1_Zone12b_EmergencyStairsE2_Wall_N_0",
+    "SM_L1_Zone12b_EmergencyStairsE2_Wall_S_0"
+  ],
+  "strays": [],
+  "shared_boundaries": [
+    "El lado oeste de E2 es el muro este de Mantenimiento (SM_L1_Zone07_Maintenance_Wall_E_* y su puerta), incluido en blockout_maintenance."
+  ],
+  "blocked_elements": [],
+  "glb": {
+    "bytes": 43496,
+    "meshes": 34,
+    "mesh_nodes": 34,
+    "nodes": 35,
+    "scenes": 1,
+    "scene_index": 0,
+    "materials": 5,
+    "images": 0,
+    "tris": 408,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "root_nodes": [
+      "FM_L1_BLOCKOUT_STAIRS_E2"
+    ],
+    "root_node_ok": true,
+    "aabb_gltf_min": [
+      112.0,
+      -4.8,
+      25.85
+    ],
+    "aabb_gltf_max": [
+      122.15,
+      6.0,
+      44.15
+    ],
+    "aabb_godot_position": [
+      112.0,
+      -4.8,
+      25.85
+    ],
+    "aabb_godot_size": [
+      10.15,
+      10.8,
+      18.3
+    ],
+    "forbidden_nodes": [],
+    "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_stairs_e2.glb"
+  }
+}

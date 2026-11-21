@@ -1,0 +1,113 @@
+{
+  "objects": {
+    "REC12_BENCH_A": {
+      "lod0": {
+        "tris": 5200,
+        "verts": 2672,
+        "non_manifold": 0,
+        "degenerate": 0,
+        "uv": true
+      },
+      "lod": {
+        "1": {
+          "tris": 1976,
+          "verts": 1060,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.38
+        },
+        "2": {
+          "tris": 624,
+          "verts": 384,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.12
+        }
+      }
+    },
+    "REC12_BENCH_B": {
+      "lod0": {
+        "tris": 5200,
+        "verts": 2672,
+        "non_manifold": 0,
+        "degenerate": 0,
+        "uv": true
+      },
+      "lod": {
+        "1": {
+          "tris": 1976,
+          "verts": 1060,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.38
+        },
+        "2": {
+          "tris": 624,
+          "verts": 384,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.12
+        }
+      }
+    },
+    "REC12_TABLE": {
+      "lod0": {
+        "tris": 1424,
+        "verts": 744,
+        "non_manifold": 0,
+        "degenerate": 0,
+        "uv": true
+      },
+      "lod": {
+        "1": {
+          "tris": 640,
+          "verts": 352,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "2": {
+          "tris": 212,
+          "verts": 138,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC12_PLANTER": {
+      "lod0": {
+        "tris": 3992,
+        "verts": 2056,
+        "non_manifold": 0,
+        "degenerate": 0,
+        "uv": true
+      },
+      "lod": {
+        "1": {
+          "tris": 1396,
+          "verts": 758,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.35
+        },
+        "2": {
+          "tris": 398,
+          "verts": 259,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.1
+        }
+      }
+    }
+  },
+  "qa_pass": true
+}

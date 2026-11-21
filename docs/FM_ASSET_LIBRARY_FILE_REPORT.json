@@ -1,0 +1,121 @@
+{
+  "file": "/home/riyo/Documentos/game/assets/blender/fm_shared_hero_library.blend",
+  "scenes": [
+    "FM_ASSET_LIBRARY"
+  ],
+  "active_scene": "FM_ASSET_LIBRARY",
+  "has_fm_library": true,
+  "level_shared_objects": [],
+  "source_security": {},
+  "library": {
+    "objects": 539,
+    "meshes": 446,
+    "tris": 1481818,
+    "children": [
+      "LIB_CORRIDOR_HERO",
+      "LIB_SECURITY_HERO"
+    ]
+  },
+  "groups": {
+    "LIB_CORRIDOR_HERO": {
+      "objects": 230,
+      "meshes": 147,
+      "tris": 853164,
+      "children": [
+        "L1_SHARED_HERO"
+      ]
+    },
+    "L1_SHARED_HERO": {
+      "objects": 230,
+      "meshes": 147,
+      "tris": 853164,
+      "children": [
+        "DOORS",
+        "DOORS_LOD",
+        "LIGHTING",
+        "LIGHTING_LOD",
+        "P0_COLLISION",
+        "P0_TEST_ASSEMBLY",
+        "SERVICES"
+      ]
+    },
+    "LIB_SECURITY_HERO": {
+      "objects": 309,
+      "meshes": 299,
+      "tris": 628654,
+      "children": [
+        "LIB_SEC_CART",
+        "LIB_SEC_CHECKPOINT",
+        "LIB_SEC_CHECKPOINT_DEBRIS",
+        "LIB_SEC_DEBRIS_R21C",
+        "LIB_SEC_DEBRIS_R21D",
+        "LIB_SEC_FIXTURES",
+        "LIB_SEC_HATCH",
+        "LIB_SEC_LOCKERS",
+        "LIB_SEC_OPS",
+        "LIB_SEC_STORAGE"
+      ]
+    },
+    "LIB_SEC_CHECKPOINT": {
+      "objects": 128,
+      "meshes": 127,
+      "tris": 26200,
+      "children": []
+    },
+    "LIB_SEC_CHECKPOINT_DEBRIS": {
+      "objects": 32,
+      "meshes": 31,
+      "tris": 13412,
+      "children": []
+    },
+    "LIB_SEC_OPS": {
+      "objects": 70,
+      "meshes": 69,
+      "tris": 213092,
+      "children": []
+    },
+    "LIB_SEC_LOCKERS": {
+      "objects": 3,
+      "meshes": 2,
+      "tris": 181984,
+      "children": []
+    },
+    "LIB_SEC_HATCH": {
+      "objects": 8,
+      "meshes": 7,
+      "tris": 29456,
+      "children": []
+    },
+    "LIB_SEC_STORAGE": {
+      "objects": 3,
+      "meshes": 2,
+      "tris": 56958,
+      "children": []
+    },
+    "LIB_SEC_CART": {
+      "objects": 2,
+      "meshes": 1,
+      "tris": 20870,
+      "children": []
+    },
+    "LIB_SEC_FIXTURES": {
+      "objects": 4,
+      "meshes": 3,
+      "tris": 3316,
+      "children": []
+    },
+    "LIB_SEC_DEBRIS_R21C": {
+      "objects": 13,
+      "meshes": 12,
+      "tris": 27856,
+      "children": []
+    },
+    "LIB_SEC_DEBRIS_R21D": {
+      "objects": 46,
+      "meshes": 45,
+      "tris": 55510,
+      "children": []
+    }
+  },
+  "all_mesh_tris": 1481818
+}

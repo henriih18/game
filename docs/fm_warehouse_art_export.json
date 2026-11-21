@@ -1,0 +1,54 @@
+{
+  "bytes": 20577408,
+  "meshes": 95,
+  "nodes": 99,
+  "materials": 46,
+  "images": 31,
+  "tris": 147344,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "WH_BloodTrail_BLOOD",
+    "WH_BrokenPallet_DECAL",
+    "WH_CableTray_CABLE",
+    "WH_CageSign_SIGN",
+    "WH_CeilingBeams_TRIM",
+    "WH_Conveyor",
+    "WH_CoveredBundle",
+    "WH_Drain_GRILLE",
+    "WH_E1_TrayLink_CABLE",
+    "WH_Emerg_LIGHT_01",
+    "WH_Emerg_LIGHT_02",
+    "WH_Emerg_LIGHT_03"
+  ],
+  "source_objects": 99,
+  "resized_images": 7,
+  "source_aabb_blender": {
+    "min": [
+      61.8,
+      8.14,
+      -0.07
+    ],
+    "max": [
+      110.0,
+      37.833,
+      5.9
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      61.7,
+      4.0,
+      -0.2
+    ],
+    "max": [
+      110.18,
+      38.15,
+      6.0
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "file": "assets/models/fm/warehouse_art.glb",
+  "max_bytes": 31457280,
+  "pass": true
+}

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/lockers_corridor_kit.glb" id="1_corridor"]
+
+[node name="LockersCorridorArt" type="Node3D"]
+
+[node name="LockersCorridorSector" parent="." instance=ExtResource("1_corridor")]
+
+[node name="Emerg_LockersCorridor" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 3.2, -35)
+light_color = Color(1, 0.74, 0.46, 1)
+light_energy = 0.34
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.5

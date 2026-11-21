@@ -1,0 +1,253 @@
+{
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "script": "/home/riyo/Documentos/game/scripts/fm/fm_blockout_rooms_export_headless.py",
+  "rooms": [
+    {
+      "room": "control",
+      "file": "blockout_control.glb",
+      "objects": 26,
+      "tris": 312,
+      "materials": 9,
+      "bytes": 34280,
+      "aabb_godot_position": [
+        -105.15,
+        -0.2,
+        -60.15
+      ],
+      "aabb_godot_size": [
+        28.33,
+        6.2,
+        24.15
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "lockers",
+      "file": "blockout_lockers.glb",
+      "objects": 25,
+      "tris": 300,
+      "materials": 7,
+      "bytes": 32372,
+      "aabb_godot_position": [
+        29.804,
+        -0.2,
+        -64.15
+      ],
+      "aabb_godot_size": [
+        30.346,
+        4.7,
+        24.33
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "warehouse",
+      "file": "blockout_warehouse.glb",
+      "objects": 44,
+      "tris": 528,
+      "materials": 9,
+      "bytes": 55064,
+      "aabb_godot_position": [
+        62.0,
+        -0.2,
+        -38.15
+      ],
+      "aabb_godot_size": [
+        48.18,
+        6.2,
+        34.15
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "maintenance",
+      "file": "blockout_maintenance.glb",
+      "objects": 39,
+      "tris": 468,
+      "materials": 9,
+      "bytes": 48880,
+      "aabb_godot_position": [
+        55.85,
+        -0.2,
+        4.0
+      ],
+      "aabb_godot_size": [
+        56.33,
+        6.2,
+        44.15
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "offices",
+      "file": "blockout_offices.glb",
+      "objects": 30,
+      "tris": 360,
+      "materials": 8,
+      "bytes": 38360,
+      "aabb_godot_position": [
+        -30.15,
+        -0.2,
+        -70.15
+      ],
+      "aabb_godot_size": [
+        45.34,
+        4.7,
+        66.15
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "restroom",
+      "file": "blockout_restroom.glb",
+      "objects": 14,
+      "tris": 168,
+      "materials": 6,
+      "bytes": 18908,
+      "aabb_godot_position": [
+        15.0,
+        -0.2,
+        -58.15
+      ],
+      "aabb_godot_size": [
+        15.0,
+        4.2,
+        16.3
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "stairs_main",
+      "file": "blockout_stairs_main.glb",
+      "objects": 50,
+      "tris": 600,
+      "materials": 10,
+      "bytes": 62700,
+      "aabb_godot_position": [
+        -12.15,
+        -4.8,
+        4.0
+      ],
+      "aabb_godot_size": [
+        20.3,
+        11.8,
+        46.15
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "stairs_e1",
+      "file": "blockout_stairs_e1.glb",
+      "objects": 34,
+      "tris": 408,
+      "materials": 5,
+      "bytes": 43528,
+      "aabb_godot_position": [
+        110.0,
+        -4.8,
+        -26.15
+      ],
+      "aabb_godot_size": [
+        10.15,
+        10.8,
+        18.3
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    },
+    {
+      "room": "stairs_e2",
+      "file": "blockout_stairs_e2.glb",
+      "objects": 34,
+      "tris": 408,
+      "materials": 5,
+      "bytes": 43496,
+      "aabb_godot_position": [
+        112.0,
+        -4.8,
+        25.85
+      ],
+      "aabb_godot_size": [
+        10.15,
+        10.8,
+        18.3
+      ],
+      "strays": [],
+      "cameras": 0,
+      "lights": 0,
+      "forbidden_nodes": [],
+      "root_node_ok": true
+    }
+  ],
+  "totals": {
+    "rooms": 9,
+    "objects": 296,
+    "tris": 3552,
+    "bytes": 377588,
+    "strays": 0,
+    "cameras": 0,
+    "lights": 0
+  },
+  "room_reports": [
+    "docs/fm_blockout_control_export.json",
+    "docs/fm_blockout_lockers_export.json",
+    "docs/fm_blockout_warehouse_export.json",
+    "docs/fm_blockout_maintenance_export.json",
+    "docs/fm_blockout_offices_export.json",
+    "docs/fm_blockout_restroom_export.json",
+    "docs/fm_blockout_stairs_main_export.json",
+    "docs/fm_blockout_stairs_e1_export.json",
+    "docs/fm_blockout_stairs_e2_export.json"
+  ],
+  "blockers": [
+    {
+      "room": "lockers",
+      "blocked_elements": [
+        {
+          "objects": [
+            "SM_L1_Conn_ChangingConnector_Ceiling",
+            "SM_L1_Conn_ChangingConnector_Wall_W_0"
+          ],
+          "reason_es": "Pasillo corredor-Vestuarios incompleto: solo existen techo y muro oeste. No hay suelo ni muro este blockout; el suelo y el muro central x=46 son kit hero de Z10 (L1_KIT_PILOT) ya exportado en z10_conector.glb. Exportarlo duplicaria techo/muro sobre arte hero."
+        }
+      ]
+    }
+  ],
+  "limitations_es": [
+    "Las salas siguen en blockout: no tienen props, UVs de produccion ni arte hero; solo cascara, columnas, puertas, suelo, techo y conectores completos.",
+    "El pasillo corredor-Vestuarios no se exporta: su suelo y muro central son kit hero de Z10 y el blockout solo aporta techo y muro oeste.",
+    "Los muros compartidos se exportan una sola vez para evitar z-fighting: Aseo depende de Vestuarios; E1 de Almacen; E2 de Mantenimiento.",
+    "La escalera de emergencia 12C y la galeria tecnica Este no forman parte de esta tarea."
+  ]
+}

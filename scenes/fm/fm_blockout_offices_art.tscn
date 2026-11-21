@@ -1,0 +1,235 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/blockout_offices.glb" id="1_offices"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/offices_art.glb" id="2_offices_art"]
+
+[node name="BlockoutOfficesArt" type="Node3D"]
+
+[node name="OfficesSector" parent="." instance=ExtResource("1_offices")]
+
+[node name="OfficesArt" parent="OfficesSector" instance=ExtResource("2_offices_art")]
+
+[node name="Emerg_Offices" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 3.3, -50)
+light_color = Color(0.92, 0.95, 0.82, 1)
+light_energy = 0.26
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 6.5
+omni_attenuation = 1.5
+
+[node name="Of_Lobby_Warm" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 3.2, -34.8)
+light_color = Color(1, 0.78, 0.56, 1)
+light_energy = 3.8
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.5
+omni_attenuation = 1.4
+
+[node name="Of_Lobby_Cool" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 3.4, -35.5)
+light_color = Color(0.74, 0.86, 1, 1)
+light_energy = 7.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 13.0
+omni_attenuation = 1.35
+
+[node name="Of_Open_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.0, -42)
+light_color = Color(0.76, 0.87, 1, 1)
+light_energy = 7.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.35
+
+[node name="Of_Open_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.0, -42)
+light_color = Color(0.76, 0.87, 1, 1)
+light_energy = 7.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.35
+
+[node name="Of_Open_03" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.0, -50)
+light_color = Color(0.76, 0.87, 1, 1)
+light_energy = 7.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.35
+
+[node name="Of_Open_04" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.0, -50)
+light_color = Color(0.76, 0.87, 1, 1)
+light_energy = 7.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 13.5
+omni_attenuation = 1.35
+
+[node name="Of_Open_05" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.0, -57)
+light_color = Color(0.76, 0.87, 1, 1)
+light_energy = 6.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 12.5
+omni_attenuation = 1.35
+
+[node name="Of_Open_06" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.0, -57)
+light_color = Color(0.76, 0.87, 1, 1)
+light_energy = 6.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 12.5
+omni_attenuation = 1.35
+
+[node name="Of_Private_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5, 3.3, -67.0)
+light_color = Color(1, 0.86, 0.68, 1)
+light_energy = 5.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Of_Private_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5, 3.3, -67.0)
+light_color = Color(1, 0.86, 0.68, 1)
+light_energy = 5.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Of_Private_03" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 3.3, -67.0)
+light_color = Color(1, 0.86, 0.68, 1)
+light_energy = 5.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Of_Private_04" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 3.3, -67.0)
+light_color = Color(1, 0.86, 0.68, 1)
+light_energy = 5.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Of_Meeting" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 3.5, -63.5)
+light_color = Color(0.94, 0.93, 0.84, 1)
+light_energy = 5.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 10.0
+omni_attenuation = 1.35
+
+[node name="Of_Archive" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2, 3.4, -50)
+light_color = Color(0.66, 0.82, 1, 1)
+light_energy = 3.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Of_Archive_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.0, 2.8, -53)
+light_color = Color(0.64, 0.8, 1, 1)
+light_energy = 2.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 6.0
+omni_attenuation = 1.45
+
+[node name="Of_Cafeteria" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 3.2, -35.5)
+light_color = Color(1, 0.8, 0.58, 1)
+light_energy = 4.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Of_Connector_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3.0, -8)
+light_color = Color(0.86, 0.9, 0.94, 1)
+light_energy = 4.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.0
+omni_attenuation = 1.4
+
+[node name="Of_Connector_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3.0, -15)
+light_color = Color(0.86, 0.9, 0.94, 1)
+light_energy = 4.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.0
+omni_attenuation = 1.4
+
+[node name="Of_Connector_03" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3.0, -22)
+light_color = Color(0.86, 0.9, 0.94, 1)
+light_energy = 4.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.0
+omni_attenuation = 1.4
+
+[node name="Of_Connector_04" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3.0, -28)
+light_color = Color(0.86, 0.9, 0.94, 1)
+light_energy = 4.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.0
+omni_attenuation = 1.4
+
+[node name="Of_Emerg_South" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3.2, -29.6)
+light_color = Color(1, 0.18, 0.09, 1)
+light_energy = 0.9
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.0
+omni_attenuation = 1.5
+
+[node name="Of_Emerg_East" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6, 3.2, -49)
+light_color = Color(1, 0.18, 0.09, 1)
+light_energy = 0.9
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.0
+omni_attenuation = 1.5
+
+[node name="Of_Lobby_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.8, -34)
+light_color = Color(1, 0.82, 0.64, 1)
+light_energy = 4.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.4
+
+[node name="Of_East_Corridor" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 3.0, -49)
+light_color = Color(0.78, 0.88, 1, 1)
+light_energy = 4.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.5
+omni_attenuation = 1.4

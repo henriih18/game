@@ -1,0 +1,41 @@
+{
+  "bytes": 7729160,
+  "meshes": 88,
+  "nodes": 88,
+  "materials": 32,
+  "images": 18,
+  "tris": 69720,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "CTRL_Beacon_01_LIGHT",
+    "CTRL_Beacon_02_LIGHT",
+    "CTRL_Booth_Chair",
+    "CTRL_Booth_Lamp",
+    "CTRL_Booth_Monitors",
+    "CTRL_Camera_01",
+    "CTRL_Camera_02",
+    "CTRL_Camera_03",
+    "CTRL_Camera_04",
+    "CTRL_CardReader_01",
+    "CTRL_CardReader_02",
+    "CTRL_Ceiling_CABLE"
+  ],
+  "source_objects": 88,
+  "source_aabb_blender": {
+    "min": [
+      -104.92,
+      40.16,
+      -0.03
+    ],
+    "max": [
+      -77.165,
+      59.835,
+      6.0
+    ]
+  },
+  "file": "assets/models/fm/control_art.glb",
+  "max_bytes": 15728640,
+  "aabb_inside_bounds": true,
+  "pass": true
+}

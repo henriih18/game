@@ -1,0 +1,54 @@
+{
+  "bytes": 4777844,
+  "meshes": 31,
+  "nodes": 31,
+  "materials": 25,
+  "images": 12,
+  "tris": 17440,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "RS_BloodTrail_BLOOD",
+    "RS_BrokenTiles_DECAL",
+    "RS_Ceiling_DIFFUSER",
+    "RS_CleaningRoom",
+    "RS_Drain_Stacks_CABLE",
+    "RS_Extinguisher",
+    "RS_Extract_Duct_CABLE",
+    "RS_FloorDrains_GRILLE",
+    "RS_FloorTiles_TRIM",
+    "RS_Handprint_DECAL",
+    "RS_LightPanels_LIGHT",
+    "RS_Mirrors_TRIM"
+  ],
+  "source_objects": 31,
+  "resized_images": 3,
+  "source_aabb_blender": {
+    "min": [
+      15.4,
+      42.07,
+      0.0
+    ],
+    "max": [
+      29.852,
+      57.86,
+      3.24
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      15.0,
+      41.85,
+      -0.2
+    ],
+    "max": [
+      30.0,
+      58.15,
+      4.0
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "file": "assets/models/fm/restroom_art.glb",
+  "max_bytes": 31457280,
+  "pass": true
+}

@@ -1,0 +1,112 @@
+{
+  "objects": [
+    {
+      "name": "REC09_SPRINKLER_RUN",
+      "tris": 9556,
+      "verts": 4848,
+      "polys": 4894,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_SPRINKLER_HEADS",
+      "tris": 13760,
+      "verts": 6944,
+      "polys": 6512,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_SPRINKLER_SUPPORTS",
+      "tris": 3936,
+      "verts": 2016,
+      "polys": 1920,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_SPRINKLER_CAPS",
+      "tris": 1000,
+      "verts": 504,
+      "polys": 472,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_SPRINKLER_SLEEVE_00",
+      "tris": 7916,
+      "verts": 3992,
+      "polys": 3974,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_SPRINKLER_SLEEVE_01",
+      "tris": 7916,
+      "verts": 3992,
+      "polys": 3974,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  ],
+  "total_tris": 44084,
+  "retired": [
+    "KIT_REC01_Sprinkler_Hanger_00",
+    "KIT_REC01_Sprinkler_Hanger_01",
+    "KIT_REC01_Sprinkler_Hanger_02",
+    "KIT_REC01_Sprinkler_Hanger_04",
+    "KIT_REC01_Sprinkler_Main"
+  ],
+  "retired_visible": [],
+  "inside": true,
+  "aabb": [
+    [
+      -110.16,
+      -30.125,
+      4.475
+    ],
+    [
+      -69.84,
+      -29.875,
+      4.811
+    ]
+  ],
+  "pipe": {
+    "start_x": -110.0,
+    "end_x": -70.0,
+    "y": -30.0,
+    "z": 4.6,
+    "length_m": 40.0
+  },
+  "heads_x": [
+    -106.0,
+    -102.0,
+    -96.0,
+    -92.0,
+    -86.0,
+    -82.0,
+    -76.0,
+    -72.0
+  ],
+  "supports_x": [
+    -108.0,
+    -104.0,
+    -98.0,
+    -94.0,
+    -88.0,
+    -84.0,
+    -78.0,
+    -74.0
+  ],
+  "sleeves_x": [
+    -110.0,
+    -70.0
+  ],
+  "qa_pass": true
+}

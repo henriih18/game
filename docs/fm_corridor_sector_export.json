@@ -1,0 +1,189 @@
+{
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/corridor_sector.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "collections": [
+    "L1_ARCH_ZONES",
+    "L1_ARCH_CIRCULATION",
+    "L1_ARCH_COLUMNS",
+    "L1_ARCH_CEILINGS",
+    "L1_ARCH_ALTERNATE",
+    "L1_P0B_SERVICES"
+  ],
+  "collection_meshes": {
+    "L1_ARCH_ZONES": 0,
+    "L1_ARCH_CIRCULATION": 34,
+    "L1_ARCH_COLUMNS": 0,
+    "L1_ARCH_CEILINGS": 1,
+    "L1_ARCH_ALTERNATE": 10,
+    "L1_P0B_SERVICES": 14,
+    "L1_CAMERAS": 1
+  },
+  "extra_objects": {
+    "SM_L1_Corridor_Main_Floor": "L1_CAMERAS"
+  },
+  "region_blender": [
+    [
+      -100.6,
+      -4.7,
+      -0.5
+    ],
+    [
+      74.6,
+      4.7,
+      4.6
+    ]
+  ],
+  "objects": 60,
+  "unique_meshes": 60,
+  "tris_blender": 267284,
+  "materials": 15,
+  "material_names": [
+    "M_L1_Ceiling_Blockout.009",
+    "M_L1_Corridor_Floor.010",
+    "M_L1_Door_Frame.010",
+    "M_L1_Wall_Corridor",
+    "M_L1_Wall_Corridor.010",
+    "M_SH_Label_Aluminium",
+    "M_SH_Rubber_Seal",
+    "M_SH_Sprinkler_Red",
+    "M_SH_Steel_Dark",
+    "M_SH_Steel_Galv",
+    "M_SH_Steel_Stainless",
+    "M_Z10_HERO_Firestop_Red_1K",
+    "M_Z10_HERO_Label_Alu_1K",
+    "M_Z10_HERO_Steel_Dark_2K",
+    "M_Z10_HERO_Steel_Galv_2K"
+  ],
+  "images": 10,
+  "image_names": [
+    "T_Z10_FIRESTOP_RED_1K_BC.png",
+    "T_Z10_FIRESTOP_RED_1K_ORM.png",
+    "T_Z10_LABEL_ALU_1K_BC.png",
+    "T_Z10_LABEL_ALU_1K_ORM.png",
+    "T_Z10_STEEL_DARK_2M_2K_BC",
+    "T_Z10_STEEL_DARK_2M_2K_N",
+    "T_Z10_STEEL_DARK_2M_2K_ORM",
+    "T_Z10_STEEL_GALV_2M_2K_BC",
+    "T_Z10_STEEL_GALV_2M_2K_N",
+    "T_Z10_STEEL_GALV_2M_2K_ORM"
+  ],
+  "aabb_blender": [
+    [
+      -100.15,
+      -4.1898,
+      -0.2
+    ],
+    [
+      74.15,
+      4.19,
+      4.2
+    ]
+  ],
+  "aabb_godot_position": [
+    -100.15,
+    -0.2,
+    -4.19
+  ],
+  "aabb_godot_size": [
+    174.3,
+    4.4,
+    8.3798
+  ],
+  "names": [
+    "P0B_BLIND_E",
+    "P0B_BLIND_W",
+    "P0B_END_FLANGE_E",
+    "P0B_END_FLANGE_W",
+    "P0B_HVAC_RUN_800x600",
+    "P0B_LABELS",
+    "P0B_SLEEVE_CORR",
+    "P0B_SPRINKLER_HEADS",
+    "P0B_SPRINKLER_RUN_DN80",
+    "P0B_SUPPORTS_HVAC",
+    "P0B_SUPPORTS_SPRINKLER",
+    "P0B_SUPPORTS_TRAY",
+    "P0B_TEE_MAIN",
+    "P0B_TRAY_RUN_400",
+    "SM_L1_Corridor_Door_N_-14_L",
+    "SM_L1_Corridor_Door_N_-14_R",
+    "SM_L1_Corridor_Door_N_-14_T",
+    "SM_L1_Corridor_Door_N_-92_L",
+    "SM_L1_Corridor_Door_N_-92_R",
+    "SM_L1_Corridor_Door_N_-92_T",
+    "SM_L1_Corridor_Door_N_40_L",
+    "SM_L1_Corridor_Door_N_40_R",
+    "SM_L1_Corridor_Door_N_40_T",
+    "SM_L1_Corridor_Door_S_-4_L",
+    "SM_L1_Corridor_Door_S_-4_R",
+    "SM_L1_Corridor_Door_S_-4_T",
+    "SM_L1_Corridor_Door_S_-94_L",
+    "SM_L1_Corridor_Door_S_-94_R",
+    "SM_L1_Corridor_Door_S_-94_T",
+    "SM_L1_Corridor_Door_S_60_L",
+    "SM_L1_Corridor_Door_S_60_R",
+    "SM_L1_Corridor_Door_S_60_T",
+    "SM_L1_Corridor_Main_Ceiling",
+    "SM_L1_Corridor_Main_Floor",
+    "SM_L1_Corridor_Main_Wall_E_0",
+    "SM_L1_Corridor_Main_Wall_N_0",
+    "SM_L1_Corridor_Main_Wall_N_1",
+    "SM_L1_Corridor_Main_Wall_N_10",
+    "SM_L1_Corridor_Main_Wall_N_2",
+    "SM_L1_Corridor_Main_Wall_N_3",
+    "SM_L1_Corridor_Main_Wall_N_4",
+    "SM_L1_Corridor_Main_Wall_N_5",
+    "SM_L1_Corridor_Main_Wall_N_6",
+    "SM_L1_Corridor_Main_Wall_N_7",
+    "SM_L1_Corridor_Main_Wall_N_8",
+    "SM_L1_Corridor_Main_Wall_N_9",
+    "SM_L1_Corridor_Main_Wall_S_0",
+    "SM_L1_Corridor_Main_Wall_S_1",
+    "SM_L1_Corridor_Main_Wall_S_10",
+    "SM_L1_Corridor_Main_Wall_S_2",
+    "SM_L1_Corridor_Main_Wall_S_3_Fix_0",
+    "SM_L1_Corridor_Main_Wall_S_3_Fix_1",
+    "SM_L1_Corridor_Main_Wall_S_3_Fix_2",
+    "SM_L1_Corridor_Main_Wall_S_4",
+    "SM_L1_Corridor_Main_Wall_S_5",
+    "SM_L1_Corridor_Main_Wall_S_6",
+    "SM_L1_Corridor_Main_Wall_S_7",
+    "SM_L1_Corridor_Main_Wall_S_8",
+    "SM_L1_Corridor_Main_Wall_S_9",
+    "SM_L1_Corridor_Main_Wall_W_0"
+  ],
+  "strays": [],
+  "glb": {
+    "bytes": 28629368,
+    "meshes": 60,
+    "mesh_nodes": 60,
+    "nodes": 60,
+    "materials": 15,
+    "images": 10,
+    "tris": 267284,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "aabb_gltf_min": [
+      -100.15,
+      -0.2,
+      -4.19
+    ],
+    "aabb_gltf_max": [
+      74.15,
+      4.2,
+      4.1898
+    ],
+    "aabb_godot_position": [
+      -100.15,
+      -0.2,
+      -4.19
+    ],
+    "aabb_godot_size": [
+      174.3,
+      4.4,
+      8.3798
+    ],
+    "forbidden_nodes": []
+  }
+}

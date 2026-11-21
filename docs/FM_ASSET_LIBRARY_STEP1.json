@@ -1,0 +1,14 @@
+{
+  "library_scene": "FM_ASSET_LIBRARY",
+  "library_root": "FM_LIBRARY",
+  "corridor_collection": "LIB_CORRIDOR_HERO",
+  "shared_objects": 230,
+  "shared_tris": 853164,
+  "level_objects": 2457,
+  "shared_names_remaining_in_level": [],
+  "shared_remaining_count": 0,
+  "library_scene_objects": 230,
+  "library_scene_collections": [
+    "FM_LIBRARY"
+  ]
+}

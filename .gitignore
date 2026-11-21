@@ -1,0 +1,86 @@
+# --- Godot 4 ---
+.godot/
+/android/
+*.translation
+
+# --- Builds / exports ---
+/build/
+/exports/
+/next_exports/
+
+# --- Backups, autosaves y temporales ---
+docs/backups/
+backups/
+tmp/
+temp/
+*.log
+*.tmp
+*.bak
+*.blend1
+*.blend2
+*.autosave
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# --- Sistema / editores / configuración local ---
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+/.agents/
+
+# --- Blender: fuentes pesadas y renders de trabajo ---
+/blender_concept/*.blend
+/blender_concept/*.blend1
+/blender_concept/renders/
+/blender_concept/versions/
+
+# --- Bibliotecas fuente de modelos/texturas/HDRI ---
+# No se usan en runtime; se quedan en disco y no se suben.
+/assets/Modelos 3D/
+/assets/texturas/
+/assets/art/
+/assets/HDRI/
+/assets/blender/
+
+# --- Archivos comprimidos de modelos fuente ---
+*.rar
+*.7z
+/objetos-modelados/**/*.zip
+
+# --- Archivos que superan el límite de GitHub (100 MB) ---
+# z10_sector.glb pesa 137,9 MB y GitHub lo rechaza.
+# Opción A (recomendada): Git LFS. NO lo ignores; añade .gitattributes:
+#   assets/models/fm/z10_sector.glb filter=lfs diff=lfs merge=lfs -text
+# Opción B: descarga externa. Descomenta la línea siguiente:
+/assets/models/fm/z10_sector.glb
+
+# --- Referencias visuales personales ---
+# Si no quieres subirlas, descomenta:
+/fotos-referencia/
+
+# --- Secretos / credenciales ---
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials.*
+# Si export_presets.cfg contiene contraseñas de keystore, descomenta:
+# export_presets.cfg
+
+/objetos-modelados/personaje-jugador/nomad_player/nomad_player_rig.blend

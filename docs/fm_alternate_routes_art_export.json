@@ -1,0 +1,61 @@
+{
+  "bytes": 1545912,
+  "meshes": 20,
+  "nodes": 20,
+  "materials": 7,
+  "images": 0,
+  "tris": 38632,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "ALT_Beacons_LIGHT",
+    "ALT_BeaconStems_TRIM",
+    "ALT_Conduits_CABLE",
+    "ALT_FloorLines_FLOOR_LINE",
+    "ALT_Hazard_HAZ",
+    "ALT_Puddles_DIS_WATER",
+    "ALT_Sign_Crawl_O_SIGN",
+    "ALT_Sign_East_M_SIGN",
+    "ALT_Sign_East_W_SIGN",
+    "ALT_Sign_Maint_M_SIGN",
+    "ALT_Sign_Maint_S_SIGN",
+    "ALT_Sign_North_C_SIGN",
+    "ALT_Sign_North_O_SIGN",
+    "ALT_Sign_NWStair_SIGN",
+    "ALT_Sign_Reception_SIGN",
+    "ALT_Sign_ReceptLink_SIGN",
+    "ALT_Sign_Security_SIGN",
+    "ALT_Sign_Service_V_SIGN",
+    "ALT_Sign_Service_W_SIGN",
+    "ALT_SignPlates_SIGN"
+  ],
+  "file": "assets/models/fm/alternate_routes_art.glb",
+  "source_objects": 20,
+  "source_tris": 38632,
+  "source_aabb_blender": {
+    "min": [
+      -95.65,
+      -32.557,
+      0.001
+    ],
+    "max": [
+      105.69,
+      66.19,
+      2.597
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      -96.5,
+      -33.0,
+      -5.0
+    ],
+    "max": [
+      106.0,
+      67.2,
+      6.2
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "pass": true
+}

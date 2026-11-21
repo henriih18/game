@@ -1,0 +1,140 @@
+{
+  "room_id": "lockers",
+  "title_es": "Vestuarios",
+  "function_es": "Vestuario del personal de recuperacion: taquillas, cambio de equipo y acceso de servicio desde el corredor. Sala de 30 x 24 m con cuatro columnas y tres vanos.",
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_lockers.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "prefixes": [
+    "SM_L1_Zone05_Changing_",
+    "SM_L1_Column_Changing_"
+  ],
+  "collections": [
+    "L1_ARCH_CEILINGS",
+    "L1_ARCH_COLUMNS",
+    "L1_ARCH_ZONES"
+  ],
+  "objects": 25,
+  "unique_meshes": 25,
+  "tris_blender": 300,
+  "materials": 7,
+  "material_names": [
+    "M_L1_Ceiling_Blockout.009",
+    "M_L1_Column_Steel.010",
+    "M_L1_Door_Frame",
+    "M_L1_Door_Frame.010",
+    "M_L1_Wall_Blockout",
+    "M_L1_Wall_Blockout.010",
+    "M_L1_Zone_Changing.010"
+  ],
+  "images": 0,
+  "image_names": [],
+  "shell": {
+    "floor": true,
+    "ceiling": true,
+    "wall_pieces": 10,
+    "door_pieces": 9
+  },
+  "aabb_blender": [
+    [
+      29.804,
+      39.82,
+      -0.2
+    ],
+    [
+      60.15,
+      64.15,
+      4.5
+    ]
+  ],
+  "aabb_godot_position": [
+    29.804,
+    -0.2,
+    -64.15
+  ],
+  "aabb_godot_size": [
+    30.346,
+    4.7,
+    24.33
+  ],
+  "names": [
+    "SM_L1_Column_Changing_0_0",
+    "SM_L1_Column_Changing_0_1",
+    "SM_L1_Column_Changing_1_0",
+    "SM_L1_Column_Changing_1_1",
+    "SM_L1_Zone05_Changing_Ceiling",
+    "SM_L1_Zone05_Changing_Door_S_New_L",
+    "SM_L1_Zone05_Changing_Door_S_New_R",
+    "SM_L1_Zone05_Changing_Door_S_New_T",
+    "SM_L1_Zone05_Changing_Door_S_Service_L",
+    "SM_L1_Zone05_Changing_Door_S_Service_R",
+    "SM_L1_Zone05_Changing_Door_S_Service_T",
+    "SM_L1_Zone05_Changing_Door_W_L",
+    "SM_L1_Zone05_Changing_Door_W_R",
+    "SM_L1_Zone05_Changing_Door_W_T",
+    "SM_L1_Zone05_Changing_Floor",
+    "SM_L1_Zone05_Changing_Wall_E_0",
+    "SM_L1_Zone05_Changing_Wall_N_0",
+    "SM_L1_Zone05_Changing_Wall_S_0",
+    "SM_L1_Zone05_Changing_Wall_S_1",
+    "SM_L1_Zone05_Changing_Wall_S_2",
+    "SM_L1_Zone05_Changing_Wall_S_3",
+    "SM_L1_Zone05_Changing_Wall_S_4",
+    "SM_L1_Zone05_Changing_Wall_W_0",
+    "SM_L1_Zone05_Changing_Wall_W_1",
+    "SM_L1_Zone05_Changing_Wall_W_2"
+  ],
+  "strays": [],
+  "shared_boundaries": [
+    "El lado este de Aseo comparte el muro oeste de Vestuarios (SM_L1_Zone05_Changing_Wall_W_*); se exporta solo aqui."
+  ],
+  "blocked_elements": [
+    {
+      "objects": [
+        "SM_L1_Conn_ChangingConnector_Ceiling",
+        "SM_L1_Conn_ChangingConnector_Wall_W_0"
+      ],
+      "reason_es": "Pasillo corredor-Vestuarios incompleto: solo existen techo y muro oeste. No hay suelo ni muro este blockout; el suelo y el muro central x=46 son kit hero de Z10 (L1_KIT_PILOT) ya exportado en z10_conector.glb. Exportarlo duplicaria techo/muro sobre arte hero."
+    }
+  ],
+  "glb": {
+    "bytes": 32372,
+    "meshes": 25,
+    "mesh_nodes": 25,
+    "nodes": 26,
+    "scenes": 1,
+    "scene_index": 0,
+    "materials": 7,
+    "images": 0,
+    "tris": 300,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "root_nodes": [
+      "FM_L1_BLOCKOUT_LOCKERS"
+    ],
+    "root_node_ok": true,
+    "aabb_gltf_min": [
+      29.804,
+      -0.2,
+      -64.15
+    ],
+    "aabb_gltf_max": [
+      60.15,
+      4.5,
+      -39.82
+    ],
+    "aabb_godot_position": [
+      29.804,
+      -0.2,
+      -64.15
+    ],
+    "aabb_godot_size": [
+      30.346,
+      4.7,
+      24.33
+    ],
+    "forbidden_nodes": [],
+    "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_lockers.glb"
+  }
+}

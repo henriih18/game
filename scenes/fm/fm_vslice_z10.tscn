@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_vslice_z10.gd" id="1_slice"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_z10_art_r8.tscn" id="2_z10"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_reception_art_r9.tscn" id="3_reception"]
+
+[node name="FMVSliceZ10" type="Node3D"]
+script = ExtResource("1_slice")
+
+[node name="Z10Art" parent="." instance=ExtResource("2_z10")]
+
+[node name="ReceptionArt" parent="." instance=ExtResource("3_reception")]

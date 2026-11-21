@@ -1,0 +1,153 @@
+{
+  "panel": "PROP_Z10_SVC_EastCompletion",
+  "panel_cut_ok": true,
+  "panel_stats": {
+    "tris": 284,
+    "verts": 148,
+    "non_manifold_edges": 0,
+    "degenerate_faces": 0,
+    "uv": true
+  },
+  "retired_sleeves": [
+    "KIT_PILOT_Z10_Sleeve_00",
+    "KIT_PILOT_Z10_Sleeve_01"
+  ],
+  "objects": {
+    "P0B4_CONDUIT_CLAMP_01": {
+      "tris": 12,
+      "verts": 8,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_CONDUIT_CLAMP_02": {
+      "tris": 12,
+      "verts": 8,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_CONDUIT_E_DOOR": {
+      "tris": 428,
+      "verts": 216,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_01": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_02": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_03": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_04": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_HVAC_RUN_800x600": {
+      "tris": 9564,
+      "verts": 5032,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_HVAC_E": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_HVAC_W": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_SPR_E": {
+      "tris": 7916,
+      "verts": 3992,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_SPR_W": {
+      "tris": 7916,
+      "verts": 3992,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SPRINKLER_HEADS": {
+      "tris": 4960,
+      "verts": 2520,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SPRINKLER_RUN_DN80": {
+      "tris": 5218,
+      "verts": 2700,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORTS_HVAC": {
+      "tris": 2598,
+      "verts": 1368,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORTS_SPRINKLER": {
+      "tris": 1540,
+      "verts": 800,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORT_EXTENSIONS": {
+      "tris": 96,
+      "verts": 64,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  },
+  "object_count": 17,
+  "total_tris": 62156,
+  "bbox_min": [
+    40.0105,
+    16.8751,
+    3.0612
+  ],
+  "bbox_max": [
+    62.0095,
+    24.0,
+    4.19
+  ],
+  "checks": {
+    "non_manifold_total": 0,
+    "degenerate_total": 0,
+    "uv_missing": []
+  }
+}

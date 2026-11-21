@@ -1,0 +1,2559 @@
+{
+  "visible_materials": 77,
+  "visible_unique_image_files": 161,
+  "visible_unique_rgba_mip_bytes": 2616197067,
+  "visible_images": [
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "barrel_03_diff.png.002",
+        "barrel_03_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "barrel_03_diff.png.002",
+        "barrel_03_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "barrel_03_metal.png.002",
+        "barrel_03_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "barrel_03_metal.png.002",
+        "barrel_03_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "barrel_03_nor_gl.png.002",
+        "barrel_03_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "barrel_03_nor_gl.png.002",
+        "barrel_03_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_rough_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "barrel_03_rough.png.002",
+        "barrel_03_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "barrel_03_rough.png.002",
+        "barrel_03_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_office_desk_diff.png.002",
+        "metal_office_desk_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "metal_office_desk_diff.png.002",
+        "metal_office_desk_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_office_desk_metal.png.002",
+        "metal_office_desk_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "metal_office_desk_metal.png.002",
+        "metal_office_desk_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_office_desk_nor_gl.png.002",
+        "metal_office_desk_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "metal_office_desk_nor_gl.png.002",
+        "metal_office_desk_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_office_desk_rough.png.002",
+        "metal_office_desk_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "metal_office_desk_rough.png.002",
+        "metal_office_desk_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "SchoolChair_01_diff.png.002",
+        "SchoolChair_01_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "SchoolChair_01_diff.png.002",
+        "SchoolChair_01_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_metallic_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "SchoolChair_01_metallic.png.002",
+        "SchoolChair_01_metallic.png.002"
+      ],
+      "visible_datablocks": [
+        "SchoolChair_01_metallic.png.002",
+        "SchoolChair_01_metallic.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "SchoolChair_01_nor_gl.png.002",
+        "SchoolChair_01_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "SchoolChair_01_nor_gl.png.002",
+        "SchoolChair_01_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_roughness_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "SchoolChair_01_roughness.png.002",
+        "SchoolChair_01_roughness.png.002"
+      ],
+      "visible_datablocks": [
+        "SchoolChair_01_roughness.png.002",
+        "SchoolChair_01_roughness.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "tool_cart_diff.png.002",
+        "tool_cart_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "tool_cart_diff.png.002",
+        "tool_cart_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "tool_cart_metal.png.002",
+        "tool_cart_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "tool_cart_metal.png.002",
+        "tool_cart_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "tool_cart_nor_gl.png.002",
+        "tool_cart_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "tool_cart_nor_gl.png.002",
+        "tool_cart_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "tool_cart_rough.png.002",
+        "tool_cart_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "tool_cart_rough.png.002",
+        "tool_cart_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_crate_02_diff.png.002",
+        "wooden_crate_02_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "wooden_crate_02_diff.png.002",
+        "wooden_crate_02_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_crate_02_metal.png.002",
+        "wooden_crate_02_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "wooden_crate_02_metal.png.002",
+        "wooden_crate_02_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_crate_02_nor_gl.png.002",
+        "wooden_crate_02_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "wooden_crate_02_nor_gl.png.002",
+        "wooden_crate_02_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_crate_02_rough.png.002",
+        "wooden_crate_02_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "wooden_crate_02_rough.png.002",
+        "wooden_crate_02_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/texturas/Hormigon y cemento/worn_concrete_floor_2k.blend/textures/worn_concrete_floor_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "worn_concrete_floor_diff_2k.jpg"
+      ],
+      "visible_datablocks": [
+        "worn_concrete_floor_diff_2k.jpg"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/texturas/Hormigon y cemento/worn_concrete_floor_2k.blend/textures/worn_concrete_floor_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "worn_concrete_floor_nor_gl_2k.exr"
+      ],
+      "visible_datablocks": [
+        "worn_concrete_floor_nor_gl_2k.exr"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/texturas/Hormigon y cemento/worn_concrete_floor_2k.blend/textures/worn_concrete_floor_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "worn_concrete_floor_rough_2k.exr"
+      ],
+      "visible_datablocks": [
+        "worn_concrete_floor_rough_2k.exr"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Barrel_02_2k.blend/textures/Barrel_02_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Barrel_02_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "Barrel_02_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Barrel_02_2k.blend/textures/Barrel_02_metallic_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Barrel_02_metallic.png.001"
+      ],
+      "visible_datablocks": [
+        "Barrel_02_metallic.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Barrel_02_2k.blend/textures/Barrel_02_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Barrel_02_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "Barrel_02_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Barrel_02_2k.blend/textures/Barrel_02_roughness_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Barrel_02_roughness.png.001"
+      ],
+      "visible_datablocks": [
+        "Barrel_02_roughness.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/caged_hanging_light_2k.blend/textures/caged_hanging_light_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "caged_hanging_light_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "caged_hanging_light_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/caged_hanging_light_2k.blend/textures/caged_hanging_light_emissive_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "caged_hanging_light_emissive.png.001"
+      ],
+      "visible_datablocks": [
+        "caged_hanging_light_emissive.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/caged_hanging_light_2k.blend/textures/caged_hanging_light_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "caged_hanging_light_metal.png.001"
+      ],
+      "visible_datablocks": [
+        "caged_hanging_light_metal.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/caged_hanging_light_2k.blend/textures/caged_hanging_light_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "caged_hanging_light_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "caged_hanging_light_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/caged_hanging_light_2k.blend/textures/caged_hanging_light_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "caged_hanging_light_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "caged_hanging_light_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/cardboard_box_01_2k.blend/textures/cardboard_box_01_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "cardboard_box_01_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "cardboard_box_01_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/cardboard_box_01_2k.blend/textures/cardboard_box_01_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "cardboard_box_01_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "cardboard_box_01_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/cardboard_box_01_2k.blend/textures/cardboard_box_01_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "cardboard_box_01_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "cardboard_box_01_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/fire_alarm_2k.blend/textures/fire_alarm_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "fire_alarm_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "fire_alarm_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/fire_alarm_2k.blend/textures/fire_alarm_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "fire_alarm_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "fire_alarm_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/fire_alarm_2k.blend/textures/fire_alarm_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "fire_alarm_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "fire_alarm_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/fire_alarm_2k.blend/textures/fire_alarm_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "fire_alarm_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "fire_alarm_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_pastic_container_2k.blend/textures/industrial_pastic_container_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pastic_container_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_pastic_container_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_pastic_container_2k.blend/textures/industrial_pastic_container_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pastic_container_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_pastic_container_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_pastic_container_2k.blend/textures/industrial_pastic_container_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pastic_container_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_pastic_container_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_pastic_container_2k.blend/textures/industrial_pastic_container_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pastic_container_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_pastic_container_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/industrial_pipe_lamp_2k.blend/textures/industrial_pipe_lamp_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pipe_lamp_diff.png"
+      ],
+      "visible_datablocks": [
+        "industrial_pipe_lamp_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/industrial_pipe_lamp_2k.blend/textures/industrial_pipe_lamp_emission_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pipe_lamp_emission.png"
+      ],
+      "visible_datablocks": [
+        "industrial_pipe_lamp_emission.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/industrial_pipe_lamp_2k.blend/textures/industrial_pipe_lamp_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pipe_lamp_metal.png"
+      ],
+      "visible_datablocks": [
+        "industrial_pipe_lamp_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/industrial_pipe_lamp_2k.blend/textures/industrial_pipe_lamp_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pipe_lamp_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "industrial_pipe_lamp_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/industrial_pipe_lamp_2k.blend/textures/industrial_pipe_lamp_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_pipe_lamp_rough.png"
+      ],
+      "visible_datablocks": [
+        "industrial_pipe_lamp_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_storage_cart_diff.png.002",
+        "industrial_storage_cart_diff.png.003"
+      ],
+      "visible_datablocks": [
+        "industrial_storage_cart_diff.png.002",
+        "industrial_storage_cart_diff.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_storage_cart_metal.png.002",
+        "industrial_storage_cart_metal.png.003"
+      ],
+      "visible_datablocks": [
+        "industrial_storage_cart_metal.png.002",
+        "industrial_storage_cart_metal.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_storage_cart_nor_gl.png.002",
+        "industrial_storage_cart_nor_gl.png.003"
+      ],
+      "visible_datablocks": [
+        "industrial_storage_cart_nor_gl.png.002",
+        "industrial_storage_cart_nor_gl.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "industrial_storage_cart_rough.png.002",
+        "industrial_storage_cart_rough.png.003"
+      ],
+      "visible_datablocks": [
+        "industrial_storage_cart_rough.png.002",
+        "industrial_storage_cart_rough.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_body_diff_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_body_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_body_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_body_metal_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_body_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_body_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_body_nor_gl_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_body_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_body_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_body_rough_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_body_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_body_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_glass_diff_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_glass_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_glass_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_glass_metal_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_glass_metal.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_glass_metal.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_glass_nor_gl_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_glass_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_glass_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_glass_rough_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_glass_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_glass_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_paper_diff_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_paper_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_paper_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_paper_metal_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_paper_metal.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_paper_metal.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_paper_nor_gl_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_paper_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_paper_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_paper_opacity_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_paper_opacity.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_paper_opacity.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/korean_fire_extinguisher_01_2k.blend/textures/korean_fire_extinguisher_01_paper_rough_2k.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "korean_fire_extinguisher_01_paper_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "korean_fire_extinguisher_01_paper_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/metal_toolbox_2k.blend/textures/metal_toolbox_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_toolbox_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "metal_toolbox_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/metal_toolbox_2k.blend/textures/metal_toolbox_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_toolbox_metal.png.001"
+      ],
+      "visible_datablocks": [
+        "metal_toolbox_metal.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/metal_toolbox_2k.blend/textures/metal_toolbox_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_toolbox_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "metal_toolbox_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/metal_toolbox_2k.blend/textures/metal_toolbox_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "metal_toolbox_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "metal_toolbox_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/plastic_bottle_gallon_2k.blend/textures/plastic_bottle_gallon_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "plastic_bottle_gallon_diff.png"
+      ],
+      "visible_datablocks": [
+        "plastic_bottle_gallon_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/plastic_bottle_gallon_2k.blend/textures/plastic_bottle_gallon_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "plastic_bottle_gallon_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "plastic_bottle_gallon_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/plastic_bottle_gallon_2k.blend/textures/plastic_bottle_gallon_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "plastic_bottle_gallon_rough.png"
+      ],
+      "visible_datablocks": [
+        "plastic_bottle_gallon_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/pliers_2k.blend/textures/pliers_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "pliers_diff.png"
+      ],
+      "visible_datablocks": [
+        "pliers_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/pliers_2k.blend/textures/pliers_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "pliers_metal.png"
+      ],
+      "visible_datablocks": [
+        "pliers_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/pliers_2k.blend/textures/pliers_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "pliers_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "pliers_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/pliers_2k.blend/textures/pliers_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "pliers_rough.png"
+      ],
+      "visible_datablocks": [
+        "pliers_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/power_box_01_2k.blend/textures/power_box_01_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "power_box_01_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "power_box_01_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/power_box_01_2k.blend/textures/power_box_01_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "power_box_01_metal.png.001"
+      ],
+      "visible_datablocks": [
+        "power_box_01_metal.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/power_box_01_2k.blend/textures/power_box_01_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "power_box_01_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "power_box_01_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/power_box_01_2k.blend/textures/power_box_01_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "power_box_01_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "power_box_01_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Television_01_2k.blend/textures/Television_01_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Television_01_diff.png"
+      ],
+      "visible_datablocks": [
+        "Television_01_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Television_01_2k.blend/textures/Television_01_metallic_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Television_01_metallic.png"
+      ],
+      "visible_datablocks": [
+        "Television_01_metallic.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Television_01_2k.blend/textures/Television_01_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Television_01_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "Television_01_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/Television_01_2k.blend/textures/Television_01_roughness_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "Television_01_roughness.png"
+      ],
+      "visible_datablocks": [
+        "Television_01_roughness.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/television_02_2k.blend/textures/television_02_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "television_02_diff.png"
+      ],
+      "visible_datablocks": [
+        "television_02_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/television_02_2k.blend/textures/television_02_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "television_02_metal.png"
+      ],
+      "visible_datablocks": [
+        "television_02_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/television_02_2k.blend/textures/television_02_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "television_02_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "television_02_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/television_02_2k.blend/textures/television_02_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "television_02_rough.png"
+      ],
+      "visible_datablocks": [
+        "television_02_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_01_2k.blend/textures/utility_box_01_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_01_diff.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_01_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_01_2k.blend/textures/utility_box_01_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_01_metal.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_01_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_01_2k.blend/textures/utility_box_01_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_01_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_01_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_01_2k.blend/textures/utility_box_01_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_01_rough.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_01_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_02_2k.blend/textures/utility_box_02_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_02_diff.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_02_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_02_2k.blend/textures/utility_box_02_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_02_metal.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_02_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_02_2k.blend/textures/utility_box_02_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_02_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_02_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/utility_box_02_2k.blend/textures/utility_box_02_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "utility_box_02_rough.png"
+      ],
+      "visible_datablocks": [
+        "utility_box_02_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/vintage_stapler_2k.blend/textures/vintage_stapler_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "vintage_stapler_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "vintage_stapler_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/vintage_stapler_2k.blend/textures/vintage_stapler_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "vintage_stapler_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "vintage_stapler_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/vintage_stapler_2k.blend/textures/vintage_stapler_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "vintage_stapler_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "vintage_stapler_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/vintage_stapler_2k.blend/textures/vintage_stapler_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "vintage_stapler_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "vintage_stapler_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/wooden_hammer_01_2k.blend/textures/wooden_hammer_01_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_hammer_01_diff.png"
+      ],
+      "visible_datablocks": [
+        "wooden_hammer_01_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/wooden_hammer_01_2k.blend/textures/wooden_hammer_01_metal_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_hammer_01_metal.png"
+      ],
+      "visible_datablocks": [
+        "wooden_hammer_01_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/wooden_hammer_01_2k.blend/textures/wooden_hammer_01_nor_gl_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_hammer_01_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "wooden_hammer_01_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Infraestructura industrial y mantenimiento/wooden_hammer_01_2k.blend/textures/wooden_hammer_01_rough_2k.exr",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 22369621,
+      "datablocks": [
+        "wooden_hammer_01_rough.png"
+      ],
+      "visible_datablocks": [
+        "wooden_hammer_01_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/concrete_wall_albedo.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "concrete_wall_albedo.png"
+      ],
+      "visible_datablocks": [
+        "concrete_wall_albedo.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/concrete_wall_normal.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "concrete_wall_normal.png"
+      ],
+      "visible_datablocks": [
+        "concrete_wall_normal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/concrete_wall_roughness.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "concrete_wall_roughness.png"
+      ],
+      "visible_datablocks": [
+        "concrete_wall_roughness.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/metal_panel_albedo.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "metal_panel_albedo.png"
+      ],
+      "visible_datablocks": [
+        "metal_panel_albedo.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/metal_panel_normal.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "metal_panel_normal.png"
+      ],
+      "visible_datablocks": [
+        "metal_panel_normal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/metal_panel_roughness.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "metal_panel_roughness.png"
+      ],
+      "visible_datablocks": [
+        "metal_panel_roughness.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/trashbag_1k.blend/textures/trashbag_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "trashbag_diff.png.002",
+        "trashbag_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "trashbag_diff.png.002",
+        "trashbag_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/trashbag_1k.blend/textures/trashbag_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "trashbag_nor_gl.png.002",
+        "trashbag_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "trashbag_nor_gl.png.002",
+        "trashbag_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/trashbag_1k.blend/textures/trashbag_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "trashbag_rough.png.002",
+        "trashbag_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "trashbag_rough.png.002",
+        "trashbag_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "WetFloorSign_01_diff.png.002",
+        "WetFloorSign_01_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "WetFloorSign_01_diff.png.002",
+        "WetFloorSign_01_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_metallic_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "WetFloorSign_01_metallic.png.002",
+        "WetFloorSign_01_metallic.png.002"
+      ],
+      "visible_datablocks": [
+        "WetFloorSign_01_metallic.png.002",
+        "WetFloorSign_01_metallic.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "WetFloorSign_01_nor_gl.png.002",
+        "WetFloorSign_01_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "WetFloorSign_01_nor_gl.png.002",
+        "WetFloorSign_01_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_roughness_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "WetFloorSign_01_roughness.png.002",
+        "WetFloorSign_01_roughness.png.002"
+      ],
+      "visible_datablocks": [
+        "WetFloorSign_01_roughness.png.002",
+        "WetFloorSign_01_roughness.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/adjustable_wrench_1k.blend/textures/adjustable_wrench_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "adjustable_wrench_diff.png"
+      ],
+      "visible_datablocks": [
+        "adjustable_wrench_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/adjustable_wrench_1k.blend/textures/adjustable_wrench_metal_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "adjustable_wrench_metal.png"
+      ],
+      "visible_datablocks": [
+        "adjustable_wrench_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/adjustable_wrench_1k.blend/textures/adjustable_wrench_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "adjustable_wrench_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "adjustable_wrench_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/adjustable_wrench_1k.blend/textures/adjustable_wrench_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "adjustable_wrench_rough.png"
+      ],
+      "visible_datablocks": [
+        "adjustable_wrench_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/clipboard_1k.blend/textures/clipboard_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "clipboard_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "clipboard_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/clipboard_1k.blend/textures/clipboard_metal_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "clipboard_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "clipboard_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/clipboard_1k.blend/textures/clipboard_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "clipboard_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "clipboard_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/clipboard_1k.blend/textures/clipboard_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "clipboard_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "clipboard_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/fishermans_hat_1k.blend/textures/fishermans_hat_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "fishermans_hat_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "fishermans_hat_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/fishermans_hat_1k.blend/textures/fishermans_hat_metal_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "fishermans_hat_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "fishermans_hat_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/fishermans_hat_1k.blend/textures/fishermans_hat_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "fishermans_hat_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "fishermans_hat_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/fishermans_hat_1k.blend/textures/fishermans_hat_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "fishermans_hat_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "fishermans_hat_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/garden_gloves_01_1k.blend/textures/garden_gloves_01_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "garden_gloves_01_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "garden_gloves_01_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/garden_gloves_01_1k.blend/textures/garden_gloves_01_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "garden_gloves_01_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "garden_gloves_01_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/garden_gloves_01_1k.blend/textures/garden_gloves_01_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "garden_gloves_01_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "garden_gloves_01_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "industrial_wall_lamp_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_emissive_1k.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "industrial_wall_lamp_emissive.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_emissive.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_diff_1k.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "industrial_wall_lamp_glass_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_glass_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_nor_gl_1k.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "industrial_wall_lamp_glass_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_glass_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "industrial_wall_lamp_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "industrial_wall_lamp_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_container_1k.blend/textures/plastic_container_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_container_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "plastic_container_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_container_1k.blend/textures/plastic_container_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_container_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "plastic_container_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_container_1k.blend/textures/plastic_container_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_container_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "plastic_container_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_crate_01_1k.blend/textures/plastic_crate_01_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_crate_01_diff.png.001"
+      ],
+      "visible_datablocks": [
+        "plastic_crate_01_diff.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_crate_01_1k.blend/textures/plastic_crate_01_metal_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_crate_01_metal.png.001"
+      ],
+      "visible_datablocks": [
+        "plastic_crate_01_metal.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_crate_01_1k.blend/textures/plastic_crate_01_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_crate_01_nor_gl.png.001"
+      ],
+      "visible_datablocks": [
+        "plastic_crate_01_nor_gl.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/plastic_crate_01_1k.blend/textures/plastic_crate_01_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "plastic_crate_01_rough.png.001"
+      ],
+      "visible_datablocks": [
+        "plastic_crate_01_rough.png.001"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/screwdriver_1k.blend/textures/screwdriver_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "screwdriver_diff.png"
+      ],
+      "visible_datablocks": [
+        "screwdriver_diff.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/screwdriver_1k.blend/textures/screwdriver_metal_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "screwdriver_metal.png"
+      ],
+      "visible_datablocks": [
+        "screwdriver_metal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/screwdriver_1k.blend/textures/screwdriver_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "screwdriver_nor_gl.png"
+      ],
+      "visible_datablocks": [
+        "screwdriver_nor_gl.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/screwdriver_1k.blend/textures/screwdriver_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "screwdriver_rough.png"
+      ],
+      "visible_datablocks": [
+        "screwdriver_rough.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wall_clock_1k.blend/textures/wall_clock_diff_1k.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "wall_clock_diff.png.002"
+      ],
+      "visible_datablocks": [
+        "wall_clock_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wall_clock_1k.blend/textures/wall_clock_glass_alpha_1k.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "wall_clock_glass_alpha.png.002"
+      ],
+      "visible_datablocks": [
+        "wall_clock_glass_alpha.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wall_clock_1k.blend/textures/wall_clock_glass_rough_1k.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "wall_clock_glass_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "wall_clock_glass_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wall_clock_1k.blend/textures/wall_clock_metal_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "wall_clock_metal.png.002"
+      ],
+      "visible_datablocks": [
+        "wall_clock_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wall_clock_1k.blend/textures/wall_clock_nor_gl_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "wall_clock_nor_gl.png.002"
+      ],
+      "visible_datablocks": [
+        "wall_clock_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wall_clock_1k.blend/textures/wall_clock_rough_1k.exr",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 5592405,
+      "datablocks": [
+        "wall_clock_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "wall_clock_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/rust_albedo.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 1398101,
+      "datablocks": [
+        "rust_albedo.png"
+      ],
+      "visible_datablocks": [
+        "rust_albedo.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/rust_normal.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 1398101,
+      "datablocks": [
+        "rust_normal.png"
+      ],
+      "visible_datablocks": [
+        "rust_normal.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/rust_roughness.png",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 1398101,
+      "datablocks": [
+        "rust_roughness.png"
+      ],
+      "visible_datablocks": [
+        "rust_roughness.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/art/fm/screen_scan.png",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 349525,
+      "datablocks": [
+        "screen_scan.png"
+      ],
+      "visible_datablocks": [
+        "screen_scan.png"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_alpha_1k.png",
+      "size": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "datablocks": [
+        "industrial_wall_lamp_glass_alpha.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_glass_alpha.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_rough_1k.png",
+      "size": [
+        0,
+        0
+      ],
+      "bytes": 0,
+      "datablocks": [
+        "industrial_wall_lamp_glass_rough.png.002"
+      ],
+      "visible_datablocks": [
+        "industrial_wall_lamp_glass_rough.png.002"
+      ]
+    }
+  ],
+  "duplicate_image_paths": [
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_diff_2k.jpg",
+      "names": [
+        "barrel_03_diff.png.002",
+        "barrel_03_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_metal_2k.exr",
+      "names": [
+        "barrel_03_metal.png.002",
+        "barrel_03_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_nor_gl_2k.exr",
+      "names": [
+        "barrel_03_nor_gl.png.002",
+        "barrel_03_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/barrel_03_2k.blend/textures/barrel_03_rough_2k.jpg",
+      "names": [
+        "barrel_03_rough.png.002",
+        "barrel_03_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_diff_2k.jpg",
+      "names": [
+        "metal_office_desk_diff.png.002",
+        "metal_office_desk_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_metal_2k.exr",
+      "names": [
+        "metal_office_desk_metal.png.002",
+        "metal_office_desk_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_nor_gl_2k.exr",
+      "names": [
+        "metal_office_desk_nor_gl.png.002",
+        "metal_office_desk_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/metal_office_desk_2k.blend/textures/metal_office_desk_rough_2k.exr",
+      "names": [
+        "metal_office_desk_rough.png.002",
+        "metal_office_desk_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_diff_2k.jpg",
+      "names": [
+        "SchoolChair_01_diff.png.002",
+        "SchoolChair_01_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_metallic_2k.exr",
+      "names": [
+        "SchoolChair_01_metallic.png.002",
+        "SchoolChair_01_metallic.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_nor_gl_2k.exr",
+      "names": [
+        "SchoolChair_01_nor_gl.png.002",
+        "SchoolChair_01_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/SchoolChair_01_2k.blend/textures/SchoolChair_01_roughness_2k.jpg",
+      "names": [
+        "SchoolChair_01_roughness.png.002",
+        "SchoolChair_01_roughness.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_diff_2k.jpg",
+      "names": [
+        "tool_cart_diff.png.002",
+        "tool_cart_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_metal_2k.exr",
+      "names": [
+        "tool_cart_metal.png.002",
+        "tool_cart_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_nor_gl_2k.exr",
+      "names": [
+        "tool_cart_nor_gl.png.002",
+        "tool_cart_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/tool_cart_2k.blend/textures/tool_cart_rough_2k.exr",
+      "names": [
+        "tool_cart_rough.png.002",
+        "tool_cart_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/trashbag_1k.blend/textures/trashbag_diff_1k.jpg",
+      "names": [
+        "trashbag_diff.png.002",
+        "trashbag_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/trashbag_1k.blend/textures/trashbag_nor_gl_1k.exr",
+      "names": [
+        "trashbag_nor_gl.png.002",
+        "trashbag_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/trashbag_1k.blend/textures/trashbag_rough_1k.exr",
+      "names": [
+        "trashbag_rough.png.002",
+        "trashbag_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_diff_1k.jpg",
+      "names": [
+        "WetFloorSign_01_diff.png.002",
+        "WetFloorSign_01_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_metallic_1k.exr",
+      "names": [
+        "WetFloorSign_01_metallic.png.002",
+        "WetFloorSign_01_metallic.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_nor_gl_1k.exr",
+      "names": [
+        "WetFloorSign_01_nor_gl.png.002",
+        "WetFloorSign_01_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Puertas, ventanas y arquitectura/WetFloorSign_01_1k.blend/textures/WetFloorSign_01_roughness_1k.jpg",
+      "names": [
+        "WetFloorSign_01_roughness.png.002",
+        "WetFloorSign_01_roughness.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_diff_2k.jpg",
+      "names": [
+        "wooden_crate_02_diff.png.002",
+        "wooden_crate_02_diff.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_metal_2k.exr",
+      "names": [
+        "wooden_crate_02_metal.png.002",
+        "wooden_crate_02_metal.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_nor_gl_2k.exr",
+      "names": [
+        "wooden_crate_02_nor_gl.png.002",
+        "wooden_crate_02_nor_gl.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Objetos pequeños y narrativa ambiental/wooden_crate_02_2k.blend/textures/wooden_crate_02_rough_2k.exr",
+      "names": [
+        "wooden_crate_02_rough.png.002",
+        "wooden_crate_02_rough.png.002"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_diff_2k.jpg",
+      "names": [
+        "industrial_storage_cart_diff.png.002",
+        "industrial_storage_cart_diff.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_metal_2k.exr",
+      "names": [
+        "industrial_storage_cart_metal.png.002",
+        "industrial_storage_cart_metal.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_nor_gl_2k.exr",
+      "names": [
+        "industrial_storage_cart_nor_gl.png.002",
+        "industrial_storage_cart_nor_gl.png.003"
+      ]
+    },
+    {
+      "path": "/home/riyo/Documentos/game/assets/Modelos 3D/Mobiliario y almacenamiento/industrial_storage_cart_2k.blend/textures/industrial_storage_cart_rough_2k.exr",
+      "names": [
+        "industrial_storage_cart_rough.png.002",
+        "industrial_storage_cart_rough.png.003"
+      ]
+    }
+  ],
+  "hidden_asset_roots": [
+    {
+      "name": "NEXUS_ASSET_L1_REC_COFFEE_CART_ROOT",
+      "source": "CoffeeCart_01_4k",
+      "children": 3
+    },
+    {
+      "name": "NEXUS_ASSET_L1_OFFICE_LAPTOP_ROOT",
+      "source": "classic_laptop_2k",
+      "children": 3
+    },
+    {
+      "name": "NEXUS_ASSET_L1_REST_CLEANER_TIN_ROOT",
+      "source": "cleaner_tin_01_1k",
+      "children": 1
+    }
+  ]
+}

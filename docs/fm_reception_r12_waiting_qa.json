@@ -1,0 +1,55 @@
+{
+  "collection": "L1_RECEPTION_R12_HERO",
+  "retired": [
+    "PROP_REC02_Bench_A_Seat",
+    "PROP_REC02_Bench_A_Back",
+    "PROP_REC02_Bench_A_Leg",
+    "PROP_REC02_Bench_A_Leg.001",
+    "PROP_REC02_Bench_A_Leg.002",
+    "PROP_REC02_Bench_A_Leg.003",
+    "PROP_REC02_Bench_B_Seat",
+    "PROP_REC02_Bench_B_Back",
+    "PROP_REC02_Bench_B_Leg",
+    "PROP_REC02_Bench_B_Leg.001",
+    "PROP_REC02_Bench_B_Leg.002",
+    "PROP_REC02_Bench_B_Leg.003",
+    "PROP_REC02_Table_Top",
+    "PROP_REC02_Table_Leg",
+    "PROP_REC02_Table_Leg.001",
+    "PROP_REC02_Table_Leg.002",
+    "PROP_REC02_Table_Leg.003",
+    "PROP_REC02_Waiting_Planter",
+    "PROP_REC02_Waiting_PlanterSoil"
+  ],
+  "objects": {
+    "REC12_BENCH_A": {
+      "tris": 5200,
+      "verts": 2672,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "REC12_BENCH_B": {
+      "tris": 5200,
+      "verts": 2672,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "REC12_TABLE": {
+      "tris": 1424,
+      "verts": 744,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "REC12_PLANTER": {
+      "tris": 3992,
+      "verts": 2056,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  },
+  "qa_pass": true
+}

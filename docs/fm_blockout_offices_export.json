@@ -1,0 +1,138 @@
+{
+  "room_id": "offices",
+  "title_es": "Oficinas / administracion",
+  "function_es": "Area administrativa: 45 x 40 m, 4,5 m de altura, seis columnas, acceso norte-sur desde el corredor y puerta este al enlace de Aseo.",
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_offices.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "prefixes": [
+    "SM_L1_Zone08_Offices_",
+    "SM_L1_Column_Offices_",
+    "SM_L1_Conn_OfficesConnector_"
+  ],
+  "collections": [
+    "L1_ARCH_CEILINGS",
+    "L1_ARCH_CIRCULATION",
+    "L1_ARCH_COLUMNS",
+    "L1_ARCH_ZONES"
+  ],
+  "objects": 30,
+  "unique_meshes": 30,
+  "tris_blender": 360,
+  "materials": 8,
+  "material_names": [
+    "M_L1_Ceiling_Blockout.009",
+    "M_L1_Column_Steel.010",
+    "M_L1_Corridor_Floor.010",
+    "M_L1_Door_Frame.010",
+    "M_L1_Wall_Blockout",
+    "M_L1_Wall_Blockout.010",
+    "M_L1_Wall_Corridor.010",
+    "M_L1_Zone_Offices.010"
+  ],
+  "images": 0,
+  "image_names": [],
+  "shell": {
+    "floor": true,
+    "ceiling": true,
+    "wall_pieces": 14,
+    "door_pieces": 6
+  },
+  "aabb_blender": [
+    [
+      -30.15,
+      4.0,
+      -0.2
+    ],
+    [
+      15.19,
+      70.15,
+      4.5
+    ]
+  ],
+  "aabb_godot_position": [
+    -30.15,
+    -0.2,
+    -70.15
+  ],
+  "aabb_godot_size": [
+    45.34,
+    4.7,
+    66.15
+  ],
+  "names": [
+    "SM_L1_Column_Offices_0_0",
+    "SM_L1_Column_Offices_0_1",
+    "SM_L1_Column_Offices_1_0",
+    "SM_L1_Column_Offices_1_1",
+    "SM_L1_Column_Offices_2_0",
+    "SM_L1_Column_Offices_2_1",
+    "SM_L1_Conn_OfficesConnector_Ceiling",
+    "SM_L1_Conn_OfficesConnector_Floor",
+    "SM_L1_Conn_OfficesConnector_Wall_E_0",
+    "SM_L1_Conn_OfficesConnector_Wall_W_0",
+    "SM_L1_Zone08_Offices_Ceiling",
+    "SM_L1_Zone08_Offices_Door_E_L",
+    "SM_L1_Zone08_Offices_Door_E_R",
+    "SM_L1_Zone08_Offices_Door_E_T",
+    "SM_L1_Zone08_Offices_Door_S_L",
+    "SM_L1_Zone08_Offices_Door_S_R",
+    "SM_L1_Zone08_Offices_Door_S_T",
+    "SM_L1_Zone08_Offices_Floor",
+    "SM_L1_Zone08_Offices_Wall_E_0",
+    "SM_L1_Zone08_Offices_Wall_E_1",
+    "SM_L1_Zone08_Offices_Wall_E_2",
+    "SM_L1_Zone08_Offices_Wall_N_0",
+    "SM_L1_Zone08_Offices_Wall_S_0",
+    "SM_L1_Zone08_Offices_Wall_S_1",
+    "SM_L1_Zone08_Offices_Wall_S_2",
+    "SM_L1_Zone08_Offices_Wall_W_0a",
+    "SM_L1_Zone08_Offices_Wall_W_0b",
+    "SM_L1_Zone08_Offices_Wall_W_0c",
+    "SM_L1_Zone08_Offices_Wall_W_1",
+    "SM_L1_Zone08_Offices_Wall_W_2"
+  ],
+  "strays": [],
+  "shared_boundaries": [],
+  "blocked_elements": [],
+  "glb": {
+    "bytes": 38360,
+    "meshes": 30,
+    "mesh_nodes": 30,
+    "nodes": 31,
+    "scenes": 1,
+    "scene_index": 0,
+    "materials": 8,
+    "images": 0,
+    "tris": 360,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "root_nodes": [
+      "FM_L1_BLOCKOUT_OFFICES"
+    ],
+    "root_node_ok": true,
+    "aabb_gltf_min": [
+      -30.15,
+      -0.2,
+      -70.15
+    ],
+    "aabb_gltf_max": [
+      15.19,
+      4.5,
+      -4.0
+    ],
+    "aabb_godot_position": [
+      -30.15,
+      -0.2,
+      -70.15
+    ],
+    "aabb_godot_size": [
+      45.34,
+      4.7,
+      66.15
+    ],
+    "forbidden_nodes": [],
+    "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_offices.glb"
+  }
+}

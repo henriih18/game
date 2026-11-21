@@ -1,0 +1,161 @@
+{
+  "room_id": "stairs_main",
+  "title_es": "Escaleras principales",
+  "function_es": "Nucleo vertical principal de 20 x 20 m y 7 m de altura: 24 peldaños que descienden 4,5 m hasta la meseta del Nivel 2, con foso, cuatro franjas de suelo y pasillo de acceso al corredor.",
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_stairs_main.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "prefixes": [
+    "SM_L1_Stair_Main_",
+    "SM_L1_Zone11_MainStairs_",
+    "SM_L1_Conn_StairsConnector_"
+  ],
+  "collections": [
+    "L1_ARCH_ALTERNATE",
+    "L1_ARCH_CEILINGS",
+    "L1_ARCH_CIRCULATION",
+    "L1_ARCH_CORES",
+    "L1_ARCH_ZONES"
+  ],
+  "objects": 50,
+  "unique_meshes": 50,
+  "tris_blender": 600,
+  "materials": 10,
+  "material_names": [
+    "M_L1_Ceiling_Blockout.009",
+    "M_L1_Corridor_Floor.010",
+    "M_L1_Door_Frame",
+    "M_L1_Door_Frame.010",
+    "M_L1_Stair_Concrete",
+    "M_L1_Wall_Blockout",
+    "M_L1_Wall_Blockout.010",
+    "M_L1_Wall_Corridor",
+    "M_L1_Wall_Corridor.010",
+    "M_L1_Zone_MainStairs"
+  ],
+  "images": 0,
+  "image_names": [],
+  "shell": {
+    "floor": true,
+    "ceiling": true,
+    "wall_pieces": 12,
+    "door_pieces": 3
+  },
+  "aabb_blender": [
+    [
+      -12.15,
+      -50.15,
+      -4.8
+    ],
+    [
+      8.15,
+      -4.0,
+      7.0
+    ]
+  ],
+  "aabb_godot_position": [
+    -12.15,
+    -4.8,
+    4.0
+  ],
+  "aabb_godot_size": [
+    20.3,
+    11.8,
+    46.15
+  ],
+  "names": [
+    "SM_L1_Conn_StairsConnector_Ceiling",
+    "SM_L1_Conn_StairsConnector_Floor",
+    "SM_L1_Conn_StairsConnector_Wall_E_0",
+    "SM_L1_Conn_StairsConnector_Wall_E_1",
+    "SM_L1_Conn_StairsConnector_Wall_E_2",
+    "SM_L1_Conn_StairsConnector_Wall_W_0",
+    "SM_L1_Stair_Main_Floor_E",
+    "SM_L1_Stair_Main_Floor_N",
+    "SM_L1_Stair_Main_Floor_S",
+    "SM_L1_Stair_Main_Floor_W",
+    "SM_L1_Stair_Main_LowerLanding",
+    "SM_L1_Stair_Main_Pit_E",
+    "SM_L1_Stair_Main_Pit_S",
+    "SM_L1_Stair_Main_Pit_W",
+    "SM_L1_Stair_Main_Step_00",
+    "SM_L1_Stair_Main_Step_01",
+    "SM_L1_Stair_Main_Step_02",
+    "SM_L1_Stair_Main_Step_03",
+    "SM_L1_Stair_Main_Step_04",
+    "SM_L1_Stair_Main_Step_05",
+    "SM_L1_Stair_Main_Step_06",
+    "SM_L1_Stair_Main_Step_07",
+    "SM_L1_Stair_Main_Step_08",
+    "SM_L1_Stair_Main_Step_09",
+    "SM_L1_Stair_Main_Step_10",
+    "SM_L1_Stair_Main_Step_11",
+    "SM_L1_Stair_Main_Step_12",
+    "SM_L1_Stair_Main_Step_13",
+    "SM_L1_Stair_Main_Step_14",
+    "SM_L1_Stair_Main_Step_15",
+    "SM_L1_Stair_Main_Step_16",
+    "SM_L1_Stair_Main_Step_17",
+    "SM_L1_Stair_Main_Step_18",
+    "SM_L1_Stair_Main_Step_19",
+    "SM_L1_Stair_Main_Step_20",
+    "SM_L1_Stair_Main_Step_21",
+    "SM_L1_Stair_Main_Step_22",
+    "SM_L1_Stair_Main_Step_23",
+    "SM_L1_Zone11_MainStairs_Ceiling",
+    "SM_L1_Zone11_MainStairs_Door_N_L",
+    "SM_L1_Zone11_MainStairs_Door_N_R",
+    "SM_L1_Zone11_MainStairs_Door_N_T",
+    "SM_L1_Zone11_MainStairs_Wall_E_0",
+    "SM_L1_Zone11_MainStairs_Wall_N_0",
+    "SM_L1_Zone11_MainStairs_Wall_N_1",
+    "SM_L1_Zone11_MainStairs_Wall_N_2",
+    "SM_L1_Zone11_MainStairs_Wall_S_0",
+    "SM_L1_Zone11_MainStairs_Wall_W_0",
+    "SM_L1_Zone11_MainStairs_Wall_W_1",
+    "SM_L1_Zone11_MainStairs_Wall_W_2"
+  ],
+  "strays": [],
+  "shared_boundaries": [],
+  "blocked_elements": [],
+  "glb": {
+    "bytes": 62700,
+    "meshes": 50,
+    "mesh_nodes": 50,
+    "nodes": 51,
+    "scenes": 1,
+    "scene_index": 0,
+    "materials": 10,
+    "images": 0,
+    "tris": 600,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "root_nodes": [
+      "FM_L1_BLOCKOUT_STAIRS_MAIN"
+    ],
+    "root_node_ok": true,
+    "aabb_gltf_min": [
+      -12.15,
+      -4.8,
+      4.0
+    ],
+    "aabb_gltf_max": [
+      8.15,
+      7.0,
+      50.15
+    ],
+    "aabb_godot_position": [
+      -12.15,
+      -4.8,
+      4.0
+    ],
+    "aabb_godot_size": [
+      20.3,
+      11.8,
+      46.15
+    ],
+    "forbidden_nodes": [],
+    "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_stairs_main.glb"
+  }
+}

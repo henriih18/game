@@ -1,0 +1,45 @@
+{
+  "collection": "L1_RECEPTION_R10_AGING",
+  "objects": 72,
+  "meshes": 72,
+  "tris": 3096,
+  "decals": 59,
+  "props": 13,
+  "shared_meshes": 13,
+  "materials": [
+    "M_HERO_Concrete",
+    "M_HERO_Galvanized",
+    "M_HERO_Ops_CeilingTile",
+    "M_HERO_Steel_Rust",
+    "M_HERO_Water",
+    "M_R21B_Cable_Black",
+    "M_R21D_ConeOrange",
+    "M_R21D_ConeWhite",
+    "M_REC10_Black",
+    "M_REC10_Chip",
+    "M_REC10_Dust",
+    "M_REC10_Grime",
+    "M_REC10_Manila",
+    "M_REC10_Paper",
+    "M_REC10_Rust",
+    "M_REC10_Scuff",
+    "M_REC10_TapeWorn",
+    "M_REC10_Wet"
+  ],
+  "aabb": [
+    [
+      -109.9800033569336,
+      -39.95000076293945,
+      0.0
+    ],
+    [
+      -70.1449966430664,
+      -8.0,
+      5.191999912261963
+    ]
+  ],
+  "inside_reception": true,
+  "walkway_conflicts": [],
+  "qa_pass": true,
+  "notes": "Desgaste ambiental de Recepci\u00f3n: suciedad perimetral, roces, polvo, chips, \u00f3xido, manchas de techo, papeles y escombros. No toca arquitectura, hero clusters ni el recorrido central."
+}

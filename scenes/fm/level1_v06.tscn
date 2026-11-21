@@ -1,0 +1,94 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_level1_v06.gd" id="1_orchestrator"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_z10_art_r8.tscn" id="2_z10"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_reception_art_r9.tscn" id="3_reception"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_security_art.tscn" id="4_security"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_corridor_art.tscn" id="5_corridor"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_security_access_art.tscn" id="6_security_access"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_control_art.tscn" id="7_control"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_lockers_art.tscn" id="8_lockers"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_warehouse_art.tscn" id="9_warehouse"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_maintenance_art.tscn" id="10_maintenance"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_offices_art.tscn" id="11_offices"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_restroom_art.tscn" id="12_restroom"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_stairs_main_art.tscn" id="13_stairs_main"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_stairs_e1_art.tscn" id="14_stairs_e1"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_blockout_stairs_e2_art.tscn" id="15_stairs_e2"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_lockers_corridor_art.tscn" id="16_lockers_corridor"]
+[ext_resource type="PackedScene" path="res://scenes/fm/fm_alternate_routes.tscn" id="17_alt_routes"]
+
+[sub_resource type="Environment" id="Environment_level1_v06"]
+background_mode = 1
+background_color = Color(0.0015, 0.0018, 0.0022, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.3, 0.32, 0.38, 1)
+ambient_light_energy = 0.02
+tonemap_mode = 4
+tonemap_exposure = 0.8
+ssr_enabled = true
+ssr_max_steps = 48
+ssr_depth_tolerance = 0.2
+ssao_enabled = true
+ssao_radius = 1.2
+ssao_intensity = 1.2
+ssao_light_affect = 0.1
+glow_enabled = true
+glow_intensity = 0.2
+glow_bloom = 0.01
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.012
+volumetric_fog_albedo = Color(0.55, 0.6, 0.68, 1)
+volumetric_fog_gi_inject = 0.0
+volumetric_fog_anisotropy = 0.25
+volumetric_fog_sky_affect = 0.0
+fog_enabled = true
+fog_light_color = Color(0.035, 0.055, 0.06, 1)
+fog_light_energy = 0.6
+fog_density = 0.0025
+fog_aerial_perspective = 0.15
+fog_sky_affect = 0.0
+adjustment_enabled = true
+adjustment_brightness = 1.0
+adjustment_contrast = 1.06
+adjustment_saturation = 1.10
+
+[node name="FMLevel1V06" type="Node3D"]
+script = ExtResource("1_orchestrator")
+
+[node name="Sectors" type="Node3D" parent="."]
+
+[node name="Z10Art" parent="Sectors" instance=ExtResource("2_z10")]
+
+[node name="ReceptionArt" parent="Sectors" instance=ExtResource("3_reception")]
+
+[node name="SecurityArt" parent="Sectors" instance=ExtResource("4_security")]
+
+[node name="CorridorArt" parent="Sectors" instance=ExtResource("5_corridor")]
+
+[node name="SecurityAccessArt" parent="Sectors" instance=ExtResource("6_security_access")]
+
+[node name="ControlArt" parent="Sectors" instance=ExtResource("7_control")]
+
+[node name="LockersArt" parent="Sectors" instance=ExtResource("8_lockers")]
+
+[node name="WarehouseArt" parent="Sectors" instance=ExtResource("9_warehouse")]
+
+[node name="MaintenanceArt" parent="Sectors" instance=ExtResource("10_maintenance")]
+
+[node name="OfficesArt" parent="Sectors" instance=ExtResource("11_offices")]
+
+[node name="RestroomArt" parent="Sectors" instance=ExtResource("12_restroom")]
+
+[node name="StairsMainArt" parent="Sectors" instance=ExtResource("13_stairs_main")]
+
+[node name="StairsE1Art" parent="Sectors" instance=ExtResource("14_stairs_e1")]
+
+[node name="StairsE2Art" parent="Sectors" instance=ExtResource("15_stairs_e2")]
+
+[node name="LockersCorridorArt" parent="Sectors" instance=ExtResource("16_lockers_corridor")]
+
+[node name="AlternateRoutes" parent="." instance=ExtResource("17_alt_routes")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_level1_v06")

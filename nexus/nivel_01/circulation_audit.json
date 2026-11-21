@@ -1,0 +1,1486 @@
+{
+  "file": "/home/riyo/Documentos/game/nexus/nivel_01/NEXUS_L1_V05.blend",
+  "floor": -5.65,
+  "capsule": {
+    "radius_m": 0.38,
+    "height_m": 1.8,
+    "diameter_m": 0.76
+  },
+  "step_m": 0.05,
+  "step_height_m": 0.16,
+  "segments": [
+    {
+      "label": "reception_door_to_room",
+      "length_m": 2.3,
+      "min_clearance": {
+        "clearance_m": -0.38,
+        "point": [
+          -12.0,
+          2.6
+        ],
+        "blocker": "NEXUS_V05_REC_BENCH2"
+      },
+      "blockers": {
+        "NEXUS_V05_REC_BENCH2": {
+          "point": [
+            -12.0,
+            2.25
+          ],
+          "clearance_m": -0.03
+        },
+        "NEXUS_V05_C_REC_TABLE_TOP": {
+          "point": [
+            -12.0,
+            3.7
+          ],
+          "clearance_m": -0.18
+        }
+      }
+    },
+    {
+      "label": "reception_around_west",
+      "length_m": 5.6,
+      "min_clearance": {
+        "clearance_m": -0.38,
+        "point": [
+          -12.68,
+          4.32
+        ],
+        "blocker": "NEXUS_V05_C_REC_TABLE_TOP"
+      },
+      "blockers": {
+        "NEXUS_V05_REC_WAINSCOT_TRIM_S_A": {
+          "point": [
+            -12.74,
+            2.23
+          ],
+          "clearance_m": -0.012
+        },
+        "NEXUS_V05_C_REC_TABLE_TOP": {
+          "point": [
+            -13.08,
+            4.12
+          ],
+          "clearance_m": -0.001
+        }
+      }
+    },
+    {
+      "label": "reception_to_corridor",
+      "length_m": 7.43,
+      "min_clearance": {
+        "clearance_m": -0.38,
+        "point": [
+          -11.97,
+          4.69
+        ],
+        "blocker": "NEXUS_V05_C_REC_TABLE_TOP"
+      },
+      "blockers": {
+        "NEXUS_V05_C_REC_TABLE_TOP": {
+          "point": [
+            -11.27,
+            5.06
+          ],
+          "clearance_m": -0.017
+        },
+        "NEXUS_V05_REC_WAINSCOT_TRIM_S_A": {
+          "point": [
+            -13.26,
+            2.28
+          ],
+          "clearance_m": -0.001
+        },
+        "NEXUS_V05_RECEPCION_DOOR_L": {
+          "point": [
+            -12.63,
+            1.99
+          ],
+          "clearance_m": -0.109
+        }
+      }
+    },
+    {
+      "label": "corridor_west_to_security",
+      "length_m": 15.0,
+      "min_clearance": {
+        "clearance_m": 0.29,
+        "point": [
+          -12.0,
+          0.0
+        ],
+        "blocker": "NEXUS_L1_DIS_WET_SIGN_FALLEN_01"
+      },
+      "blockers": {}
+    },
+    {
+      "label": "security_approach",
+      "length_m": 4.2,
+      "min_clearance": {
+        "clearance_m": 0.22,
+        "point": [
+          3.0,
+          1.55
+        ],
+        "blocker": "NEXUS_V05_D_CORR_WALLSTAIN_0"
+      },
+      "blockers": {}
+    },
+    {
+      "label": "security_to_control",
+      "length_m": 20.43,
+      "min_clearance": {
+        "clearance_m": -0.38,
+        "point": [
+          12.2,
+          0.65
+        ],
+        "blocker": "NEXUS_L1_DIS_CART_CORR_cart"
+      },
+      "blockers": {
+        "NEXUS_L1_DIS_CART_CORR_cart": {
+          "point": [
+            12.2,
+            0.3
+          ],
+          "clearance_m": -0.05
+        },
+        "NEXUS_V05_CONTROL_ACCESO_DOOR_L": {
+          "point": [
+            12.2,
+            1.65
+          ],
+          "clearance_m": -0.38
+        },
+        "NEXUS_V05_CONTROL_ACCESO_WALL_S_A": {
+          "point": [
+            12.28,
+            2.04
+          ],
+          "clearance_m": -0.115
+        },
+        "NEXUS_V05_ACC_BARRIER_1": {
+          "point": [
+            12.48,
+            2.9
+          ],
+          "clearance_m": -0.003
+        },
+        "NEXUS_L1_DIS_CHAIR_ACC_01": {
+          "point": [
+            12.5,
+            4.08
+          ],
+          "clearance_m": -0.057
+        },
+        "NEXUS_V05_C_ACC_ARCH_SENSOR_0": {
+          "point": [
+            12.5,
+            5.51
+          ],
+          "clearance_m": -0.143
+        },
+        "NEXUS_V05_ACC_ARCH_POST_12.15": {
+          "point": [
+            12.5,
+            6.15
+          ],
+          "clearance_m": -0.019
+        },
+        "NEXUS_ASSET_L1_ACC_CHAIR_0_SchoolChair_01": {
+          "point": [
+            12.5,
+            6.35
+          ],
+          "clearance_m": -0.018
+        }
+      }
+    },
+    {
+      "label": "control_to_restricted",
+      "length_m": 18.87,
+      "min_clearance": {
+        "clearance_m": -0.38,
+        "point": [
+          12.5,
+          7.0
+        ],
+        "blocker": "NEXUS_ASSET_L1_ACC_CHAIR_0_SchoolChair_01"
+      },
+      "blockers": {
+        "NEXUS_ASSET_L1_ACC_CHAIR_0_SchoolChair_01": {
+          "point": [
+            12.5,
+            7.0
+          ],
+          "clearance_m": -0.38
+        },
+        "NEXUS_V05_ACC_ARCH_POST_12.15": {
+          "point": [
+            12.5,
+            6.15
+          ],
+          "clearance_m": -0.019
+        },
+        "NEXUS_V05_C_ACC_ARCH_SENSOR_0": {
+          "point": [
+            12.5,
+            6.1
+          ],
+          "clearance_m": -0.054
+        },
+        "NEXUS_L1_DIS_CHAIR_ACC_01": {
+          "point": [
+            12.5,
+            5.46
+          ],
+          "clearance_m": -0.131
+        },
+        "NEXUS_V05_ACC_BARRIER_1": {
+          "point": [
+            12.5,
+            4.03
+          ],
+          "clearance_m": -0.055
+        },
+        "NEXUS_V05_CONTROL_ACCESO_WALL_S_A": {
+          "point": [
+            12.3,
+            2.13
+          ],
+          "clearance_m": -0.025
+        },
+        "NEXUS_V05_CONTROL_ACCESO_DOOR_L": {
+          "point": [
+            12.27,
+            1.99
+          ],
+          "clearance_m": -0.161
+        },
+        "NEXUS_L1_DIS_CART_CORR_cart": {
+          "point": [
+            12.2,
+            1.6
+          ],
+          "clearance_m": -0.38
+        }
+      }
+    }
+  ],
+  "blockers_hit": {
+    "NEXUS_ASSET_L1_ACC_CHAIR_0_SchoolChair_01": [
+      [
+        "security_to_control",
+        [
+          12.5,
+          6.35
+        ],
+        -0.018
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.5,
+          7.0
+        ],
+        -0.38
+      ]
+    ],
+    "NEXUS_L1_DIS_CART_CORR_cart": [
+      [
+        "security_to_control",
+        [
+          12.2,
+          0.3
+        ],
+        -0.05
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.2,
+          1.6
+        ],
+        -0.38
+      ]
+    ],
+    "NEXUS_L1_DIS_CHAIR_ACC_01": [
+      [
+        "security_to_control",
+        [
+          12.5,
+          4.08
+        ],
+        -0.057
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.5,
+          5.46
+        ],
+        -0.131
+      ]
+    ],
+    "NEXUS_V05_ACC_ARCH_POST_12.15": [
+      [
+        "security_to_control",
+        [
+          12.5,
+          6.15
+        ],
+        -0.019
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.5,
+          6.15
+        ],
+        -0.019
+      ]
+    ],
+    "NEXUS_V05_ACC_BARRIER_1": [
+      [
+        "security_to_control",
+        [
+          12.48,
+          2.9
+        ],
+        -0.003
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.5,
+          4.03
+        ],
+        -0.055
+      ]
+    ],
+    "NEXUS_V05_CONTROL_ACCESO_DOOR_L": [
+      [
+        "security_to_control",
+        [
+          12.2,
+          1.65
+        ],
+        -0.38
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.27,
+          1.99
+        ],
+        -0.161
+      ]
+    ],
+    "NEXUS_V05_CONTROL_ACCESO_WALL_S_A": [
+      [
+        "security_to_control",
+        [
+          12.28,
+          2.04
+        ],
+        -0.115
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.3,
+          2.13
+        ],
+        -0.025
+      ]
+    ],
+    "NEXUS_V05_C_ACC_ARCH_SENSOR_0": [
+      [
+        "security_to_control",
+        [
+          12.5,
+          5.51
+        ],
+        -0.143
+      ],
+      [
+        "control_to_restricted",
+        [
+          12.5,
+          6.1
+        ],
+        -0.054
+      ]
+    ],
+    "NEXUS_V05_C_REC_TABLE_TOP": [
+      [
+        "reception_door_to_room",
+        [
+          -12.0,
+          3.7
+        ],
+        -0.18
+      ],
+      [
+        "reception_around_west",
+        [
+          -13.08,
+          4.12
+        ],
+        -0.001
+      ],
+      [
+        "reception_to_corridor",
+        [
+          -11.27,
+          5.06
+        ],
+        -0.017
+      ]
+    ],
+    "NEXUS_V05_RECEPCION_DOOR_L": [
+      [
+        "reception_to_corridor",
+        [
+          -12.63,
+          1.99
+        ],
+        -0.109
+      ]
+    ],
+    "NEXUS_V05_REC_BENCH2": [
+      [
+        "reception_door_to_room",
+        [
+          -12.0,
+          2.25
+        ],
+        -0.03
+      ]
+    ],
+    "NEXUS_V05_REC_WAINSCOT_TRIM_S_A": [
+      [
+        "reception_around_west",
+        [
+          -12.74,
+          2.23
+        ],
+        -0.012
+      ],
+      [
+        "reception_to_corridor",
+        [
+          -13.26,
+          2.28
+        ],
+        -0.001
+      ]
+    ]
+  },
+  "door_geometry": [
+    {
+      "prefix": "NEXUS_V05_RECEPCION_DOOR",
+      "clear_width_m": 1.6,
+      "clear_height_m": 3.07,
+      "leaf": "NEXUS_V05_RECEPCION_DOOR_LEAF"
+    },
+    {
+      "prefix": "NEXUS_V05_SEGURIDAD_DOOR",
+      "clear_width_m": 1.6,
+      "clear_height_m": 3.07,
+      "leaf": "NEXUS_V05_SEGURIDAD_DOOR_LEAF"
+    },
+    {
+      "prefix": "NEXUS_V05_CONTROL_ACCESO_DOOR",
+      "clear_width_m": 1.6,
+      "clear_height_m": 3.07,
+      "leaf": "NEXUS_V05_CONTROL_ACCESO_DOOR_LEAF"
+    },
+    {
+      "prefix": "NEXUS_V05_VESTUARIOS_DOOR",
+      "clear_width_m": 1.6,
+      "clear_height_m": 3.07,
+      "leaf": "NEXUS_V05_VESTUARIOS_DOOR_LEAF"
+    },
+    {
+      "prefix": "NEXUS_V05_MANTENIMIENTO_DOOR",
+      "clear_width_m": 1.6,
+      "clear_height_m": 3.07,
+      "leaf": "NEXUS_V05_MANTENIMIENTO_DOOR_LEAF"
+    },
+    {
+      "prefix": "NEXUS_V05_ALMACEN_DOOR",
+      "clear_width_m": 1.6,
+      "clear_height_m": 3.07,
+      "leaf": "NEXUS_V05_ALMACEN_DOOR_LEAF"
+    }
+  ],
+  "door_leaf_objects_excluded": [
+    "NEXUS_V05_ALMACEN_DOOR_GLASS",
+    "NEXUS_V05_ALMACEN_DOOR_HANDLE",
+    "NEXUS_V05_ALMACEN_DOOR_LEAF",
+    "NEXUS_V05_CONTROL_ACCESO_DOOR_GLASS",
+    "NEXUS_V05_CONTROL_ACCESO_DOOR_HANDLE",
+    "NEXUS_V05_CONTROL_ACCESO_DOOR_LEAF",
+    "NEXUS_V05_MANTENIMIENTO_DOOR_GLASS",
+    "NEXUS_V05_MANTENIMIENTO_DOOR_HANDLE",
+    "NEXUS_V05_MANTENIMIENTO_DOOR_LEAF",
+    "NEXUS_V05_OFFICE_DOOR_GLASS",
+    "NEXUS_V05_OFFICE_DOOR_HANDLE",
+    "NEXUS_V05_OFFICE_DOOR_LEAF",
+    "NEXUS_V05_RECEPCION_DOOR_GLASS",
+    "NEXUS_V05_RECEPCION_DOOR_HANDLE",
+    "NEXUS_V05_RECEPCION_DOOR_LEAF",
+    "NEXUS_V05_REST_DOOR_HANDLE",
+    "NEXUS_V05_REST_DOOR_LEAF",
+    "NEXUS_V05_SEGURIDAD_DOOR_GLASS",
+    "NEXUS_V05_SEGURIDAD_DOOR_HANDLE",
+    "NEXUS_V05_SEGURIDAD_DOOR_LEAF",
+    "NEXUS_V05_SERVICE_CONN_MAINT_DOOR_LEAF",
+    "NEXUS_V05_VESTUARIOS_DOOR_GLASS",
+    "NEXUS_V05_VESTUARIOS_DOOR_HANDLE",
+    "NEXUS_V05_VESTUARIOS_DOOR_LEAF",
+    "REC_HIDE_CABINET_0_DOOR_HANDLE",
+    "REC_HIDE_CABINET_0_DOOR_LEAF"
+  ],
+  "low_steps_excluded": [
+    {
+      "name": "NEXUS_V05_SEGURIDAD_BASE",
+      "z": [
+        -5.71,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_CONTROL_ACCESO_BASE",
+      "z": [
+        -5.71,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_VESTUARIOS_BASE",
+      "z": [
+        -5.71,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_ALMACEN_BASE",
+      "z": [
+        -5.71,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_MANTENIMIENTO_BASE",
+      "z": [
+        -5.71,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_ACC_FLOOR_LINE",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_ACC_ARROW_0",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_ACC_ARROW_1",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_ACC_ARROW_2",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_OFFICE_BASE_0",
+      "z": [
+        -5.77,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_OFFICE_BASE_1",
+      "z": [
+        -5.77,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_OFFICE_BASE_2",
+      "z": [
+        -5.77,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_SHOE_0",
+      "z": [
+        -5.61,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_SHOE_1",
+      "z": [
+        -5.61,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_SHOE_2",
+      "z": [
+        -5.61,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_SHOE_3",
+      "z": [
+        -5.61,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_SHOE_4",
+      "z": [
+        -5.61,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_BLOCK_0",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_BLOCK_1",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_BLOCK_2",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_PLANK_0",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_PLANK_1",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_PLANK_2",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_PLANK_3",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_PLANK_4",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_RUNNER_0",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_0_RUNNER_1",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_BLOCK_0",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_BLOCK_1",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_BLOCK_2",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_PLANK_0",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_PLANK_1",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_PLANK_2",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_PLANK_3",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_PLANK_4",
+      "z": [
+        -5.56,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_RUNNER_0",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_STORE_PALLET_1_RUNNER_1",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_C_ACC_XRAY_HAZ_S",
+      "z": [
+        -5.6,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_C_ACC_XRAY_HAZ_N",
+      "z": [
+        -5.6,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_C_ACC_ARCH_BASE_0",
+      "z": [
+        -5.66,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_C_ACC_ARCH_BASE_1",
+      "z": [
+        -5.66,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_V05_D_REC_RUG",
+      "z": [
+        -5.65,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_D_MAINT_LADDER_RUNG_0",
+      "z": [
+        -5.57,
+        -5.53
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_CTRL_HAZ_55",
+      "z": [
+        -5.59,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_VEST_SHOWER_TRAY",
+      "z": [
+        -5.65,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_VEST_SHOWER_CURB_W",
+      "z": [
+        -5.61,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_VEST_SHOWER_CURB_N",
+      "z": [
+        -5.61,
+        -5.51
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_VEST_SHOWER_DRAIN",
+      "z": [
+        -5.56,
+        -5.53
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_PAPER_FLOOR_0",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_PAPER_FLOOR_1",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_PAPER_FLOOR_2",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_PAPER_FLOOR_3",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SEC_PAPERS_A",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SEC_PAPERS_B",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_COVERALL",
+      "z": [
+        -5.64,
+        -5.56
+      ]
+    },
+    {
+      "name": "NEXUS_V05_B_VEST_COVERALL_ARM",
+      "z": [
+        -5.61,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_D_STORE_SPILL_0",
+      "z": [
+        -5.72,
+        -5.54
+      ]
+    },
+    {
+      "name": "NEXUS_V05_D_STORE_SPILL_1",
+      "z": [
+        -5.72,
+        -5.54
+      ]
+    },
+    {
+      "name": "NEXUS_V05_D_STORE_SPILL_2",
+      "z": [
+        -5.72,
+        -5.54
+      ]
+    },
+    {
+      "name": "NEXUS_V05_D_STORE_SPILL_3",
+      "z": [
+        -5.72,
+        -5.54
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_0_0",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_0_1",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_0_2",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_0_3",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_1_0",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_1_1",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_1_2",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_1_3",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_2_0",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_2_1",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_2_2",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_E_STORE_SPILL_2_3",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_STORE_THRESH",
+      "z": [
+        -5.65,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_STORE_HAZ_0",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_STORE_HAZ_1",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_STORE_HAZ_2",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_STORE_HAZ_3",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_MAINT_THRESH",
+      "z": [
+        -5.65,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_MAINT_HAZ_0",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_MAINT_HAZ_1",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_MAINT_HAZ_2",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_DRAIN_FRAME",
+      "z": [
+        -5.64,
+        -5.63
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_DRAIN_SLAT_0",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_DRAIN_SLAT_1",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_DRAIN_SLAT_2",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_DRAIN_SLAT_3",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_V05_SERVICE_CONN_DRAIN_SLAT_4",
+      "z": [
+        -5.63,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_OFFICE_FLOOR_BINDER",
+      "z": [
+        -5.64,
+        -5.61
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_00",
+      "z": [
+        -5.65,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_01",
+      "z": [
+        -5.65,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_02",
+      "z": [
+        -5.65,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_03",
+      "z": [
+        -5.65,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_04",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_05",
+      "z": [
+        -5.65,
+        -5.61
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_06",
+      "z": [
+        -5.65,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_07",
+      "z": [
+        -5.65,
+        -5.62
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_08",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_09",
+      "z": [
+        -5.65,
+        -5.61
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_10",
+      "z": [
+        -5.65,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_11",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_12",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_13",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_14",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_15",
+      "z": [
+        -5.65,
+        -5.61
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_16",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_17",
+      "z": [
+        -5.65,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_18",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_19",
+      "z": [
+        -5.65,
+        -5.61
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_20",
+      "z": [
+        -5.65,
+        -5.59
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_21",
+      "z": [
+        -5.65,
+        -5.61
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_DEBRIS_22",
+      "z": [
+        -5.65,
+        -5.6
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_CAN_00",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_CAN_01",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_CAN_02",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_CAN_03",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_CLOTH_00",
+      "z": [
+        -5.65,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_CLOTH_01",
+      "z": [
+        -5.65,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_MONITOR_REC",
+      "z": [
+        -5.65,
+        -5.57
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_MONITOR_REC_SCREEN",
+      "z": [
+        -5.57,
+        -5.56
+      ]
+    },
+    {
+      "name": "NEXUS_L1_DIS_MAINT_PIPE",
+      "z": [
+        -5.64,
+        -5.56
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_COUNTER_DRAWER_FRONT_0",
+      "z": [
+        -5.72,
+        -5.52
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_COUNTER_DRAWER_PULL_0",
+      "z": [
+        -5.57,
+        -5.55
+      ]
+    },
+    {
+      "name": "NEXUS_V05_REC_COUNTER_FOOTREST",
+      "z": [
+        -5.64,
+        -5.6
+      ]
+    },
+    {
+      "name": "REC_LOOT_CASE_0_CORNER_W_35",
+      "z": [
+        -5.64,
+        -5.59
+      ]
+    },
+    {
+      "name": "REC_LOOT_CASE_0_CORNER_E_35",
+      "z": [
+        -5.64,
+        -5.59
+      ]
+    },
+    {
+      "name": "REC_LOOT_CASE_0_STRIPE",
+      "z": [
+        -5.59,
+        -5.56
+      ]
+    },
+    {
+      "name": "REC_LOOT_SAMPLE_0_HAZARD",
+      "z": [
+        -5.62,
+        -5.57
+      ]
+    },
+    {
+      "name": "REC_TRAP_NOISE_0_CAN_0",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "REC_TRAP_NOISE_0_CAN_1",
+      "z": [
+        -5.65,
+        -5.58
+      ]
+    },
+    {
+      "name": "REC_HIDE_CABINET_0_BASE",
+      "z": [
+        -5.65,
+        -5.59
+      ]
+    }
+  ],
+  "pinches": {
+    "reception_bench_to_south_wall": {
+      "gap_m": 0.76,
+      "player_diameter_m": 0.76,
+      "margin_m": -0.0,
+      "bench_x": [
+        -12.5,
+        -8.5
+      ],
+      "bench_y": [
+        2.6,
+        3.4
+      ]
+    },
+    "control_cart_to_door": {
+      "cart_x": [
+        11.27,
+        12.69
+      ],
+      "cart_y": [
+        0.63,
+        1.68
+      ],
+      "door_west_edge_x": 12.2,
+      "free_width_m": 0
+    }
+  },
+  "blocker_count": 963
+}

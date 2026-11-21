@@ -1,0 +1,51 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_z10_art_r8.gd" id="1_0xi5o"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/z10_sector.glb" id="2_echkt"]
+[ext_resource type="Texture2D" path="res://assets/art/fm/z10_hero/decals/T_Z10_FLOOR_LABEL_10_CONECTOR_DE_SERVICIO.png" id="3_hh86f"]
+
+[sub_resource type="Environment" id="Environment_cpbx0"]
+background_mode = 1
+background_color = Color(0.0015, 0.0018, 0.0022, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.3, 0.32, 0.38, 1)
+ambient_light_energy = 0.02
+tonemap_mode = 4
+tonemap_exposure = 0.8
+ssr_enabled = true
+ssr_max_steps = 48
+ssr_depth_tolerance = 0.2
+ssao_enabled = true
+ssao_radius = 1.2
+ssao_intensity = 1.2
+ssao_light_affect = 0.1
+glow_enabled = true
+glow_intensity = 0.2
+glow_bloom = 0.01
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.012
+volumetric_fog_albedo = Color(0.55, 0.6, 0.68, 1)
+volumetric_fog_gi_inject = 0.0
+volumetric_fog_anisotropy = 0.25
+volumetric_fog_sky_affect = 0.0
+
+[node name="FM_Z10_ART_R8" type="Node3D" unique_id=1393958124]
+script = ExtResource("1_0xi5o")
+
+[node name="Z10Sector" type="Node3D" parent="." unique_id=1024214768 instance=ExtResource("2_echkt")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=224392232]
+environment = SubResource("Environment_cpbx0")
+
+[node name="ArtCamera" type="Camera3D" parent="." unique_id=2058667671]
+transform = Transform3D(0.30929038, -0.08276554, -0.94735914, 0, 0.9962055, -0.087032974, 0.95096767, 0.026918462, 0.30811676, 46, 2, -18)
+current = true
+fov = 68.0
+
+[node name="FloorLabel" type="Decal" parent="." unique_id=1414131959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0.5, -22)
+size = Vector3(16, 2, 0.7)
+texture_albedo = ExtResource("3_hh86f")
+modulate = Color(0.7, 0.65, 0.5, 1)
+upper_fade = 0.0
+lower_fade = 0.0

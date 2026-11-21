@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/blockout_lockers.glb" id="1_lockers"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/vestuarios_art.glb" id="2_vest"]
+
+[node name="BlockoutLockersArt" type="Node3D"]
+
+[node name="LockersSector" parent="." instance=ExtResource("1_lockers")]
+
+[node name="VestuariosArt" parent="LockersSector" instance=ExtResource("2_vest")]
+
+[node name="Emerg_Lockers" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.5, 3.2, -52)
+light_color = Color(1, 0.72, 0.42, 1)
+light_energy = 0.3
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 6.0
+omni_attenuation = 1.5
+
+[node name="Vest_Fluo_Entry" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 3.9, -45.5)
+light_color = Color(0.72, 0.86, 1, 1)
+light_energy = 4.5
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 12.0
+omni_attenuation = 1.25
+
+[node name="Vest_Fluo_NW" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 3.9, -55.2)
+light_color = Color(0.72, 0.86, 1, 1)
+light_energy = 4.0
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 11.0
+omni_attenuation = 1.25
+
+[node name="Vest_Fluo_NE" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 3.9, -55.2)
+light_color = Color(0.72, 0.86, 1, 1)
+light_energy = 4.0
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 11.0
+omni_attenuation = 1.25
+
+[node name="Vest_Fluo_East" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 3.9, -45.5)
+light_color = Color(0.70, 0.84, 1, 1)
+light_energy = 3.6
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 10.0
+omni_attenuation = 1.3
+
+[node name="Vest_Fluo_Shower" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.5, 3.7, -59.8)
+light_color = Color(0.62, 0.80, 1, 1)
+light_energy = 4.5
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 10.0
+omni_attenuation = 1.35
+
+[node name="Vest_Fluo_Broken" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 3.8, -50.2)
+light_color = Color(0.55, 0.70, 0.85, 1)
+light_energy = 1.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 6.5
+omni_attenuation = 1.5
+
+[node name="Vest_Emerg_West" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4, 2.9, -50)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 1.2
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.5
+omni_attenuation = 1.5
+
+[node name="Vest_Emerg_North" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.8, -63.6)
+light_color = Color(1, 0.18, 0.08, 1)
+light_energy = 1.0
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 5.0
+omni_attenuation = 1.5
+
+[node name="Vest_WestDoorFill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6, 2.7, -50)
+light_color = Color(1, 0.56, 0.30, 1)
+light_energy = 2.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.0
+omni_attenuation = 1.4
+
+[node name="Vest_Fluo_EastWall" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.5, 3.6, -47.0)
+light_color = Color(0.70, 0.84, 1, 1)
+light_energy = 4.2
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 9.5
+omni_attenuation = 1.3
+
+[node name="Vest_Fluo_Wash" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.5, 3.6, -61.5)
+light_color = Color(0.72, 0.86, 1, 1)
+light_energy = 4.2
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 8.5
+omni_attenuation = 1.35
+
+[node name="Vest_Fluo_SW" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.0, 3.6, -43.5)
+light_color = Color(0.72, 0.86, 1, 1)
+light_energy = 3.6
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 9.0
+omni_attenuation = 1.3

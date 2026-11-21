@@ -1,0 +1,157 @@
+{
+  "batch": "SECURITY_P0A_PORTALS",
+  "objects": [
+    {
+      "tris": 5844,
+      "verts": 3056,
+      "polys": 3150,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "name": "SEC_P0A_PORTAL_S",
+      "bbox": [
+        [
+          -92.3,
+          9.73,
+          0.0
+        ],
+        [
+          -85.7,
+          10.27,
+          3.295
+        ]
+      ],
+      "dims": [
+        6.6,
+        0.54,
+        3.295
+      ]
+    },
+    {
+      "tris": 5844,
+      "verts": 3056,
+      "polys": 3150,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "name": "SEC_P0A_PORTAL_N",
+      "bbox": [
+        [
+          -96.3,
+          35.73,
+          0.0
+        ],
+        [
+          -91.7,
+          36.27,
+          2.695
+        ]
+      ],
+      "dims": [
+        4.6,
+        0.54,
+        2.695
+      ]
+    }
+  ],
+  "old_trim_kept": [
+    {
+      "name": "SM_L1_Zone03_Security_Door_S_L",
+      "hide_render": false,
+      "bbox": [
+        [
+          -92.0,
+          9.82,
+          0.0
+        ],
+        [
+          -91.84,
+          10.18,
+          3.04
+        ]
+      ]
+    },
+    {
+      "name": "SM_L1_Zone03_Security_Door_S_R",
+      "hide_render": false,
+      "bbox": [
+        [
+          -86.16,
+          9.82,
+          0.0
+        ],
+        [
+          -86.0,
+          10.18,
+          3.04
+        ]
+      ]
+    },
+    {
+      "name": "SM_L1_Zone03_Security_Door_S_T",
+      "hide_render": false,
+      "bbox": [
+        [
+          -91.84,
+          9.82,
+          3.04
+        ],
+        [
+          -86.16,
+          10.18,
+          3.18
+        ]
+      ]
+    },
+    {
+      "name": "SM_L1_Zone03_Security_Door_N_L",
+      "hide_render": false,
+      "bbox": [
+        [
+          -96.0,
+          35.82,
+          0.0
+        ],
+        [
+          -95.84,
+          36.18,
+          2.44
+        ]
+      ]
+    },
+    {
+      "name": "SM_L1_Zone03_Security_Door_N_R",
+      "hide_render": false,
+      "bbox": [
+        [
+          -92.16,
+          35.82,
+          0.0
+        ],
+        [
+          -92.0,
+          36.18,
+          2.44
+        ]
+      ]
+    },
+    {
+      "name": "SM_L1_Zone03_Security_Door_N_T",
+      "hide_render": false,
+      "bbox": [
+        [
+          -95.9975,
+          35.8046,
+          2.434
+        ],
+        [
+          -92.0025,
+          36.1954,
+          2.586
+        ]
+      ]
+    }
+  ],
+  "collection": "L1_SECURITY_P0A_HERO",
+  "note": "Old 12-tri jamb/header trim remains behind the new posts/header, enclosed with 10 mm overlap; architecture untouched."
+}

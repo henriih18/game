@@ -1,0 +1,98 @@
+{
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/security_access_sector.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "collection": "L1_ARCH_ALTERNATE",
+  "name_prefix": "SM_L1_Alt_SecurityCorridor_",
+  "region_blender": [
+    [
+      -71.3,
+      3.7,
+      -0.5
+    ],
+    [
+      -36.3,
+      12.1,
+      2.7
+    ]
+  ],
+  "objects": 11,
+  "unique_meshes": 11,
+  "tris_blender": 132,
+  "materials": 2,
+  "material_names": [
+    "M_L1_Corridor_Floor",
+    "M_L1_Wall_Corridor"
+  ],
+  "images": 0,
+  "image_names": [],
+  "aabb_blender": [
+    [
+      -71.0,
+      4.0,
+      -0.2
+    ],
+    [
+      -36.6,
+      11.8,
+      2.4
+    ]
+  ],
+  "aabb_godot_position": [
+    -71.0,
+    -0.2,
+    -11.8
+  ],
+  "aabb_godot_size": [
+    34.4,
+    2.6,
+    7.8
+  ],
+  "names": [
+    "SM_L1_Alt_SecurityCorridor_Ceiling_H",
+    "SM_L1_Alt_SecurityCorridor_Ceiling_V",
+    "SM_L1_Alt_SecurityCorridor_Floor_H",
+    "SM_L1_Alt_SecurityCorridor_Floor_V",
+    "SM_L1_Alt_SecurityCorridor_Wall_E",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_0",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_1",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_2",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_V",
+    "SM_L1_Alt_SecurityCorridor_Wall_S",
+    "SM_L1_Alt_SecurityCorridor_Wall_W"
+  ],
+  "strays": [],
+  "glb": {
+    "bytes": 14912,
+    "meshes": 11,
+    "mesh_nodes": 11,
+    "nodes": 11,
+    "materials": 2,
+    "images": 0,
+    "tris": 132,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "aabb_gltf_min": [
+      -71.0,
+      -0.2,
+      -11.8
+    ],
+    "aabb_gltf_max": [
+      -36.6,
+      2.4,
+      -4.0
+    ],
+    "aabb_godot_position": [
+      -71.0,
+      -0.2,
+      -11.8
+    ],
+    "aabb_godot_size": [
+      34.4,
+      2.6,
+      7.8
+    ],
+    "forbidden_nodes": []
+  }
+}

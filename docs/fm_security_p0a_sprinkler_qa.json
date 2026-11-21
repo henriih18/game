@@ -1,0 +1,54 @@
+{
+  "objects": [
+    {
+      "name": "SEC_P0A_SPRINKLER_RUN",
+      "tris": 5580,
+      "verts": 2832,
+      "polys": 2850,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_SPRINKLER_HEADS",
+      "tris": 10320,
+      "verts": 5208,
+      "polys": 4884,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_SPRINKLER_SUPPORTS",
+      "tris": 2952,
+      "verts": 1512,
+      "polys": 1440,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_SPRINKLER_CAPS",
+      "tris": 1000,
+      "verts": 504,
+      "polys": 472,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  ],
+  "total_tris": 19852,
+  "retired": [
+    "R21B_SERV_Sprinkler"
+  ],
+  "pipe": {
+    "start_y": 11.2,
+    "end_y": 34.8,
+    "length_m": 23.6,
+    "x": -90.7,
+    "z": 4.38
+  },
+  "heads": 6,
+  "supports": 6,
+  "qa_pass": true
+}

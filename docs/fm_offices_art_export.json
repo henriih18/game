@@ -1,0 +1,54 @@
+{
+  "bytes": 9726296,
+  "meshes": 260,
+  "nodes": 262,
+  "materials": 32,
+  "images": 16,
+  "tris": 178918,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "OF_ArchiveAC",
+    "OF_ArchiveClock",
+    "OF_ArchiveDoor",
+    "OF_ArchiveLabel_SIGN",
+    "OF_ArchiveSAI",
+    "OF_ArchiveShelf_1",
+    "OF_ArchiveShelf_2",
+    "OF_ArchiveWall_E",
+    "OF_ArchiveWall_N",
+    "OF_ArchiveWall_S",
+    "OF_ArchiveWall_W_1",
+    "OF_ArchiveWall_W_2"
+  ],
+  "source_objects": 262,
+  "resized_images": 0,
+  "source_aabb_blender": {
+    "min": [
+      -29.941,
+      4.2,
+      0.0
+    ],
+    "max": [
+      14.805,
+      70.0,
+      4.5
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      -30.15,
+      4.0,
+      -0.2
+    ],
+    "max": [
+      15.19,
+      70.15,
+      4.5
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "file": "assets/models/fm/offices_art.glb",
+  "max_bytes": 31457280,
+  "pass": true
+}

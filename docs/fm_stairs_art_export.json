@@ -1,0 +1,166 @@
+{
+  "sectors": [
+    {
+      "bytes": 1769800,
+      "meshes": 18,
+      "nodes": 18,
+      "materials": 16,
+      "images": 10,
+      "tris": 9586,
+      "cameras": 0,
+      "lights": 0,
+      "names_sample": [
+        "ST_Main_Ceiling_CABLE",
+        "ST_Main_ConnectorServices_CABLE",
+        "ST_Main_Decals_DECAL",
+        "ST_Main_Extinguisher",
+        "ST_Main_ExtinguisherTop",
+        "ST_Main_FloorLines_FLOOR_LINE",
+        "ST_Main_Guardrails_TRIM",
+        "ST_Main_Handrails_TRIM",
+        "ST_Main_Lights_LIGHT",
+        "ST_Main_Props",
+        "ST_Main_Puddle_DIS_WATER",
+        "ST_Main_SignBasement_SIGN"
+      ],
+      "id": "Main",
+      "source_objects": 18,
+      "resized_images": 0,
+      "source_aabb_blender": {
+        "min": [
+          -11.848,
+          -49.848,
+          -4.5
+        ],
+        "max": [
+          7.845,
+          -1.9,
+          7.0
+        ]
+      },
+      "bounds_blender": {
+        "min": [
+          -12.15,
+          -50.15,
+          -4.8
+        ],
+        "max": [
+          8.15,
+          -1.5,
+          7.0
+        ]
+      },
+      "aabb_inside_bounds": true,
+      "file": "assets/models/fm/stairs_main_art.glb",
+      "pass": true
+    },
+    {
+      "bytes": 1268860,
+      "meshes": 14,
+      "nodes": 14,
+      "materials": 15,
+      "images": 7,
+      "tris": 4846,
+      "cameras": 0,
+      "lights": 0,
+      "names_sample": [
+        "ST_E1_Ceiling_CABLE",
+        "ST_E1_Decals_DECAL",
+        "ST_E1_Extinguisher",
+        "ST_E1_FloorLines_FLOOR_LINE",
+        "ST_E1_Guardrails_TRIM",
+        "ST_E1_Handrails_TRIM",
+        "ST_E1_Lights_LIGHT",
+        "ST_E1_Puddle_DIS_WATER",
+        "ST_E1_SignEmergency_SIGN",
+        "ST_E1_SignExit_SIGN",
+        "ST_E1_SignName_SIGN",
+        "ST_E1_StepNosings_TRIM"
+      ],
+      "id": "E1",
+      "source_objects": 14,
+      "resized_images": 0,
+      "source_aabb_blender": {
+        "min": [
+          110.0,
+          8.155,
+          -4.496
+        ],
+        "max": [
+          119.845,
+          25.845,
+          5.99
+        ]
+      },
+      "bounds_blender": {
+        "min": [
+          110.0,
+          7.85,
+          -4.8
+        ],
+        "max": [
+          120.15,
+          26.15,
+          6.0
+        ]
+      },
+      "aabb_inside_bounds": true,
+      "file": "assets/models/fm/stairs_e1_art.glb",
+      "pass": true
+    },
+    {
+      "bytes": 1281748,
+      "meshes": 14,
+      "nodes": 14,
+      "materials": 15,
+      "images": 7,
+      "tris": 5186,
+      "cameras": 0,
+      "lights": 0,
+      "names_sample": [
+        "ST_E2_Ceiling_CABLE",
+        "ST_E2_Decals_DECAL",
+        "ST_E2_Extinguisher",
+        "ST_E2_FloorLines_FLOOR_LINE",
+        "ST_E2_Guardrails_TRIM",
+        "ST_E2_Handrails_TRIM",
+        "ST_E2_Lights_LIGHT",
+        "ST_E2_Puddle_DIS_WATER",
+        "ST_E2_SignEmergency_SIGN",
+        "ST_E2_SignExit_SIGN",
+        "ST_E2_SignName_SIGN",
+        "ST_E2_StepNosings_TRIM"
+      ],
+      "id": "E2",
+      "source_objects": 14,
+      "resized_images": 0,
+      "source_aabb_blender": {
+        "min": [
+          112.0,
+          -43.846,
+          -4.496
+        ],
+        "max": [
+          121.845,
+          -26.155,
+          5.99
+        ]
+      },
+      "bounds_blender": {
+        "min": [
+          112.0,
+          -44.15,
+          -4.8
+        ],
+        "max": [
+          122.15,
+          -25.85,
+          6.0
+        ]
+      },
+      "aabb_inside_bounds": true,
+      "file": "assets/models/fm/stairs_e2_art.glb",
+      "pass": true
+    }
+  ]
+}

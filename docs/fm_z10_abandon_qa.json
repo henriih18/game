@@ -1,0 +1,897 @@
+{
+  "collections": [
+    "L1_Z10_ABANDON",
+    "L1_Z10_LIGHTING",
+    "L1_Z10_ATMOSPHERE"
+  ],
+  "object_count": 45,
+  "mesh_count": 38,
+  "light_count": 7,
+  "total_tris_new": 57372,
+  "bbox_min": [
+    40.0,
+    8.0,
+    -0.0002
+  ],
+  "bbox_max": [
+    62.0,
+    30.0,
+    4.2
+  ],
+  "outside_room": [],
+  "portal_conflicts": {
+    "south_portal": [],
+    "east_portal": [],
+    "north_portal": []
+  },
+  "new_geometry": [
+    "PROP_Z10_WorkLight",
+    "LIGHT_Z10_Luminaire_01",
+    "LIGHT_Z10_Luminaire_02",
+    "LIGHT_Z10_Luminaire_03",
+    "VOL_Z10_Fog"
+  ],
+  "objects": {
+    "PROP_Z10_WorkLight": {
+      "type": "MESH",
+      "tris": 2388,
+      "verts": 1284,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "NEW",
+      "bbox": [
+        [
+          55.1647,
+          9.1913,
+          0.0
+        ],
+        [
+          57.31,
+          10.0087,
+          2.59
+        ]
+      ]
+    },
+    "DET_Z10_Emergency_E": {
+      "type": "MESH",
+      "tris": 368,
+      "verts": 192,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_FIX_Emergency_Checkpoint",
+      "bbox": [
+        [
+          61.737,
+          21.86,
+          2.9575
+        ],
+        [
+          61.903,
+          22.14,
+          3.1425
+        ]
+      ]
+    },
+    "DET_Z10_CableReel": {
+      "type": "MESH",
+      "tris": 5460,
+      "verts": 2792,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CableReel_Tipped",
+      "bbox": [
+        [
+          42.6677,
+          9.5937,
+          -0.0
+        ],
+        [
+          43.7323,
+          10.8063,
+          1.1544
+        ]
+      ]
+    },
+    "DET_Z10_Chair_A": {
+      "type": "MESH",
+      "tris": 9248,
+      "verts": 4744,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21C_CHAOS_ChairA",
+      "bbox": [
+        [
+          44.258,
+          9.9519,
+          0.0
+        ],
+        [
+          45.342,
+          11.4481,
+          0.8227
+        ]
+      ]
+    },
+    "DET_Z10_Pallet": {
+      "type": "MESH",
+      "tris": 1780,
+      "verts": 920,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Pallet",
+      "bbox": [
+        [
+          41.6121,
+          11.1715,
+          0.0
+        ],
+        [
+          42.7879,
+          12.4285,
+          0.439
+        ]
+      ]
+    },
+    "DET_Z10_Chunk_A": {
+      "type": "MESH",
+      "tris": 320,
+      "verts": 162,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21C_CHAOS_ChunkA",
+      "bbox": [
+        [
+          43.3877,
+          9.9931,
+          -0.0
+        ],
+        [
+          43.8124,
+          10.407,
+          0.0922
+        ]
+      ]
+    },
+    "DET_Z10_Chunk_B": {
+      "type": "MESH",
+      "tris": 320,
+      "verts": 162,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21C_CHAOS_ChunkB",
+      "bbox": [
+        [
+          42.6098,
+          10.6595,
+          0.0
+        ],
+        [
+          42.9902,
+          11.1405,
+          0.0667
+        ]
+      ]
+    },
+    "DET_Z10_Chunk_C": {
+      "type": "MESH",
+      "tris": 320,
+      "verts": 162,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21C_CHAOS_ChunkC",
+      "bbox": [
+        [
+          44.2146,
+          10.8183,
+          0.0
+        ],
+        [
+          44.5854,
+          11.1817,
+          0.0602
+        ]
+      ]
+    },
+    "DET_Z10_Puddle_A": {
+      "type": "MESH",
+      "tris": 88,
+      "verts": 46,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Puddle_Checkpoint",
+      "bbox": [
+        [
+          41.9706,
+          10.2024,
+          0.012
+        ],
+        [
+          44.8294,
+          12.1976,
+          0.0135
+        ]
+      ]
+    },
+    "DET_Z10_Dust_A": {
+      "type": "MESH",
+      "tris": 80,
+      "verts": 42,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Dust_0",
+      "bbox": [
+        [
+          42.4085,
+          10.1217,
+          0.012
+        ],
+        [
+          45.5915,
+          12.2783,
+          0.0135
+        ]
+      ]
+    },
+    "DET_Z10_LockerDoor": {
+      "type": "MESH",
+      "tris": 1808,
+      "verts": 936,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_LockerDoor_FloorB",
+      "bbox": [
+        [
+          41.3231,
+          27.1113,
+          -0.0
+        ],
+        [
+          42.2769,
+          28.0887,
+          0.0891
+        ]
+      ]
+    },
+    "DET_Z10_Chair_B": {
+      "type": "MESH",
+      "tris": 9248,
+      "verts": 4744,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Chair_DraggedB",
+      "bbox": [
+        [
+          43.0256,
+          27.6986,
+          -0.0
+        ],
+        [
+          44.5744,
+          29.1014,
+          1.7238
+        ]
+      ]
+    },
+    "DET_Z10_CRT_A": {
+      "type": "MESH",
+      "tris": 2670,
+      "verts": 1373,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21C_CHAOS_CRT_A",
+      "bbox": [
+        [
+          42.2694,
+          28.5791,
+          0.0
+        ],
+        [
+          42.9306,
+          29.2209,
+          0.4966
+        ]
+      ]
+    },
+    "DET_Z10_Tile_A": {
+      "type": "MESH",
+      "tris": 188,
+      "verts": 96,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CeilingTile_FlatA",
+      "bbox": [
+        [
+          41.1939,
+          28.3939,
+          0.0
+        ],
+        [
+          42.0061,
+          29.2061,
+          0.028
+        ]
+      ]
+    },
+    "DET_Z10_Tile_B": {
+      "type": "MESH",
+      "tris": 188,
+      "verts": 96,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CeilingTile_FlatB",
+      "bbox": [
+        [
+          44.21,
+          27.41,
+          0.0
+        ],
+        [
+          44.9901,
+          28.1901,
+          0.028
+        ]
+      ]
+    },
+    "DET_Z10_Puddle_B": {
+      "type": "MESH",
+      "tris": 96,
+      "verts": 50,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Puddle_Hole",
+      "bbox": [
+        [
+          41.9134,
+          26.2437,
+          0.012
+        ],
+        [
+          44.0866,
+          27.7563,
+          0.0135
+        ]
+      ]
+    },
+    "DET_Z10_Dust_B": {
+      "type": "MESH",
+      "tris": 80,
+      "verts": 42,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_DustHeavy_0",
+      "bbox": [
+        [
+          40.0933,
+          26.7765,
+          0.012
+        ],
+        [
+          44.9067,
+          29.6236,
+          0.0135
+        ]
+      ]
+    },
+    "DET_Z10_CRT_B": {
+      "type": "MESH",
+      "tris": 1556,
+      "verts": 832,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CRT_Broken",
+      "bbox": [
+        [
+          59.7086,
+          11.5318,
+          0.0
+        ],
+        [
+          60.6914,
+          12.4682,
+          0.4017
+        ]
+      ]
+    },
+    "DET_Z10_ElecCover": {
+      "type": "MESH",
+      "tris": 108,
+      "verts": 56,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_ElectricalCover",
+      "bbox": [
+        [
+          60.475,
+          10.8646,
+          0.0
+        ],
+        [
+          60.725,
+          11.1354,
+          0.018
+        ]
+      ]
+    },
+    "DET_Z10_Conduit": {
+      "type": "MESH",
+      "tris": 160,
+      "verts": 82,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_ConduitBent",
+      "bbox": [
+        [
+          59.6107,
+          13.0351,
+          0.0
+        ],
+        [
+          59.9893,
+          13.3649,
+          1.1681
+        ]
+      ]
+    },
+    "DET_Z10_Metal_A": {
+      "type": "MESH",
+      "tris": 80,
+      "verts": 42,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Debris_Metal_3",
+      "bbox": [
+        [
+          59.2866,
+          12.5141,
+          0.0
+        ],
+        [
+          59.5134,
+          12.6859,
+          0.0362
+        ]
+      ]
+    },
+    "DET_Z10_Metal_B": {
+      "type": "MESH",
+      "tris": 80,
+      "verts": 42,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Debris_Metal_5",
+      "bbox": [
+        [
+          59.9532,
+          13.7357,
+          0.0
+        ],
+        [
+          60.0468,
+          13.8643,
+          0.0219
+        ]
+      ]
+    },
+    "DET_Z10_Glass": {
+      "type": "MESH",
+      "tris": 610,
+      "verts": 323,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_GlassPane_Broken",
+      "bbox": [
+        [
+          59.8771,
+          9.8771,
+          0.0
+        ],
+        [
+          60.9229,
+          10.9229,
+          1.8689
+        ]
+      ]
+    },
+    "DET_Z10_Puddle_C": {
+      "type": "MESH",
+      "tris": 88,
+      "verts": 46,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Puddle_CheckpointWet",
+      "bbox": [
+        [
+          58.1146,
+          11.4622,
+          0.012
+        ],
+        [
+          61.0854,
+          13.3378,
+          0.0135
+        ]
+      ]
+    },
+    "DET_Z10_Chair_C": {
+      "type": "MESH",
+      "tris": 9248,
+      "verts": 4744,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Chair_DraggedC",
+      "bbox": [
+        [
+          58.3772,
+          27.0333,
+          0.0
+        ],
+        [
+          59.6228,
+          28.5667,
+          0.6014
+        ]
+      ]
+    },
+    "DET_Z10_Cone_A": {
+      "type": "MESH",
+      "tris": 392,
+      "verts": 204,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Cone_Tipped",
+      "bbox": [
+        [
+          59.9947,
+          26.3132,
+          -0.0002
+        ],
+        [
+          60.4053,
+          26.8868,
+          0.3577
+        ]
+      ]
+    },
+    "DET_Z10_Cone_B": {
+      "type": "MESH",
+      "tris": 392,
+      "verts": 204,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Cone_Upright",
+      "bbox": [
+        [
+          58.1984,
+          28.5984,
+          0.0
+        ],
+        [
+          58.6016,
+          29.0016,
+          0.52
+        ]
+      ]
+    },
+    "DET_Z10_Tile_C": {
+      "type": "MESH",
+      "tris": 188,
+      "verts": 96,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CeilingTile_FlatA",
+      "bbox": [
+        [
+          59.5961,
+          28.1961,
+          0.0
+        ],
+        [
+          60.4039,
+          29.0039,
+          0.028
+        ]
+      ]
+    },
+    "DET_Z10_Dust_C": {
+      "type": "MESH",
+      "tris": 80,
+      "verts": 42,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Dust_1",
+      "bbox": [
+        [
+          57.3224,
+          25.7815,
+          0.012
+        ],
+        [
+          61.6776,
+          28.2185,
+          0.0135
+        ]
+      ]
+    },
+    "DET_Z10_CeilingGrid": {
+      "type": "MESH",
+      "tris": 108,
+      "verts": 56,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CeilingGrid_0",
+      "bbox": [
+        [
+          50.2716,
+          23.7479,
+          3.8199
+        ],
+        [
+          50.7284,
+          25.2521,
+          4.0801
+        ]
+      ]
+    },
+    "DET_Z10_Tile_Hanging": {
+      "type": "MESH",
+      "tris": 188,
+      "verts": 96,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_CeilingTile_HangingD",
+      "bbox": [
+        [
+          50.0995,
+          24.0967,
+          3.8331
+        ],
+        [
+          50.9005,
+          24.9033,
+          4.0469
+        ]
+      ]
+    },
+    "DET_Z10_Cable_A": {
+      "type": "MESH",
+      "tris": 192,
+      "verts": 98,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Cable_HangA",
+      "bbox": [
+        [
+          50.6191,
+          24.0212,
+          0.0
+        ],
+        [
+          50.9809,
+          24.3788,
+          3.6594
+        ]
+      ]
+    },
+    "DET_Z10_Cable_B": {
+      "type": "MESH",
+      "tris": 192,
+      "verts": 98,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Cable_HangB",
+      "bbox": [
+        [
+          52.8493,
+          20.8287,
+          0.0
+        ],
+        [
+          53.1507,
+          21.1713,
+          3.2899
+        ]
+      ]
+    },
+    "DET_Z10_Cable_C": {
+      "type": "MESH",
+      "tris": 192,
+      "verts": 98,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "R21D_Cable_HangC",
+      "bbox": [
+        [
+          58.039,
+          29.2404,
+          -0.0
+        ],
+        [
+          58.361,
+          29.5596,
+          3.9568
+        ]
+      ]
+    },
+    "LIGHT_Z10_Luminaire_01": {
+      "type": "MESH",
+      "tris": 2952,
+      "verts": 1574,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "NEW",
+      "bbox": [
+        [
+          46.2201,
+          13.817,
+          3.6619
+        ],
+        [
+          47.7799,
+          14.183,
+          3.9901
+        ]
+      ]
+    },
+    "LIGHT_Z10_Point_01": {
+      "type": "POINT",
+      "energy": 55.0,
+      "loc": [
+        47.0,
+        14.0,
+        3.64
+      ]
+    },
+    "LIGHT_Z10_Luminaire_02": {
+      "type": "MESH",
+      "tris": 2952,
+      "verts": 1574,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "NEW",
+      "bbox": [
+        [
+          56.2201,
+          13.817,
+          3.6619
+        ],
+        [
+          57.7799,
+          14.183,
+          3.9901
+        ]
+      ]
+    },
+    "LIGHT_Z10_Point_02": {
+      "type": "POINT",
+      "energy": 55.0,
+      "loc": [
+        57.0,
+        14.0,
+        3.64
+      ]
+    },
+    "LIGHT_Z10_Luminaire_03": {
+      "type": "MESH",
+      "tris": 2952,
+      "verts": 1574,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "NEW",
+      "bbox": [
+        [
+          51.817,
+          24.2201,
+          3.6619
+        ],
+        [
+          52.183,
+          25.7799,
+          3.9901
+        ]
+      ]
+    },
+    "LIGHT_Z10_Point_03": {
+      "type": "POINT",
+      "energy": 55.0,
+      "loc": [
+        52.0,
+        25.0,
+        3.64
+      ]
+    },
+    "LIGHT_Z10_SouthSpill": {
+      "type": "POINT",
+      "energy": 35.0,
+      "loc": [
+        42.5,
+        9.2,
+        2.6
+      ]
+    },
+    "LIGHT_Z10_WorkSpot": {
+      "type": "SPOT",
+      "energy": 260.0,
+      "loc": [
+        55.9,
+        9.6,
+        1.98
+      ]
+    },
+    "LIGHT_Z10_WorkFill": {
+      "type": "POINT",
+      "energy": 45.0,
+      "loc": [
+        55.9,
+        9.6,
+        1.98
+      ]
+    },
+    "LIGHT_Z10_Emergency_E": {
+      "type": "POINT",
+      "energy": 10.0,
+      "loc": [
+        61.5,
+        22.0,
+        3.0
+      ]
+    },
+    "VOL_Z10_Fog": {
+      "type": "MESH",
+      "tris": 12,
+      "verts": 8,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true,
+      "source": "NEW",
+      "bbox": [
+        [
+          40.0,
+          8.0,
+          0.0
+        ],
+        [
+          62.0,
+          30.0,
+          4.2
+        ]
+      ]
+    }
+  }
+}

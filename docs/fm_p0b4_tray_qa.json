@@ -1,0 +1,46 @@
+{
+  "collection": "L1_P0B4_Z10",
+  "objects": {
+    "P0B4_TRAY_WEST": {
+      "tris": 49168,
+      "verts": 25836,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_TRAY_EAST": {
+      "tris": 36280,
+      "verts": 19060,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_TRAY_SLEEVES": {
+      "tris": 1216,
+      "verts": 640,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  },
+  "total_tris_added": 86664,
+  "retired": [
+    "KIT_PILOT_Z10_TrayBracket_00",
+    "KIT_PILOT_Z10_TrayBracket_01",
+    "KIT_PILOT_Z10_TrayBracket_02",
+    "KIT_PILOT_Z10_TrayBracket_03",
+    "KIT_PILOT_Z10_TrayBracket_04",
+    "KIT_PILOT_Z10_Tray_00",
+    "KIT_PILOT_Z10_Tray_01",
+    "KIT_PILOT_Z10_Tray_02",
+    "KIT_PILOT_Z10_Tray_03",
+    "KIT_PILOT_Z10_Tray_04",
+    "PROP_Z10_SVC_WestTrayCables",
+    "PROP_Z10_WestTray"
+  ],
+  "checks": {
+    "non_manifold_total": 0,
+    "degenerate_total": 0,
+    "uv_missing": []
+  }
+}

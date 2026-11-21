@@ -1,0 +1,72 @@
+{
+  "file": "/home/riyo/Documentos/game/nexus/nivel_01/NEXUS_L1_V05.blend",
+  "bounds": {
+    "min": [
+      -21.0,
+      1.0,
+      -6.199999809265137
+    ],
+    "max": [
+      -3.0,
+      14.199999809265137,
+      0.800000011920929
+    ]
+  },
+  "selected": 698,
+  "by_type": {
+    "MESH": 632,
+    "LIGHT": 16,
+    "EMPTY": 35,
+    "FONT": 15
+  },
+  "triangles": 70464,
+  "key": {
+    "loot": [
+      "NEXUS_V05_REC_LOOT_DRIVE_0",
+      "NEXUS_V05_REC_LOOT_DOCS_0",
+      "NEXUS_V05_REC_LOOT_CASE_0",
+      "NEXUS_V05_REC_LOOT_CRATE_0",
+      "NEXUS_V05_REC_LOOT_SAMPLE_0"
+    ],
+    "extraction": [
+      "NEXUS_V05_REC_EXTRACT_SIGN_TEXT",
+      "NEXUS_V05_REC_EXTRACT_INDICATOR",
+      "NEXUS_V05_REC_EXTRACT_SIGN_PLATE",
+      "NEXUS_V05_REC_EXTRACT_SCREEN",
+      "NEXUS_V05_REC_EXTRACT_CONSOLE",
+      "NEXUS_V05_REC_EXTRACT_RING_W",
+      "NEXUS_V05_REC_EXTRACT_RING_E",
+      "NEXUS_V05_REC_EXTRACT_RECEPTION_TRIGGER",
+      "NEXUS_V05_REC_EXTRACT_RING_S",
+      "NEXUS_V05_REC_EXTRACT_BUTTON",
+      "NEXUS_V05_REC_EXTRACT_ZONE",
+      "NEXUS_V05_REC_EXTRACT_LIGHT",
+      "NEXUS_V05_REC_EXTRACT_FLOOR_TEXT",
+      "NEXUS_V05_REC_EXTRACT_RING_N"
+    ],
+    "elevator_doors": [
+      "NEXUS_V05_C_REC_ELEV_L",
+      "NEXUS_V05_C_REC_ELEV_R"
+    ],
+    "lights": [
+      "NEXUS_V05_ELEV_CAB_LIGHT",
+      "NEXUS_V05_EMERG_0",
+      "NEXUS_V05_REC_EMERG_MID",
+      "NEXUS_V05_REC_FINAL_LIGHT_2",
+      "NEXUS_V05_REC_EMERG_REST",
+      "NEXUS_V05_REC_EMERG_OFFICE",
+      "NEXUS_V05_REC_EMERG_NW",
+      "NEXUS_V05_REC_FINAL_LIGHT_1",
+      "NEXUS_V05_REC_SPILL_CORRIDOR",
+      "NEXUS_V05_REC_FINAL_LIGHT_3",
+      "NEXUS_V05_REC_EXTRACT_LIGHT",
+      "NEXUS_V05_REC_EMERG_E",
+      "NEXUS_V05_EMERG_1",
+      "NEXUS_V05_REC_EMERG_N",
+      "NEXUS_V05_REC_FINAL_LIGHT_0",
+      "NEXUS_V05_REC_EMERG_DOOR"
+    ],
+    "has_shared_clock": true
+  },
+  "output": "/home/riyo/Documentos/game/assets/models/fm/reception_nexus.glb"
+}

@@ -1,0 +1,156 @@
+{
+  "collection": "L1_P0B4_Z10",
+  "retired_collection": "Z10_RETIRED_P0B4",
+  "retired_objects": [
+    "PROP_Z10_HVACDuct",
+    "PROP_Z10_HVACFlange_42.0",
+    "PROP_Z10_HVACFlange_44.5",
+    "PROP_Z10_HVACFlange_47.0",
+    "PROP_Z10_HVACFlange_49.5",
+    "PROP_Z10_HVACFlange_52.0",
+    "PROP_Z10_HVACFlange_54.5",
+    "PROP_Z10_HVACFlange_57.0",
+    "PROP_Z10_HVACFlange_59.5",
+    "PROP_Z10_HVACHanger_42.0",
+    "PROP_Z10_HVACHanger_44.5",
+    "PROP_Z10_HVACHanger_47.0",
+    "PROP_Z10_HVACHanger_49.5",
+    "PROP_Z10_HVACHanger_52.0",
+    "PROP_Z10_HVACHanger_54.5",
+    "PROP_Z10_HVACHanger_57.0",
+    "PROP_Z10_HVACHanger_59.5",
+    "PROP_Z10_HVACSupports",
+    "PROP_Z10_SVC_HVACCompletion",
+    "PROP_Z10_SVC_HVACWallConnections",
+    "PROP_Z10_SprinklerHanger_42.5",
+    "PROP_Z10_SprinklerHanger_46.5",
+    "PROP_Z10_SprinklerHanger_50.5",
+    "PROP_Z10_SprinklerHanger_54.5",
+    "PROP_Z10_SprinklerHanger_58.5",
+    "PROP_Z10_SprinklerHead_42.5",
+    "PROP_Z10_SprinklerHead_46.5",
+    "PROP_Z10_SprinklerHead_50.5",
+    "PROP_Z10_SprinklerHead_54.5",
+    "PROP_Z10_SprinklerHead_58.5",
+    "PROP_Z10_SprinklerPipe"
+  ],
+  "objects": {
+    "P0B4_GRILLE_01": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_02": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_03": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_GRILLE_04": {
+      "tris": 3820,
+      "verts": 1944,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_HVAC_RUN_800x600": {
+      "tris": 9564,
+      "verts": 5032,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_HVAC_E": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_HVAC_W": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_SPR_E": {
+      "tris": 7916,
+      "verts": 3992,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SLEEVE_SPR_W": {
+      "tris": 7916,
+      "verts": 3992,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SPRINKLER_HEADS": {
+      "tris": 4960,
+      "verts": 2520,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SPRINKLER_RUN_DN80": {
+      "tris": 5218,
+      "verts": 2700,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORTS_HVAC": {
+      "tris": 2598,
+      "verts": 1368,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORTS_SPRINKLER": {
+      "tris": 1540,
+      "verts": 800,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B4_SUPPORT_EXTENSIONS": {
+      "tris": 96,
+      "verts": 64,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  },
+  "object_count": 14,
+  "total_tris": 61704,
+  "bbox_min": [
+    40.0105,
+    16.8751,
+    3.0612
+  ],
+  "bbox_max": [
+    62.0095,
+    20.51,
+    4.19
+  ],
+  "checks": {
+    "non_manifold_total": 0,
+    "degenerate_total": 0,
+    "uv_missing": []
+  },
+  "bbox_note": "Calculated after view_layer.update(); matrix_world is current.",
+  "retired_count": 31
+}

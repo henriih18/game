@@ -1,0 +1,34 @@
+{
+  "retired": "PROP_Z10_SprinklerFeeds",
+  "revision": "R2 horizontal side-stem valves, clear of duct and ceiling",
+  "layout": {
+    "pipe_z": 3.9,
+    "valve_a_y": 16.55,
+    "valve_b_y": 21.55,
+    "wheel_top_z": 3.969,
+    "ceiling_underside_z": 3.99,
+    "duct_top_z": 3.85,
+    "duct_y": [
+      19.57,
+      20.43
+    ],
+    "gauge_axis": "-X"
+  },
+  "objects": {
+    "P0B5_FEED_A": {
+      "tris": 8784,
+      "verts": 4484,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "P0B5_FEED_B": {
+      "tris": 9896,
+      "verts": 5044,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  },
+  "qa_pass": true
+}

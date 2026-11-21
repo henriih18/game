@@ -1,0 +1,25 @@
+{
+  "source_objects": 7828,
+  "master_objects": 7828,
+  "missing_objects": [],
+  "extra_objects": [],
+  "type_mismatches": [],
+  "transform_mismatches": [],
+  "visibility_mismatches": [],
+  "source_triangles": 761932,
+  "master_triangles": 761932,
+  "source_camera": "NEXUS_V05_CAM_Corridor",
+  "master_camera": "NEXUS_V05_CAM_Corridor",
+  "master_libraries": [
+    "//../nucleo/NEXUS_CORE.blend",
+    "//../compartido/NEXUS_HISTORICAL.blend",
+    "//../nivel_01/NEXUS_L1_V05.blend",
+    "//../nivel_02/NEXUS_L2_V04.blend",
+    "//../nivel_03/NEXUS_L3_MEDICAL.blend",
+    "//../nivel_04/NEXUS_L4_CONTAINMENT.blend",
+    "//../nivel_05/NEXUS_L5_INFRA.blend",
+    "//../compartido/NEXUS_SHARED_ASSETS.blend"
+  ],
+  "missing_libraries": [],
+  "failures": []
+}

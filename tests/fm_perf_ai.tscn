@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/fm_perf_ai.gd" id="1_perf_ai"]
+
+[node name="FMPerfAI" type="Node"]
+script = ExtResource("1_perf_ai")

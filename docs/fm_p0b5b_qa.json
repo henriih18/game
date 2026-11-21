@@ -1,0 +1,46 @@
+{
+  "generation": "P0B5B",
+  "removed_branch_pipes": [],
+  "removed_old_tees": [],
+  "head_cut": {
+    "before_tris": 3088,
+    "after_tris": 3088
+  },
+  "objects": {
+    "P0B5_SPRINKLER_BRANCHES": {
+      "tris": 10992,
+      "verts": 5824,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B5_SPRINKLER_TEES": {
+      "tris": 4456,
+      "verts": 2352,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    "P0B5_SPRINKLER_ESCUTCHEONS": {
+      "tris": 3776,
+      "verts": 1920,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  },
+  "branches_source": {
+    "tris": 7648,
+    "verts": 3896,
+    "non_manifold_edges": 0,
+    "degenerate_faces": 0,
+    "uv": true
+  },
+  "heads_source": {
+    "tris": 3088,
+    "verts": 1568,
+    "non_manifold_edges": 0,
+    "degenerate_faces": 0,
+    "uv": true
+  }
+}

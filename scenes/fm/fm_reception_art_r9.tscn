@@ -1,0 +1,126 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_reception_art_r9.gd" id="1_py5q1"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/reception_sector.glb" id="2_wijfk"]
+
+[sub_resource type="Environment" id="Environment_pskho"]
+background_mode = 1
+background_color = Color(0.002, 0.0024, 0.003, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.45, 0.45, 0.48, 1)
+ambient_light_energy = 0.06
+tonemap_mode = 4
+tonemap_exposure = 1.12
+ssr_enabled = true
+ssr_max_steps = 48
+ssr_depth_tolerance = 0.2
+ssao_enabled = true
+ssao_radius = 1.2
+ssao_intensity = 1.2
+ssao_light_affect = 0.1
+glow_enabled = true
+glow_intensity = 0.25
+glow_bloom = 0.015
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.008
+volumetric_fog_albedo = Color(0.55, 0.6, 0.68, 1)
+volumetric_fog_gi_inject = 0.0
+volumetric_fog_anisotropy = 0.25
+volumetric_fog_sky_affect = 0.0
+
+[node name="FM_RECEPTION_ART_R9" type="Node3D" unique_id=1707502967]
+script = ExtResource("1_py5q1")
+
+[node name="ReceptionSector" type="Node3D" parent="." unique_id=609803229 instance=ExtResource("2_wijfk")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=137055559]
+environment = SubResource("Environment_pskho")
+
+[node name="ArtCamera" type="Camera3D" parent="." unique_id=1925462386]
+transform = Transform3D(0.7631965, 0.0025853165, -0.64616126, 0, 0.999992, 0.004001007, 0.64616644, -0.0030535546, 0.76319045, -106, 1.7, 36)
+current = true
+fov = 73.7
+
+[node name="PracticalA" type="OmniLight3D" parent="." unique_id=436357398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88, 4.45, 24)
+light_color = Color(1, 0.82, 0.62, 1)
+light_energy = 6.0
+light_specular = 0.3
+shadow_enabled = true
+omni_range = 25.0
+omni_attenuation = 0.75
+
+[node name="Pendant_0" type="OmniLight3D" parent="." unique_id=167978138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 3, 12)
+light_color = Color(1, 0.8, 0.58, 1)
+light_energy = 1.8
+light_specular = 0.3
+omni_range = 12.0
+
+[node name="Pendant_1" type="OmniLight3D" parent="." unique_id=1067322027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 3, 12)
+light_color = Color(1, 0.8, 0.58, 1)
+light_energy = 1.8
+light_specular = 0.3
+omni_range = 12.0
+
+[node name="Pendant_2" type="OmniLight3D" parent="." unique_id=710759390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 3, 34)
+light_color = Color(1, 0.8, 0.58, 1)
+light_energy = 1.8
+light_specular = 0.3
+omni_range = 12.0
+
+[node name="Pendant_3" type="OmniLight3D" parent="." unique_id=1160175651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 3, 34)
+light_color = Color(1, 0.8, 0.58, 1)
+light_energy = 1.8
+light_specular = 0.3
+omni_range = 12.0
+
+[node name="Vestibule_0" type="OmniLight3D" parent="." unique_id=437895022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92, 3.05, 6)
+light_color = Color(1, 0.82, 0.62, 1)
+light_energy = 1.2
+light_specular = 0.3
+omni_range = 7.0
+
+[node name="Vestibule_1" type="OmniLight3D" parent="." unique_id=684526238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88, 3.05, 6)
+light_color = Color(1, 0.82, 0.62, 1)
+light_energy = 1.2
+light_specular = 0.3
+omni_range = 7.0
+
+[node name="Emerg_Ceiling_N" type="OmniLight3D" parent="." unique_id=1166634992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 5, 9.2)
+light_color = Color(1, 0.03, 0.02, 1)
+light_energy = 1.8
+light_specular = 0.0
+omni_range = 7.0
+
+[node name="Emerg_Ceiling_S" type="OmniLight3D" parent="." unique_id=1493018902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 5, 38.8)
+light_color = Color(1, 0.03, 0.02, 1)
+light_energy = 1.8
+light_specular = 0.0
+omni_range = 7.0
+
+[node name="Emerg_Decon" type="OmniLight3D" parent="." unique_id=1244658515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97, 2.45, 33.86)
+light_color = Color(1, 0.03, 0.02, 1)
+light_specular = 0.0
+omni_range = 4.0
+
+[node name="Emerg_Extraction" type="OmniLight3D" parent="." unique_id=1794120923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 4.05, 39.55)
+light_color = Color(1, 0.03, 0.02, 1)
+light_energy = 1.2
+light_specular = 0.0
+
+[node name="Exit_Salida" type="OmniLight3D" parent="." unique_id=315771512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 4, 39.35)
+light_color = Color(0.25, 1, 0.45, 1)
+light_energy = 0.3
+light_specular = 0.0
+omni_range = 3.0

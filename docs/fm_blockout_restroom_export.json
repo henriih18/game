@@ -1,0 +1,120 @@
+{
+  "room_id": "restroom",
+  "title_es": "Aseo",
+  "function_es": "Aseo de planta de 12 x 16 m y 4 m de altura, accesible desde el enlace con Oficinas. Sala pequena y claustrofobica.",
+  "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_restroom.glb",
+  "blend": "/home/riyo/Documentos/game/nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "prefixes": [
+    "SM_L1_Zone09_Aseo_",
+    "SM_L1_Conn_AseoLink_"
+  ],
+  "collections": [
+    "L1_ARCH_CEILINGS",
+    "L1_ARCH_CIRCULATION",
+    "L1_ARCH_ZONES"
+  ],
+  "objects": 14,
+  "unique_meshes": 14,
+  "tris_blender": 168,
+  "materials": 6,
+  "material_names": [
+    "M_L1_Ceiling_Blockout.009",
+    "M_L1_Corridor_Floor.010",
+    "M_L1_Door_Frame.010",
+    "M_L1_Wall_Blockout.010",
+    "M_L1_Wall_Corridor.010",
+    "M_L1_Zone_Aseo.010"
+  ],
+  "images": 0,
+  "image_names": [],
+  "shell": {
+    "floor": true,
+    "ceiling": true,
+    "wall_pieces": 7,
+    "door_pieces": 3
+  },
+  "aabb_blender": [
+    [
+      15.0,
+      41.85,
+      -0.2
+    ],
+    [
+      30.0,
+      58.15,
+      4.0
+    ]
+  ],
+  "aabb_godot_position": [
+    15.0,
+    -0.2,
+    -58.15
+  ],
+  "aabb_godot_size": [
+    15.0,
+    4.2,
+    16.3
+  ],
+  "names": [
+    "SM_L1_Conn_AseoLink_Ceiling",
+    "SM_L1_Conn_AseoLink_Floor",
+    "SM_L1_Conn_AseoLink_Wall_N_0",
+    "SM_L1_Conn_AseoLink_Wall_S_0",
+    "SM_L1_Zone09_Aseo_Ceiling",
+    "SM_L1_Zone09_Aseo_Door_W_L",
+    "SM_L1_Zone09_Aseo_Door_W_R",
+    "SM_L1_Zone09_Aseo_Door_W_T",
+    "SM_L1_Zone09_Aseo_Floor",
+    "SM_L1_Zone09_Aseo_Wall_N_0",
+    "SM_L1_Zone09_Aseo_Wall_S_0",
+    "SM_L1_Zone09_Aseo_Wall_W_0",
+    "SM_L1_Zone09_Aseo_Wall_W_1",
+    "SM_L1_Zone09_Aseo_Wall_W_2"
+  ],
+  "strays": [],
+  "shared_boundaries": [
+    "El lado este de Aseo es el muro oeste de Vestuarios (SM_L1_Zone05_Changing_Wall_W_*), incluido en blockout_lockers."
+  ],
+  "blocked_elements": [],
+  "glb": {
+    "bytes": 18908,
+    "meshes": 14,
+    "mesh_nodes": 14,
+    "nodes": 15,
+    "scenes": 1,
+    "scene_index": 0,
+    "materials": 6,
+    "images": 0,
+    "tris": 168,
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "skins": 0,
+    "root_nodes": [
+      "FM_L1_BLOCKOUT_RESTROOM"
+    ],
+    "root_node_ok": true,
+    "aabb_gltf_min": [
+      15.0,
+      -0.2,
+      -58.15
+    ],
+    "aabb_gltf_max": [
+      30.0,
+      4.0,
+      -41.85
+    ],
+    "aabb_godot_position": [
+      15.0,
+      -0.2,
+      -58.15
+    ],
+    "aabb_godot_size": [
+      15.0,
+      4.2,
+      16.3
+    ],
+    "forbidden_nodes": [],
+    "glb_path": "/home/riyo/Documentos/game/assets/models/fm/blockout_restroom.glb"
+  }
+}

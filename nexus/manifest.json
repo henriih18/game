@@ -1,0 +1,181 @@
+{
+  "source": "/home/riyo/Documentos/game/FM_NEXUS_V05_level1_v125.blend",
+  "source_scene_objects": 7828,
+  "method": "Niveles locales editables; assets comunes enlazados a L1; master enlazado",
+  "note": "El master se refresca al abrir: L1 evoluciono despues de la division. Estado v138: recepcion retexturizada (v126-v127), extraccion en el ascensor SALIDA con cabina transitable y puertas animadas (v136-v137), y zona de extraccion definida como la recepcion completa de 16 x 10 m para 1-8 jugadores (v138), con REC_PASS126/REC_LOD1/REC_PLAY y NEXUS_V05_ELEVATOR anidadas en NEXUS_L1_V05.",
+  "files": {
+    "L1": {
+      "path": "/home/riyo/Documentos/game/nexus/nivel_01/NEXUS_L1_V05.blend",
+      "bytes": 2569121,
+      "scene_objects": 2441,
+      "datablock_objects": 2441,
+      "datablock_meshes": 2142,
+      "datablock_materials": 128,
+      "mesh_objects": 2217,
+      "lights": 63,
+      "cameras": 12,
+      "active_camera": "NEXUS_V05_CAM_ExtractionElevator",
+      "libraries": [
+        "//../compartido/NEXUS_SHARED_ASSETS.blend"
+      ],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": [
+        "//../../assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_alpha_1k.png",
+        "//../../assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_rough_1k.png"
+      ]
+    },
+    "L2": {
+      "path": "/home/riyo/Documentos/game/nexus/nivel_02/NEXUS_L2_V04.blend",
+      "bytes": 1029129,
+      "scene_objects": 1861,
+      "datablock_objects": 1861,
+      "datablock_meshes": 1769,
+      "datablock_materials": 37,
+      "mesh_objects": 1769,
+      "lights": 42,
+      "cameras": 10,
+      "active_camera": "NEXUS_V04_CAM_Airlock",
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": []
+    },
+    "L3": {
+      "path": "/home/riyo/Documentos/game/nexus/nivel_03/NEXUS_L3_MEDICAL.blend",
+      "bytes": 450600,
+      "scene_objects": 620,
+      "datablock_objects": 620,
+      "datablock_meshes": 580,
+      "datablock_materials": 24,
+      "mesh_objects": 580,
+      "lights": 33,
+      "cameras": 0,
+      "active_camera": null,
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": []
+    },
+    "L4": {
+      "path": "/home/riyo/Documentos/game/nexus/nivel_04/NEXUS_L4_CONTAINMENT.blend",
+      "bytes": 455950,
+      "scene_objects": 621,
+      "datablock_objects": 621,
+      "datablock_meshes": 579,
+      "datablock_materials": 25,
+      "mesh_objects": 579,
+      "lights": 37,
+      "cameras": 0,
+      "active_camera": null,
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": []
+    },
+    "L5": {
+      "path": "/home/riyo/Documentos/game/nexus/nivel_05/NEXUS_L5_INFRA.blend",
+      "bytes": 571620,
+      "scene_objects": 817,
+      "datablock_objects": 817,
+      "datablock_meshes": 763,
+      "datablock_materials": 35,
+      "mesh_objects": 763,
+      "lights": 45,
+      "cameras": 0,
+      "active_camera": null,
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": []
+    },
+    "CORE": {
+      "path": "/home/riyo/Documentos/game/nexus/nucleo/NEXUS_CORE.blend",
+      "bytes": 415980,
+      "scene_objects": 500,
+      "datablock_objects": 500,
+      "datablock_meshes": 479,
+      "datablock_materials": 12,
+      "mesh_objects": 479,
+      "lights": 20,
+      "cameras": 0,
+      "active_camera": null,
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": []
+    },
+    "SHARED": {
+      "path": "/home/riyo/Documentos/game/nexus/compartido/NEXUS_SHARED_ASSETS.blend",
+      "bytes": 7924148,
+      "scene_objects": 224,
+      "datablock_objects": 224,
+      "datablock_meshes": 78,
+      "datablock_materials": 47,
+      "mesh_objects": 145,
+      "lights": 1,
+      "cameras": 0,
+      "active_camera": null,
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": [
+        "//../../assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_alpha_1k.png",
+        "//../../assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_rough_1k.png"
+      ]
+    },
+    "HIST": {
+      "path": "/home/riyo/Documentos/game/nexus/compartido/NEXUS_HISTORICAL.blend",
+      "bytes": 720993,
+      "scene_objects": 1255,
+      "datablock_objects": 1255,
+      "datablock_meshes": 1143,
+      "datablock_materials": 22,
+      "mesh_objects": 1143,
+      "lights": 75,
+      "cameras": 9,
+      "active_camera": "NEXUS_V03_CAM_Corridor",
+      "libraries": [],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": []
+    },
+    "MASTER": {
+      "path": "/home/riyo/Documentos/game/nexus/master/NEXUS_MASTER.blend",
+      "bytes": 398478,
+      "scene_objects": 8115,
+      "datablock_objects": 8115,
+      "datablock_meshes": 7455,
+      "datablock_materials": 283,
+      "mesh_objects": 7530,
+      "lights": 315,
+      "cameras": 31,
+      "active_camera": "NEXUS_V05_CAM_Corridor",
+      "libraries": [
+        "//../nucleo/NEXUS_CORE.blend",
+        "//../compartido/NEXUS_HISTORICAL.blend",
+        "//../nivel_01/NEXUS_L1_V05.blend",
+        "//../nivel_02/NEXUS_L2_V04.blend",
+        "//../nivel_03/NEXUS_L3_MEDICAL.blend",
+        "//../nivel_04/NEXUS_L4_CONTAINMENT.blend",
+        "//../nivel_05/NEXUS_L5_INFRA.blend",
+        "//../compartido/NEXUS_SHARED_ASSETS.blend"
+      ],
+      "missing_libraries": [],
+      "missing_images": [],
+      "suspicious_small_images": [
+        "//../../assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_alpha_1k.png",
+        "//../../assets/Modelos 3D/Objetos pequeños y narrativa ambiental/industrial_wall_lamp_1k.blend/textures/industrial_wall_lamp_glass_rough_1k.png"
+      ]
+    }
+  },
+  "post_split_l1_versions": [
+    "NEXUS_L1_V05_recepcion_v127.blend",
+    "NEXUS_L1_V05_recepcion_v128.blend",
+    "NEXUS_L1_V05_recepcion_v129.blend",
+    "NEXUS_L1_V05_recepcion_v130.blend",
+    "NEXUS_L1_V05_recepcion_v132.blend",
+    "NEXUS_L1_V05_recepcion_v133.blend",
+    "NEXUS_L1_V05_control_v134.blend"
+  ]
+}

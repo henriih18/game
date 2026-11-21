@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/blockout_stairs_e1.glb" id="1_stairs_e1"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/stairs_e1_art.glb" id="2_stairs_e1_art"]
+
+[node name="BlockoutStairsE1Art" type="Node3D"]
+
+[node name="StairsE1Sector" parent="." instance=ExtResource("1_stairs_e1")]
+
+[node name="StairsE1Art" parent="StairsE1Sector" instance=ExtResource("2_stairs_e1_art")]
+
+[node name="Emerg_StairsE1" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.6, 2.9, -17)
+light_color = Color(1, 0.28, 0.18, 1)
+light_energy = 0.28
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 5.8
+omni_attenuation = 1.5
+
+[node name="Se1_Ceiling_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115, 4.8, -13)
+light_color = Color(0.82, 0.88, 1, 1)
+light_energy = 4.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 11.0
+omni_attenuation = 1.35
+
+[node name="Se1_Ceiling_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115, 4.8, -22)
+light_color = Color(0.82, 0.88, 1, 1)
+light_energy = 4.5
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 11.0
+omni_attenuation = 1.35
+
+[node name="Se1_Landing_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115, 0.6, -24.5)
+light_color = Color(0.9, 0.9, 0.94, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 8.0
+omni_attenuation = 1.4
+
+[node name="Se1_Entry_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.5, 2.6, -12)
+light_color = Color(1, 0.6, 0.3, 1)
+light_energy = 2.2
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.0
+omni_attenuation = 1.4

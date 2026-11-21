@@ -1,0 +1,69 @@
+{
+  "bytes": 5974800,
+  "meshes": 106,
+  "nodes": 106,
+  "materials": [
+    "M_VEST_Locker_Green",
+    "M_FM_Workbench_Wood",
+    "M_FM_Steel_Dark",
+    "M_FM_Rubber",
+    "M_VEST_Cloth_Dark",
+    "M_VEST_Black",
+    "M_VEST_Towel",
+    "M_FM_Label_White",
+    "M_VEST_Galv",
+    "M_R21B_Emissive_Red",
+    "M_VEST_Cloth_Olive",
+    "M_FM_Label_Taquillas",
+    "M_VEST_Emissive_Green",
+    "M_VEST_Red",
+    "M_FM_Label_Extintor",
+    "M_REC03_DecalHand",
+    "M_VEST_HardHat",
+    "M_VEST_Emissive_Cool",
+    "M_FM_Label_Num_01",
+    "M_FM_Label_Num_02",
+    "M_FM_Label_Num_03",
+    "M_VEST_Paper",
+    "M_VEST_Cork",
+    "M_VEST_Puddle",
+    "M_VEST_Tile",
+    "M_VEST_Ceramic",
+    "M_VEST_Mirror",
+    "M_FM_Sign_Servicio"
+  ],
+  "images": 20,
+  "tris": 51050,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "VEST_Baseboards_TRIM",
+    "VEST_Bench_E_A",
+    "VEST_Bench_E_B",
+    "VEST_Bench_E_C",
+    "VEST_Bench_E_D",
+    "VEST_Bench_Island_NE_A",
+    "VEST_Bench_Island_NE_B",
+    "VEST_Bench_Island_NW_A",
+    "VEST_Bench_Island_NW_B",
+    "VEST_Bench_Island_SE_A",
+    "VEST_Bench_Island_SE_B",
+    "VEST_Bench_Island_SW_A"
+  ],
+  "source_objects": 106,
+  "source_aabb_blender": {
+    "min": [
+      30.0,
+      40.0,
+      0.0
+    ],
+    "max": [
+      60.0,
+      64.0,
+      4.4
+    ]
+  },
+  "file": "assets/models/fm/vestuarios_art.glb",
+  "max_bytes": 26214400,
+  "pass": true
+}

@@ -1,0 +1,836 @@
+{
+  "collection": "L1_RECEPTION_LOD",
+  "sources": {
+    "REC06_CHAIR_HERO": {
+      "source_tris": 4764,
+      "levels": {
+        "LOD1": {
+          "tris": 2142,
+          "verts": 1141,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 714,
+          "verts": 427,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC06_DESK_HERO": {
+      "source_tris": 6136,
+      "levels": {
+        "LOD1": {
+          "tris": 2760,
+          "verts": 1500,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 920,
+          "verts": 580,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC07_SECURITY_EQUIPMENT_HERO": {
+      "source_tris": 14504,
+      "levels": {
+        "LOD1": {
+          "tris": 6526,
+          "verts": 3527,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 2174,
+          "verts": 1351,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC07_SECURITY_CHAIR_HERO": {
+      "source_tris": 4764,
+      "levels": {
+        "LOD1": {
+          "tris": 2142,
+          "verts": 1141,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 714,
+          "verts": 427,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC08_STANCHION_A": {
+      "source_tris": 14596,
+      "levels": {
+        "LOD1": {
+          "tris": 6568,
+          "verts": 3362,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 2188,
+          "verts": 1172,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC08_STANCHION_B": {
+      "source_tris": 11612,
+      "levels": {
+        "LOD1": {
+          "tris": 5224,
+          "verts": 2670,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1740,
+          "verts": 928,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC08_STANCHION_C": {
+      "source_tris": 11612,
+      "levels": {
+        "LOD1": {
+          "tris": 5224,
+          "verts": 2670,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1740,
+          "verts": 928,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC08_STANCHION_D": {
+      "source_tris": 14596,
+      "levels": {
+        "LOD1": {
+          "tris": 6568,
+          "verts": 3362,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 2188,
+          "verts": 1172,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC08_BARRIER_POST": {
+      "source_tris": 11612,
+      "levels": {
+        "LOD1": {
+          "tris": 5224,
+          "verts": 2670,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1740,
+          "verts": 928,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC08_BARRIER_RECEIVER": {
+      "source_tris": 4820,
+      "levels": {
+        "LOD1": {
+          "tris": 2168,
+          "verts": 1114,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 722,
+          "verts": 391,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_MAIN": {
+      "source_tris": 16844,
+      "levels": {
+        "LOD1": {
+          "tris": 7578,
+          "verts": 4163,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 2526,
+          "verts": 1637,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_TRANSITION": {
+      "source_tris": 5500,
+      "levels": {
+        "LOD1": {
+          "tris": 2474,
+          "verts": 1303,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 824,
+          "verts": 478,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_BRANCH_00": {
+      "source_tris": 10392,
+      "levels": {
+        "LOD1": {
+          "tris": 4676,
+          "verts": 2438,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1558,
+          "verts": 879,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_BRANCH_01": {
+      "source_tris": 10392,
+      "levels": {
+        "LOD1": {
+          "tris": 4676,
+          "verts": 2438,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1558,
+          "verts": 879,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_BRANCH_02": {
+      "source_tris": 10392,
+      "levels": {
+        "LOD1": {
+          "tris": 4676,
+          "verts": 2438,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1558,
+          "verts": 879,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_BRANCH_03": {
+      "source_tris": 10392,
+      "levels": {
+        "LOD1": {
+          "tris": 4676,
+          "verts": 2438,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1558,
+          "verts": 879,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_BRANCH_04": {
+      "source_tris": 10392,
+      "levels": {
+        "LOD1": {
+          "tris": 4676,
+          "verts": 2438,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1558,
+          "verts": 879,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_SLEEVE_W": {
+      "source_tris": 3308,
+      "levels": {
+        "LOD1": {
+          "tris": 1488,
+          "verts": 778,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 496,
+          "verts": 282,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_SLEEVE_E": {
+      "source_tris": 3308,
+      "levels": {
+        "LOD1": {
+          "tris": 1488,
+          "verts": 778,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 496,
+          "verts": 282,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_FIREDAMPER_W": {
+      "source_tris": 7888,
+      "levels": {
+        "LOD1": {
+          "tris": 3548,
+          "verts": 1870,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1182,
+          "verts": 687,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_FIREDAMPER_E": {
+      "source_tris": 7888,
+      "levels": {
+        "LOD1": {
+          "tris": 3548,
+          "verts": 1870,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1182,
+          "verts": 687,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_MAIN_100": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_MAIN_94": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_MAIN_80": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_MAIN_72": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_BRANCH_00": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_BRANCH_01": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_GRILLE_BRANCH_02": {
+      "source_tris": 3820,
+      "levels": {
+        "LOD1": {
+          "tris": 1718,
+          "verts": 893,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 572,
+          "verts": 320,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_HVAC_SUPPORTS": {
+      "source_tris": 12320,
+      "levels": {
+        "LOD1": {
+          "tris": 5544,
+          "verts": 2932,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1848,
+          "verts": 1084,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_SPRINKLER_HEADS": {
+      "source_tris": 13760,
+      "levels": {
+        "LOD1": {
+          "tris": 6192,
+          "verts": 3160,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 2064,
+          "verts": 1096,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_SPRINKLER_SUPPORTS": {
+      "source_tris": 3936,
+      "levels": {
+        "LOD1": {
+          "tris": 1770,
+          "verts": 933,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 590,
+          "verts": 343,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_SPRINKLER_SLEEVE_00": {
+      "source_tris": 7916,
+      "levels": {
+        "LOD1": {
+          "tris": 3562,
+          "verts": 1815,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1186,
+          "verts": 627,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_SPRINKLER_SLEEVE_01": {
+      "source_tris": 7916,
+      "levels": {
+        "LOD1": {
+          "tris": 3562,
+          "verts": 1815,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1186,
+          "verts": 627,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_TRAY_N_SUPPORTS": {
+      "source_tris": 7248,
+      "levels": {
+        "LOD1": {
+          "tris": 3260,
+          "verts": 1702,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 1086,
+          "verts": 615,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC09_TRAY_W_SUPPORTS": {
+      "source_tris": 5248,
+      "levels": {
+        "LOD1": {
+          "tris": 2360,
+          "verts": 1244,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 786,
+          "verts": 457,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC12_BENCH_A": {
+      "source_tris": 5200,
+      "levels": {
+        "LOD1": {
+          "tris": 2340,
+          "verts": 1242,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 780,
+          "verts": 462,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC12_BENCH_B": {
+      "source_tris": 5200,
+      "levels": {
+        "LOD1": {
+          "tris": 2340,
+          "verts": 1242,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 780,
+          "verts": 462,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC12_PLANTER": {
+      "source_tris": 3992,
+      "levels": {
+        "LOD1": {
+          "tris": 1796,
+          "verts": 958,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 598,
+          "verts": 359,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    },
+    "REC13_LOCKERS_HERO": {
+      "source_tris": 21488,
+      "levels": {
+        "LOD1": {
+          "tris": 9668,
+          "verts": 5090,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.45
+        },
+        "LOD2": {
+          "tris": 3222,
+          "verts": 1867,
+          "non_manifold": 0,
+          "degenerate": 0,
+          "uv": true,
+          "ratio": 0.15
+        }
+      }
+    }
+  },
+  "skipped": [
+    "REC06_EQUIPMENT_HERO",
+    "REC07_SECURITY_DESK_HERO",
+    "REC09_SPRINKLER_RUN",
+    "REC09_TRAY_N",
+    "REC09_TRAY_W"
+  ],
+  "total_source_tris": 316676,
+  "total_lod1_tris": 142470,
+  "total_lod2_tris": 47466,
+  "failures": [],
+  "qa_pass": true
+}

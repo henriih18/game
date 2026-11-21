@@ -1,0 +1,136 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/blockout_restroom.glb" id="1_restroom"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/restroom_art.glb" id="2_restroom_art"]
+
+[node name="BlockoutRestroomArt" type="Node3D"]
+
+[node name="RestroomSector" parent="." instance=ExtResource("1_restroom")]
+
+[node name="RestroomArt" parent="RestroomSector" instance=ExtResource("2_restroom_art")]
+
+[node name="Emerg_Restroom" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3, -50)
+light_color = Color(0.62, 1, 0.72, 1)
+light_energy = 0.2
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 4.2
+omni_attenuation = 1.6
+
+[node name="Rs_Ceiling_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6, 3.0, -44.8)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4, 3.0, -44.8)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_03" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2, 3.0, -44.8)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_04" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.0, 3.0, -44.8)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_05" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6, 3.0, -55.0)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_06" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4, 3.0, -55.0)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_07" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2, 3.0, -55.0)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Ceiling_08" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.0, 3.0, -55.0)
+light_color = Color(0.78, 0.9, 1, 1)
+light_energy = 3.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.5
+omni_attenuation = 1.4
+
+[node name="Rs_Mirror_Warm_01" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0, 2.35, -54.9)
+light_color = Color(1, 0.82, 0.62, 1)
+light_energy = 1.4
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 5.0
+omni_attenuation = 1.45
+
+[node name="Rs_Mirror_Warm_02" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0, 2.35, -44.2)
+light_color = Color(1, 0.82, 0.62, 1)
+light_energy = 1.4
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 5.0
+omni_attenuation = 1.45
+
+[node name="Rs_Entry_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6, 2.7, -49)
+light_color = Color(0.82, 0.9, 1, 1)
+light_energy = 2.0
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 6.0
+omni_attenuation = 1.4
+
+[node name="Rs_Connector_Fill" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5, 2.8, -49)
+light_color = Color(0.86, 0.9, 0.94, 1)
+light_energy = 2.4
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 7.0
+omni_attenuation = 1.4
+
+[node name="Rs_Emerg_East" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7, 2.6, -50)
+light_color = Color(1, 0.16, 0.08, 1)
+light_energy = 0.7
+light_specular = 0.05
+shadow_enabled = false
+omni_range = 4.5
+omni_attenuation = 1.5

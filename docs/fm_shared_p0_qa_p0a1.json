@@ -1,0 +1,283 @@
+{
+ "build": {
+  "SM_SH_HVAC_RECT800x600_L2000": {
+   "tris": 10392,
+   "verts": 5296,
+   "objects_replaced": 4,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_RECT800x600_PEN400": {
+   "tris": 7844,
+   "verts": 4016,
+   "objects_replaced": 3,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_RECT600x400_L2000": {
+   "tris": 10392,
+   "verts": 5296,
+   "objects_replaced": 2,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_RECT600x400_PEN400": {
+   "tris": 7844,
+   "verts": 4016,
+   "objects_replaced": 3,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_TEE_800x600": {
+   "tris": 8476,
+   "verts": 4336,
+   "objects_replaced": 2,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_TRANS_800x600_600x400": {
+   "tris": 5500,
+   "verts": 2816,
+   "objects_replaced": 3,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_DAMPER_800x600": {
+   "tris": 8408,
+   "verts": 4304,
+   "objects_replaced": 2,
+   "old_datablocks": 2
+  },
+  "SM_SH_FIREDAMPER_800x600": {
+   "tris": 7888,
+   "verts": 4040,
+   "objects_replaced": 2,
+   "old_datablocks": 2
+  },
+  "SM_SH_HVAC_GRILLE_600x400": {
+   "tris": 3820,
+   "verts": 1944,
+   "objects_replaced": 3,
+   "old_datablocks": 2
+  },
+  "SM_SH_SLEEVE_RECT_800x600": {
+   "tris": 3308,
+   "verts": 1688,
+   "objects_replaced": 4,
+   "old_datablocks": 2
+  },
+  "SM_SH_SHAFT_ACCESS_600x1200": {
+   "tris": 5724,
+   "verts": 2936,
+   "objects_replaced": 2,
+   "old_datablocks": 2
+  },
+  "SM_SH_SLEEVE_RECT_600x400": {
+   "tris": 3308,
+   "verts": 1688,
+   "objects_replaced": 0,
+   "old_datablocks": 0,
+   "new_master": true
+  }
+ },
+ "qa": {
+  "SM_SH_HVAC_RECT800x600_L2000": {
+   "pass": true,
+   "tris": 10392,
+   "verts": 5296,
+   "materials": 5,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 3,
+   "bbox": [
+    2.002,
+    0.882,
+    0.682
+   ]
+  },
+  "SM_SH_HVAC_RECT800x600_PEN400": {
+   "pass": true,
+   "tris": 7844,
+   "verts": 4016,
+   "materials": 4,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 2,
+   "bbox": [
+    0.408,
+    0.882,
+    0.682
+   ]
+  },
+  "SM_SH_HVAC_RECT600x400_L2000": {
+   "pass": true,
+   "tris": 10392,
+   "verts": 5296,
+   "materials": 5,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 1,
+   "bbox": [
+    2.002,
+    0.682,
+    0.482
+   ]
+  },
+  "SM_SH_HVAC_RECT600x400_PEN400": {
+   "pass": true,
+   "tris": 7844,
+   "verts": 4016,
+   "materials": 4,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 2,
+   "bbox": [
+    0.408,
+    0.682,
+    0.482
+   ]
+  },
+  "SM_SH_HVAC_TEE_800x600": {
+   "pass": true,
+   "tris": 8476,
+   "verts": 4336,
+   "materials": 3,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 1,
+   "bbox": [
+    1.608,
+    0.882,
+    0.945
+   ]
+  },
+  "SM_SH_HVAC_TRANS_800x600_600x400": {
+   "pass": true,
+   "tris": 5500,
+   "verts": 2816,
+   "materials": 3,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 2,
+   "bbox": [
+    0.608,
+    0.882,
+    0.682
+   ]
+  },
+  "SM_SH_HVAC_DAMPER_800x600": {
+   "pass": true,
+   "tris": 8408,
+   "verts": 4304,
+   "materials": 6,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 1,
+   "bbox": [
+    0.358,
+    0.976,
+    0.709
+   ]
+  },
+  "SM_SH_FIREDAMPER_800x600": {
+   "pass": true,
+   "tris": 7888,
+   "verts": 4040,
+   "materials": 7,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 1,
+   "bbox": [
+    0.358,
+    0.882,
+    0.682
+   ]
+  },
+  "SM_SH_HVAC_GRILLE_600x400": {
+   "pass": true,
+   "tris": 3820,
+   "verts": 1944,
+   "materials": 4,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 2,
+   "bbox": [
+    0.159,
+    0.68,
+    0.48
+   ]
+  },
+  "SM_SH_SLEEVE_RECT_800x600": {
+   "pass": true,
+   "tris": 3308,
+   "verts": 1688,
+   "materials": 4,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 3,
+   "bbox": [
+    0.307,
+    0.98,
+    0.78
+   ]
+  },
+  "SM_SH_SHAFT_ACCESS_600x1200": {
+   "pass": true,
+   "tris": 5724,
+   "verts": 2936,
+   "materials": 4,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 1,
+   "bbox": [
+    0.7,
+    0.052,
+    1.34
+   ]
+  },
+  "SM_SH_SLEEVE_RECT_600x400": {
+   "pass": true,
+   "tris": 3308,
+   "verts": 1688,
+   "materials": 4,
+   "nonmanifold_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "coplanar_overlaps": [],
+   "errors": [],
+   "objects": 1,
+   "bbox": [
+    0.307,
+    0.78,
+    0.58
+   ]
+  }
+ }
+}

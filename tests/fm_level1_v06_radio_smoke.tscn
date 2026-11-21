@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/fm_level1_v06_radio_smoke.gd" id="1_radio_smoke"]
+
+[node name="FMLevel1V06RadioSmoke" type="Node"]
+script = ExtResource("1_radio_smoke")

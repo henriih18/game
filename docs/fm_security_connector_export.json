@@ -1,0 +1,44 @@
+{
+  "bytes": 5016,
+  "meshes": 3,
+  "nodes": 3,
+  "materials": 2,
+  "images": 0,
+  "tris": 36,
+  "cameras": 0,
+  "lights": 0,
+  "names": [
+    "SM_L1_Conn_SecurityConnector_Floor",
+    "SM_L1_Conn_SecurityConnector_Wall_E_0",
+    "SM_L1_Conn_SecurityConnector_Wall_W_0"
+  ],
+  "file": "assets/models/fm/security_connector.glb",
+  "source_objects": 3,
+  "source_tris": 36,
+  "source_aabb_blender": {
+    "min": [
+      -92.15,
+      4.0,
+      -0.2
+    ],
+    "max": [
+      -85.85,
+      10.0,
+      4.2
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      -92.2,
+      4.0,
+      -0.25
+    ],
+    "max": [
+      -85.8,
+      10.0,
+      4.25
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "pass": true
+}

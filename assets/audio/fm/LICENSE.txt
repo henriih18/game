@@ -1,0 +1,19 @@
+FRECUENCIA MUERTA — Audio de terror (assets/audio/fm)
+
+Los archivos WAV de esta carpeta fueron sintetizados para el proyecto con
+`tools/fm_generate_horror_audio.py` (síntesis propia, sin grabaciones ni
+muestras externas). Se publican como CC0 1.0 / dominio público dentro de
+FRECUENCIA MUERTA: se pueden usar, modificar y redistribuir con el juego.
+
+Archivos:
+  amb_drone_loop.wav              drone grave + cluster metálico, loop 24 s
+  event_metal_hit.wav             golpe metálico con cola de sala
+  event_distant_steps.wav         pasos lejanos amortiguados
+  event_whisper_static.wav        susurro ininteligible + estática
+  event_radio_interference.wav    interferencia de radio
+  event_drip.wav                  goteo en sala húmeda
+  event_creak.wav                 crujido metálico
+
+El lecho industrial reutiliza `assets/audio/ambience/ambience.wav`, generado
+también por el proyecto con `tools/generate_audio.py`. No hay recursos de
+procedencia desconocida.

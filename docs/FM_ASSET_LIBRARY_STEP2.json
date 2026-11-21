@@ -1,0 +1,133 @@
+{
+  "library_scene": "FM_ASSET_LIBRARY",
+  "security_root": "LIB_SECURITY_HERO",
+  "groups": [
+    {
+      "name": "LIB_SEC_CHECKPOINT",
+      "source": "L1_SECURITY_R2_HERO",
+      "objects": 127,
+      "tris": 26200,
+      "shared_meshes": 127,
+      "offset": [
+        200.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_CHECKPOINT_DEBRIS",
+      "source": "L1_SECURITY_R2_HERO",
+      "objects": 31,
+      "tris": 13412,
+      "shared_meshes": 31,
+      "offset": [
+        200.0,
+        8.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_OPS",
+      "source": "L1_SECURITY_R21A_HERO",
+      "objects": 69,
+      "tris": 213092,
+      "shared_meshes": 69,
+      "offset": [
+        200.0,
+        50.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_LOCKERS",
+      "source": "L1_SECURITY_R21C_HERO_LOCKERS",
+      "objects": 2,
+      "tris": 181984,
+      "shared_meshes": 2,
+      "offset": [
+        200.0,
+        100.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_HATCH",
+      "source": "L1_SECURITY_R21C_HERO_HATCH",
+      "objects": 7,
+      "tris": 29456,
+      "shared_meshes": 7,
+      "offset": [
+        200.0,
+        120.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_STORAGE",
+      "source": "L1_SECURITY_R21C_HERO_STORAGE",
+      "objects": 2,
+      "tris": 56958,
+      "shared_meshes": 2,
+      "offset": [
+        200.0,
+        140.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_CART",
+      "source": "L1_SECURITY_R21C_HERO_CART",
+      "objects": 1,
+      "tris": 20870,
+      "shared_meshes": 1,
+      "offset": [
+        200.0,
+        160.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_FIXTURES",
+      "source": "L1_SECURITY_R21D_HERO_FIXTURES",
+      "objects": 3,
+      "tris": 3316,
+      "shared_meshes": 3,
+      "offset": [
+        200.0,
+        180.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_DEBRIS_R21C",
+      "source": "L1_SECURITY_R21C_HERO_CHAOS",
+      "objects": 12,
+      "tris": 27856,
+      "shared_meshes": 12,
+      "offset": [
+        200.0,
+        200.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LIB_SEC_DEBRIS_R21D",
+      "source": "L1_SECURITY_R21D_HERO_CHAOS",
+      "objects": 45,
+      "tris": 55510,
+      "shared_meshes": 45,
+      "offset": [
+        200.0,
+        220.0,
+        0.0
+      ]
+    }
+  ],
+  "total_objects": 299,
+  "total_tris": 628654,
+  "notes": [
+    "Copies are linked duplicates sharing mesh data with the Security originals.",
+    "Originals remain untouched in the level scene.",
+    "Saved after each group to survive a heavy pass."
+  ]
+}

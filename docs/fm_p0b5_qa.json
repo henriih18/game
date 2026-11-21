@@ -1,0 +1,26 @@
+{
+  "collection": "L1_P0B5_Z10",
+  "retired": [],
+  "assets": [
+    {
+      "name": "P0B5_RISER_A",
+      "fm_riser": "A",
+      "tris": 19136,
+      "verts": 9980,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    {
+      "name": "P0B5_RISER_B",
+      "fm_riser": "B",
+      "tris": 19136,
+      "verts": 9980,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  ],
+  "pass": true,
+  "total_tris": 38272
+}

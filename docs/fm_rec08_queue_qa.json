@@ -1,0 +1,217 @@
+{
+  "collection": "L1_RECEPTION_R8_HERO",
+  "objects": {
+    "REC08_BARRIER_BELT": {
+      "tris": 228,
+      "verts": 116,
+      "polys": 114,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -86.17,
+        -9.7511,
+        0.869
+      ],
+      "bbox_max": [
+        -84.33,
+        -9.7489,
+        0.925
+      ]
+    },
+    "REC08_BARRIER_POST": {
+      "tris": 10972,
+      "verts": 5864,
+      "polys": 5486,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -86.4079,
+        -9.9079,
+        0.0
+      ],
+      "bbox_max": [
+        -86.0921,
+        -9.5921,
+        0.971
+      ]
+    },
+    "REC08_BARRIER_RECEIVER": {
+      "tris": 4564,
+      "verts": 2440,
+      "polys": 2282,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -84.3699,
+        -9.8699,
+        0.0
+      ],
+      "bbox_max": [
+        -84.1301,
+        -9.6301,
+        0.9425
+      ]
+    },
+    "REC08_BELT_A": {
+      "tris": 228,
+      "verts": 116,
+      "polys": 114,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -89.0011,
+        -13.5,
+        0.863
+      ],
+      "bbox_max": [
+        -88.9989,
+        -10.5,
+        0.925
+      ]
+    },
+    "REC08_BELT_B": {
+      "tris": 228,
+      "verts": 116,
+      "polys": 114,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -86.0011,
+        -13.5,
+        0.863
+      ],
+      "bbox_max": [
+        -85.9989,
+        -10.5,
+        0.925
+      ]
+    },
+    "REC08_BELT_C": {
+      "tris": 228,
+      "verts": 116,
+      "polys": 114,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -89.0,
+        -10.5011,
+        0.807
+      ],
+      "bbox_max": [
+        -86.0,
+        -10.4989,
+        0.865
+      ]
+    },
+    "REC08_STANCHION_A": {
+      "tris": 13820,
+      "verts": 7376,
+      "polys": 6910,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -89.1579,
+        -10.6579,
+        0.0
+      ],
+      "bbox_max": [
+        -88.8421,
+        -10.3421,
+        0.951
+      ]
+    },
+    "REC08_STANCHION_B": {
+      "tris": 10972,
+      "verts": 5864,
+      "polys": 5486,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -89.1579,
+        -13.6579,
+        0.0
+      ],
+      "bbox_max": [
+        -88.8421,
+        -13.3421,
+        0.951
+      ]
+    },
+    "REC08_STANCHION_C": {
+      "tris": 10972,
+      "verts": 5864,
+      "polys": 5486,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -86.1579,
+        -13.6579,
+        0.0
+      ],
+      "bbox_max": [
+        -85.8421,
+        -13.3421,
+        0.951
+      ]
+    },
+    "REC08_STANCHION_D": {
+      "tris": 13820,
+      "verts": 7376,
+      "polys": 6910,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -86.1579,
+        -10.6579,
+        0.0
+      ],
+      "bbox_max": [
+        -85.8421,
+        -10.3421,
+        0.951
+      ]
+    }
+  },
+  "total_tris": 66032,
+  "total_verts": 35248,
+  "bbox_min": [
+    -89.1579,
+    -13.6579,
+    0.0
+  ],
+  "bbox_max": [
+    -84.1301,
+    -9.5921,
+    0.971
+  ],
+  "retired": [
+    "PROP_REC02_Barrier_Arm",
+    "PROP_REC02_Barrier_Post",
+    "PROP_REC02_Belt_A",
+    "PROP_REC02_Belt_B",
+    "PROP_REC02_Belt_C",
+    "PROP_REC02_Stanchion_0",
+    "PROP_REC02_Stanchion_1",
+    "PROP_REC02_Stanchion_2",
+    "PROP_REC02_Stanchion_3",
+    "PROP_REC02_StanchionBase_0",
+    "PROP_REC02_StanchionBase_1",
+    "PROP_REC02_StanchionBase_2",
+    "PROP_REC02_StanchionBase_3"
+  ],
+  "retired_count": 13,
+  "notes": {
+    "queue": "4 stanchions with dual cassettes at corners (belts at 0.90 and 0.84 m), 3 sagging black belts, retractable barrier with receiver at the security desk",
+    "old_queue_retired": "PROP_REC02_Barrier_*, PROP_REC02_Belt_*, PROP_REC02_Stanchion* moved to L1_RECEPTION_RETIRED and hidden"
+  }
+}

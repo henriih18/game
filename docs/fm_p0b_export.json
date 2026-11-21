@@ -1,0 +1,44 @@
+{
+  "started": "2026-11-09 12:58:37",
+  "collection": "L1_P0B_SERVICES",
+  "path": "assets/models/fm/p0b_corridor_services.glb",
+  "objects": 17,
+  "meshes": 16,
+  "vertices": 145256,
+  "triangles": 279564,
+  "bytes": 10244988,
+  "aabb_min": [
+    -99.053,
+    -2.51,
+    3.1
+  ],
+  "aabb_max": [
+    73.853,
+    19.6,
+    3.99
+  ],
+  "aabb_size": [
+    172.906,
+    22.11,
+    0.89
+  ],
+  "names": [
+    "P0B_BLIND_E",
+    "P0B_BLIND_W",
+    "P0B_END_FLANGE_E",
+    "P0B_END_FLANGE_W",
+    "P0B_HVAC_BRANCH_Z10",
+    "P0B_HVAC_RUN_800x600",
+    "P0B_LABELS",
+    "P0B_SLEEVE_CORR",
+    "P0B_SLEEVE_Z10",
+    "P0B_SPRINKLER_HEADS",
+    "P0B_SPRINKLER_RUN_DN80",
+    "P0B_SUPPORTS_HVAC",
+    "P0B_SUPPORTS_SPRINKLER",
+    "P0B_SUPPORTS_TRAY",
+    "P0B_TEE_MAIN",
+    "P0B_TEE_Z10",
+    "P0B_TRAY_RUN_400"
+  ]
+}

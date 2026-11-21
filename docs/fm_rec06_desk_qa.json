@@ -1,0 +1,60 @@
+{
+  "collection": "L1_RECEPTION_R6_HERO",
+  "retired_collection": "L1_RECEPTION_RETIRED",
+  "retired": [
+    "PROP_REC02_CPU",
+    "PROP_REC02_Chair_Desk_Back",
+    "PROP_REC02_Chair_Desk_Leg",
+    "PROP_REC02_Chair_Desk_Leg.001",
+    "PROP_REC02_Chair_Desk_Leg.002",
+    "PROP_REC02_Chair_Desk_Leg.003",
+    "PROP_REC02_Chair_Desk_Seat",
+    "PROP_REC02_Credenza",
+    "PROP_REC02_Credenza_Top",
+    "PROP_REC02_Desk_Front",
+    "PROP_REC02_Desk_Modesty",
+    "PROP_REC02_Desk_ReturnFront",
+    "PROP_REC02_Desk_ReturnTop",
+    "PROP_REC02_Desk_SideL",
+    "PROP_REC02_Desk_SideR",
+    "PROP_REC02_Desk_Top",
+    "PROP_REC02_Keyboard",
+    "PROP_REC02_Monitor_Credenza_Base",
+    "PROP_REC02_Monitor_Credenza_Frame",
+    "PROP_REC02_Monitor_Credenza_Neck",
+    "PROP_REC02_Monitor_Credenza_Screen",
+    "PROP_REC02_Monitor_Desk_Base",
+    "PROP_REC02_Monitor_Desk_Frame",
+    "PROP_REC02_Monitor_Desk_Neck",
+    "PROP_REC02_Monitor_Desk_Screen"
+  ],
+  "objects": [
+    {
+      "name": "REC06_DESK_HERO",
+      "tris": 6136,
+      "verts": 3188,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    {
+      "name": "REC06_EQUIPMENT_HERO",
+      "tris": 8528,
+      "verts": 4544,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    },
+    {
+      "name": "REC06_CHAIR_HERO",
+      "tris": 4764,
+      "verts": 2452,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv": true
+    }
+  ],
+  "total_tris": 19428,
+  "total_verts": 10184,
+  "qa_pass": true
+}

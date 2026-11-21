@@ -1,0 +1,1642 @@
+{
+  "file": "/home/riyo/Documentos/game/nexus/master/NEXUS_MASTER.blend",
+  "capsule_radius_m": 0.38,
+  "capsule_height_m": 1.8,
+  "min_required_headroom_m": 3.12,
+  "tower_objects": 398,
+  "side_bvh": [
+    4392,
+    3282
+  ],
+  "all_bvh": [
+    7136,
+    5124
+  ],
+  "flights": [
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L1_L2_01",
+      "tramo": "L1_L2",
+      "lane_y": 9.7,
+      "run_m": 2.72,
+      "rise_m": 2.0,
+      "top_x": 31.43,
+      "bottom_x": 34.15,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          9.7,
+          -6.3
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.11,
+          9.0,
+          -5.4
+        ],
+        "headroom_m": null
+      },
+      "headroom_min_m": null,
+      "headroom_at": null,
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.11,
+            9.7,
+            -6.3
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.11,
+            9.0,
+            -5.4
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            9.7,
+            -6.8
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.79,
+            9.0,
+            -5.9
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.75,
+          "point": [
+            33.47,
+            9.7,
+            -7.3
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.47,
+            9.0,
+            -6.4
+          ],
+          "headroom_m": null
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L1_L2_02",
+      "tramo": "L1_L2",
+      "lane_y": 11.4,
+      "run_m": 2.72,
+      "rise_m": 2.0,
+      "top_x": 34.15,
+      "bottom_x": 31.43,
+      "clearance_min_m": 1.59,
+      "clearance_at": {
+        "t": 0.75,
+        "point": [
+          32.11,
+          11.4,
+          -9.3
+        ],
+        "clearance_m": 1.59,
+        "nearest": [
+          30.14,
+          11.4,
+          -8.4
+        ],
+        "headroom_m": null
+      },
+      "headroom_min_m": null,
+      "headroom_at": null,
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            33.47,
+            11.4,
+            -8.3
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.47,
+            9.0,
+            -7.4
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            11.4,
+            -8.8
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            32.79,
+            9.0,
+            -7.9
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.11,
+            11.4,
+            -9.3
+          ],
+          "clearance_m": 1.59,
+          "nearest": [
+            30.14,
+            11.4,
+            -8.4
+          ],
+          "headroom_m": null
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L1_L2_03",
+      "tramo": "L1_L2",
+      "lane_y": 13.1,
+      "run_m": 2.72,
+      "rise_m": 2.0,
+      "top_x": 31.43,
+      "bottom_x": 34.15,
+      "clearance_min_m": 1.339,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          13.1,
+          -10.3
+        ],
+        "clearance_m": 1.339,
+        "nearest": [
+          30.98,
+          13.3,
+          -10.68
+        ],
+        "headroom_m": null
+      },
+      "headroom_min_m": null,
+      "headroom_at": null,
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.11,
+            13.1,
+            -10.3
+          ],
+          "clearance_m": 1.339,
+          "nearest": [
+            30.98,
+            13.3,
+            -10.68
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            13.1,
+            -10.8
+          ],
+          "clearance_m": 1.601,
+          "nearest": [
+            30.98,
+            13.3,
+            -10.68
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.75,
+          "point": [
+            33.47,
+            13.1,
+            -11.3
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.47,
+            15.5,
+            -10.4
+          ],
+          "headroom_m": null
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L1_L2_04",
+      "tramo": "L1_L2",
+      "lane_y": 14.8,
+      "run_m": 2.72,
+      "rise_m": 2.0,
+      "top_x": 34.15,
+      "bottom_x": 31.43,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          33.47,
+          14.8,
+          -12.3
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          33.47,
+          15.5,
+          -11.4
+        ],
+        "headroom_m": null
+      },
+      "headroom_min_m": null,
+      "headroom_at": null,
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            33.47,
+            14.8,
+            -12.3
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.47,
+            15.5,
+            -11.4
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            14.8,
+            -12.8
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.79,
+            15.5,
+            -11.9
+          ],
+          "headroom_m": null
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.11,
+            14.8,
+            -13.3
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.11,
+            15.5,
+            -12.4
+          ],
+          "headroom_m": null
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L2_L3_01",
+      "tramo": "L2_L3",
+      "lane_y": 9.7,
+      "run_m": 3.53,
+      "rise_m": 2.17,
+      "top_x": 31.43,
+      "bottom_x": 34.96,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.31,
+          9.7,
+          -14.34
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.31,
+          9.0,
+          -13.44
+        ],
+        "headroom_m": 6.282
+      },
+      "headroom_min_m": 6.282,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.31,
+          9.7,
+          -14.34
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.31,
+          9.0,
+          -13.44
+        ],
+        "headroom_m": 6.282
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.31,
+            9.7,
+            -14.34
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.31,
+            9.0,
+            -13.44
+          ],
+          "headroom_m": 6.282
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.19,
+            9.7,
+            -14.88
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.19,
+            9.0,
+            -13.98
+          ],
+          "headroom_m": 6.823
+        },
+        {
+          "t": 0.75,
+          "point": [
+            34.08,
+            9.7,
+            -15.43
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            34.08,
+            9.0,
+            -14.52
+          ],
+          "headroom_m": 7.365
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L2_L3_02",
+      "tramo": "L2_L3",
+      "lane_y": 11.4,
+      "run_m": 3.53,
+      "rise_m": 2.33,
+      "top_x": 34.96,
+      "bottom_x": 31.43,
+      "clearance_min_m": 1.793,
+      "clearance_at": {
+        "t": 0.75,
+        "point": [
+          32.31,
+          11.4,
+          -17.72
+        ],
+        "clearance_m": 1.793,
+        "nearest": [
+          30.14,
+          11.4,
+          -16.82
+        ],
+        "headroom_m": 7.657
+      },
+      "headroom_min_m": 6.49,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          34.08,
+          11.4,
+          -16.55
+        ],
+        "clearance_m": 1.863,
+        "nearest": [
+          36.32,
+          11.4,
+          -15.65
+        ],
+        "headroom_m": 6.49
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            34.08,
+            11.4,
+            -16.55
+          ],
+          "clearance_m": 1.863,
+          "nearest": [
+            36.32,
+            11.4,
+            -15.65
+          ],
+          "headroom_m": 6.49
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.19,
+            11.4,
+            -17.13
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.19,
+            9.0,
+            -16.23
+          ],
+          "headroom_m": 7.073
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.31,
+            11.4,
+            -17.72
+          ],
+          "clearance_m": 1.793,
+          "nearest": [
+            30.14,
+            11.4,
+            -16.82
+          ],
+          "headroom_m": 7.657
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L2_L3_03",
+      "tramo": "L2_L3",
+      "lane_y": 13.1,
+      "run_m": 3.53,
+      "rise_m": 2.17,
+      "top_x": 31.43,
+      "bottom_x": 34.96,
+      "clearance_min_m": 1.793,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.31,
+          13.1,
+          -18.84
+        ],
+        "clearance_m": 1.793,
+        "nearest": [
+          30.14,
+          13.1,
+          -17.94
+        ],
+        "headroom_m": 6.782
+      },
+      "headroom_min_m": 6.782,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.31,
+          13.1,
+          -18.84
+        ],
+        "clearance_m": 1.793,
+        "nearest": [
+          30.14,
+          13.1,
+          -17.94
+        ],
+        "headroom_m": 6.782
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.31,
+            13.1,
+            -18.84
+          ],
+          "clearance_m": 1.793,
+          "nearest": [
+            30.14,
+            13.1,
+            -17.94
+          ],
+          "headroom_m": 6.782
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.19,
+            13.1,
+            -19.38
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.19,
+            15.5,
+            -18.48
+          ],
+          "headroom_m": 7.323
+        },
+        {
+          "t": 0.75,
+          "point": [
+            34.08,
+            13.1,
+            -19.93
+          ],
+          "clearance_m": 1.863,
+          "nearest": [
+            36.32,
+            13.1,
+            -19.02
+          ],
+          "headroom_m": 7.865
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L2_L3_04",
+      "tramo": "L2_L3",
+      "lane_y": 14.8,
+      "run_m": 3.53,
+      "rise_m": 2.33,
+      "top_x": 34.96,
+      "bottom_x": 31.43,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          34.08,
+          14.8,
+          -21.05
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          34.08,
+          15.5,
+          -20.15
+        ],
+        "headroom_m": 6.99
+      },
+      "headroom_min_m": 6.99,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          34.08,
+          14.8,
+          -21.05
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          34.08,
+          15.5,
+          -20.15
+        ],
+        "headroom_m": 6.99
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            34.08,
+            14.8,
+            -21.05
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            34.08,
+            15.5,
+            -20.15
+          ],
+          "headroom_m": 6.99
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.19,
+            14.8,
+            -21.63
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.19,
+            15.5,
+            -20.73
+          ],
+          "headroom_m": 7.573
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.31,
+            14.8,
+            -22.22
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.31,
+            15.5,
+            -21.32
+          ],
+          "headroom_m": 8.157
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L3_L4_01",
+      "tramo": "L3_L4",
+      "lane_y": 9.7,
+      "run_m": 3.8,
+      "rise_m": 2.5,
+      "top_x": 31.43,
+      "bottom_x": 35.23,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.38,
+          9.7,
+          -23.42
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.38,
+          9.0,
+          -22.52
+        ],
+        "headroom_m": 7.198
+      },
+      "headroom_min_m": 7.198,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.38,
+          9.7,
+          -23.42
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.38,
+          9.0,
+          -22.52
+        ],
+        "headroom_m": 7.198
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.38,
+            9.7,
+            -23.42
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.38,
+            9.0,
+            -22.52
+          ],
+          "headroom_m": 7.198
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.33,
+            9.7,
+            -24.05
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.33,
+            9.0,
+            -23.15
+          ],
+          "headroom_m": 7.823
+        },
+        {
+          "t": 0.75,
+          "point": [
+            34.28,
+            9.7,
+            -24.67
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            34.28,
+            9.0,
+            -23.78
+          ],
+          "headroom_m": 8.448
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L3_L4_02",
+      "tramo": "L3_L4",
+      "lane_y": 11.4,
+      "run_m": 3.8,
+      "rise_m": 2.5,
+      "top_x": 35.23,
+      "bottom_x": 31.43,
+      "clearance_min_m": 1.66,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          34.28,
+          11.4,
+          -25.92
+        ],
+        "clearance_m": 1.66,
+        "nearest": [
+          36.32,
+          11.4,
+          -25.03
+        ],
+        "headroom_m": 7.365
+      },
+      "headroom_min_m": 7.365,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          34.28,
+          11.4,
+          -25.92
+        ],
+        "clearance_m": 1.66,
+        "nearest": [
+          36.32,
+          11.4,
+          -25.03
+        ],
+        "headroom_m": 7.365
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            34.28,
+            11.4,
+            -25.92
+          ],
+          "clearance_m": 1.66,
+          "nearest": [
+            36.32,
+            11.4,
+            -25.03
+          ],
+          "headroom_m": 7.365
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.33,
+            11.4,
+            -26.55
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.33,
+            9.0,
+            -25.65
+          ],
+          "headroom_m": 7.99
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.38,
+            11.4,
+            -27.17
+          ],
+          "clearance_m": 1.86,
+          "nearest": [
+            30.14,
+            11.4,
+            -26.28
+          ],
+          "headroom_m": 8.615
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L3_L4_03",
+      "tramo": "L3_L4",
+      "lane_y": 13.1,
+      "run_m": 3.8,
+      "rise_m": 2.5,
+      "top_x": 31.43,
+      "bottom_x": 35.23,
+      "clearance_min_m": 1.66,
+      "clearance_at": {
+        "t": 0.75,
+        "point": [
+          34.28,
+          13.1,
+          -29.67
+        ],
+        "clearance_m": 1.66,
+        "nearest": [
+          36.32,
+          13.1,
+          -28.77
+        ],
+        "headroom_m": 8.948
+      },
+      "headroom_min_m": 7.698,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.38,
+          13.1,
+          -28.42
+        ],
+        "clearance_m": 1.86,
+        "nearest": [
+          30.14,
+          13.1,
+          -27.52
+        ],
+        "headroom_m": 7.698
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.38,
+            13.1,
+            -28.42
+          ],
+          "clearance_m": 1.86,
+          "nearest": [
+            30.14,
+            13.1,
+            -27.52
+          ],
+          "headroom_m": 7.698
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.33,
+            13.1,
+            -29.05
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.33,
+            15.5,
+            -28.15
+          ],
+          "headroom_m": 8.323
+        },
+        {
+          "t": 0.75,
+          "point": [
+            34.28,
+            13.1,
+            -29.67
+          ],
+          "clearance_m": 1.66,
+          "nearest": [
+            36.32,
+            13.1,
+            -28.77
+          ],
+          "headroom_m": 8.948
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L3_L4_04",
+      "tramo": "L3_L4",
+      "lane_y": 14.8,
+      "run_m": 3.8,
+      "rise_m": 2.5,
+      "top_x": 35.23,
+      "bottom_x": 31.43,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          34.28,
+          14.8,
+          -30.92
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          34.28,
+          15.5,
+          -30.02
+        ],
+        "headroom_m": 7.865
+      },
+      "headroom_min_m": 7.865,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          34.28,
+          14.8,
+          -30.92
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          34.28,
+          15.5,
+          -30.02
+        ],
+        "headroom_m": 7.865
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            34.28,
+            14.8,
+            -30.92
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            34.28,
+            15.5,
+            -30.02
+          ],
+          "headroom_m": 7.865
+        },
+        {
+          "t": 0.5,
+          "point": [
+            33.33,
+            14.8,
+            -31.55
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.33,
+            15.5,
+            -30.65
+          ],
+          "headroom_m": 8.49
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.38,
+            14.8,
+            -32.17
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.38,
+            15.5,
+            -31.28
+          ],
+          "headroom_m": 9.115
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L4_L5_01",
+      "tramo": "L4_L5",
+      "lane_y": 9.7,
+      "run_m": 2.72,
+      "rise_m": 1.83,
+      "top_x": 31.43,
+      "bottom_x": 34.15,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          9.7,
+          -33.26
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.11,
+          9.0,
+          -32.36
+        ],
+        "headroom_m": 7.698
+      },
+      "headroom_min_m": 7.698,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          9.7,
+          -33.26
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.11,
+          9.0,
+          -32.36
+        ],
+        "headroom_m": 7.698
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.11,
+            9.7,
+            -33.26
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.11,
+            9.0,
+            -32.36
+          ],
+          "headroom_m": 7.698
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            9.7,
+            -33.72
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.79,
+            9.0,
+            -32.82
+          ],
+          "headroom_m": 8.157
+        },
+        {
+          "t": 0.75,
+          "point": [
+            33.47,
+            9.7,
+            -34.17
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.47,
+            9.0,
+            -33.28
+          ],
+          "headroom_m": 8.615
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L4_L5_02",
+      "tramo": "L4_L5",
+      "lane_y": 11.4,
+      "run_m": 2.72,
+      "rise_m": 1.83,
+      "top_x": 34.15,
+      "bottom_x": 31.43,
+      "clearance_min_m": 1.59,
+      "clearance_at": {
+        "t": 0.75,
+        "point": [
+          32.11,
+          11.4,
+          -36.01
+        ],
+        "clearance_m": 1.59,
+        "nearest": [
+          30.14,
+          11.4,
+          -35.11
+        ],
+        "headroom_m": 7.948
+      },
+      "headroom_min_m": 7.032,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          33.47,
+          11.4,
+          -35.09
+        ],
+        "clearance_m": 2.02,
+        "nearest": [
+          33.47,
+          9.0,
+          -34.19
+        ],
+        "headroom_m": 7.032
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            33.47,
+            11.4,
+            -35.09
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.47,
+            9.0,
+            -34.19
+          ],
+          "headroom_m": 7.032
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            11.4,
+            -35.55
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            32.79,
+            9.0,
+            -34.65
+          ],
+          "headroom_m": 7.49
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.11,
+            11.4,
+            -36.01
+          ],
+          "clearance_m": 1.59,
+          "nearest": [
+            30.14,
+            11.4,
+            -35.11
+          ],
+          "headroom_m": 7.948
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L4_L5_03",
+      "tramo": "L4_L5",
+      "lane_y": 13.1,
+      "run_m": 2.72,
+      "rise_m": 1.83,
+      "top_x": 31.43,
+      "bottom_x": 34.15,
+      "clearance_min_m": 1.59,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          13.1,
+          -36.93
+        ],
+        "clearance_m": 1.59,
+        "nearest": [
+          30.14,
+          13.1,
+          -36.03
+        ],
+        "headroom_m": 6.365
+      },
+      "headroom_min_m": 6.365,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          13.1,
+          -36.93
+        ],
+        "clearance_m": 1.59,
+        "nearest": [
+          30.14,
+          13.1,
+          -36.03
+        ],
+        "headroom_m": 6.365
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.11,
+            13.1,
+            -36.93
+          ],
+          "clearance_m": 1.59,
+          "nearest": [
+            30.14,
+            13.1,
+            -36.03
+          ],
+          "headroom_m": 6.365
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            13.1,
+            -37.38
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            32.79,
+            15.5,
+            -36.48
+          ],
+          "headroom_m": 6.823
+        },
+        {
+          "t": 0.75,
+          "point": [
+            33.47,
+            13.1,
+            -37.84
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.47,
+            15.5,
+            -36.94
+          ],
+          "headroom_m": 7.282
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L4_L5_04",
+      "tramo": "L4_L5",
+      "lane_y": 14.8,
+      "run_m": 2.72,
+      "rise_m": 1.83,
+      "top_x": 34.15,
+      "bottom_x": 31.43,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          33.47,
+          14.8,
+          -38.76
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          33.47,
+          15.5,
+          -37.86
+        ],
+        "headroom_m": 5.698
+      },
+      "headroom_min_m": 5.698,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          33.47,
+          14.8,
+          -38.76
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          33.47,
+          15.5,
+          -37.86
+        ],
+        "headroom_m": 5.698
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            33.47,
+            14.8,
+            -38.76
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.47,
+            15.5,
+            -37.86
+          ],
+          "headroom_m": 5.698
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            14.8,
+            -39.22
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.79,
+            15.5,
+            -38.32
+          ],
+          "headroom_m": 6.157
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.11,
+            14.8,
+            -39.67
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.11,
+            15.5,
+            -38.78
+          ],
+          "headroom_m": 6.615
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L4_L5_05",
+      "tramo": "L4_L5",
+      "lane_y": 9.7,
+      "run_m": 2.72,
+      "rise_m": 1.83,
+      "top_x": 31.43,
+      "bottom_x": 34.15,
+      "clearance_min_m": 0.32,
+      "clearance_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          9.7,
+          -40.59
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.11,
+          9.0,
+          -39.69
+        ],
+        "headroom_m": 5.698
+      },
+      "headroom_min_m": 5.698,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          32.11,
+          9.7,
+          -40.59
+        ],
+        "clearance_m": 0.32,
+        "nearest": [
+          32.11,
+          9.0,
+          -39.69
+        ],
+        "headroom_m": 5.698
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            32.11,
+            9.7,
+            -40.59
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.11,
+            9.0,
+            -39.69
+          ],
+          "headroom_m": 5.698
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            9.7,
+            -41.05
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            32.79,
+            9.0,
+            -40.15
+          ],
+          "headroom_m": 6.157
+        },
+        {
+          "t": 0.75,
+          "point": [
+            33.47,
+            9.7,
+            -41.51
+          ],
+          "clearance_m": 0.32,
+          "nearest": [
+            33.47,
+            9.0,
+            -40.61
+          ],
+          "headroom_m": 6.615
+        }
+      ]
+    },
+    {
+      "flight": "NEXUS_VTOWER_EAST_STAIR_4L_FLIGHT_L4_L5_06",
+      "tramo": "L4_L5",
+      "lane_y": 11.4,
+      "run_m": 2.72,
+      "rise_m": 1.83,
+      "top_x": 34.15,
+      "bottom_x": 31.43,
+      "clearance_min_m": 0.775,
+      "clearance_at": {
+        "t": 0.75,
+        "point": [
+          32.11,
+          11.4,
+          -43.34
+        ],
+        "clearance_m": 0.775,
+        "nearest": [
+          30.98,
+          11.64,
+          -42.44
+        ],
+        "headroom_m": 6.615
+      },
+      "headroom_min_m": 5.698,
+      "headroom_at": {
+        "t": 0.25,
+        "point": [
+          33.47,
+          11.4,
+          -42.43
+        ],
+        "clearance_m": 2.02,
+        "nearest": [
+          33.47,
+          9.0,
+          -41.53
+        ],
+        "headroom_m": 5.698
+      },
+      "samples": [
+        {
+          "t": 0.25,
+          "point": [
+            33.47,
+            11.4,
+            -42.43
+          ],
+          "clearance_m": 2.02,
+          "nearest": [
+            33.47,
+            9.0,
+            -41.53
+          ],
+          "headroom_m": 5.698
+        },
+        {
+          "t": 0.5,
+          "point": [
+            32.79,
+            11.4,
+            -42.88
+          ],
+          "clearance_m": 1.446,
+          "nearest": [
+            30.98,
+            11.64,
+            -41.98
+          ],
+          "headroom_m": 6.157
+        },
+        {
+          "t": 0.75,
+          "point": [
+            32.11,
+            11.4,
+            -43.34
+          ],
+          "clearance_m": 0.775,
+          "nearest": [
+            30.98,
+            11.64,
+            -42.44
+          ],
+          "headroom_m": 6.615
+        }
+      ]
+    }
+  ],
+  "approach": {
+    "start": [
+      24.0,
+      0.0
+    ],
+    "portal": [
+      30.0,
+      12.5
+    ],
+    "start_walkable": true,
+    "reachable": true,
+    "path": [
+      [
+        24.0,
+        0.0
+      ],
+      [
+        24.55,
+        0.45
+      ],
+      [
+        24.55,
+        1.45
+      ],
+      [
+        24.6,
+        2.4
+      ],
+      [
+        24.6,
+        3.4
+      ],
+      [
+        24.6,
+        4.4
+      ],
+      [
+        24.6,
+        5.4
+      ],
+      [
+        24.6,
+        6.4
+      ],
+      [
+        24.6,
+        7.4
+      ],
+      [
+        24.6,
+        8.4
+      ],
+      [
+        24.6,
+        9.4
+      ],
+      [
+        25.45,
+        9.55
+      ],
+      [
+        26.45,
+        9.55
+      ],
+      [
+        27.45,
+        9.55
+      ],
+      [
+        28.45,
+        9.55
+      ],
+      [
+        29.45,
+        9.55
+      ],
+      [
+        29.45,
+        10.55
+      ],
+      [
+        29.45,
+        11.55
+      ],
+      [
+        29.9,
+        12.1
+      ],
+      [
+        30.0,
+        12.5
+      ]
+    ],
+    "walkable_cells": 41702,
+    "reachable_cells": 21378
+  },
+  "failures": []
+}

@@ -1,0 +1,54 @@
+{
+  "bytes": 21677968,
+  "meshes": 104,
+  "nodes": 106,
+  "materials": 57,
+  "images": 42,
+  "tris": 95870,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "MT_AHU_01",
+    "MT_AHU_02",
+    "MT_AHU_Air_CABLE",
+    "MT_AirDryer",
+    "MT_AirReceiver",
+    "MT_Barrel_01",
+    "MT_Barrel_02",
+    "MT_Barrel_03",
+    "MT_BenchClutter",
+    "MT_BloodTrail_BLOOD",
+    "MT_Boiler_01",
+    "MT_Boiler_02"
+  ],
+  "source_objects": 106,
+  "resized_images": 10,
+  "source_aabb_blender": {
+    "min": [
+      56.08,
+      -47.97,
+      0.0
+    ],
+    "max": [
+      112.0,
+      -7.769,
+      5.99
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      55.85,
+      -48.15,
+      -0.2
+    ],
+    "max": [
+      112.18,
+      -4.0,
+      6.0
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "file": "assets/models/fm/maintenance_art.glb",
+  "max_bytes": 31457280,
+  "pass": true
+}

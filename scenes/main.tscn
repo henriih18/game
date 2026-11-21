@@ -1,0 +1,210 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Texture2D" path="res://assets/art/floor_tile.svg" id="2_floor"]
+[ext_resource type="PackedScene" path="res://scenes/gem.tscn" id="4_gem"]
+[ext_resource type="PackedScene" path="res://scenes/crate.tscn" id="5_crate"]
+[ext_resource type="PackedScene" path="res://scenes/extraction_zone.tscn" id="6_zone"]
+[ext_resource type="PackedScene" path="res://scenes/security_camera.tscn" id="8_camera"]
+[ext_resource type="Shader" path="res://assets/shaders/vignette.gdshader" id="9_vignette"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h"]
+size = Vector2(600, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v"]
+size = Vector2(40, 260)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vignette"]
+shader = ExtResource("9_vignette")
+shader_parameter/intensity = 0.0
+shader_parameter/danger_color = Color(0.85, 0.08, 0.12, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Floor" type="Sprite2D" parent="."]
+texture = ExtResource("2_floor")
+centered = false
+texture_repeat = 2
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 720)
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="WallHorizontal" type="StaticBody2D" parent="Walls"]
+position = Vector2(640, 200)
+
+[node name="Base" type="ColorRect" parent="Walls/WallHorizontal"]
+offset_left = -300.0
+offset_top = -20.0
+offset_right = 300.0
+offset_bottom = 20.0
+color = Color(0.17, 0.19, 0.27, 1)
+
+[node name="Top" type="ColorRect" parent="Walls/WallHorizontal"]
+offset_left = -300.0
+offset_top = -20.0
+offset_right = 300.0
+offset_bottom = -14.0
+color = Color(0.24, 0.27, 0.38, 1)
+
+[node name="Bottom" type="ColorRect" parent="Walls/WallHorizontal"]
+offset_left = -300.0
+offset_top = 14.0
+offset_right = 300.0
+offset_bottom = 20.0
+color = Color(0.12, 0.13, 0.19, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallHorizontal"]
+shape = SubResource("RectangleShape2D_h")
+
+[node name="WallVertical" type="StaticBody2D" parent="Walls"]
+position = Vector2(900, 480)
+
+[node name="Base" type="ColorRect" parent="Walls/WallVertical"]
+offset_left = -20.0
+offset_top = -130.0
+offset_right = 20.0
+offset_bottom = 130.0
+color = Color(0.17, 0.19, 0.27, 1)
+
+[node name="Top" type="ColorRect" parent="Walls/WallVertical"]
+offset_left = -20.0
+offset_top = -130.0
+offset_right = -14.0
+offset_bottom = 130.0
+color = Color(0.24, 0.27, 0.38, 1)
+
+[node name="Bottom" type="ColorRect" parent="Walls/WallVertical"]
+offset_left = 14.0
+offset_top = -130.0
+offset_right = 20.0
+offset_bottom = 130.0
+color = Color(0.12, 0.13, 0.19, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallVertical"]
+shape = SubResource("RectangleShape2D_v")
+
+[node name="Cameras" type="Node2D" parent="."]
+
+[node name="Camera1" parent="Cameras" instance=ExtResource("8_camera")]
+position = Vector2(710, 320)
+
+[node name="Camera2" parent="Cameras" instance=ExtResource("8_camera")]
+position = Vector2(1120, 260)
+
+[node name="Gems" type="Node2D" parent="."]
+
+[node name="Gem1" parent="Gems" instance=ExtResource("4_gem")]
+position = Vector2(150, 120)
+
+[node name="Gem2" parent="Gems" instance=ExtResource("4_gem")]
+position = Vector2(700, 320)
+
+[node name="Gem3" parent="Gems" instance=ExtResource("4_gem")]
+position = Vector2(1180, 260)
+
+[node name="Crate" parent="." instance=ExtResource("5_crate")]
+position = Vector2(260, 620)
+
+[node name="ExtractionZone" parent="." instance=ExtResource("6_zone")]
+position = Vector2(1090, 630)
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="DangerVignette" type="ColorRect" parent="HUD"]
+material = SubResource("ShaderMaterial_vignette")
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="StatusLabel" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 700.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.93, 0.94, 0.97, 1)
+theme_override_font_sizes/font_size = 24
+text = "Gemas: 0/3  ·  Caja: pendiente"
+
+[node name="HintLabel" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 676.0
+offset_right = 760.0
+offset_bottom = 704.0
+theme_override_colors/font_color = Color(0.55, 0.58, 0.66, 1)
+theme_override_font_sizes/font_size = 16
+text = "P1: WASD + E   ·   P2: Flechas + Enter   ·   Evitá las cámaras"
+
+[node name="TimerLabel" type="Label" parent="HUD"]
+offset_left = 900.0
+offset_top = 16.0
+offset_right = 1256.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.93, 0.94, 0.97, 1)
+theme_override_font_sizes/font_size = 24
+text = "Tiempo: 2:00"
+horizontal_alignment = 2
+
+[node name="AlarmLabel" type="Label" parent="HUD"]
+offset_left = 900.0
+offset_top = 66.0
+offset_right = 1016.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(1, 0.45, 0.45, 1)
+theme_override_font_sizes/font_size = 14
+text = "ALARMA"
+horizontal_alignment = 2
+
+[node name="AlarmBack" type="ColorRect" parent="HUD"]
+offset_left = 1024.0
+offset_top = 66.0
+offset_right = 1252.0
+offset_bottom = 80.0
+color = Color(0.2, 0.11, 0.13, 1)
+
+[node name="AlarmFill" type="ColorRect" parent="HUD"]
+offset_left = 1026.0
+offset_top = 68.0
+offset_right = 1026.0
+offset_bottom = 78.0
+color = Color(0.95, 0.3, 0.3, 1)
+
+[node name="Overlay" type="ColorRect" parent="HUD"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.03, 0.03, 0.06, 0.72)
+
+[node name="ResultLabel" type="Label" parent="HUD/Overlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = -70.0
+offset_right = 460.0
+offset_bottom = 10.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 52
+text = "¡ROBO COMPLETO!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubLabel" type="Label" parent="HUD/Overlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = 20.0
+offset_right = 460.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.78, 0.8, 0.9, 1)
+theme_override_font_sizes/font_size = 20
+text = "R para volver al menú"
+horizontal_alignment = 1
+vertical_alignment = 1

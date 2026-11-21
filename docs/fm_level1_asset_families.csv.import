@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dd273jcs4xnct"
+
+[deps]
+
+files=["res://docs/fm_level1_asset_families.priority.translation", "res://docs/fm_level1_asset_families.status.translation", "res://docs/fm_level1_asset_families.visible.translation", "res://docs/fm_level1_asset_families.tris.translation", "res://docs/fm_level1_asset_families.uv0.translation", "res://docs/fm_level1_asset_families.linked.translation"]
+
+source_file="res://docs/fm_level1_asset_families.csv"
+dest_files=["res://docs/fm_level1_asset_families.priority.translation", "res://docs/fm_level1_asset_families.status.translation", "res://docs/fm_level1_asset_families.visible.translation", "res://docs/fm_level1_asset_families.tris.translation", "res://docs/fm_level1_asset_families.uv0.translation", "res://docs/fm_level1_asset_families.linked.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

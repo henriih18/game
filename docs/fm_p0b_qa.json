@@ -1,0 +1,304 @@
+{
+  "build": "P0B.1",
+  "collection": "L1_P0B_SERVICES",
+  "range": [
+    -99.0,
+    73.8
+  ],
+  "objects": {
+    "P0B_BLIND_E": {
+      "tris": 316,
+      "verts": 168,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        73.806,
+        -2.41,
+        3.24
+      ],
+      "bbox_max": [
+        73.827,
+        -1.59,
+        3.86
+      ]
+    },
+    "P0B_BLIND_W": {
+      "tris": 316,
+      "verts": 168,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -99.018,
+        -2.41,
+        3.24
+      ],
+      "bbox_max": [
+        -98.997,
+        -1.59,
+        3.86
+      ]
+    },
+    "P0B_END_FLANGE_E": {
+      "tris": 560,
+      "verts": 288,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        73.8,
+        -2.45,
+        3.2
+      ],
+      "bbox_max": [
+        73.853,
+        -1.55,
+        3.9
+      ]
+    },
+    "P0B_END_FLANGE_W": {
+      "tris": 560,
+      "verts": 288,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -99.053,
+        -2.45,
+        3.2
+      ],
+      "bbox_max": [
+        -99.0,
+        -1.55,
+        3.9
+      ]
+    },
+    "P0B_HVAC_BRANCH_Z10": {
+      "tris": 8964,
+      "verts": 4680,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        42.57,
+        -2.0,
+        3.22
+      ],
+      "bbox_max": [
+        43.43,
+        19.6,
+        3.88
+      ]
+    },
+    "P0B_HVAC_RUN_800x600": {
+      "tris": 71712,
+      "verts": 37440,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -99.0,
+        -2.43,
+        3.22
+      ],
+      "bbox_max": [
+        73.8,
+        -1.57,
+        3.88
+      ]
+    },
+    "P0B_LABELS": {
+      "tris": 3240,
+      "verts": 1728,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -94.28,
+        -1.623,
+        3.669
+      ],
+      "bbox_max": [
+        69.08,
+        -1.573,
+        3.673
+      ]
+    },
+    "P0B_SLEEVE_CORR": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        42.51,
+        3.846,
+        3.16
+      ],
+      "bbox_max": [
+        43.49,
+        4.154,
+        3.94
+      ]
+    },
+    "P0B_SLEEVE_Z10": {
+      "tris": 3308,
+      "verts": 1688,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        42.51,
+        7.846,
+        3.16
+      ],
+      "bbox_max": [
+        43.49,
+        8.153,
+        3.94
+      ]
+    },
+    "P0B_SPRINKLER_HEADS": {
+      "tris": 42656,
+      "verts": 21672,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -97.043,
+        2.357,
+        3.176
+      ],
+      "bbox_max": [
+        71.043,
+        2.443,
+        3.9
+      ]
+    },
+    "P0B_SPRINKLER_RUN_DN80": {
+      "tris": 40896,
+      "verts": 20736,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -99.0,
+        2.338,
+        3.838
+      ],
+      "bbox_max": [
+        73.8,
+        2.462,
+        3.968
+      ]
+    },
+    "P0B_SUPPORTS_HVAC": {
+      "tris": 20592,
+      "verts": 10656,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -96.64,
+        -2.51,
+        3.1
+      ],
+      "bbox_max": [
+        71.44,
+        -1.49,
+        3.99
+      ]
+    },
+    "P0B_SUPPORTS_SPRINKLER": {
+      "tris": 13244,
+      "verts": 6880,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -97.018,
+        2.318,
+        3.855
+      ],
+      "bbox_max": [
+        71.018,
+        2.482,
+        3.99
+      ]
+    },
+    "P0B_SUPPORTS_TRAY": {
+      "tris": 27588,
+      "verts": 14136,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -97.52,
+        -0.05,
+        3.113
+      ],
+      "bbox_max": [
+        70.52,
+        0.45,
+        3.99
+      ]
+    },
+    "P0B_TEE_MAIN": {
+      "tris": 560,
+      "verts": 288,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        42.55,
+        -1.653,
+        3.2
+      ],
+      "bbox_max": [
+        43.45,
+        -1.6,
+        3.9
+      ]
+    },
+    "P0B_TEE_Z10": {
+      "tris": 560,
+      "verts": 288,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        42.55,
+        19.547,
+        3.2
+      ],
+      "bbox_max": [
+        43.45,
+        19.6,
+        3.9
+      ]
+    },
+    "P0B_TRAY_RUN_400": {
+      "tris": 41184,
+      "verts": 22464,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox_min": [
+        -99.03,
+        -0.01,
+        3.144
+      ],
+      "bbox_max": [
+        73.8,
+        0.41,
+        3.25
+      ]
+    }
+  },
+  "totals": {
+    "meshes": 17,
+    "tris": 279564
+  },
+  "elapsed_s": 10.0
+}

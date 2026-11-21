@@ -1,0 +1,99 @@
+{
+  "generation": "VERIFIED_P0B5D",
+  "collection": "L1_P0B5D_Z10",
+  "retired": [
+    "KIT_PILOT_Z10_Conduit_00",
+    "KIT_PILOT_Z10_Conduit_01",
+    "KIT_PILOT_Z10_Conduit_03",
+    "KIT_PILOT_Z10_Conduit_04",
+    "P0B4_SPRINKLER_HEADS"
+  ],
+  "objects": {
+    "P0B5D_CONDUIT_EAST": {
+      "tris": 8360,
+      "verts": 4256,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox": [
+        [
+          61.6867,
+          8.0,
+          3.08
+        ],
+        [
+          61.86,
+          30.0,
+          3.22
+        ]
+      ]
+    },
+    "P0B5D_SPRINKLER_HEADS": {
+      "tris": 12576,
+      "verts": 6432,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox": [
+        [
+          42.9571,
+          9.9571,
+          3.176
+        ],
+        [
+          59.0429,
+          28.0429,
+          3.9
+        ]
+      ]
+    },
+    "P0B5D_RISER_SLEEVES": {
+      "tris": 5256,
+      "verts": 2640,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox": [
+        [
+          46.2255,
+          15.7555,
+          3.945
+        ],
+        [
+          55.7745,
+          24.2445,
+          4.185
+        ]
+      ]
+    },
+    "P0B5D_RISER_TAGS": {
+      "tris": 456,
+      "verts": 264,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox": [
+        [
+          46.3437,
+          15.775,
+          1.344
+        ],
+        [
+          55.6563,
+          24.225,
+          1.472
+        ]
+      ]
+    }
+  },
+  "backup": "FM_LEVEL1_V06_ARCH_before_p0b5d.blend",
+  "notes": {
+    "S-10": "closed by P0b.4 (HVAC wall sleeves + 4 diffusers); west patinillo pending user decision",
+    "S-11": "four square spans replaced by 24-sided r0.035 conduit + 4 junction boxes",
+    "S-12": "orphan sleeves already retired in P0b.4",
+    "S-13": "west tray sleeves y8/y30 and supports already in P0b.4",
+    "S-14": "4 main + 8 branch complete heads from P0B_SPRINKLER_HEADS; old floating P0B4 heads retired",
+    "S-15": "6 pipe extensions + sleeves + firestop wraps + valve tags; pass plates existed"
+  },
+  "qa_pass": true
+}

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/security_access_sector.glb" id="1_security_access"]
+
+[node name="FM_SECURITY_ACCESS_ART" type="Node3D"]
+
+[node name="SecurityAccessSector" type="Node3D" parent="." instance=ExtResource("1_security_access")]
+
+[node name="Emerg_SecurityAccess" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2.05, -10.9)
+light_color = Color(1, 0.05, 0.02, 1)
+light_energy = 0.22
+light_specular = 0.15
+shadow_enabled = false
+omni_range = 4.0
+omni_attenuation = 1.5

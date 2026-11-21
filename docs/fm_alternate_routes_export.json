@@ -1,0 +1,82 @@
+{
+  "bytes": 104816,
+  "meshes": 86,
+  "nodes": 86,
+  "materials": 6,
+  "images": 0,
+  "tris": 1032,
+  "cameras": 0,
+  "lights": 0,
+  "names_sample": [
+    "SM_L1_Alt_EastGallery_Tunnel_Ceiling",
+    "SM_L1_Alt_EastGallery_Tunnel_Floor",
+    "SM_L1_Alt_EastGallery_Tunnel_Wall_E_0",
+    "SM_L1_Alt_EastGallery_Tunnel_Wall_W_0",
+    "SM_L1_Alt_MaintCorridor_BranchCeiling",
+    "SM_L1_Alt_MaintCorridor_BranchFloor",
+    "SM_L1_Alt_MaintCorridor_BranchWall_E",
+    "SM_L1_Alt_MaintCorridor_BranchWall_W",
+    "SM_L1_Alt_MaintCorridor_Ceiling",
+    "SM_L1_Alt_MaintCorridor_Floor",
+    "SM_L1_Alt_MaintCorridor_Wall_N_0",
+    "SM_L1_Alt_MaintCorridor_Wall_N_1",
+    "SM_L1_Alt_MaintCorridor_Wall_S",
+    "SM_L1_Alt_NorthConnector_Tunnel_Ceiling",
+    "SM_L1_Alt_NorthConnector_Tunnel_Floor",
+    "SM_L1_Alt_NorthConnector_Tunnel_Wall_E_0"
+  ],
+  "file": "assets/models/fm/alternate_routes.glb",
+  "source_objects": 86,
+  "source_tris": 1032,
+  "excluded_objects": 28,
+  "excluded_sample": [
+    "ANNOT_L1_MaintCorridor",
+    "SM_L1_Alt_SecurityCorridor_Ceiling_H",
+    "SM_L1_Alt_SecurityCorridor_Ceiling_V",
+    "SM_L1_Alt_SecurityCorridor_Floor_H",
+    "SM_L1_Alt_SecurityCorridor_Floor_V",
+    "SM_L1_Alt_SecurityCorridor_Wall_E",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_0",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_1",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_2",
+    "SM_L1_Alt_SecurityCorridor_Wall_N_V",
+    "SM_L1_Alt_SecurityCorridor_Wall_S",
+    "SM_L1_Alt_SecurityCorridor_Wall_W"
+  ],
+  "routes": {
+    "EastGallery": 4,
+    "MaintCorridor": 9,
+    "NWStair": 36,
+    "NorthConnector": 4,
+    "NorthGallery": 6,
+    "OfficesCrawl": 9,
+    "ReceptionStair": 10,
+    "ServiceLoop": 8
+  },
+  "source_aabb_blender": {
+    "min": [
+      -96.25,
+      -32.75,
+      -4.8
+    ],
+    "max": [
+      105.75,
+      67.0,
+      6.0
+    ]
+  },
+  "bounds_blender": {
+    "min": [
+      -96.5,
+      -33.0,
+      -5.0
+    ],
+    "max": [
+      106.0,
+      67.2,
+      6.2
+    ]
+  },
+  "aabb_inside_bounds": true,
+  "pass": true
+}

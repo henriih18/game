@@ -1,0 +1,74 @@
+{
+  "collection": "L1_RECEPTION_R13_HERO",
+  "retired": [
+    "PROP_REC02_Locker_Body",
+    "PROP_REC02_Locker_Door_0",
+    "PROP_REC02_Locker_Handle_0",
+    "PROP_REC02_Locker_Door_1",
+    "PROP_REC02_Locker_Handle_1",
+    "PROP_REC02_Locker_Plate_1",
+    "PROP_REC02_Locker_Vent_1_0",
+    "PROP_REC02_Locker_Vent_1_2",
+    "PROP_REC02_Locker_Door_2",
+    "PROP_REC02_Locker_Handle_2",
+    "PROP_REC02_Locker_Vent_2_0",
+    "PROP_REC02_Locker_Vent_2_1",
+    "PROP_REC02_Locker_Vent_2_2",
+    "PROP_REC02_Locker_Door_3",
+    "PROP_REC02_Locker_Handle_3",
+    "PROP_REC02_Locker_Plate_3",
+    "PROP_REC02_Locker_Vent_3_0",
+    "PROP_REC02_Locker_Vent_3_2",
+    "PROP_REC02_Locker_Door_4",
+    "PROP_REC02_Locker_Handle_4",
+    "PROP_REC02_Locker_Plate_4",
+    "PROP_REC02_Locker_Vent_4_0",
+    "PROP_REC02_Locker_Vent_4_2",
+    "PROP_REC02_Locker_Door_5",
+    "PROP_REC02_Locker_Handle_5",
+    "PROP_REC02_Locker_Plate_5",
+    "PROP_REC02_Locker_Vent_5_0",
+    "PROP_REC02_Locker_Vent_5_1",
+    "PROP_REC02_Locker_Vent_5_2",
+    "PROP_REC02_Locker_Plate_0",
+    "PROP_REC02_Locker_Plate_2",
+    "PROP_REC02_Locker_Vent_0_0",
+    "PROP_REC02_Locker_Vent_0_1",
+    "PROP_REC02_Locker_Vent_3_1",
+    "PROP_REC02_Locker_Vent_4_1",
+    "KIT_REC02_Sign_Desk",
+    "KIT_REC02_Sign_Lockers",
+    "KIT_REC02_Sign_Decon"
+  ],
+  "objects": {
+    "REC13_LOCKERS_HERO": {
+      "tris": 21488,
+      "verts": 11000,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "REC13_SIGN_LOCKERS": {
+      "tris": 1576,
+      "verts": 808,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "REC13_SIGN_DECON": {
+      "tris": 1576,
+      "verts": 808,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    "REC13_SIGN_DESK": {
+      "tris": 1352,
+      "verts": 696,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  },
+  "qa_pass": true
+}

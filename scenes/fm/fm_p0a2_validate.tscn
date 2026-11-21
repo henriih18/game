@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/fm/fm_p0a2_godot_validate_node.gd" id="1_p0a2"]
+
+[node name="P0A2Validate" type="Node3D"]
+script = ExtResource("1_p0a2")

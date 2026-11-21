@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dofqc8jvrxwuw"
+
+[deps]
+
+files=["res://docs/fm_level1_moved_objects.type.translation", "res://docs/fm_level1_moved_objects.collections.translation", "res://docs/fm_level1_moved_objects.distance.translation", "res://docs/fm_level1_moved_objects.control.translation", "res://docs/fm_level1_moved_objects.pilot.translation", "res://docs/fm_level1_moved_objects.dimensions.translation", "res://docs/fm_level1_moved_objects.classification.translation", "res://docs/fm_level1_moved_objects.action.translation"]
+
+source_file="res://docs/fm_level1_moved_objects.csv"
+dest_files=["res://docs/fm_level1_moved_objects.type.translation", "res://docs/fm_level1_moved_objects.collections.translation", "res://docs/fm_level1_moved_objects.distance.translation", "res://docs/fm_level1_moved_objects.control.translation", "res://docs/fm_level1_moved_objects.pilot.translation", "res://docs/fm_level1_moved_objects.dimensions.translation", "res://docs/fm_level1_moved_objects.classification.translation", "res://docs/fm_level1_moved_objects.action.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

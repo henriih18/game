@@ -1,0 +1,228 @@
+{
+  "batch": "SECURITY_P0A_LIGHTS",
+  "new_objects": 10,
+  "new_lights": 2,
+  "retired_old": [
+    "KIT_SEC01_CeilingLightHousing_0",
+    "DET_SEC01_CeilingLightPanel_0",
+    "KIT_SEC01_CeilingLightHousing_1",
+    "DET_SEC01_CeilingLightPanel_1",
+    "KIT_SEC01_CeilingLightHousing_2",
+    "DET_SEC01_CeilingLightPanel_2",
+    "KIT_SEC01_CeilingLightHousing_3",
+    "DET_SEC01_CeilingLightPanel_3",
+    "KIT_SEC01_CeilingLightHousing_4",
+    "DET_SEC01_CeilingLightPanel_4",
+    "KIT_SEC01_CeilingLightHousing_5",
+    "DET_SEC01_CeilingLightPanel_5",
+    "KIT_SEC01_CeilingLightHousing_6",
+    "DET_SEC01_CeilingLightPanel_6",
+    "R21B_SERV_EmergencyS",
+    "R21B_SERV_EmergencyW1",
+    "R21B_SERV_EmergencyW2"
+  ],
+  "retired_visible": [],
+  "all_inside": true,
+  "all_mesh_shared": true,
+  "objects": [
+    {
+      "name": "SEC_P0A_LUMINAIRE_00",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -102.28,
+          12.817,
+          4.392
+        ],
+        [
+          -100.72,
+          13.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_LUMINAIRE_01",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -88.78,
+          12.817,
+          4.392
+        ],
+        [
+          -87.22,
+          13.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_LUMINAIRE_02",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -75.28,
+          12.817,
+          4.392
+        ],
+        [
+          -73.72,
+          13.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_LUMINAIRE_03",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -102.28,
+          30.817,
+          4.392
+        ],
+        [
+          -100.72,
+          31.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_LUMINAIRE_04",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -88.78,
+          30.817,
+          4.392
+        ],
+        [
+          -87.22,
+          31.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_LUMINAIRE_05",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -75.28,
+          30.817,
+          4.392
+        ],
+        [
+          -73.72,
+          31.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_LUMINAIRE_06",
+      "tris": 9228,
+      "mesh": "SM_SH_LUMINAIRE_1500_OFF",
+      "data_users": 8,
+      "bbox": [
+        [
+          -88.78,
+          20.817,
+          4.392
+        ],
+        [
+          -87.22,
+          21.183,
+          4.72
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_EMERG_S",
+      "tris": 9712,
+      "mesh": "SM_SH_EMERGENCY_WALL_E",
+      "data_users": 5,
+      "bbox": [
+        [
+          -94.702,
+          9.991,
+          2.99
+        ],
+        [
+          -94.498,
+          10.177,
+          3.48
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_EMERG_W1",
+      "tris": 9712,
+      "mesh": "SM_SH_EMERGENCY_WALL_E",
+      "data_users": 5,
+      "bbox": [
+        [
+          -105.008,
+          14.498,
+          2.99
+        ],
+        [
+          -104.824,
+          14.702,
+          3.48
+        ]
+      ],
+      "inside_security": true
+    },
+    {
+      "name": "SEC_P0A_EMERG_W2",
+      "tris": 9712,
+      "mesh": "SM_SH_EMERGENCY_WALL_E",
+      "data_users": 5,
+      "bbox": [
+        [
+          -105.008,
+          27.498,
+          2.99
+        ],
+        [
+          -104.824,
+          27.702,
+          3.48
+        ]
+      ],
+      "inside_security": true
+    }
+  ],
+  "lights": [
+    "SEC_P0A_LIGHT_EMERG_S",
+    "SEC_P0A_LIGHT_EMERG_W1"
+  ],
+  "hero_collection_objects": 12,
+  "source_masters": [
+    "SM_SH_LUMINAIRE_1500_OFF",
+    "SM_SH_EMERGENCY_WALL_E"
+  ]
+}

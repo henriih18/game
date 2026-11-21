@@ -1,0 +1,204 @@
+{
+  "collection": "L1_RECEPTION_R9_HERO",
+  "retired_collection": "L1_RECEPTION_RETIRED_R9",
+  "retired": [
+    "KIT_REC01_HVAC_Flange_00",
+    "KIT_REC01_HVAC_Flange_01",
+    "KIT_REC01_HVAC_Flange_02",
+    "KIT_REC01_HVAC_Flange_03",
+    "KIT_REC01_HVAC_Flange_04",
+    "KIT_REC01_HVAC_Flange_05",
+    "KIT_REC01_HVAC_Flange_06",
+    "KIT_REC01_HVAC_Flange_07",
+    "KIT_REC01_HVAC_Flange_08",
+    "KIT_REC01_HVAC_Hanger_00",
+    "KIT_REC01_HVAC_Hanger_03",
+    "KIT_REC01_HVAC_Hanger_04",
+    "KIT_REC01_HVAC_Main"
+  ],
+  "retired_visible": [],
+  "objects": 20,
+  "tris": 136744,
+  "verts": 69980,
+  "qa_pass": true,
+  "inside": true,
+  "aabb": [
+    [
+      -110.154,
+      -24.633,
+      4.021
+    ],
+    [
+      -69.846,
+      -13.45,
+      5.196
+    ]
+  ],
+  "stats": [
+    {
+      "name": "REC09_HVAC_MAIN",
+      "tris": 16844,
+      "verts": 8796,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_TRANSITION",
+      "tris": 5500,
+      "verts": 2816,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_BRANCH_00",
+      "tris": 10392,
+      "verts": 5296,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_BRANCH_01",
+      "tris": 10392,
+      "verts": 5296,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_BRANCH_02",
+      "tris": 10392,
+      "verts": 5296,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_BRANCH_03",
+      "tris": 10392,
+      "verts": 5296,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_BRANCH_04",
+      "tris": 10392,
+      "verts": 5296,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_BRANCH_END",
+      "tris": 988,
+      "verts": 504,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_SLEEVE_W",
+      "tris": 3308,
+      "verts": 1688,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_SLEEVE_E",
+      "tris": 3308,
+      "verts": 1688,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_FIREDAMPER_W",
+      "tris": 7888,
+      "verts": 4040,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_FIREDAMPER_E",
+      "tris": 7888,
+      "verts": 4040,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_MAIN_100",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_MAIN_94",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_MAIN_80",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_MAIN_72",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_BRANCH_00",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_BRANCH_01",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_GRILLE_BRANCH_02",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_HVAC_SUPPORTS",
+      "tris": 12320,
+      "verts": 6320,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  ],
+  "limits": [
+    "No se conecta al ramal del corredor: termina en sleeve/fire damper.",
+    "No se construyen patinillos; decision pendiente del usuario.",
+    "Sin retorno HVAC; solo suministro."
+  ]
+}

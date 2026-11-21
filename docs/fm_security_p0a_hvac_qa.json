@@ -1,0 +1,142 @@
+{
+  "collection": "L1_SECURITY_P0A_HERO",
+  "retired": [
+    "R21B_SERV_HVACDuct"
+  ],
+  "objects": 10,
+  "tris": 55976,
+  "verts": 28724,
+  "qa_pass": true,
+  "stats": [
+    {
+      "name": "SEC_P0A_HVAC_RUN",
+      "tris": 10912,
+      "verts": 5700,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_SUPPORTS",
+      "tris": 7392,
+      "verts": 3792,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_SLEEVE_S",
+      "tris": 3308,
+      "verts": 1688,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_SLEEVE_N",
+      "tris": 3308,
+      "verts": 1688,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_FIREDAMPER_S",
+      "tris": 7888,
+      "verts": 4040,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_FIREDAMPER_N",
+      "tris": 7888,
+      "verts": 4040,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_GRILLE_14",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_GRILLE_20",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_GRILLE_26",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "SEC_P0A_HVAC_GRILLE_32",
+      "tris": 3820,
+      "verts": 1944,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  ],
+  "bounds": [
+    [
+      -97.63,
+      -97.63,
+      -97.69,
+      -97.69,
+      -97.641,
+      -97.641,
+      -97.44,
+      -97.44,
+      -97.44,
+      -97.44
+    ],
+    [
+      10.0,
+      11.95,
+      9.846,
+      35.847,
+      10.546,
+      35.446,
+      13.66,
+      19.66,
+      25.66,
+      31.66
+    ],
+    [
+      3.22,
+      3.822,
+      3.16,
+      3.16,
+      3.209,
+      3.209,
+      3.091,
+      3.091,
+      3.091,
+      3.091
+    ]
+  ],
+  "aabb": [
+    [
+      -97.69,
+      9.846,
+      3.091
+    ],
+    [
+      -96.71,
+      36.153,
+      4.686
+    ]
+  ]
+}

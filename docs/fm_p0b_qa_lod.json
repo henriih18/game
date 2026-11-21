@@ -1,0 +1,982 @@
+{
+  "generated": "P0b.3",
+  "ratios": {
+    "LOD1": 0.35,
+    "LOD2": 0.12
+  },
+  "note": "LOD copies stay hidden in viewport/render; they are library assets.",
+  "assets": [
+    {
+      "asset": "P0B_BLIND_E",
+      "lod0_tris": 316,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_BLIND_E_LOD1",
+              "tris": 110,
+              "verts": 65,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0209,
+                0.8197,
+                0.62
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.25,
+          "meshes": [
+            {
+              "name": "P0B_BLIND_E_LOD2",
+              "tris": 78,
+              "verts": 49,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0208,
+                0.819,
+                0.619
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_BLIND_W",
+      "lod0_tris": 316,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_BLIND_W_LOD1",
+              "tris": 110,
+              "verts": 65,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0209,
+                0.8197,
+                0.62
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.25,
+          "meshes": [
+            {
+              "name": "P0B_BLIND_W_LOD2",
+              "tris": 78,
+              "verts": 49,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0208,
+                0.819,
+                0.619
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_END_FLANGE_E",
+      "lod0_tris": 560,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_END_FLANGE_E_LOD1",
+              "tris": 196,
+              "verts": 106,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8998,
+                0.6998
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.25,
+          "meshes": [
+            {
+              "name": "P0B_END_FLANGE_E_LOD2",
+              "tris": 140,
+              "verts": 78,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8994,
+                0.6994
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_END_FLANGE_W",
+      "lod0_tris": 560,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_END_FLANGE_W_LOD1",
+              "tris": 196,
+              "verts": 106,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8998,
+                0.6998
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.25,
+          "meshes": [
+            {
+              "name": "P0B_END_FLANGE_W_LOD2",
+              "tris": 140,
+              "verts": 78,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8994,
+                0.6994
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_HVAC_BRANCH_Z10",
+      "lod0_tris": 8964,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_HVAC_BRANCH_Z10_LOD1",
+              "tris": 3136,
+              "verts": 1766,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                21.6,
+                0.8595,
+                0.6595
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_HVAC_BRANCH_Z10_LOD2",
+              "tris": 1074,
+              "verts": 735,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                21.6013,
+                0.859,
+                0.659
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_HVAC_RUN_800x600",
+      "lod0_tris": 71712,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_HVAC_RUN_800x600_LOD1",
+              "tris": 25098,
+              "verts": 14133,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                172.8,
+                0.8595,
+                0.6595
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_HVAC_RUN_800x600_LOD2",
+              "tris": 8604,
+              "verts": 5886,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                172.8012,
+                0.859,
+                0.659
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_LABELS",
+      "lod0_tris": 3240,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_LABELS_LOD1",
+              "tris": 1134,
+              "verts": 675,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Label_Aluminium",
+                "M_SH_Steel_Stainless"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                163.3597,
+                0.0038,
+                0.05
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_LABELS_LOD2",
+              "tris": 388,
+              "verts": 302,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Label_Aluminium",
+                "M_SH_Steel_Stainless"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                163.3601,
+                0.0031,
+                0.0501
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SLEEVE_CORR",
+      "lod0_tris": 3308,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SLEEVE_CORR_LOD1",
+              "tris": 1156,
+              "verts": 612,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Firestop_Red",
+                "M_SH_Steel_Dark",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.3068,
+                0.98,
+                0.78
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SLEEVE_CORR_LOD2",
+              "tris": 396,
+              "verts": 232,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Firestop_Red",
+                "M_SH_Steel_Dark",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.3066,
+                0.979,
+                0.779
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SLEEVE_Z10",
+      "lod0_tris": 3308,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SLEEVE_Z10_LOD1",
+              "tris": 1156,
+              "verts": 612,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Firestop_Red",
+                "M_SH_Steel_Dark",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.3068,
+                0.98,
+                0.78
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SLEEVE_Z10_LOD2",
+              "tris": 396,
+              "verts": 232,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Firestop_Red",
+                "M_SH_Steel_Dark",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.3066,
+                0.979,
+                0.779
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SPRINKLER_HEADS",
+      "lod0_tris": 42656,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SPRINKLER_HEADS_LOD1",
+              "tris": 14928,
+              "verts": 7808,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Sprinkler_Red",
+                "M_SH_Steel_Stainless"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.0858,
+                0.0858,
+                0.724
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SPRINKLER_HEADS_LOD2",
+              "tris": 5118,
+              "verts": 2903,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Sprinkler_Red",
+                "M_SH_Steel_Stainless"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.0856,
+                0.0856,
+                0.7236
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SPRINKLER_RUN_DN80",
+      "lod0_tris": 40896,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SPRINKLER_RUN_DN80_LOD1",
+              "tris": 14312,
+              "verts": 7438,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Sprinkler_Red",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                172.8,
+                0.1237,
+                0.1299
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SPRINKLER_RUN_DN80_LOD2",
+              "tris": 4906,
+              "verts": 2741,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Sprinkler_Red",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                172.8018,
+                0.1237,
+                0.1237
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SUPPORTS_HVAC",
+      "lod0_tris": 20592,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SUPPORTS_HVAC_LOD1",
+              "tris": 7206,
+              "verts": 3963,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.08,
+                1.02,
+                0.89
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SUPPORTS_HVAC_LOD2",
+              "tris": 2470,
+              "verts": 1595,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.0794,
+                1.0192,
+                0.8895
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SUPPORTS_SPRINKLER",
+      "lod0_tris": 13244,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SUPPORTS_SPRINKLER_LOD1",
+              "tris": 4634,
+              "verts": 2575,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.035,
+                0.164,
+                0.135
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SUPPORTS_SPRINKLER_LOD2",
+              "tris": 1588,
+              "verts": 1052,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.0342,
+                0.1632,
+                0.1347
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_SUPPORTS_TRAY",
+      "lod0_tris": 27588,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_SUPPORTS_TRAY_LOD1",
+              "tris": 9654,
+              "verts": 5169,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.04,
+                0.5,
+                0.8775
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_SUPPORTS_TRAY_LOD2",
+              "tris": 3310,
+              "verts": 1997,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                168.0392,
+                0.4992,
+                0.8769
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_TEE_MAIN",
+      "lod0_tris": 560,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_TEE_MAIN_LOD1",
+              "tris": 196,
+              "verts": 106,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8998,
+                0.6998
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.25,
+          "meshes": [
+            {
+              "name": "P0B_TEE_MAIN_LOD2",
+              "tris": 140,
+              "verts": 78,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8994,
+                0.6994
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_TEE_Z10",
+      "lod0_tris": 560,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_TEE_Z10_LOD1",
+              "tris": 196,
+              "verts": 106,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8998,
+                0.6998
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.25,
+          "meshes": [
+            {
+              "name": "P0B_TEE_Z10_LOD2",
+              "tris": 140,
+              "verts": 78,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.0529,
+                0.8994,
+                0.6994
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "asset": "P0B_TRAY_RUN_400",
+      "lod0_tris": 41184,
+      "lods": {
+        "LOD1": {
+          "ratio": 0.35,
+          "meshes": [
+            {
+              "name": "P0B_TRAY_RUN_400_LOD1",
+              "tris": 14414,
+              "verts": 9079,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Stainless"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                172.8297,
+                0.4196,
+                0.106
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "P0B_TRAY_RUN_400_LOD2",
+              "tris": 4942,
+              "verts": 4343,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Stainless"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                172.8309,
+                0.4203,
+                0.1038
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "totals": {
+    "LOD0": 279564,
+    "LOD1": 97832,
+    "LOD2": 33908
+  },
+  "reduction": {
+    "LOD1_pct": 34.99,
+    "LOD2_pct": 12.13
+  },
+  "qa_fail": []
+}

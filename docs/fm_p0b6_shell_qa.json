@@ -1,0 +1,62 @@
+{
+  "generation": "VERIFIED_P0B6",
+  "collection": "L1_P0B6_SHELL",
+  "retired": [
+    "R21B_SERV_VentS",
+    "R21B_SERV_VentE",
+    "R21B_SERV_VentW"
+  ],
+  "wayfinding": {
+    "object": "DET_REC02_Way_CenterToExtraction",
+    "moved_verts": 4,
+    "stats": {
+      "tris": 12,
+      "verts": 8,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox": [
+        [
+          -94.04,
+          -35.0,
+          0.004
+        ],
+        [
+          -93.96,
+          -16.0,
+          0.01
+        ]
+      ]
+    }
+  },
+  "objects": {
+    "P0B6_CCTV_TRAY_LINK": {
+      "tris": 4472,
+      "verts": 2432,
+      "non_manifold": 0,
+      "degenerate": 0,
+      "uv": true,
+      "bbox": [
+        [
+          -87.108,
+          24.6,
+          3.69
+        ],
+        [
+          -84.305,
+          35.553,
+          4.69
+        ]
+      ]
+    }
+  },
+  "backup": "FM_LEVEL1_V06_ARCH_before_p0b6_shell.blend",
+  "notes": {
+    "S-06": "3 rejillas de pared sin conducto retiradas; retorno diferido con patinillos (S-18)",
+    "S-09": "bandeja central P0A enlazada con bandeja CCTV mediante 10,3 m + 2,3 m + 0,6 m + bajada 0,55 m",
+    "S-21": "linea de circulacion prolongada de y-33 a y-35, hasta la plataforma de extraccion",
+    "S-01..S-05/S-07/S-08": "ya resueltos por R9/P0A; audit doc desactualizado",
+    "S-18": "patinillos pendientes por decision del usuario; no se construyen"
+  },
+  "qa_pass": true
+}

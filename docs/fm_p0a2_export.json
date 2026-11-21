@@ -1,0 +1,22 @@
+{
+  "started": "2026-11-09 12:12:02",
+  "exports": [
+    {
+      "path": "assets/models/fm/p0a_library_lod.glb",
+      "objects": 35,
+      "meshes": 20,
+      "triangles": 141890,
+      "bytes": 5443156
+    },
+    {
+      "path": "assets/models/fm/p0a_test_assembly.glb",
+      "objects": 46,
+      "meshes": 45,
+      "triangles": 123172,
+      "bytes": 2644216
+    }
+  ],
+  "missing_roots": [],
+  "test_assembly_meshes": 46,
+  "finished": "2026-11-09 12:12:03"
+}

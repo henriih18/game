@@ -1,0 +1,167 @@
+{
+  "batch": "SECURITY_P0A_TRAYS",
+  "objects": 7,
+  "tris": 21254,
+  "qa": [
+    {
+      "name": "SEC_P0A_TRAY_WEST_18M5",
+      "tris": 4432,
+      "verts": 2432,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -104.93,
+          12.97,
+          3.494
+        ],
+        [
+          -104.51,
+          31.5,
+          3.6
+        ]
+      ],
+      "shared_users": 1
+    },
+    {
+      "name": "SEC_P0A_TRAY_CENTRE_12M",
+      "tris": 2898,
+      "verts": 1596,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -84.765,
+          12.57,
+          4.244
+        ],
+        [
+          -84.345,
+          24.6,
+          4.35
+        ]
+      ],
+      "shared_users": 1
+    },
+    {
+      "name": "SEC_P0A_TRAY_SUPPORTS_WEST",
+      "tris": 4592,
+      "verts": 2352,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -105.0,
+          13.09,
+          3.4
+        ],
+        [
+          -104.44,
+          31.31,
+          3.7
+        ]
+      ],
+      "shared_users": 1
+    },
+    {
+      "name": "SEC_P0A_TRAY_SUPPORTS_CENTRE",
+      "tris": 4940,
+      "verts": 2520,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -84.81,
+          13.175,
+          4.246
+        ],
+        [
+          -84.29,
+          24.225,
+          4.79
+        ]
+      ],
+      "shared_users": 1
+    },
+    {
+      "name": "SEC_P0A_TRAY_CABLES_WEST",
+      "tris": 2244,
+      "verts": 1200,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -104.8975,
+          13.05,
+          3.588
+        ],
+        [
+          -104.5425,
+          31.45,
+          3.6475
+        ]
+      ],
+      "shared_users": 1
+    },
+    {
+      "name": "SEC_P0A_TRAY_CABLES_CENTRE",
+      "tris": 1716,
+      "verts": 912,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -84.7325,
+          12.65,
+          4.338
+        ],
+        [
+          -84.3775,
+          24.55,
+          4.3975
+        ]
+      ],
+      "shared_users": 1
+    },
+    {
+      "name": "SEC_P0A_TRAY_ENDCAPS",
+      "tris": 432,
+      "verts": 224,
+      "degenerate": 0,
+      "uv": [
+        "MapaUV"
+      ],
+      "bbox": [
+        [
+          -104.955,
+          12.59,
+          3.49
+        ],
+        [
+          -84.32,
+          31.51,
+          4.36
+        ]
+      ],
+      "shared_users": 1
+    }
+  ],
+  "retired": [
+    "R21B_SERV_WestCableTray",
+    "R21B_SERV_CentreCableTray"
+  ],
+  "retired_visible": [],
+  "inside": true
+}

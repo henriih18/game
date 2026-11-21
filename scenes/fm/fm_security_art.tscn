@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/fm/security_sector.glb" id="1_security"]
+[ext_resource type="PackedScene" path="res://assets/models/fm/security_connector.glb" id="2_connector"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_SecurityConnectorCeiling"]
+albedo_color = Color(0.13, 0.14, 0.15, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="Mesh_SecurityConnectorCeiling"]
+material = SubResource("Mat_SecurityConnectorCeiling")
+size = Vector3(6, 0.2, 6)
+
+[node name="FM_SECURITY_ART" type="Node3D"]
+
+[node name="SecuritySector" type="Node3D" parent="." instance=ExtResource("1_security")]
+
+[node name="SecurityConnectorArt" parent="SecuritySector" instance=ExtResource("2_connector")]
+
+[node name="SecurityConnector_Ceiling" type="MeshInstance3D" parent="SecuritySector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89, 4.1, -7)
+mesh = SubResource("Mesh_SecurityConnectorCeiling")
+
+[node name="Emerg_SW" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -101, 3.3, -32)
+light_color = Color(1, 0.05, 0.02, 1)
+light_energy = 0.55
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 6.0
+omni_attenuation = 1.4
+
+[node name="Emerg_C" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88, 3.3, -22)
+light_color = Color(1, 0.38, 0.1, 1)
+light_energy = 0.5
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 5.5
+omni_attenuation = 1.5
+
+[node name="Emerg_NE" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.5, 3.3, -12.5)
+light_color = Color(1, 0.05, 0.02, 1)
+light_energy = 0.55
+light_specular = 0.2
+shadow_enabled = false
+omni_range = 6.0
+omni_attenuation = 1.4

@@ -1,0 +1,21 @@
+{
+  "library_file": "/home/riyo/Documentos/game/assets/blender/fm_shared_hero_library.blend",
+  "scenes": [
+    "FM_ASSET_LIBRARY"
+  ],
+  "active_scene": "FM_ASSET_LIBRARY",
+  "root_collection": "FM_LIBRARY",
+  "collections": 2,
+  "objects": 539,
+  "meshes": 446,
+  "shared_meshes": 43,
+  "tris": 1481818,
+  "materials": 96,
+  "texts": [],
+  "children": [
+    "LIB_CORRIDOR_HERO",
+    "LIB_SECURITY_HERO"
+  ],
+  "bytes": 20850582,
+  "bytes_note": "Tama\u00f1o real tras purge y guardado final; el valor previo 39.785.990 era el tama\u00f1o antes del save."
+}

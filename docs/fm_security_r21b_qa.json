@@ -1,0 +1,2775 @@
+{
+ "ok": true,
+ "pass": true,
+ "errors": [],
+ "warnings": [
+  "R21B_BRIEF_Table: 5 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_00: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_01: 2 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_02: 2 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_03: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_04: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_05: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_08_Tipped: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Chair_09_Tipped: 2 closed parts with normals pointing inward",
+  "R21B_BRIEF_PlanningBoard: 6 closed parts with normals pointing inward",
+  "R21B_BRIEF_Screen: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Projector: 15 closed parts with normals pointing inward",
+  "R21B_BRIEF_Credenza: 6 closed parts with normals pointing inward",
+  "R21B_BRIEF_Lectern: 4 closed parts with normals pointing inward",
+  "R21B_BRIEF_CoatRack: 5 closed parts with normals pointing inward",
+  "R21B_BRIEF_Plant0_PotGroup: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_Plant1_PotGroup: 1 closed parts with normals pointing inward",
+  "R21B_BRIEF_PowerTower: duplicate verts=12 loose verts=0",
+  "R21B_CHAOS_CableReelA: 5 closed parts with normals pointing inward",
+  "R21B_CHAOS_CableReelA: duplicate verts=5 loose verts=0",
+  "R21B_CHAOS_CableReelB: 2 closed parts with normals pointing inward",
+  "R21B_CHAOS_CableReelB: duplicate verts=5 loose verts=0",
+  "R21B_CHAOS_DeadMonitorA: 1 closed parts with normals pointing inward",
+  "R21B_CHAOS_HangingLight: 1 closed parts with normals pointing inward",
+  "R21B_CHAOS_SparkBox: 2 closed parts with normals pointing inward",
+  "R21B_CIRC_GlassDoor: 3 closed parts with normals pointing inward",
+  "R21B_CIRC_GlassDoor: duplicate verts=8 loose verts=0",
+  "R21B_CIRC_RestrictedSign: 7 closed parts with normals pointing inward",
+  "R21B_CIRC_Queue: 8 closed parts with normals pointing inward",
+  "R21B_CIRC_FloorMarkings: duplicate verts=124 loose verts=0",
+  "R21B_CIRC_Planter1_Foliage: 1 closed parts with normals pointing inward",
+  "R21B_SERV_WestCableTray: 2 closed parts with normals pointing inward",
+  "R21B_SERV_HVACDuct: 20 closed parts with normals pointing inward",
+  "R21B_SERV_CentreCableTray: 9 closed parts with normals pointing inward",
+  "R21B_SERV_VentS: 3 closed parts with normals pointing inward",
+  "R21B_SERV_VentE: 2 closed parts with normals pointing inward",
+  "R21B_SERV_HoseCabinet: 1 closed parts with normals pointing inward",
+  "R21B_SERV_HoseCabinet: duplicate verts=9 loose verts=0",
+  "R21B_SERV_Clock: 5 closed parts with normals pointing inward",
+  "R21B_SERV_RoomSign: 3 closed parts with normals pointing inward",
+  "R21B_HATCH_ServiceCounter: 6 closed parts with normals pointing inward",
+  "R21B_HATCH_Sign: 4 closed parts with normals pointing inward",
+  "R21B_LOCK_BankA: 36 closed parts with normals pointing inward",
+  "R21B_LOCK_BankB: 27 closed parts with normals pointing inward",
+  "R21B_LOCK_RadioStation: 14 closed parts with normals pointing inward",
+  "R21B_LOCK_KeyCabinet: 16 closed parts with normals pointing inward",
+  "R21B_LOCK_FirstAid: 1 closed parts with normals pointing inward",
+  "R21B_LOCK_Extinguisher: 4 closed parts with normals pointing inward",
+  "R21B_LOCK_Shelving: 4 closed parts with normals pointing inward",
+  "hidden back-to-back faces: R21B_CIRC_RestrictedSign (243 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_CIRC_FloorMarkings (124 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_BRIEF_PlanningBoard (104 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_CIRC_FloorMarkings<->SM_L1_Zone03_Security_Floor (89 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_LOCK_RadioStation (58 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_SERV_CentreCableTray<->SM_L1_Zone03_Security_Ceiling (48 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_SERV_Clock (46 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_BRIEF_Projector (38 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_SERV_HVACDuct (32 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_BRIEF_Plant1_PotGroup (26 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_BRIEF_Plant0_PotGroup (24 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_CHAOS_Dust0<->R21B_CIRC_FloorMarkings (22 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_LOCK_BankB<->SM_L1_Zone03_Security_Wall_S_2 (19 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_SERV_Sprinkler<->SM_L1_Zone03_Security_Ceiling (18 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_LOCK_BankA<->SM_L1_Zone03_Security_Wall_E_2 (18 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_CHAOS_CenterBench (16 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_SERV_WestCableTray<->SM_L1_Zone03_Security_Wall_W_0 (16 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_LOCK_BenchA (16 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_LOCK_BenchB (16 pairs) - delete to save tris",
+  "hidden back-to-back faces: R21B_LOCK_Extinguisher (16 pairs) - delete to save tris",
+  "16 parts fully enclosed, not touching (eyes/internals?): ['R21B_BRIEF_Chair_00', 'R21B_BRIEF_Chair_01', 'R21B_BRIEF_Chair_02', 'R21B_BRIEF_Chair_03', 'R21B_BRIEF_Chair_04']",
+  "asset lowest point z=-0.2 (not resting on ground plane z=0)"
+ ],
+ "ground_z": -0.2,
+ "zfighting": [],
+ "floating": [],
+ "back_to_back": [
+  {
+   "where": "R21B_CIRC_RestrictedSign",
+   "tri_pairs": 243
+  },
+  {
+   "where": "R21B_CIRC_FloorMarkings",
+   "tri_pairs": 124
+  },
+  {
+   "where": "R21B_BRIEF_PlanningBoard",
+   "tri_pairs": 104
+  },
+  {
+   "where": "R21B_CIRC_FloorMarkings<->SM_L1_Zone03_Security_Floor",
+   "tri_pairs": 89
+  },
+  {
+   "where": "R21B_LOCK_RadioStation",
+   "tri_pairs": 58
+  },
+  {
+   "where": "R21B_SERV_CentreCableTray<->SM_L1_Zone03_Security_Ceiling",
+   "tri_pairs": 48
+  },
+  {
+   "where": "R21B_SERV_Clock",
+   "tri_pairs": 46
+  },
+  {
+   "where": "R21B_BRIEF_Projector",
+   "tri_pairs": 38
+  },
+  {
+   "where": "R21B_SERV_HVACDuct",
+   "tri_pairs": 32
+  },
+  {
+   "where": "R21B_BRIEF_Plant1_PotGroup",
+   "tri_pairs": 26
+  },
+  {
+   "where": "R21B_BRIEF_Plant0_PotGroup",
+   "tri_pairs": 24
+  },
+  {
+   "where": "R21B_CHAOS_Dust0<->R21B_CIRC_FloorMarkings",
+   "tri_pairs": 22
+  },
+  {
+   "where": "R21B_LOCK_BankB<->SM_L1_Zone03_Security_Wall_S_2",
+   "tri_pairs": 19
+  },
+  {
+   "where": "R21B_SERV_Sprinkler<->SM_L1_Zone03_Security_Ceiling",
+   "tri_pairs": 18
+  },
+  {
+   "where": "R21B_LOCK_BankA<->SM_L1_Zone03_Security_Wall_E_2",
+   "tri_pairs": 18
+  },
+  {
+   "where": "R21B_CHAOS_CenterBench",
+   "tri_pairs": 16
+  },
+  {
+   "where": "R21B_SERV_WestCableTray<->SM_L1_Zone03_Security_Wall_W_0",
+   "tri_pairs": 16
+  },
+  {
+   "where": "R21B_LOCK_BenchA",
+   "tri_pairs": 16
+  },
+  {
+   "where": "R21B_LOCK_BenchB",
+   "tri_pairs": 16
+  },
+  {
+   "where": "R21B_LOCK_Extinguisher",
+   "tri_pairs": 16
+  }
+ ],
+ "enclosed": [
+  {
+   "object": "R21B_BRIEF_Chair_00",
+   "island_verts": 8,
+   "center": [
+    -98.25,
+    21.81,
+    1.007
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_01",
+   "island_verts": 8,
+   "center": [
+    -96.85,
+    21.81,
+    1.007
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_02",
+   "island_verts": 8,
+   "center": [
+    -95.45,
+    21.81,
+    1.007
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_03",
+   "island_verts": 8,
+   "center": [
+    -98.25,
+    19.09,
+    1.007
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_04",
+   "island_verts": 8,
+   "center": [
+    -96.85,
+    19.09,
+    1.007
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_05",
+   "island_verts": 8,
+   "center": [
+    -95.45,
+    19.09,
+    1.007
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_08_Tipped",
+   "island_verts": 8,
+   "center": [
+    -95.083,
+    22.468,
+    0.229
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_Chair_09_Tipped",
+   "island_verts": 8,
+   "center": [
+    -95.035,
+    17.879,
+    0.229
+   ]
+  },
+  {
+   "object": "R21B_BRIEF_CoatRack",
+   "island_verts": 128,
+   "center": [
+    -103.55,
+    23.35,
+    1.602
+   ]
+  },
+  {
+   "object": "R21B_CIRC_Queue",
+   "island_verts": 8,
+   "center": [
+    -86.5,
+    14.35,
+    0.975
+   ]
+  },
+  {
+   "object": "R21B_CIRC_Queue",
+   "island_verts": 8,
+   "center": [
+    -85.2,
+    14.35,
+    0.975
+   ]
+  },
+  {
+   "object": "R21B_CIRC_Queue",
+   "island_verts": 8,
+   "center": [
+    -83.9,
+    14.35,
+    0.975
+   ]
+  },
+  {
+   "object": "R21B_CIRC_Queue",
+   "island_verts": 8,
+   "center": [
+    -82.6,
+    14.35,
+    0.975
+   ]
+  },
+  {
+   "object": "R21B_HATCH_ServiceCounter",
+   "island_verts": 8,
+   "center": [
+    -71.549,
+    10.95,
+    0.977
+   ]
+  },
+  {
+   "object": "R21B_HATCH_Shutter",
+   "island_verts": 96,
+   "center": [
+    -71.28,
+    10.2,
+    1.02
+   ]
+  },
+  {
+   "object": "R21B_HATCH_Sign",
+   "island_verts": 8,
+   "center": [
+    -71.178,
+    12.0,
+    2.3
+   ]
+  }
+ ],
+ "objects": {
+  "R21B_BRIEF_Rug": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_BRIEF_Table": {
+   "verts": 1920,
+   "faces": 1894,
+   "tris": 3704,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 36,
+   "inside_out_islands": 5,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 8
+  },
+  "R21B_BRIEF_Chair_00": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_01": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_02": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_03": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_04": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_05": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_08_Tipped": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Chair_09_Tipped": {
+   "verts": 1168,
+   "faces": 1048,
+   "tris": 2256,
+   "ngons": 24,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 20,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_PlanningBoard": {
+   "verts": 980,
+   "faces": 832,
+   "tris": 1876,
+   "ngons": 22,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 21,
+   "inside_out_islands": 6,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Screen": {
+   "verts": 660,
+   "faces": 600,
+   "tris": 1284,
+   "ngons": 8,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 9,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_BRIEF_Projector": {
+   "verts": 934,
+   "faces": 796,
+   "tris": 1760,
+   "ngons": 18,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 27,
+   "inside_out_islands": 15,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 7
+  },
+  "R21B_BRIEF_Credenza": {
+   "verts": 980,
+   "faces": 870,
+   "tris": 1832,
+   "ngons": 10,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 32,
+   "inside_out_islands": 6,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 8
+  },
+  "R21B_BRIEF_Lectern": {
+   "verts": 428,
+   "faces": 404,
+   "tris": 804,
+   "ngons": 10,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 4,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 7
+  },
+  "R21B_BRIEF_CoatRack": {
+   "verts": 970,
+   "faces": 912,
+   "tris": 1892,
+   "ngons": 10,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 5,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_BRIEF_Bin_00": {
+   "verts": 112,
+   "faces": 110,
+   "tris": 212,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 3,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_BRIEF_Bin_01": {
+   "verts": 112,
+   "faces": 110,
+   "tris": 212,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 3,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_BRIEF_Plant0_PotGroup": {
+   "verts": 500,
+   "faces": 482,
+   "tris": 976,
+   "ngons": 4,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 7,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_BRIEF_Plant0_Foliage": {
+   "verts": 1224,
+   "faces": 1122,
+   "tris": 2380,
+   "ngons": 34,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 17,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_BRIEF_Plant1_PotGroup": {
+   "verts": 500,
+   "faces": 482,
+   "tris": 976,
+   "ngons": 4,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 7,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_BRIEF_Plant1_Foliage": {
+   "verts": 936,
+   "faces": 858,
+   "tris": 1820,
+   "ngons": 26,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_BRIEF_PowerTower": {
+   "verts": 170,
+   "faces": 164,
+   "tris": 308,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 12,
+   "islands": 8,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_BRIEF_EntryMat": {
+   "verts": 16,
+   "faces": 12,
+   "tris": 24,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 2,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_ToolCart": {
+   "verts": 200,
+   "faces": 176,
+   "tris": 344,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 14,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 6
+  },
+  "R21B_CHAOS_CableReelA": {
+   "verts": 2792,
+   "faces": 2596,
+   "tris": 5460,
+   "ngons": 36,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 5,
+   "islands": 31,
+   "inside_out_islands": 5,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_CHAOS_CableReelB": {
+   "verts": 2792,
+   "faces": 2596,
+   "tris": 5460,
+   "ngons": 36,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 5,
+   "islands": 31,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_CHAOS_Pallet": {
+   "verts": 344,
+   "faces": 318,
+   "tris": 636,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_CaseA": {
+   "verts": 216,
+   "faces": 214,
+   "tris": 412,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 5,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_CHAOS_CaseB": {
+   "verts": 216,
+   "faces": 214,
+   "tris": 412,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 5,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_CHAOS_Crate": {
+   "verts": 96,
+   "faces": 98,
+   "tris": 188,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Bin_00": {
+   "verts": 112,
+   "faces": 110,
+   "tris": 212,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 3,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CHAOS_Bin_01": {
+   "verts": 112,
+   "faces": 110,
+   "tris": 212,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 3,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CHAOS_DeadMonitorA": {
+   "verts": 322,
+   "faces": 312,
+   "tris": 612,
+   "ngons": 2,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 8,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_CHAOS_DeadMonitorB": {
+   "verts": 322,
+   "faces": 312,
+   "tris": 612,
+   "ngons": 2,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 8,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_CHAOS_FallenLight_Housing": {
+   "verts": 96,
+   "faces": 98,
+   "tris": 188,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_HangingLight": {
+   "verts": 136,
+   "faces": 146,
+   "tris": 260,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 3,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CHAOS_Debris": {
+   "verts": 152,
+   "faces": 246,
+   "tris": 252,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_Puddle0": {
+   "verts": 21,
+   "faces": 20,
+   "tris": 20,
+   "ngons": 0,
+   "boundary_edges": 20,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Puddle1": {
+   "verts": 21,
+   "faces": 20,
+   "tris": 20,
+   "ngons": 0,
+   "boundary_edges": 20,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Puddle2": {
+   "verts": 21,
+   "faces": 20,
+   "tris": 20,
+   "ngons": 0,
+   "boundary_edges": 20,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Dust0": {
+   "verts": 19,
+   "faces": 18,
+   "tris": 18,
+   "ngons": 0,
+   "boundary_edges": 18,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Dust1": {
+   "verts": 19,
+   "faces": 18,
+   "tris": 18,
+   "ngons": 0,
+   "boundary_edges": 18,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Dust2": {
+   "verts": 19,
+   "faces": 18,
+   "tris": 18,
+   "ngons": 0,
+   "boundary_edges": 18,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Dust3": {
+   "verts": 19,
+   "faces": 18,
+   "tris": 18,
+   "ngons": 0,
+   "boundary_edges": 18,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Dust4": {
+   "verts": 19,
+   "faces": 18,
+   "tris": 18,
+   "ngons": 0,
+   "boundary_edges": 18,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CHAOS_Cables": {
+   "verts": 704,
+   "faces": 720,
+   "tris": 1392,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 4,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_SparkBox": {
+   "verts": 358,
+   "faces": 338,
+   "tris": 692,
+   "ngons": 6,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 6,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CHAOS_Ficus_PotGroup": {
+   "verts": 452,
+   "faces": 402,
+   "tris": 896,
+   "ngons": 4,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 3,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_Ficus_Foliage": {
+   "verts": 1728,
+   "faces": 1584,
+   "tris": 3360,
+   "ngons": 48,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 24,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CHAOS_CenterBench": {
+   "verts": 640,
+   "faces": 636,
+   "tris": 1224,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 14,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_GlassScreen": {
+   "verts": 1592,
+   "faces": 1610,
+   "tris": 3092,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 23,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_GlassDoor": {
+   "verts": 464,
+   "faces": 404,
+   "tris": 856,
+   "ngons": 8,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 8,
+   "islands": 18,
+   "inside_out_islands": 3,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 6
+  },
+  "R21B_CIRC_RestrictedSign": {
+   "verts": 1574,
+   "faces": 1779,
+   "tris": 3088,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 21,
+   "inside_out_islands": 7,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_Queue": {
+   "verts": 2828,
+   "faces": 2438,
+   "tris": 5484,
+   "ngons": 40,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 43,
+   "inside_out_islands": 8,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_CIRC_FloorMarkings": {
+   "verts": 1104,
+   "faces": 1048,
+   "tris": 1948,
+   "ngons": 10,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 124,
+   "islands": 66,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_Planter_00": {
+   "verts": 144,
+   "faces": 134,
+   "tris": 260,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 7,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_Planter0_Foliage": {
+   "verts": 1512,
+   "faces": 1386,
+   "tris": 2940,
+   "ngons": 42,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 21,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CIRC_Planter_01": {
+   "verts": 144,
+   "faces": 134,
+   "tris": 260,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 7,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_Planter1_Foliage": {
+   "verts": 1080,
+   "faces": 990,
+   "tris": 2100,
+   "ngons": 30,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 15,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_CIRC_WaitBenchA": {
+   "verts": 872,
+   "faces": 862,
+   "tris": 1660,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 21,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_WaitBenchB": {
+   "verts": 872,
+   "faces": 862,
+   "tris": 1660,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 21,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_CIRC_ColumnBands": {
+   "verts": 192,
+   "faces": 144,
+   "tris": 288,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 24,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_CIRC_PPEStation": {
+   "verts": 1492,
+   "faces": 1466,
+   "tris": 2900,
+   "ngons": 4,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 21,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 6
+  },
+  "R21B_SERV_Skirting": {
+   "verts": 48,
+   "faces": 36,
+   "tris": 72,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 6,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_SERV_WestCableTray": {
+   "verts": 830,
+   "faces": 772,
+   "tris": 1540,
+   "ngons": 16,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 30,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_SERV_HVACDuct": {
+   "verts": 1968,
+   "faces": 1766,
+   "tris": 3620,
+   "ngons": 56,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 79,
+   "inside_out_islands": 20,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_SERV_Sprinkler": {
+   "verts": 528,
+   "faces": 446,
+   "tris": 996,
+   "ngons": 12,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 15,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_SERV_CentreCableTray": {
+   "verts": 1014,
+   "faces": 948,
+   "tris": 1924,
+   "ngons": 16,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 26,
+   "inside_out_islands": 9,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "R21B_SERV_VentW": {
+   "verts": 208,
+   "faces": 178,
+   "tris": 364,
+   "ngons": 8,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_SERV_VentS": {
+   "verts": 208,
+   "faces": 178,
+   "tris": 364,
+   "ngons": 8,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 3,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_SERV_VentE": {
+   "verts": 208,
+   "faces": 178,
+   "tris": 364,
+   "ngons": 8,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 13,
+   "inside_out_islands": 2,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_SERV_HoseCabinet": {
+   "verts": 810,
+   "faces": 814,
+   "tris": 1592,
+   "ngons": 2,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 9,
+   "islands": 8,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_SERV_Clock": {
+   "verts": 672,
+   "faces": 558,
+   "tris": 1284,
+   "ngons": 6,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 15,
+   "inside_out_islands": 5,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_SERV_EmergencyW1": {
+   "verts": 168,
+   "faces": 164,
+   "tris": 320,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 4,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_SERV_EmergencyW2": {
+   "verts": 168,
+   "faces": 164,
+   "tris": 320,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 4,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_SERV_EmergencyS": {
+   "verts": 168,
+   "faces": 164,
+   "tris": 320,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 4,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_SERV_FireAlarm": {
+   "verts": 216,
+   "faces": 214,
+   "tris": 412,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 5,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_SERV_ExitSign": {
+   "verts": 104,
+   "faces": 104,
+   "tris": 200,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 2,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 2
+  },
+  "R21B_SERV_RoomSign": {
+   "verts": 1128,
+   "faces": 1282,
+   "tris": 2220,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 14,
+   "inside_out_islands": 3,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 4
+  },
+  "R21B_HATCH_ServiceCounter": {
+   "verts": 532,
+   "faces": 482,
+   "tris": 976,
+   "ngons": 10,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 22,
+   "inside_out_islands": 6,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 9
+  },
+  "R21B_HATCH_Shutter": {
+   "verts": 1544,
+   "faces": 1536,
+   "tris": 3000,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 22,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_HATCH_OfficeNook": {
+   "verts": 2056,
+   "faces": 1838,
+   "tris": 3932,
+   "ngons": 32,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 46,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 12
+  },
+  "R21B_HATCH_Sign": {
+   "verts": 658,
+   "faces": 737,
+   "tris": 1284,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 10,
+   "inside_out_islands": 4,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_HATCH_GlassShards": {
+   "verts": 48,
+   "faces": 36,
+   "tris": 72,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 6,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_LOCK_BankA": {
+   "verts": 3264,
+   "faces": 2738,
+   "tris": 5948,
+   "ngons": 56,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 153,
+   "inside_out_islands": 36,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 8
+  },
+  "R21B_LOCK_BankB": {
+   "verts": 3240,
+   "faces": 2720,
+   "tris": 5912,
+   "ngons": 56,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 150,
+   "inside_out_islands": 27,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 8
+  },
+  "R21B_LOCK_BenchA": {
+   "verts": 296,
+   "faces": 274,
+   "tris": 532,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 15,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_LOCK_BenchB": {
+   "verts": 296,
+   "faces": 274,
+   "tris": 532,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 15,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_LOCK_RadioStation": {
+   "verts": 1240,
+   "faces": 1050,
+   "tris": 2260,
+   "ngons": 26,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 55,
+   "inside_out_islands": 14,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 11
+  },
+  "R21B_LOCK_KeyCabinet": {
+   "verts": 448,
+   "faces": 444,
+   "tris": 744,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 38,
+   "inside_out_islands": 16,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 6
+  },
+  "R21B_LOCK_FirstAid": {
+   "verts": 340,
+   "faces": 302,
+   "tris": 632,
+   "ngons": 6,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 12,
+   "inside_out_islands": 1,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 3
+  },
+  "R21B_LOCK_Extinguisher": {
+   "verts": 1882,
+   "faces": 1606,
+   "tris": 3668,
+   "ngons": 32,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 24,
+   "inside_out_islands": 4,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 6
+  },
+  "R21B_LOCK_MatLockers": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "R21B_LOCK_Shelving": {
+   "verts": 1332,
+   "faces": 1264,
+   "tris": 2536,
+   "ngons": 12,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 32,
+   "inside_out_islands": 4,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 5
+  },
+  "SM_L1_Zone03_Security_Floor": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Ceiling": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_E_1": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_E_2": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_N_0": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_N_1": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_N_2": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_S_0": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_S_1": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_S_2": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Zone03_Security_Wall_W_0": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Column_Security_0_0": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Column_Security_0_1": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Column_Security_1_0": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Column_Security_1_1": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Column_Security_2_0": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  },
+  "SM_L1_Column_Security_2_1": {
+   "verts": 8,
+   "faces": 6,
+   "tris": 12,
+   "ngons": 0,
+   "boundary_edges": 0,
+   "nonmanifold_edges": 0,
+   "wire_edges": 0,
+   "loose_verts": 0,
+   "degenerate_faces": 0,
+   "zero_length_edges": 0,
+   "inconsistent_normals_edges": 0,
+   "duplicate_verts": 0,
+   "islands": 1,
+   "inside_out_islands": 0,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "materials": 1
+  }
+ }
+}

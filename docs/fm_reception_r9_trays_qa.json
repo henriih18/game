@@ -1,0 +1,160 @@
+{
+  "objects": [
+    {
+      "name": "REC09_TRAY_N",
+      "tris": 9560,
+      "verts": 5216,
+      "polys": 5636,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_W",
+      "tris": 7756,
+      "verts": 4232,
+      "polys": 4570,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_N_SUPPORTS",
+      "tris": 7248,
+      "verts": 3696,
+      "polys": 3504,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_W_SUPPORTS",
+      "tris": 5248,
+      "verts": 2688,
+      "polys": 2560,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_N_CABLES",
+      "tris": 1804,
+      "verts": 960,
+      "polys": 994,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_W_CABLES",
+      "tris": 1584,
+      "verts": 840,
+      "polys": 864,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_CAPS",
+      "tris": 432,
+      "verts": 224,
+      "polys": 216,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_SLEEVE_00",
+      "tris": 576,
+      "verts": 288,
+      "polys": 288,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_SLEEVE_01",
+      "tris": 576,
+      "verts": 288,
+      "polys": 288,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_SLEEVE_02",
+      "tris": 576,
+      "verts": 288,
+      "polys": 288,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    },
+    {
+      "name": "REC09_TRAY_SLEEVE_03",
+      "tris": 576,
+      "verts": 288,
+      "polys": 288,
+      "nonmanifold": 0,
+      "degenerate": 0,
+      "uv": true
+    }
+  ],
+  "total_tris": 35936,
+  "retired": [
+    "KIT_REC01_Tray_N_Base",
+    "KIT_REC01_Tray_N_Hanger_01",
+    "KIT_REC01_Tray_N_Hanger_02",
+    "KIT_REC01_Tray_N_Hanger_03",
+    "KIT_REC01_Tray_N_Hanger_04",
+    "KIT_REC01_Tray_W_Base",
+    "KIT_REC01_Tray_W_Hanger_00",
+    "KIT_REC01_Tray_W_Hanger_03",
+    "KIT_REC01_Tray_W_Hanger_04",
+    "KIT_REC01_Tray_W_Hanger_06"
+  ],
+  "retired_visible": [],
+  "inside": true,
+  "aabb": [
+    [
+      -110.15950012207031,
+      -40.150001525878906,
+      4.021199703216553
+    ],
+    [
+      -69.84049987792969,
+      -7.849999904632568,
+      5.196000099182129
+    ]
+  ],
+  "north": {
+    "x": [
+      -110.0,
+      -70.0
+    ],
+    "y": -9.3,
+    "z": 4.4
+  },
+  "west": {
+    "y": [
+      -40.0,
+      -8.0
+    ],
+    "x": -109.4,
+    "z": 4.4
+  },
+  "qa_pass": true,
+  "caps_fix": "rotation_euler reset to identity; local mesh bbox held correct cap positions",
+  "caps_local_bbox": [
+    [
+      -110.01000213623047,
+      -40.0099983215332,
+      4.340000152587891
+    ],
+    [
+      -69.98999786376953,
+      -7.989999771118164,
+      4.460000038146973
+    ]
+  ]
+}

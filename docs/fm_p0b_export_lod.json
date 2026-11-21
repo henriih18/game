@@ -1,0 +1,91 @@
+{
+  "started": "2026-11-09 13:04:56",
+  "path": "assets/models/fm/p0b_corridor_services_lod.glb",
+  "objects": 51,
+  "objects_by_lod": {
+    "LOD0": 17,
+    "LOD1": 17,
+    "LOD2": 17
+  },
+  "meshes": 50,
+  "vertices": {
+    "LOD0": 145256,
+    "LOD1": 54384,
+    "LOD2": 22428
+  },
+  "triangles": {
+    "LOD0": 279564,
+    "LOD1": 97832,
+    "LOD2": 33908
+  },
+  "triangles_total": 411304,
+  "bytes": 18226392,
+  "aabb_min": [
+    -99.053,
+    -2.51,
+    3.1
+  ],
+  "aabb_max": [
+    73.853,
+    19.6,
+    3.99
+  ],
+  "aabb_size": [
+    172.906,
+    22.11,
+    0.89
+  ],
+  "names": [
+    "P0B_BLIND_E",
+    "P0B_BLIND_E_LOD1",
+    "P0B_BLIND_E_LOD2",
+    "P0B_BLIND_W",
+    "P0B_BLIND_W_LOD1",
+    "P0B_BLIND_W_LOD2",
+    "P0B_END_FLANGE_E",
+    "P0B_END_FLANGE_E_LOD1",
+    "P0B_END_FLANGE_E_LOD2",
+    "P0B_END_FLANGE_W",
+    "P0B_END_FLANGE_W_LOD1",
+    "P0B_END_FLANGE_W_LOD2",
+    "P0B_HVAC_BRANCH_Z10",
+    "P0B_HVAC_BRANCH_Z10_LOD1",
+    "P0B_HVAC_BRANCH_Z10_LOD2",
+    "P0B_HVAC_RUN_800x600",
+    "P0B_HVAC_RUN_800x600_LOD1",
+    "P0B_HVAC_RUN_800x600_LOD2",
+    "P0B_LABELS",
+    "P0B_LABELS_LOD1",
+    "P0B_LABELS_LOD2",
+    "P0B_SLEEVE_CORR",
+    "P0B_SLEEVE_CORR_LOD1",
+    "P0B_SLEEVE_CORR_LOD2",
+    "P0B_SLEEVE_Z10",
+    "P0B_SLEEVE_Z10_LOD1",
+    "P0B_SLEEVE_Z10_LOD2",
+    "P0B_SPRINKLER_HEADS",
+    "P0B_SPRINKLER_HEADS_LOD1",
+    "P0B_SPRINKLER_HEADS_LOD2",
+    "P0B_SPRINKLER_RUN_DN80",
+    "P0B_SPRINKLER_RUN_DN80_LOD1",
+    "P0B_SPRINKLER_RUN_DN80_LOD2",
+    "P0B_SUPPORTS_HVAC",
+    "P0B_SUPPORTS_HVAC_LOD1",
+    "P0B_SUPPORTS_HVAC_LOD2",
+    "P0B_SUPPORTS_SPRINKLER",
+    "P0B_SUPPORTS_SPRINKLER_LOD1",
+    "P0B_SUPPORTS_SPRINKLER_LOD2",
+    "P0B_SUPPORTS_TRAY",
+    "P0B_SUPPORTS_TRAY_LOD1",
+    "P0B_SUPPORTS_TRAY_LOD2",
+    "P0B_TEE_MAIN",
+    "P0B_TEE_MAIN_LOD1",
+    "P0B_TEE_MAIN_LOD2",
+    "P0B_TEE_Z10",
+    "P0B_TEE_Z10_LOD1",
+    "P0B_TEE_Z10_LOD2",
+    "P0B_TRAY_RUN_400",
+    "P0B_TRAY_RUN_400_LOD1",
+    "P0B_TRAY_RUN_400_LOD2"
+  ]
+}

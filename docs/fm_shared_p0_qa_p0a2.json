@@ -1,0 +1,1359 @@
+{
+  "generated": "P0a.2",
+  "player": {
+    "radius": 0.38,
+    "height": 1.7
+  },
+  "assets": [
+    {
+      "asset": "SM_SH_DOOR_SEC_DOUBLE",
+      "category": "DOOR",
+      "lod0_tris": 86964,
+      "lods": {
+        "LOD1": {
+          "tris": 33044,
+          "ratio": 0.38,
+          "meshes": [
+            {
+              "name": "SM_SH_DOOR_SEC_DOUBLE_FRAME_LOD1",
+              "tris": 7472,
+              "verts": 3932,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium",
+                "M_SH_Rubber_Seal",
+                "M_SH_Lens_Red_Off"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                2.1398,
+                0.2507,
+                2.6799
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SEC_DOUBLE_LEAF_L_LOD1",
+              "tris": 12104,
+              "verts": 6304,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.9198,
+                0.1854,
+                2.5388
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SEC_DOUBLE_LEAF_R_LOD1",
+              "tris": 13468,
+              "verts": 7008,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Brass",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.9249,
+                0.1854,
+                2.5389
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 10432,
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "SM_SH_DOOR_SEC_DOUBLE_FRAME_LOD2",
+              "tris": 2358,
+              "verts": 1375,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium",
+                "M_SH_Rubber_Seal",
+                "M_SH_Lens_Red_Off"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                2.1392,
+                0.2503,
+                2.6795
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SEC_DOUBLE_LEAF_L_LOD2",
+              "tris": 3822,
+              "verts": 2163,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.9194,
+                0.185,
+                2.5384
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SEC_DOUBLE_LEAF_R_LOD2",
+              "tris": 4252,
+              "verts": 2400,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Brass",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.9245,
+                0.185,
+                2.5384
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 48,
+        "verts": 32,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          2.14,
+          0.2508,
+          2.68
+        ]
+      },
+      "capsule": {
+        "clear_w": 1.8,
+        "clear_h": 2.6,
+        "capsule_diameter": 0.76,
+        "capsule_height": 1.7,
+        "margin_required": 0.1,
+        "width_ok": true,
+        "height_ok": true,
+        "pass": true
+      }
+    },
+    {
+      "asset": "SM_SH_DOOR_SEC_SINGLE",
+      "category": "DOOR",
+      "lod0_tris": 50856,
+      "lods": {
+        "LOD1": {
+          "tris": 19324,
+          "ratio": 0.38,
+          "meshes": [
+            {
+              "name": "SM_SH_DOOR_SEC_SINGLE_FRAME_LOD1",
+              "tris": 5856,
+              "verts": 3098,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium",
+                "M_SH_Rubber_Seal",
+                "M_SH_Lens_Red_Off"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.4398,
+                0.2507,
+                2.4799
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SEC_SINGLE_LEAF_LOD1",
+              "tris": 13468,
+              "verts": 7008,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Brass",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.1149,
+                0.1854,
+                2.3389
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 6100,
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "SM_SH_DOOR_SEC_SINGLE_FRAME_LOD2",
+              "tris": 1848,
+              "verts": 1094,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium",
+                "M_SH_Rubber_Seal",
+                "M_SH_Lens_Red_Off"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.4392,
+                0.2503,
+                2.4793
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SEC_SINGLE_LEAF_LOD2",
+              "tris": 4252,
+              "verts": 2400,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Brass",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.1145,
+                0.185,
+                2.3385
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 48,
+        "verts": 32,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          1.44,
+          0.2508,
+          2.48
+        ]
+      },
+      "capsule": {
+        "clear_w": 1.1,
+        "clear_h": 2.4,
+        "capsule_diameter": 0.76,
+        "capsule_height": 1.7,
+        "margin_required": 0.1,
+        "width_ok": true,
+        "height_ok": true,
+        "pass": true
+      }
+    },
+    {
+      "asset": "SM_SH_DOOR_SERVICE",
+      "category": "DOOR",
+      "lod0_tris": 50856,
+      "lods": {
+        "LOD1": {
+          "tris": 19324,
+          "ratio": 0.38,
+          "meshes": [
+            {
+              "name": "SM_SH_DOOR_SERVICE_FRAME_LOD1",
+              "tris": 5856,
+              "verts": 3098,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium",
+                "M_SH_Rubber_Seal",
+                "M_SH_Lens_Red_Off"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.3399,
+                0.2507,
+                2.4799
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SERVICE_LEAF_LOD1",
+              "tris": 13468,
+              "verts": 7008,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Brass",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.0149,
+                0.1854,
+                2.3389
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 6100,
+          "ratio": 0.12,
+          "meshes": [
+            {
+              "name": "SM_SH_DOOR_SERVICE_FRAME_LOD2",
+              "tris": 1848,
+              "verts": 1094,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Label_Aluminium",
+                "M_SH_Rubber_Seal",
+                "M_SH_Lens_Red_Off"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.3392,
+                0.2503,
+                2.4795
+              ]
+            },
+            {
+              "name": "SM_SH_DOOR_SERVICE_LEAF_LOD2",
+              "tris": 4252,
+              "verts": 2400,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Rubber_Seal",
+                "M_SH_Vision_Glass",
+                "M_SH_Aluminum",
+                "M_SH_Steel_Stainless",
+                "M_SH_Brass",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.0145,
+                0.185,
+                2.3386
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 48,
+        "verts": 32,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          1.34,
+          0.2508,
+          2.48
+        ]
+      },
+      "capsule": {
+        "clear_w": 1.0,
+        "clear_h": 2.4,
+        "capsule_diameter": 0.76,
+        "capsule_height": 1.7,
+        "margin_required": 0.1,
+        "width_ok": true,
+        "height_ok": true,
+        "pass": true
+      }
+    },
+    {
+      "asset": "SM_SH_PORTAL_4000",
+      "category": "PORTAL",
+      "lod0_tris": 11884,
+      "lods": {
+        "LOD1": {
+          "tris": 5346,
+          "ratio": 0.45,
+          "meshes": [
+            {
+              "name": "SM_SH_PORTAL_4000_LOD1",
+              "tris": 5346,
+              "verts": 2811,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Rubber_Seal",
+                "M_SH_Paint_SafetyOrange"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                4.5198,
+                0.4598,
+                3.2649
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 1782,
+          "ratio": 0.15,
+          "meshes": [
+            {
+              "name": "SM_SH_PORTAL_4000_LOD2",
+              "tris": 1782,
+              "verts": 1029,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Rubber_Seal",
+                "M_SH_Paint_SafetyOrange"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                4.5194,
+                0.4596,
+                3.2643
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 36,
+        "verts": 24,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          4.52,
+          0.46,
+          3.2648
+        ]
+      },
+      "capsule": {
+        "clear_w": 4.0,
+        "clear_h": 2.88,
+        "capsule_diameter": 0.76,
+        "capsule_height": 1.7,
+        "margin_required": 0.1,
+        "width_ok": true,
+        "height_ok": true,
+        "pass": true
+      }
+    },
+    {
+      "asset": "SM_SH_PORTAL_6000",
+      "category": "PORTAL",
+      "lod0_tris": 12636,
+      "lods": {
+        "LOD1": {
+          "tris": 5686,
+          "ratio": 0.45,
+          "meshes": [
+            {
+              "name": "SM_SH_PORTAL_6000_LOD1",
+              "tris": 5686,
+              "verts": 2989,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Rubber_Seal",
+                "M_SH_Paint_SafetyOrange"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                6.5198,
+                0.4598,
+                3.2649
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 1894,
+          "ratio": 0.15,
+          "meshes": [
+            {
+              "name": "SM_SH_PORTAL_6000_LOD2",
+              "tris": 1894,
+              "verts": 1093,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Rubber_Seal",
+                "M_SH_Paint_SafetyOrange"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                6.5195,
+                0.4594,
+                3.2643
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 36,
+        "verts": 24,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          6.52,
+          0.46,
+          3.2648
+        ]
+      },
+      "capsule": {
+        "clear_w": 6.0,
+        "clear_h": 2.88,
+        "capsule_diameter": 0.76,
+        "capsule_height": 1.7,
+        "margin_required": 0.1,
+        "width_ok": true,
+        "height_ok": true,
+        "pass": true
+      }
+    },
+    {
+      "asset": "SM_SH_PORTAL_8000",
+      "category": "PORTAL",
+      "lod0_tris": 15232,
+      "lods": {
+        "LOD1": {
+          "tris": 6854,
+          "ratio": 0.45,
+          "meshes": [
+            {
+              "name": "SM_SH_PORTAL_8000_LOD1",
+              "tris": 6854,
+              "verts": 3607,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Rubber_Seal",
+                "M_SH_Paint_SafetyOrange"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                8.5198,
+                0.4598,
+                3.2649
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 2284,
+          "ratio": 0.15,
+          "meshes": [
+            {
+              "name": "SM_SH_PORTAL_8000_LOD2",
+              "tris": 2284,
+              "verts": 1322,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Rubber_Seal",
+                "M_SH_Paint_SafetyOrange"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                8.5194,
+                0.4596,
+                3.2643
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 36,
+        "verts": 24,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          8.52,
+          0.46,
+          3.2648
+        ]
+      },
+      "capsule": {
+        "clear_w": 8.0,
+        "clear_h": 2.88,
+        "capsule_diameter": 0.76,
+        "capsule_height": 1.7,
+        "margin_required": 0.1,
+        "width_ok": true,
+        "height_ok": true,
+        "pass": true
+      }
+    },
+    {
+      "asset": "SM_SH_EMERGENCY_CEILING",
+      "category": "LIGHT",
+      "lod0_tris": 9176,
+      "lods": {
+        "LOD1": {
+          "tris": 2936,
+          "ratio": 0.32,
+          "meshes": [
+            {
+              "name": "SM_SH_EMERGENCY_CEILING_LOD1",
+              "tris": 2936,
+              "verts": 1544,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark",
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Aluminum",
+                "M_SH_Lens_Red_On",
+                "M_SH_Plastic_Black",
+                "M_SH_Diffuser_On",
+                "M_SH_Rubber_Seal",
+                "M_SH_Cable_Black"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.47,
+                0.3,
+                0.2319
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 916,
+          "ratio": 0.1,
+          "meshes": [
+            {
+              "name": "SM_SH_EMERGENCY_CEILING_LOD2",
+              "tris": 916,
+              "verts": 534,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Steel_Stainless",
+                "M_SH_Steel_Dark",
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Aluminum",
+                "M_SH_Lens_Red_On",
+                "M_SH_Plastic_Black",
+                "M_SH_Diffuser_On",
+                "M_SH_Rubber_Seal",
+                "M_SH_Cable_Black"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.4695,
+                0.2991,
+                0.2313
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 12,
+        "verts": 8,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          0.47,
+          0.3,
+          0.232
+        ]
+      },
+      "capsule": {
+        "test_type": "fixture_protrusion",
+        "protrusion_m": 0.232,
+        "max_protrusion_m": 0.4,
+        "player_height": 1.7,
+        "pass": true,
+        "note": "Catalog Z is display-only; placement height is set in the level."
+      }
+    },
+    {
+      "asset": "SM_SH_EMERGENCY_WALL_E",
+      "category": "LIGHT",
+      "lod0_tris": 9712,
+      "lods": {
+        "LOD1": {
+          "tris": 3106,
+          "ratio": 0.32,
+          "meshes": [
+            {
+              "name": "SM_SH_EMERGENCY_WALL_E_LOD1",
+              "tris": 3106,
+              "verts": 1641,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Rubber_Seal",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Aluminum",
+                "M_SH_Lens_Red_On",
+                "M_SH_Label_Aluminium",
+                "M_SH_Cable_Black",
+                "M_SH_Plastic_Black",
+                "M_SH_Diffuser_On"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.2039,
+                0.1849,
+                0.4898
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 970,
+          "ratio": 0.1,
+          "meshes": [
+            {
+              "name": "SM_SH_EMERGENCY_WALL_E_LOD2",
+              "tris": 970,
+              "verts": 573,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Rubber_Seal",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Aluminum",
+                "M_SH_Lens_Red_On",
+                "M_SH_Label_Aluminium",
+                "M_SH_Cable_Black",
+                "M_SH_Plastic_Black",
+                "M_SH_Diffuser_On"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.203,
+                0.1844,
+                0.4894
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 12,
+        "verts": 8,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          0.204,
+          0.185,
+          0.49
+        ]
+      },
+      "capsule": {
+        "test_type": "fixture_protrusion",
+        "protrusion_m": 0.185,
+        "max_protrusion_m": 0.4,
+        "player_height": 1.7,
+        "pass": true,
+        "note": "Catalog Z is display-only; placement height is set in the level."
+      }
+    },
+    {
+      "asset": "SM_SH_EMERGENCY_WALL_N",
+      "category": "LIGHT",
+      "lod0_tris": 9712,
+      "lods": {
+        "LOD1": {
+          "tris": 3106,
+          "ratio": 0.32,
+          "meshes": [
+            {
+              "name": "SM_SH_EMERGENCY_WALL_E.001_LOD1",
+              "tris": 3106,
+              "verts": 1641,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Rubber_Seal",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Aluminum",
+                "M_SH_Lens_Red_On",
+                "M_SH_Label_Aluminium",
+                "M_SH_Cable_Black",
+                "M_SH_Plastic_Black",
+                "M_SH_Diffuser_On"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.2039,
+                0.1849,
+                0.4898
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 970,
+          "ratio": 0.1,
+          "meshes": [
+            {
+              "name": "SM_SH_EMERGENCY_WALL_E.001_LOD2",
+              "tris": 970,
+              "verts": 573,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Rubber_Seal",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Paint_SecurityGreen",
+                "M_SH_Aluminum",
+                "M_SH_Lens_Red_On",
+                "M_SH_Label_Aluminium",
+                "M_SH_Cable_Black",
+                "M_SH_Plastic_Black",
+                "M_SH_Diffuser_On"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                0.203,
+                0.1844,
+                0.4894
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 12,
+        "verts": 8,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          0.204,
+          0.185,
+          0.49
+        ]
+      },
+      "capsule": {
+        "test_type": "fixture_protrusion",
+        "protrusion_m": 0.185,
+        "max_protrusion_m": 0.4,
+        "player_height": 1.7,
+        "pass": true,
+        "note": "Catalog Z is display-only; placement height is set in the level."
+      }
+    },
+    {
+      "asset": "SM_SH_LUMINAIRE_1500_OFF",
+      "category": "LIGHT",
+      "lod0_tris": 9228,
+      "lods": {
+        "LOD1": {
+          "tris": 2952,
+          "ratio": 0.32,
+          "meshes": [
+            {
+              "name": "SM_SH_LUMINAIRE_1500_OFF_LOD1",
+              "tris": 2952,
+              "verts": 1574,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Aluminum",
+                "M_SH_Diffuser_Off",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Cable_Black",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.5598,
+                0.366,
+                0.3282
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 922,
+          "ratio": 0.1,
+          "meshes": [
+            {
+              "name": "SM_SH_LUMINAIRE_1500_OFF_LOD2",
+              "tris": 922,
+              "verts": 559,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Aluminum",
+                "M_SH_Diffuser_Off",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Cable_Black",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.5589,
+                0.3652,
+                0.3282
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 12,
+        "verts": 8,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          1.56,
+          0.366,
+          0.3282
+        ]
+      },
+      "capsule": {
+        "test_type": "fixture_protrusion",
+        "protrusion_m": 0.328,
+        "max_protrusion_m": 0.4,
+        "player_height": 1.7,
+        "pass": true,
+        "note": "Catalog Z is display-only; placement height is set in the level."
+      }
+    },
+    {
+      "asset": "SM_SH_LUMINAIRE_1500_ON",
+      "category": "LIGHT",
+      "lod0_tris": 9228,
+      "lods": {
+        "LOD1": {
+          "tris": 2952,
+          "ratio": 0.32,
+          "meshes": [
+            {
+              "name": "SM_SH_LUMINAIRE_1500_ON_LOD1",
+              "tris": 2952,
+              "verts": 1574,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Aluminum",
+                "M_SH_Diffuser_On",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Cable_Black",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.5598,
+                0.366,
+                0.3282
+              ]
+            }
+          ]
+        },
+        "LOD2": {
+          "tris": 922,
+          "ratio": 0.1,
+          "meshes": [
+            {
+              "name": "SM_SH_LUMINAIRE_1500_ON_LOD2",
+              "tris": 922,
+              "verts": 559,
+              "uv": [
+                "MapaUV"
+              ],
+              "materials": [
+                "M_SH_Steel_Galv",
+                "M_SH_Aluminum",
+                "M_SH_Diffuser_On",
+                "M_SH_Steel_Dark",
+                "M_SH_Steel_Stainless",
+                "M_SH_Cable_Black",
+                "M_SH_Label_Aluminium"
+              ],
+              "non_manifold_edges": 0,
+              "degenerate_faces": 0,
+              "loose_verts": 0,
+              "dims": [
+                1.5589,
+                0.3652,
+                0.3282
+              ]
+            }
+          ]
+        }
+      },
+      "collision": {
+        "tris": 12,
+        "verts": 8,
+        "uv": [],
+        "materials": [],
+        "non_manifold_edges": 0,
+        "degenerate_faces": 0,
+        "loose_verts": 0,
+        "dims": [
+          1.56,
+          0.366,
+          0.3282
+        ]
+      },
+      "capsule": {
+        "test_type": "fixture_protrusion",
+        "protrusion_m": 0.328,
+        "max_protrusion_m": 0.4,
+        "player_height": 1.7,
+        "pass": true,
+        "note": "Catalog Z is display-only; placement height is set in the level."
+      }
+    }
+  ],
+  "capsule": [
+    {
+      "asset": "SM_SH_DOOR_SEC_DOUBLE",
+      "clear_w": 1.8,
+      "clear_h": 2.6,
+      "capsule_diameter": 0.76,
+      "capsule_height": 1.7,
+      "margin_required": 0.1,
+      "width_ok": true,
+      "height_ok": true,
+      "pass": true
+    },
+    {
+      "asset": "SM_SH_DOOR_SEC_SINGLE",
+      "clear_w": 1.1,
+      "clear_h": 2.4,
+      "capsule_diameter": 0.76,
+      "capsule_height": 1.7,
+      "margin_required": 0.1,
+      "width_ok": true,
+      "height_ok": true,
+      "pass": true
+    },
+    {
+      "asset": "SM_SH_DOOR_SERVICE",
+      "clear_w": 1.0,
+      "clear_h": 2.4,
+      "capsule_diameter": 0.76,
+      "capsule_height": 1.7,
+      "margin_required": 0.1,
+      "width_ok": true,
+      "height_ok": true,
+      "pass": true
+    },
+    {
+      "asset": "SM_SH_PORTAL_4000",
+      "clear_w": 4.0,
+      "clear_h": 2.88,
+      "capsule_diameter": 0.76,
+      "capsule_height": 1.7,
+      "margin_required": 0.1,
+      "width_ok": true,
+      "height_ok": true,
+      "pass": true
+    },
+    {
+      "asset": "SM_SH_PORTAL_6000",
+      "clear_w": 6.0,
+      "clear_h": 2.88,
+      "capsule_diameter": 0.76,
+      "capsule_height": 1.7,
+      "margin_required": 0.1,
+      "width_ok": true,
+      "height_ok": true,
+      "pass": true
+    },
+    {
+      "asset": "SM_SH_PORTAL_8000",
+      "clear_w": 8.0,
+      "clear_h": 2.88,
+      "capsule_diameter": 0.76,
+      "capsule_height": 1.7,
+      "margin_required": 0.1,
+      "width_ok": true,
+      "height_ok": true,
+      "pass": true
+    },
+    {
+      "asset": "SM_SH_EMERGENCY_CEILING",
+      "test_type": "fixture_protrusion",
+      "protrusion_m": 0.232,
+      "max_protrusion_m": 0.4,
+      "player_height": 1.7,
+      "pass": true,
+      "note": "Catalog Z is display-only; placement height is set in the level."
+    },
+    {
+      "asset": "SM_SH_EMERGENCY_WALL_E",
+      "test_type": "fixture_protrusion",
+      "protrusion_m": 0.185,
+      "max_protrusion_m": 0.4,
+      "player_height": 1.7,
+      "pass": true,
+      "note": "Catalog Z is display-only; placement height is set in the level."
+    },
+    {
+      "asset": "SM_SH_EMERGENCY_WALL_N",
+      "test_type": "fixture_protrusion",
+      "protrusion_m": 0.185,
+      "max_protrusion_m": 0.4,
+      "player_height": 1.7,
+      "pass": true,
+      "note": "Catalog Z is display-only; placement height is set in the level."
+    },
+    {
+      "asset": "SM_SH_LUMINAIRE_1500_OFF",
+      "test_type": "fixture_protrusion",
+      "protrusion_m": 0.328,
+      "max_protrusion_m": 0.4,
+      "player_height": 1.7,
+      "pass": true,
+      "note": "Catalog Z is display-only; placement height is set in the level."
+    },
+    {
+      "asset": "SM_SH_LUMINAIRE_1500_ON",
+      "test_type": "fixture_protrusion",
+      "protrusion_m": 0.328,
+      "max_protrusion_m": 0.4,
+      "player_height": 1.7,
+      "pass": true,
+      "note": "Catalog Z is display-only; placement height is set in the level."
+    }
+  ],
+  "gamification": {
+    "lod1_used": "mid distance (15-35 m)",
+    "lod2_used": "far distance (35-70 m) or static background",
+    "collision": "separate P0_COLLISION collection; box proxies, exported apart from visual GLB",
+    "bake_deferred": "procedural PBR is still the approved look; bake/ORM belongs to the final texture pass"
+  }
+}

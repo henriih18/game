@@ -1,0 +1,25 @@
+{
+  "tris": 372,
+  "verts": 200,
+  "non_manifold": 0,
+  "degenerate": 0,
+  "uv": true,
+  "collection": "L1_RECEPTION_R11_HERO",
+  "name": "REC10_RUG_HERO",
+  "retired": [
+    "PROP_REC02_Waiting_Rug"
+  ],
+  "aabb": [
+    [
+      -110.25,
+      -23.95,
+      0.0
+    ],
+    [
+      -104.35,
+      -20.05,
+      0.031
+    ]
+  ],
+  "qa_pass": true
+}

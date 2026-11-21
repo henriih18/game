@@ -1,0 +1,558 @@
+{
+ "task": "Z10 hero R6 - wall wood fix, floor/ceiling surfaces, cinematic lighting/fog, narrative, Godot vertex-color wear, beauty render, GLB/Godot/FPS",
+ "date": "2026-11-10",
+ "status": "R6 complete; no geometry changes; beauty render approved with Godot lookdev limitations; no commit",
+ "backup_before_r6": {
+  "file": "docs/backups/FM_LEVEL1_V06_ARCH_before_z10_hero_r6.blend",
+  "bytes": 81087072,
+  "note": "R5 final state"
+ },
+ "saved_blend": {
+  "file": "nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+  "bytes": 81082479
+ },
+ "wall_fix": {
+  "cause": "M_FM_Concrete_Wall (1K concrete_wall_* images) mapped with wall UV0 0..1 x 0.683 on 4 m x 4.2 m panels; vertical stretch + faint directional texture read as wood grain",
+  "solution": "new 2K plaster set T_Z10_WALL_PLASTER_2K_* (BC/R/ORM) and M_Z10_HERO_Wall_Plaster_2K with UV_Z10_WALL (4 m, signed box projection); non-directional mottling, water stains, short drips, cracks and scuffs",
+  "objects": "KIT_PILOT_Z10_Wall_E/N/W_* in the Z10 export selection",
+  "no_geometry": true
+ },
+ "floor_ceiling": {
+  "floor": "T_Z10_FLOOR_CONCRETE_2K_* + M_Z10_HERO_Floor_Concrete_2K; UV_Z10_FLOOR (4 m signed); aggregate, wet/oil patches, scuffs and tile-edge seams",
+  "ceiling": "T_Z10_CEILING_PANEL_2K_* + M_Z10_HERO_Ceiling_Panel_2K; UV_Z10_CEILING (4 m signed); panel grid, water stains, dust/scuffs",
+  "sets_on_disk_png": 9,
+  "sets_on_disk_mb": 7.9,
+  "no_geometry": true
+ },
+ "lighting_lookdev": {
+  "fog": {
+   "object": "VOL_Z10_Fog",
+   "density": 0.0035,
+   "anisotropy": 0.25,
+   "color": [
+    0.55,
+    0.62,
+    0.72
+   ]
+  },
+  "emergency": {
+   "object": "LIGHT_Z10_Emergency_E",
+   "energy_w": 40,
+   "color": [
+    1.0,
+    0.02,
+    0.01
+   ]
+  },
+  "render_only": "9 duplicate P0B5B work lights and STUDIO_Z10_* hidden for the beauty render; no new lights added; originals reused",
+  "camera": "(46,18,2.0) 3/4, lens 24 mm",
+  "exposure": 0.28,
+  "view": "AgX - Medium High Contrast",
+  "saved_scene": "fog and emergency values saved; duplicate P0B5B lights hidden; studio lights visible"
+ },
+ "narrative": {
+  "method": "surface textures carry water stains, short drips, cracks, scuffs, wet/oil patches and ceiling water damage; existing cables, papers, signs, cones, carts and puddles reused",
+  "new_props": 0,
+  "weapons_or_combat": false
+ },
+ "labels_dials": {
+  "status": "generic image-based label plates and generic 0-100 gauge dials fitted to their UV islands",
+  "specific_text": "not added: would require per-object unique UV/decals or new geometry; documented as next step"
+ },
+ "godot_vertex_color": {
+  "script": "scripts/fm/fm_z10_sector_post_import.gd",
+  "import_setting": "assets/models/fm/z10_sector.glb.import -> import_script/path=res://scripts/fm/fm_z10_sector_post_import.gd",
+  "action": "post-import sets vertex_color_use_as_albedo=true on M_Z10_HERO_Sprinkler_Red_WEAR_2K",
+  "verified": "Godot material vc=true for P0B4_SPRINKLER_RUN_DN80 and P0B5_RISER_A; preview docs/fm_z10_godot_wear_r6.png",
+  "preview_note": "preview uses the actual imported material with custom studio lights because the raw GLB lighting is overexposed without a Godot environment; the material flag and COLOR_0 are verified"
+ },
+ "beauty": {
+  "file": "docs/fm_z10_hero_beauty_r6.png",
+  "resolution": [
+   1280,
+   720
+  ],
+  "samples": 256,
+  "denoise": true,
+  "time_s": 97.1,
+  "camera": "(46,18,2.0), lens 24, exposure 0.28, AgX - Medium High Contrast",
+  "ab": {
+   "before": "docs/fm_z10_hero_ab_beauty_r6_before.png (R5 set)",
+   "after": "docs/fm_z10_hero_ab_beauty_r6_after.png (R6 beauty)"
+  },
+  "artifacts": "none observed; no OIDN banding visible; duct highlights controlled, wall reads plaster, floor/ceiling stained"
+ },
+ "glb": {
+  "file": "assets/models/fm/z10_sector.glb",
+  "bytes": 144619328,
+  "objects": 516,
+  "meshes": 507,
+  "unique_meshes": 402,
+  "lights": 9,
+  "tris": 519450,
+  "nodes": 516,
+  "gltf_meshes": 402,
+  "materials": 121,
+  "textures": 134,
+  "images": 87,
+  "image_bytes": 108528128,
+  "image_mb": 103.5,
+  "surface_images": 6,
+  "surface_image_mb": 6.36,
+  "tangent": {
+   "primitives": 655,
+   "with_tangent": 650,
+   "without_tangent": 5,
+   "reason": "5 untextured blockout primitives without UV/normal"
+  },
+  "texcoord": {
+   "TEXCOORD_0": 650,
+   "TEXCOORD_1": 123,
+   "TEXCOORD_2": 93,
+   "TEXCOORD_3": 8,
+   "refs_checked": 1525,
+   "mismatches": 0
+  },
+  "color0": 14,
+  "legacy_size_warnings": 0
+ },
+ "godot": {
+  "version": "4.7.2.stable.official.ed1daf0bf",
+  "import": "godot --headless --path . --import -> exit 0, no ERROR/WARNING",
+  "validation": "godot --headless --path . scenes/fm/fm_z10_sector_validate.tscn -> exit 0",
+  "validator_output": "Z10_SECTOR meshes=507 unique=402 lights=9; aabb_pos=(39.87, -0.208947, -34.939); aabb_size=(30.2835, 6.208947, 36.939); Z10_SECTOR_GODOT_OK",
+  "vram": {
+   "texture_mb": 248.2,
+   "video_mb": 313.8,
+   "method": "windowed Godot Forward+ GTX 1650 Ti, Performance.RENDER_TEXTURE_MEM_USED / RENDER_VIDEO_MEM_USED; 92 extracted textures compressed mode 2 + mips"
+  },
+  "fps": {
+   "value": 581.7,
+   "method": "windowed Godot 4.7.2, Vulkan Forward+, GTX 1650 Ti, 1280x720, VSync off, static GLB scene, 5 s / 2909 frames",
+   "caveat": "static scene baseline; not gameplay, no fog in Godot"
+  }
+ },
+ "qa": {
+  "geometry": {
+   "nonmanifold": 0,
+   "degenerate": 0,
+   "changed": false,
+   "global_qa": "pre-existing debt remains"
+  },
+  "surface_uv": {
+   "near_zero": 0,
+   "overlap_pct": "31.6-42.2",
+   "note": "modulo-tile overlap from signed box projection on opposite faces of wall/floor/ceiling boxes; tiling materials, not a bake defect"
+  },
+  "hero_accent_uv": "UV_Z10_HERO/2M 0 overlap, 0 near-zero; UV0 untouched",
+  "m_sh_remaining": 0
+ },
+ "files": {
+  "surfaces": "assets/art/fm/z10_hero/surfaces/ (9 PNG, 2K)",
+  "beauty": "docs/fm_z10_hero_beauty_r6.png",
+  "ab": [
+   "docs/fm_z10_hero_ab_beauty_r6_before.png",
+   "docs/fm_z10_hero_ab_beauty_r6_after.png"
+  ],
+  "godot_preview": "docs/fm_z10_godot_wear_r6.png",
+  "godot_script": "scripts/fm/fm_z10_sector_post_import.gd",
+  "glb": "assets/models/fm/z10_sector.glb",
+  "report": "docs/fm_z10_sector_export.json",
+  "backup": "docs/backups/FM_LEVEL1_V06_ARCH_before_z10_hero_r6.blend",
+  "docs": [
+   "docs/FM_Z10_HERO_ART.md",
+   "docs/fm_z10_hero_qa.json"
+  ]
+ },
+ "limitations": [
+  "The volumetric fog and the cinematic lighting are Cycles lookdev; glTF does not carry Blender volume, so the Godot scene has no fog unless a WorldEnvironment/volumetric fog is added.",
+  "Godot's GLB lights are overexposed without a controlled environment; the wear preview uses custom studio lights, not the raw GLB lighting.",
+  "Surface UV overlap is 31-42% modulo tiles due to box projection on opposite faces; tiling materials, no bake.",
+  "Labels and gauge dials remain generic; specific text needs unique UV/decals.",
+  "FPS 581.7 is a static 1280x720 GLB baseline, not gameplay and without fog; no LOD added.",
+  "Global geometry QA still fails on pre-existing inside-out/z-fight/floating debt."
+ ],
+ "verdict": "APROBADO en Blender beauty R6: la pared ya no lee como madera, suelo/techo tienen suciedad/juntas, la iluminación es cinematográfica con niebla/rojo y el desgaste se ve en Godot tras el import override. NO aprobado como paridad visual Godot completa: la niebla/luz de Blender no viaja en el GLB y etiquetas/diales son genéricos.",
+ "godot_parity_r7": {
+  "date": "2026-11-10",
+  "scene": "scenes/fm/fm_z10_art_r7.tscn",
+  "script": "scripts/fm/fm_z10_art_r7.gd",
+  "glb": "assets/models/fm/z10_sector.glb",
+  "capture": "docs/fm_z10_godot_parity_r7.png",
+  "ab": "docs/fm_z10_godot_parity_r7_ab.png",
+  "camera": {
+   "godot_position": [
+    46,
+    2,
+    -18
+   ],
+   "target": [
+    55.47,
+    2.87,
+    -21.08
+   ],
+   "fov_horizontal_deg": 68.0,
+   "strict_24mm_equiv_deg": 73.7,
+   "resolution": [
+    1280,
+    720
+   ]
+  },
+  "environment": {
+   "background": [
+    0.004,
+    0.005,
+    0.007
+   ],
+   "ambient_color": [
+    0.62,
+    0.52,
+    0.4
+   ],
+   "ambient_energy": 0.12,
+   "tonemap": "AgX",
+   "exposure": 0.94,
+   "agx_contrast": 1.25,
+   "glow": 0.3,
+   "glow_bloom": 0.02,
+   "fog_density": 0.018,
+   "fog_anisotropy": 0.25,
+   "ssao": true,
+   "ssr": true
+  },
+  "lights": {
+   "glb_lights_rescaled": 9,
+   "glb_range": "4.5-10.0",
+   "glb_energy": "0.1-2.0",
+   "added_scene_lights": [
+    "Key spot",
+    "Fill omni",
+    "Center omni",
+    "EastWash omni",
+    "CeilingBounce directional",
+    "FloorBounce directional"
+   ],
+   "reason": "Cycles area lights/GI and volume do not travel in glTF"
+  },
+  "wear": {
+   "post_import": "scripts/fm/fm_z10_sector_post_import.gd",
+   "verified": "Z10_ART_R7_WEAR vc=true node=P0B4_SPRINKLER_RUN_DN80"
+  },
+  "floor_decal": {
+   "texture": "assets/art/fm/z10_hero/decals/T_Z10_FLOOR_LABEL_10_CONECTOR_DE_SERVICIO.png",
+   "source": "ANNOT_L1_Label_09 (Blender, excluded L1_ARCH_LABELS)",
+   "text": "10 CONECTOR DE SERVICIO",
+   "scene_only": true,
+   "glb_modified": false,
+   "position": [
+    51,
+    0.5,
+    -22
+   ],
+   "size": [
+    16,
+    2,
+    0.7
+   ]
+  },
+  "fps": {
+   "value": 197.161,
+   "frames": 986,
+   "seconds": 5.001,
+   "resolution": [
+    1280,
+    720
+   ],
+   "vsync": "off",
+   "renderer": "Vulkan Forward+",
+   "adapter": "NVIDIA GeForce GTX 1650 Ti",
+   "caveat": "static art scene with volumetric fog/SSAO/SSR and shadowed lights; not gameplay"
+  },
+  "vram": {
+   "texture_mb": 362.92,
+   "video_mb": 448.6,
+   "objects": 3117,
+   "note": "increase over R6 baseline (248.2/313.8) from fog/SSAO/SSR/shadow buffers; no leak observed"
+  },
+  "tonal": {
+   "r6_mean": [
+    68.6,
+    66.3,
+    64.9
+   ],
+   "r7_mean": [
+    69.6,
+    65.0,
+    60.8
+   ],
+   "r6_median_luma": 62,
+   "r7_median_luma": 62,
+   "r6_p10": 17,
+   "r7_p10": 31,
+   "r6_p90": 120,
+   "r7_p90": 106
+  },
+  "verdict": "Paridad tonal/atmosférica aprobada; no pixel-perfect. Faltan GI/area/volumen de Cycles: muro este/ducto/pilar más oscuros, techo más liso, puerta casi negra; decal de suelo scene-only.",
+  "limitations": [
+   "Cycles GI/area lights/volume not in glTF",
+   "Godot fog density 0.018 is an art choice, not 0.0035 conversion",
+   "floor label is scene-only decal, original label excluded from GLB",
+   "68 deg horizontal chosen to match R6 framing; strict 24 mm would be 73.7 deg",
+   "FPS measured on static art scene, not gameplay",
+   "global geometry debt unchanged"
+  ],
+  "no_commit": true,
+  "fotos_referencia_intact": true
+ },
+ "godot_dark_r8": {
+  "date": "2026-11-10",
+  "scene": "scenes/fm/fm_z10_art_r8.tscn",
+  "script": "scripts/fm/fm_z10_art_r8.gd",
+  "preserved_r7": "scenes/fm/fm_z10_art_r7.tscn",
+  "dark_capture": "docs/fm_z10_godot_dark_r8.png",
+  "flashlight_capture": "docs/fm_z10_godot_dark_flashlight_r8.png",
+  "ab": "docs/fm_z10_godot_dark_r8_ab.png",
+  "user_direction": "Recepción excepción con algo más de luz; Z10 y resto solo luces de emergencia y muy pocas",
+  "lights": {
+   "glb_total": 9,
+   "kept": 3,
+   "disabled": 6,
+   "kept_names": [
+    "LIGHT_Z10_Emergency_E",
+    "LIGHT_L1_Conector_E",
+    "LIGHT_L1_Conector_N"
+   ],
+   "disabled_names": [
+    "LIGHT_Z10_Point_01",
+    "LIGHT_Z10_Point_02",
+    "LIGHT_Z10_Point_03",
+    "LIGHT_Z10_SouthSpill",
+    "LIGHT_Z10_WorkFill",
+    "LIGHT_Z10_WorkSpot"
+   ],
+   "added_fixed_lights": 0,
+   "emission_overrides": 29
+  },
+  "environment": {
+   "tonemap": "AgX",
+   "exposure": 0.8,
+   "agx_contrast": 1.25,
+   "ambient_energy": 0.02,
+   "ambient_color": [
+    0.3,
+    0.32,
+    0.38
+   ],
+   "background": [
+    0.0015,
+    0.0018,
+    0.0022
+   ],
+   "fog_density": 0.012,
+   "fog_anisotropy": 0.25,
+   "glow": 0.2,
+   "ssao": true,
+   "ssr": true
+  },
+  "wear": {
+   "post_import": "scripts/fm/fm_z10_sector_post_import.gd",
+   "verified": "Z10_ART_R8_WEAR vc=true node=P0B4_SPRINKLER_RUN_DN80"
+  },
+  "flashlight": {
+   "temporary": true,
+   "saved_in_scene": false,
+   "type": "SpotLight3D",
+   "energy": 8.0,
+   "range": 24.0,
+   "angle": 38.0,
+   "shadow": true,
+   "note": "diagnostic capture only; added by capture script and removed afterwards"
+  },
+  "fps": {
+   "value": 320.672,
+   "frames": 1604,
+   "seconds": 5.002,
+   "resolution": [
+    1280,
+    720
+   ],
+   "vsync": "off",
+   "renderer": "Vulkan Forward+",
+   "adapter": "NVIDIA GeForce GTX 1650 Ti",
+   "caveat": "static dark art scene, no flashlight, no gameplay"
+  },
+  "vram": {
+   "texture_mb": 361.42,
+   "video_mb": 441.5,
+   "objects": 3140,
+   "note": "fog/SSAO/SSR buffers dominate; fewer shadowed lights than R7; no leak test"
+  },
+  "tonal": {
+   "r8_dark_mean": [
+    1.71,
+    0.12,
+    0.02
+   ],
+   "r8_dark_median_luma": 0,
+   "r8_dark_p90": 1,
+   "r8_dark_p99": 13,
+   "r7_mean": [
+    69.63,
+    64.97,
+    60.81
+   ],
+   "r7_median_luma": 62,
+   "flashlight_mean": [
+    17.87,
+    17.72,
+    19.04
+   ],
+   "flashlight_median_luma": 5
+  },
+  "verdict": "Cumple la dirección oscura de Z10: sin key/fill/wash/bounce, solo 3 luces rojas de emergencia; el resto casi negro. La linterna es diagnóstica y no está en la escena.",
+  "limitations": [
+   "Very dark by design; geometry needs the diagnostic flashlight",
+   "Three red emergency lights kept; connectors can be disabled if only one is wanted",
+   "Hazard tape/sign emissive materials remain (not punctual lights)",
+   "No GI: red light does not bounce",
+   "Static FPS, not gameplay",
+   "Global geometry debt unchanged"
+  ],
+  "no_commit": true,
+  "fotos_referencia_intact": true
+ },
+ "reception_lighting_r9": {
+  "date": "2026-11-10",
+  "scene": "scenes/fm/fm_reception_art_r9.tscn",
+  "script": "scripts/fm/fm_reception_art_r9.gd",
+  "glb": "assets/models/fm/reception_sector.glb",
+  "capture": "docs/fm_reception_godot_light_r9.png",
+  "ab": "docs/fm_reception_godot_light_r9_ab.png",
+  "z10_r8_reference": "scenes/fm/fm_z10_art_r8.tscn",
+  "audit": {
+   "blend": "nexus/nivel_01/FM_LEVEL1_V06_ARCH.blend",
+   "no_L1_ARCH_LIGHTS": true,
+   "blend_lights_hidden": true,
+   "reception_light_intent": "L1_LIGHTING_INTENT + L1_RECEPTION_R1/R2/R3; all hide_render=True; R10/R13 renders used temporary area rigs",
+   "glb_lights": 0,
+   "glb_cameras": 0,
+   "glb_nodes": 292,
+   "glb_meshes": 274,
+   "glb_materials": 104,
+   "glb_textures": 41,
+   "glb_images": 30,
+   "glb_bytes": 36235496,
+   "existing_godot_test": "fm_reception_test.tscn uses 9 approximate omnis (A/B at fixtures, rest fills) + player flashlight",
+   "validator": "RECEPTION_SECTOR_GODOT_OK 292/274 AABB 40.4095 x 5.6 x 36.33739"
+  },
+  "lights": {
+   "total": 12,
+   "warm_practicals": 7,
+   "red_emergency": 4,
+   "green_exit": 1,
+   "added_fixed_non_diegetic": 0,
+   "directional": 0,
+   "spot": 0,
+   "shadowed": 1,
+   "names": [
+    "PracticalA",
+    "Pendant_0",
+    "Pendant_1",
+    "Pendant_2",
+    "Pendant_3",
+    "Vestibule_0",
+    "Vestibule_1",
+    "Emerg_Ceiling_N",
+    "Emerg_Ceiling_S",
+    "Emerg_Decon",
+    "Emerg_Extraction",
+    "Exit_Salida"
+   ]
+  },
+  "environment": {
+   "tonemap": "AgX",
+   "exposure": 1.12,
+   "agx_contrast": 1.25,
+   "ambient_energy": 0.06,
+   "ambient_color": [
+    0.45,
+    0.45,
+    0.48
+   ],
+   "background": [
+    0.002,
+    0.0024,
+    0.003
+   ],
+   "fog_density": 0.008,
+   "fog_anisotropy": 0.25,
+   "glow": 0.25,
+   "ssao": true,
+   "ssr": true
+  },
+  "camera": {
+   "position": [
+    -106,
+    1.7,
+    36
+   ],
+   "target": [
+    -99.54,
+    1.66,
+    28.37
+   ],
+   "fov_horizontal_deg": 73.7,
+   "lens_mm": 24,
+   "resolution": [
+    1280,
+    720
+   ]
+  },
+  "fps": {
+   "value": 294.082,
+   "frames": 1471,
+   "seconds": 5.002,
+   "resolution": [
+    1280,
+    720
+   ],
+   "vsync": "off",
+   "renderer": "Vulkan Forward+",
+   "adapter": "NVIDIA GeForce GTX 1650 Ti",
+   "caveat": "static art scene, not gameplay"
+  },
+  "vram": {
+   "texture_mb": 236.65,
+   "video_mb": 298.34,
+   "objects": 2584,
+   "note": "static art scene; no leak test"
+  },
+  "tonal": {
+   "reception_mean": [
+    39.9,
+    32.3,
+    24.4
+   ],
+   "reception_median_luma": 26,
+   "reception_p90": 71,
+   "reception_p99": 120,
+   "z10_r8_mean": [
+    1.7,
+    0.1,
+    0.0
+   ],
+   "z10_r8_median_luma": 0
+  },
+  "verdict": "Cumple la direccion: recepcion es la unica zona con mas luz; 12 luces diegeticas en fixtures, sin key/fill/bounce; mas legible que Z10 R8 pero todavia oscura.",
+  "limitations": [
+   "Omnis approximate Blender AREA lights and lift the ceiling",
+   "Blend lights are hidden render intents; area lights do not export",
+   "No GI/bounce; waiting area stays dark without its own fixture",
+   "Single camera view",
+   "Static FPS, not gameplay",
+   "No GLB/blend/fotos changes; no weapons/combat"
+  ],
+  "no_commit": true,
+  "fotos_referencia_intact": true
+ }
+}
