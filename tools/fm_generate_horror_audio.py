@@ -57,7 +57,6 @@ def fade_edges(buf, sr, fade_in=0.004, fade_out=0.02):
         buf[-1 - i] *= i / max(1, b)
         
 
-
 def lowpass(buf, cutoff, sr):
     """Filtro de un polo aplicado en sitio."""
     dt = 1.0 / sr
